@@ -1,0 +1,10 @@
+.container {
+    height: 164px;
+    width: 620px;
+    background-color: white;
+    color: black;
+}
+
+.container p{
+    padding: 15px;
+}

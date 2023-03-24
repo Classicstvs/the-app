@@ -1,0 +1,29 @@
+.channelBtn {
+    width: 141px;
+    height: 51px;
+    background: #0F0F0F82;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #888888;
+    cursor: pointer;
+    border: none;
+    border: 2px solid transparent;
+    margin: 10px 0;
+}
+
+.channelBtn:hover{
+    border: 2px solid #5297FF;
+    color: #5297FF;
+    transition: 0.5s;
+}
+
+.channelBtn p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    
+}
+

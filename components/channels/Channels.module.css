@@ -1,0 +1,5 @@
+.channelsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
