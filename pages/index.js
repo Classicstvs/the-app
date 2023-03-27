@@ -5,6 +5,7 @@ import Ad from "@/components/ad/Ad";
 import styles from "@/styles/Home.module.css";
 
 import {channels} from '../data/channelsList'
+import Controls from "@/components/controls/Controls";
 
 export default function Home() {
  
@@ -17,6 +18,7 @@ export default function Home() {
         <div className={styles.rightSecton}>
           <Ad />
           <Channels channels={channels} />
+          <Controls />
         </div>
       </div>
     </main>

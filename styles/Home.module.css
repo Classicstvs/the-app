@@ -1,7 +1,7 @@
 .main{
     background: linear-gradient(to top,
             #3F3C3C 0%,
-            #3F3C3C 60%,
+            #3F3C3C 31%,
             #D9D9D91F 13%,
             #D9D9D91F 100%);
 }
@@ -11,4 +11,5 @@
     margin: 0 auto;
     padding: 31px 0 ;
     display: flex;
+    gap: 6%;
 }

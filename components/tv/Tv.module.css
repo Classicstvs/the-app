@@ -1,16 +1,16 @@
 .tvContainer {
-
-}
-
-.tv{
     position: relative;
-    z-index: 1;
-    filter: drop-shadow(3px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
 .blob {
-    position: relative;
-    top: -673px;
-    right: 53px;
+    position: absolute;
+    top: -33px;
+    right: -50px;
     z-index: 0;
+}
+
+.tv {
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(3px 6px 4px rgba(0, 0, 0, 0.25));
 }
