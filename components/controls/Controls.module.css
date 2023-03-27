@@ -30,8 +30,13 @@
     margin: 0 0 0 0;
 }
 
+.channels label {
+    margin:5px 0 0 0 ;
+    color: #5297FF;
+}
+
 .channelDown {
-    margin: 0 10px 0 5px;
+    margin: 5px 5px 0 5px;
     transform: rotate(90deg);
     font-size: 25px;
     cursor: pointer;
@@ -43,6 +48,7 @@
 }
 
 .channelUp {
+    margin: 5px 5px 0 5px;
     transform: rotate(270deg);
     font-size: 25px;
     transition: 0.3s;
@@ -62,50 +68,54 @@
     margin: 5px 0 0 0;
 }
 
+.volume label {
+    color: #5297FF;
+}
+
 .volumeDown {
-    margin: 0 5px;
+    margin: 10px 5px 0 5px;
     font-size: 30px;
     cursor: pointer;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.volumeDown:hover{
+.volumeDown:hover {
     color: #5297FF;
 }
 
 .volumeUp {
-    margin: 0 9px 0 5px;
+    margin: 10px 5px 0 5px;
     font-size: 30px;
     cursor: pointer;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.volumeUp:hover{
+.volumeUp:hover {
     color: #5297FF;
-} 
+}
 
 .volume p {
     color: #5297FF;
 }
 
-.fullScreen{
+.fullScreen {
     font-size: 42px;
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.fullScreen:hover{
+.fullScreen:hover {
     color: #5297FF;
 }
 
 .skins {
-    margin: 6px 0 0 0;
+    margin: 10px 0 0 0;
     cursor: pointer;
 }
 
 .skins img {
-    margin: 0 5px;
+    margin: 0 3px;
 }
