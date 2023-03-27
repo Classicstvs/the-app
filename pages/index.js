@@ -7,6 +7,7 @@ import styles from "@/styles/Home.module.css";
 import {channels} from '../data/channelsList'
 import Controls from "@/components/controls/Controls";
 import PlayInfo from "@/components/playInfo/PlayInfo";
+import PageInfo from "@/components/pageInfo/PageInfo";
 
 export default function Home() {
  
@@ -15,6 +16,7 @@ export default function Home() {
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
           <Tv />
+          <PageInfo />
         </div>
         <div className={styles.rightSecton}>
           <Ad />
