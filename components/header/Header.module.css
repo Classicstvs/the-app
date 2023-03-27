@@ -6,13 +6,12 @@
 
 .wrapper {
   max-width: 1440px;
-  height: 107.50px;
+  height: 85.5px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .nav {
   display: flex;
@@ -41,7 +40,7 @@
 
 .nav .triangleUp {
   position: relative;
-  top:44px;
+  top:35px;
   right: 61.5%;
   width: 0;
   height: 0;

@@ -8,6 +8,7 @@ import {channels} from '../data/channelsList'
 import Controls from "@/components/controls/Controls";
 import PlayInfo from "@/components/playInfo/PlayInfo";
 import PageInfo from "@/components/pageInfo/PageInfo";
+import CardsInfo from "@/components/cardsInfo/CardsInfo";
 
 export default function Home() {
  
@@ -25,6 +26,7 @@ export default function Home() {
           <PlayInfo />
         </div>
       </div>
+      <CardsInfo />
     </main>
   );
 }
