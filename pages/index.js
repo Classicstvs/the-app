@@ -6,6 +6,7 @@ import styles from "@/styles/Home.module.css";
 
 import {channels} from '../data/channelsList'
 import Controls from "@/components/controls/Controls";
+import PlayInfo from "@/components/playInfo/PlayInfo";
 
 export default function Home() {
  
@@ -19,6 +20,7 @@ export default function Home() {
           <Ad />
           <Channels channels={channels} />
           <Controls />
+          <PlayInfo />
         </div>
       </div>
     </main>
