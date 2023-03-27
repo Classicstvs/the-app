@@ -21,7 +21,9 @@ export default function Controls() {
         <div className={styles.channelUp}>
           <FaPlay />
         </div>
-        <label>CHANNEL</label>
+        <label>
+          <strong>CHANNEL</strong>
+        </label>
       </div>
       <div className={styles.volume}>
         <div className={styles.volumeDown}>
@@ -30,7 +32,9 @@ export default function Controls() {
         <div className={styles.volumeUp}>
           <ImVolumeIncrease />
         </div>
-        <label>VOLUME</label>
+        <label>
+          <strong>VOLUME</strong>
+        </label>
       </div>
       <div className={styles.fullScreen}>
         <BiFullscreen />

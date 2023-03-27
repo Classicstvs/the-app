@@ -1,0 +1,35 @@
+.footerWrapper {
+    background: rgba(0, 0, 0, 0.25);
+    border-top: 3px solid #5297FF;
+}
+
+.footerContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #C3C3C3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+}
+
+.footerMenu ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.footerContainer li:hover{
+    transition: 0.3s;
+    color: #5297FF;
+}
+
+
+
+
+
+
