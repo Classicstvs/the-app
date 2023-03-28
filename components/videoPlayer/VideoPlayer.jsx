@@ -12,7 +12,7 @@ const VideoPlayer = ({ videoId, muted, onTitleChange }) => {
   useEffect(() => {
     axios
       .get(
-        `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=AIzaSyDb9qFHPemuFLMJuBrmxjg5awl5DWVoAHk&part=snippet`
+        `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`
       )
       .then((response) => {
         const title = response.data.items[0].snippet.title;
@@ -28,6 +28,8 @@ const VideoPlayer = ({ videoId, muted, onTitleChange }) => {
         [videoId]
       );
   });
+
+
 
   return (
     <div className={styles.videoPlayer}>
