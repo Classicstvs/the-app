@@ -23,7 +23,7 @@ export default function Home() {
           <Ad />
           <Channels channels={channels} />
           <Controls />
-          <PlayInfo />
+          {/* <PlayInfo /> */}
         </div>
       </div>
       <CardsInfo />

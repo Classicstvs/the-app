@@ -1,12 +1,19 @@
+import { useRouter } from "next/router";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./ChannelBtn.module.css";
 
 export default function ChannelBtn({ channel }) {
+
+const router = useRouter()
+
+const isActive = router.pathname === channel.url
+
   return (
-    <Link href="">
-      <button className={styles.channelBtn}>
+    <Link href={channel.url}>
+      <button className={`${styles.channelBtn} ${isActive ? styles.active : ''}`}>
         <p>{channel.name}</p>
 
         {channel.image && (
