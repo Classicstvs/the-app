@@ -18,16 +18,19 @@ import cartoonsJson from "../../data/cartoons.json";
 export default function Cartoons() {
   const router = useRouter();
 
+  const jsonLength = cartoonsJson.cartoons.length;
+
   const [videoIndex, setVideoIndex] = useState(0);
   const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [title, setTitle] = useState("")
 
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
-    const nextVideoId = news[videoIndex + 1].videoId;
-    const nextVideoTitle = news[videoIndex + 1].title;
+    const nextVideoId = cartoons[videoIndex + 1].videoId;
+    const nextVideoTitle = cartoons[videoIndex + 1].title;
 
-    router.push(`/90s/news/${nextVideoId}`);
+    router.push(`/90s/cartoons/${nextVideoId}?videoTitle=${encodeURIComponent(nextVideoTitle).replace(/%20/g, "")}`);
   };
 
   const playPrev = () => {
@@ -41,6 +44,7 @@ export default function Cartoons() {
           <VideoPlayer
             videoId={cartoons[videoIndex].videoId}
             onEnd={playNext}
+            onTitleChange={setTitle}
           />
           <Tv />
           <PageInfo />
@@ -48,8 +52,8 @@ export default function Cartoons() {
         <div className={styles.rightSecton}>
           <Ad />
           <Channels channels={channels} />
-          <Controls />
-          <PlayInfo />
+          <Controls playPrev={playPrev} playNext={playNext}/>
+          <PlayInfo title={title} jsonLength={jsonLength}/>
         </div>
       </div>
       <CardsInfo />

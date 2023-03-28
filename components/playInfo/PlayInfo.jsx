@@ -1,11 +1,19 @@
+
 import styles from "./PlayInfo.module.css";
 
-export default function PlayInfo() {
+import data from "../../data/cartoons.json";
+
+export default function PlayInfo({ title, jsonLength }) {
+
+ 
+
   return (
     <div className={styles.playInfoContainer}>
-      <h4>Now playing:</h4>
+      <h4>
+        Now playing:<span> {title}</span>
+      </h4>
       <h5>
-        Available cartoon channels: <span>853</span>
+        Available cartoon channels: <span>{jsonLength}</span>
       </h5>
       <p>
         Cartoon channels from the 90s were a treasure trove of classic animated
