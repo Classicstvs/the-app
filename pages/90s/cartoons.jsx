@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-
 import styles from "../../styles/allChannels.module.css";
 
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
@@ -23,21 +22,26 @@ export default function Cartoons() {
 
   const [videoIndex, setVideoIndex] = useState(0);
   const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
-  const [title, setTitle] = useState("")
+  const [title, setTitle] = useState("");
+
 
   const playNext = () => {
-
     setVideoIndex((prevIndex) => prevIndex + 1);
 
     const nextVideoId = cartoons[videoIndex + 1].videoId;
     const nextVideoTitle = cartoons[videoIndex + 1].title;
 
-    router.push(`/90s/cartoons/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(/%20/g, "")}`);
+    router.push(
+      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+        nextVideoTitle
+      ).replace(/%20/g, "")}`
+    );
   };
 
   const playPrev = () => {
     setVideoIndex((prevIndex) => prevIndex - 1);
   };
+
 
 
   return (
@@ -55,8 +59,14 @@ export default function Cartoons() {
         <div className={styles.rightSecton}>
           <Ad />
           <Channels channels={channels} />
-          <Controls playPrev={playPrev} playNext={playNext}/>
-          <PlayInfo titleTick="You can change the channels, Up and Down." jsonLength={jsonLength}/>
+          <Controls
+            playPrev={playPrev}
+            playNext={playNext}
+          />
+          <PlayInfo
+            titleTick="You can change the channels, Up and Down."
+            jsonLength={jsonLength}
+          />
         </div>
       </div>
       <CardsInfo />
