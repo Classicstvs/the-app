@@ -27,7 +27,7 @@ export default function Video() {
     }
   }, [videoTitle]);
 
-  const [videoIndex, setVideoIndex] = useState(0);
+  const [videoIndex, setVideoIndex] = useState(Math.floor(Math.random() * cartoonsJson.cartoons.length));
   const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
   const [title, setTitle] = useState("")
 

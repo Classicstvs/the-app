@@ -26,6 +26,7 @@ export default function Cartoons() {
   const [title, setTitle] = useState("")
 
   const playNext = () => {
+
     setVideoIndex((prevIndex) => prevIndex + 1);
 
     const nextVideoId = cartoons[videoIndex + 1].videoId;
