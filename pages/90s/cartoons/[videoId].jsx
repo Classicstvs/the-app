@@ -38,7 +38,7 @@ export default function Video() {
     const nextVideoTitle = cartoons[videoIndex + 1].title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?videoTitle=${encodeURIComponent(
+      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
       ).replace(/%20/g, "")}`
     );
@@ -51,7 +51,7 @@ export default function Video() {
     const prevVideoTitle = cartoons[videoIndex - 1].title;
 
     router.push(
-      `/90s/cartoons/${prevVideoId}?videoTitle=${encodeURIComponent(
+      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(
         prevVideoTitle
       ).replace(/%20/g, "")}`
     );

@@ -31,12 +31,13 @@ export default function Cartoons() {
     const nextVideoId = cartoons[videoIndex + 1].videoId;
     const nextVideoTitle = cartoons[videoIndex + 1].title;
 
-    router.push(`/90s/cartoons/${nextVideoId}?videoTitle=${encodeURIComponent(nextVideoTitle).replace(/%20/g, "")}`);
+    router.push(`/90s/cartoons/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(/%20/g, "")}`);
   };
 
   const playPrev = () => {
     setVideoIndex((prevIndex) => prevIndex - 1);
   };
+
 
   return (
     <main className={styles.main}>
