@@ -56,7 +56,7 @@ export default function Cartoons() {
           <Ad />
           <Channels channels={channels} />
           <Controls playPrev={playPrev} playNext={playNext}/>
-          <PlayInfo title={title} jsonLength={jsonLength}/>
+          <PlayInfo titleTick="You can change the channels, Up and Down." jsonLength={jsonLength}/>
         </div>
       </div>
       <CardsInfo />
