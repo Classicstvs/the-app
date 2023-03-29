@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ReactPlayer from "react-player";
 
+
+
 import styles from "./VideoPlayer.module.css";
 
-const VideoPlayer = ({ videoId, muted, onTitleChange }) => {
+const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player }) => {
   const [video, setVideo] = useState(null);
   const [videoTitle, setVideoTitle] = useState();
 
@@ -19,7 +21,7 @@ const VideoPlayer = ({ videoId, muted, onTitleChange }) => {
         const url = `https://www.youtube.com/watch?v=${videoId}`;
         setVideoTitle(title);
         setVideo(url);
-        onTitleChange(title)
+        onTitleChange(title);
       })
       .catch(
         (error) => {
@@ -30,18 +32,20 @@ const VideoPlayer = ({ videoId, muted, onTitleChange }) => {
   });
 
 
-
   return (
     <div className={styles.videoPlayer}>
       {video ? (
         <ReactPlayer
+        ref={player}
           width="615px"
           height="460px"
           url={video}
           playing={true}
           controls={false}
           loop={true}
+          volume={volume}
           muted={muted}
+   
           config={{
             youtube: {
               playerVars: {

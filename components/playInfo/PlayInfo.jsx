@@ -1,14 +1,11 @@
-
 import styles from "./PlayInfo.module.css";
 
 import data from "../../data/cartoons.json";
 
-export default function PlayInfo({ title, jsonLength }) {
-
- 
-
+export default function PlayInfo({ title, jsonLength, titleTick }) {
   return (
     <div className={styles.playInfoContainer}>
+      <p>{titleTick}</p>
       <h4>
         Now playing:<span> {title}</span>
       </h4>

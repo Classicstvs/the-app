@@ -34,3 +34,11 @@
     letter-spacing: 0.09em;
     text-align: left; 
 }
+
+.playInfoContainer p:first-child{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    color: #5297FF;
+}
