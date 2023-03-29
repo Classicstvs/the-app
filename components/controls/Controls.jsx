@@ -8,17 +8,22 @@ import { ImVolumeDecrease } from "react-icons/im";
 import { ImVolumeIncrease } from "react-icons/im";
 import { BiFullscreen } from "react-icons/bi";
 
-export default function Controls() {
+export default function Controls({ playPrev, playNext, videoIndex }) {
+  const isVideoFirst = videoIndex === 0;
+
   return (
     <div className={styles.controls}>
       <div className={styles.powerBtn}>
         <FaPowerOff />
       </div>
       <div className={styles.channels}>
-        <div className={styles.channelDown}>
+        <div
+          className={styles.channelDown}
+          onClick={!isVideoFirst ? playPrev : undefined}
+        >
           <FaPlay />
         </div>
-        <div className={styles.channelUp}>
+        <div className={styles.channelUp} onClick={playNext}>
           <FaPlay />
         </div>
         <label>

@@ -7,7 +7,7 @@ export default function Channels({channels}) {
   return (
     <div className={styles.channelsContainer}>
         {channels.map((channel)=>(
-          <ChannelBtn channel={channel} key={channel.name}/>
+          <ChannelBtn channel={channel} key={channel.name} />
         ))}    
     </div>
   )

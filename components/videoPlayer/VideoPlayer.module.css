@@ -1,0 +1,7 @@
+.videoPlayer{
+    z-index: 1;
+    position: absolute;
+    top: 47px;
+    left: 46px;
+}
+
