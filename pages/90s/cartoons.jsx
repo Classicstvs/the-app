@@ -38,9 +38,9 @@ export default function Cartoons() {
     );
   };
 
-  const playPrev = () => {
-    setVideoIndex((prevIndex) => prevIndex - 1);
-  };
+  // const playPrev = () => {
+  //   setVideoIndex((prevIndex) => prevIndex - 1);
+  // };
 
 
 
@@ -60,7 +60,7 @@ export default function Cartoons() {
           <Ad />
           <Channels channels={channels} />
           <Controls
-            playPrev={playPrev}
+            // playPrev={playPrev}
             playNext={playNext}
           />
           <PlayInfo
