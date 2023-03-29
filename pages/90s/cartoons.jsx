@@ -43,7 +43,6 @@ export default function Cartoons() {
   // };
 
 
-
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>
