@@ -15,6 +15,9 @@ import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 import { channels } from "../../../data/channelsList";
 import cartoonsJson from "../../../data/cartoons.json";
 
+import { useRef } from 'react'
+import screenfull from 'screenfull'
+
 export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
@@ -33,7 +36,9 @@ export default function Video() {
   const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
+  const [isFullScreen, setIsFullScreen] = useState(false);
 
+  //Change channels
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
@@ -60,6 +65,7 @@ export default function Video() {
     );
   };
 
+  //Set Volume
   const increaseVolume = () => {
     setVolume((prevVolume) => {
       const newVolume = prevVolume + 0.1;
@@ -74,6 +80,15 @@ export default function Video() {
     });
   };
 
+//Set Fullscreen
+  const player = useRef(null);
+  const handleClickFullscreen = () => {
+    if (screenfull.isEnabled) {
+      screenfull.request(player.current.wrapper);
+    }
+  };
+
+
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>
@@ -83,6 +98,7 @@ export default function Video() {
             onEnd={playNext}
             onTitleChange={setTitle}
             volume={volume}
+            player={player}
           />
           <Tv />
           <PageInfo />
@@ -96,6 +112,7 @@ export default function Video() {
             videoIndex={videoIndex}
             increaseVolume={increaseVolume}
             decreaseVolume={decreaseVolume}
+            handleClickFullscreen={handleClickFullscreen}
           />
           <PlayInfo title={title} jsonLength={jsonLength} />
         </div>

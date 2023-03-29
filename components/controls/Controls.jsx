@@ -8,7 +8,7 @@ import { ImVolumeDecrease } from "react-icons/im";
 import { ImVolumeIncrease } from "react-icons/im";
 import { BiFullscreen } from "react-icons/bi";
 
-export default function Controls({ playPrev, playNext, videoIndex, increaseVolume, decreaseVolume }) {
+export default function Controls({ playPrev, playNext, videoIndex, increaseVolume, decreaseVolume, handleClickFullscreen }) {
   const isVideoFirst = videoIndex === 0;
 
   return (
@@ -41,7 +41,7 @@ export default function Controls({ playPrev, playNext, videoIndex, increaseVolum
           <strong>VOLUME</strong>
         </label>
       </div>
-      <div className={styles.fullScreen}>
+      <div className={styles.fullScreen} onClick={handleClickFullscreen}>
         <BiFullscreen />
       </div>
       <div className={styles.skins}>
