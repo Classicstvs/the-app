@@ -15,7 +15,10 @@ export default function Footer() {
               <Link href='#'>Subscribe</Link>
             </li>
             <li>
-              <Link href='#'>Terms and Conditions</Link>
+              <Link href='/terms'>Terms and Conditions</Link>
+            </li>
+            <li>
+              <Link href='/privacy'>Privacy Policy</Link>
             </li>
             <li>
               <Link href='#'>FAQ</Link>
