@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import cn from 'classnames'
+
 import styles from "./Controls.module.css";
 
 import { FaPowerOff } from "react-icons/fa";
@@ -8,12 +10,45 @@ import { ImVolumeDecrease } from "react-icons/im";
 import { ImVolumeIncrease } from "react-icons/im";
 import { BiFullscreen } from "react-icons/bi";
 
-export default function Controls({ playPrev, playNext, videoIndex, increaseVolume, decreaseVolume, handleClickFullscreen }) {
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
+export default function Controls({
+  playPrev,
+  playNext,
+  videoIndex,
+  increaseVolume,
+  decreaseVolume,
+  handleClickFullscreen,
+  titleTick
+}) {
   const isVideoFirst = videoIndex === 0;
 
+  const router = useRouter();
+  const [activeRoute, setActiveRoute] = useState("/");
+
+  const powerOn = () => {
+    setActiveRoute(router.push("/90s/cartoons"));
+  };
+
+  const powerOff = () => {
+    setActiveRoute(router.push("/"));
+  };
+
+  useEffect(() => {
+    setActiveRoute(router.pathname);
+  }, [router.pathname]);
+
   return (
+   <>
+    <div className={styles.tick}><p>{titleTick}</p></div>
     <div className={styles.controls}>
-      <div className={styles.powerBtn}>
+      <div
+        className={cn(styles.powerBtn, {
+          [styles.isActive]: activeRoute && activeRoute !== "/",
+        })}
+        onClick={activeRoute === "/" ? powerOn : powerOff}
+      >
         <FaPowerOff />
       </div>
       <div className={styles.channels}>
@@ -55,5 +90,6 @@ export default function Controls({ playPrev, playNext, videoIndex, increaseVolum
         />
       </div>
     </div>
+   </>
   );
 }

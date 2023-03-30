@@ -17,3 +17,11 @@
 .leftSecton{
     position: relative;
 }
+
+.leftSecton>img{
+    color: transparent;
+    position: absolute;
+    top: 64px;
+    left: 35px;
+    z-index: 1;
+}

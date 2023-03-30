@@ -30,7 +30,7 @@ export default function Header() {
           </Link>
 
           <Link
-            className={router.pathname === "/" || "/90/" ? styles["activePath"] : ""}
+            className={router.pathname === "/" || "/90s/" ? styles["activePath"] : ""}
             href="/"
           >
             90s
