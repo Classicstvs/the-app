@@ -9,6 +9,8 @@
     align-items: center;
     gap: 2.05%;
     margin: 23px 0 0 0;
+     user-select: none;
+    -webkit-user-select: none;
 }
 
 .powerBtn {
@@ -70,8 +72,6 @@
 
 .volume label {
     color: #5297FF;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 .volumeDown {
@@ -116,8 +116,6 @@
 .skins {
     margin: 10px 0 0 0;
     cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 .skins img {
