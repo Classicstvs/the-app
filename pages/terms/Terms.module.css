@@ -1,16 +1,18 @@
-.container{
+.container {
     padding-top: 5vh;
     padding-bottom: 5vh;
-    max-width:800px ;
+    max-width: 800px;
     margin: 0 auto;
 }
-.container p{
-   text-align: justify;
-   margin-top: 2.2vh;
-   font-size: 2.2vh;
+
+.container p {
+    text-align: justify;
+    margin-top: 2.2vh;
+    font-size: 2.2vh;
 }
+
 .pageInfoWrapper h1 {
-   
+
     font-size: 48px;
     font-weight: 900;
     line-height: 56px;
