@@ -79,7 +79,7 @@ export default function Controls({
       </div>
       <div className={styles.skins}>
         <Link href='/faq'>
-        <Image src="/icons/tv_blue.webp" alt="TV Skin" width={47} height={47} />
+        <Image src="/icons/tv_blue.webp" alt="TV FAQ" width={47} height={47} />
         </Link>
       </div>
     </div>
