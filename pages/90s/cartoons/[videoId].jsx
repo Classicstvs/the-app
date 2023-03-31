@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 import styles from "../../../styles/allChannels.module.css";
@@ -15,20 +16,15 @@ import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 import { channels } from "../../../data/channelsList";
 import cartoonsJson from "../../../data/cartoons.json";
 
-import { useRef } from 'react'
-import screenfull from 'screenfull'
+import { useRef } from "react";
+
+import screenfull from "screenfull";
 
 export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
   const jsonLength = cartoonsJson.cartoons.length;
-
-  useEffect(() => {
-    if (videoTitle) {
-      document.title = videoTitle;
-    }
-  }, [videoTitle]);
 
   const [videoIndex, setVideoIndex] = useState(
     Math.floor(Math.random() * cartoonsJson.cartoons.length)
@@ -37,10 +33,15 @@ export default function Video() {
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
+  const [year, setYear] = useState(null);
 
   //Change channels
   const playNext = () => {
-    setVideoIndex((prevIndex) => prevIndex + 1);
+    if ((videoIndex === jsonLength - 1) && (cartoons && cartoons[videoIndex + 1]) ){
+      setVideoIndex(0);
+    } else {
+      setVideoIndex((prevIndex) => prevIndex + 1);
+    }
 
     const nextVideoId = cartoons[videoIndex + 1].videoId;
     const nextVideoTitle = cartoons[videoIndex + 1].title;
@@ -80,7 +81,7 @@ export default function Video() {
     });
   };
 
-//Set Fullscreen
+  //Set Fullscreen
   const player = useRef(null);
   const handleClickFullscreen = () => {
     if (screenfull.isEnabled) {
@@ -88,6 +89,13 @@ export default function Video() {
     }
   };
 
+  useEffect(() => {
+    if (videoTitle) {
+      document.title = videoTitle;
+    }
+
+    setYear(cartoons[videoIndex].year);
+  }, [videoTitle, cartoons, videoIndex]);
 
   return (
     <main className={styles.main}>
@@ -114,7 +122,7 @@ export default function Video() {
             decreaseVolume={decreaseVolume}
             handleClickFullscreen={handleClickFullscreen}
           />
-          <PlayInfo title={title} jsonLength={jsonLength} />
+          <PlayInfo title={title} jsonLength={jsonLength} year={year} />
         </div>
       </div>
       <CardsInfo />

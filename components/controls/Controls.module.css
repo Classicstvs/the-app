@@ -128,13 +128,12 @@
 
 
 .tick p{
-    margin: -1px 0 -7px 0;
     padding: 0;
     color: #5297FF;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .tick{
     position: relative;
-        margin: 0 0 -17px 15px;
+    margin: -1px 0 -23px 0;
 }

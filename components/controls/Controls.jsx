@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import cn from 'classnames'
+import cn from "classnames";
 
 import styles from "./Controls.module.css";
 
@@ -20,7 +20,6 @@ export default function Controls({
   increaseVolume,
   decreaseVolume,
   handleClickFullscreen,
-  titleTick
 }) {
   const isVideoFirst = videoIndex === 0;
 
@@ -40,8 +39,6 @@ export default function Controls({
   }, [router.pathname]);
 
   return (
-   <>
-    <div className={styles.tick}><p>{titleTick}</p></div>
     <div className={styles.controls}>
       <div
         className={cn(styles.powerBtn, {
@@ -90,6 +87,5 @@ export default function Controls({
         />
       </div>
     </div>
-   </>
   );
 }

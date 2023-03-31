@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import Image from 'next/image'
+import Image from "next/image";
 
 import styles from "../../styles/allChannels.module.css";
 
@@ -25,7 +25,6 @@ export default function Cartoons() {
   const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
   const [title, setTitle] = useState("");
 
-
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
@@ -43,7 +42,6 @@ export default function Cartoons() {
   //   setVideoIndex((prevIndex) => prevIndex - 1);
   // };
 
-
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>
@@ -53,7 +51,13 @@ export default function Cartoons() {
             onEnd={playNext}
             onTitleChange={setTitle}
           /> */}
-          <Image src='/images/noize.gif' alt="TV Noise" width={615} height={460} className={styles.noise}/>
+          <Image
+            src="/images/noize.gif"
+            alt="TV Noise"
+            width={615}
+            height={460}
+            className={styles.noise}
+          />
           <Tv />
           <PageInfo />
         </div>
@@ -63,9 +67,9 @@ export default function Cartoons() {
           <Controls
             // playPrev={playPrev}
             playNext={playNext}
-            titleTick="You can change the channels, Up and Down."
           />
           <PlayInfo
+            titleTick="You can change the channels, Up and Down."
             jsonLength={jsonLength}
           />
         </div>
