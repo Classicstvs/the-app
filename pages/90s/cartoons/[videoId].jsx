@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
+import Image from "next/image";
+
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 import styles from "../../../styles/allChannels.module.css";
@@ -34,10 +36,12 @@ export default function Video() {
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
+  const [showNoise, setShowNoise] = useState(true);
 
   //Change channels
   const playNext = () => {
-    if ((videoIndex === jsonLength - 1) && (cartoons && cartoons[videoIndex + 1]) ){
+    setShowNoise(true);
+    if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex + 1]) {
       setVideoIndex(0);
     } else {
       setVideoIndex((prevIndex) => prevIndex + 1);
@@ -54,6 +58,7 @@ export default function Video() {
   };
 
   const playPrev = () => {
+    setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
     const prevVideoId = cartoons[videoIndex - 1].videoId;
@@ -97,11 +102,31 @@ export default function Video() {
     setYear(cartoons[videoIndex].year);
   }, [videoTitle, cartoons, videoIndex]);
 
+  useEffect(() => {
+    if (showNoise) {
+      const timer = setTimeout(() => {
+        setShowNoise(false);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [showNoise]);
+
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
+          <Image
+            src="/images/noize.gif"
+            alt="TV Noise"
+            width={615}
+            height={460}
+            className={`${styles.noise} ${
+              showNoise ? styles.show : styles.hide
+            }`}
+          />
           <VideoPlayer
+      
             videoId={cartoons[videoIndex].videoId}
             onEnd={playNext}
             onTitleChange={setTitle}
