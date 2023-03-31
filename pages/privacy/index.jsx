@@ -2,7 +2,7 @@ import styles from "./Privacy.module.css";
 
 export default function Privacy() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h1>Privacy Policy</h1>
@@ -23,6 +23,6 @@ export default function Privacy() {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -2,8 +2,8 @@ import styles from './Faq.module.css'
 
 export default function FAQ() {
   return (
-    <div>
+    <main>
       <h1>FAQ</h1>
-    </div>
+    </main>
   );
 }

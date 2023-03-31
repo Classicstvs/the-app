@@ -2,7 +2,7 @@ import styles from "./Terms.module.css";
 
 export default function Terms() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h1>Terms of Service</h1>
@@ -37,6 +37,6 @@ export default function Terms() {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
