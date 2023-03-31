@@ -1,5 +1,5 @@
 .controls {
-    max-width: 620px;
+    max-width: 460px;
     height: 51px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #403F3F;
@@ -7,7 +7,7 @@
     padding: 0 20px;
     display: flex;
     align-items: center;
-    gap: 2.05%;
+    gap: 12px;
     margin: 12px 0 0 0;
      user-select: none;
     -webkit-user-select: none;
@@ -15,7 +15,7 @@
 
 .powerBtn {
     margin-top: 6px;
-    padding: 0 3px 0 3px;
+    padding: 0;
     font-size: 28px;
     transition: 0.3s;
     cursor: pointer;
@@ -70,6 +70,10 @@
     color: #5297FF;
 }
 
+.channels label{
+    font-size: 14px;
+}
+
 .volume {
     margin: 5px 0 0 0;
 }
@@ -106,6 +110,10 @@
     color: #5297FF;
 }
 
+.volume label{
+    font-size: 14px;
+}
+
 .fullScreen {
     font-size: 42px;
     margin: 15px 0 0 0;
@@ -123,7 +131,7 @@
 }
 
 .skins img {
-    margin: 0 3px;
+    margin: 0 -7px;
 }
 
 

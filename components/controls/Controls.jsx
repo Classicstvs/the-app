@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 
 import cn from "classnames";
 
@@ -77,14 +78,9 @@ export default function Controls({
         <BiFullscreen />
       </div>
       <div className={styles.skins}>
+        <Link href='/faq'>
         <Image src="/icons/tv_blue.webp" alt="TV Skin" width={47} height={47} />
-        <Image src="/icons/tv_grey.webp" alt="TV Skin" width={47} height={47} />
-        <Image
-          src="/icons/tv_black.webp"
-          alt="TV Skin"
-          width={47}
-          height={47}
-        />
+        </Link>
       </div>
     </div>
   );

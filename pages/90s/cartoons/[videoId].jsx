@@ -42,7 +42,7 @@ export default function Video() {
   const playNext = () => {
     setShowNoise(true);
     if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex + 1]) {
-      setVideoIndex(0);
+      setVideoIndex(1);
     } else {
       setVideoIndex((prevIndex) => prevIndex + 1);
     }
@@ -93,6 +93,8 @@ export default function Video() {
       screenfull.request(player.current.wrapper);
     }
   };
+
+
 
   useEffect(() => {
     if (videoTitle) {
@@ -146,6 +148,7 @@ export default function Video() {
             increaseVolume={increaseVolume}
             decreaseVolume={decreaseVolume}
             handleClickFullscreen={handleClickFullscreen}
+        
           />
           <PlayInfo title={title} jsonLength={jsonLength} year={year} />
         </div>
