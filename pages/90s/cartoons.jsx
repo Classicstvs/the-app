@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
@@ -41,6 +41,15 @@ export default function Cartoons() {
   // const playPrev = () => {
   //   setVideoIndex((prevIndex) => prevIndex - 1);
   // };
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      playNext();
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [videoIndex]);
 
   return (
     <main className={styles.main}>
