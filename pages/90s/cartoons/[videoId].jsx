@@ -128,9 +128,8 @@ export default function Video() {
             }`}
           />
           <VideoPlayer
-      
             videoId={cartoons[videoIndex].videoId}
-            onEnd={playNext}
+            onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
             player={player}

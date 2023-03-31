@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 
 import styles from "./VideoPlayer.module.css";
 
-const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player }) => {
+const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player,onEnded }) => {
   const [video, setVideo] = useState(null);
   const [videoTitle, setVideoTitle] = useState();
 
@@ -34,18 +34,19 @@ const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player }) => {
       {video ? (
         <ReactPlayer
           ref={player}
+          onEnded={onEnded}
           width="615px"
           height="460px"
           url={video}
           playing={true}
-          controls={false}
-          loop={true}
+          controls={true}
+          loop={false}
           volume={volume}
           muted={muted}
           config={{
             youtube: {
               playerVars: {
-                autoplay: 1,
+                autoplay: 0,
                 modestbranding: 1,
                 disablekb: 1,
                 showinfo: 0,
