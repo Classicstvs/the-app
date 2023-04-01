@@ -45,23 +45,48 @@ export default function Video() {
   };
 
   //Change channels
+  // const playNext = () => {
+  //   setShowNoise(true);
+  //   if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex - 1]) {
+  //     setVideoIndex(1);
+  //   } else {
+  //       setVideoIndex((prevIndex) => prevIndex + 1);
+  //   }
+
+  //   const randomIndex = Math.floor(Math.random() * jsonLength);
+  //   setVideoIndex(randomIndex);
+
+  //   const nextVideoId = cartoons[videoIndex + 1].videoId;
+  //   const nextVideoTitle = cartoons[videoIndex + 1].title;
+
+  //   router.push(
+  //     `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+  //       nextVideoTitle
+  //     ).replace(/%20/g, "")}`
+  //   );
+  // };
+
   const playNext = () => {
     setShowNoise(true);
-    if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex + 1]) {
-      setVideoIndex(1);
-    } else {
-      setVideoIndex((prevIndex) => prevIndex + 1);
+    const randomIndex = Math.floor(Math.random() * jsonLength);
+    setVideoIndex(randomIndex);
+  
+    const nextVideo = cartoons[randomIndex];
+    if (!nextVideo) {
+      console.error(`Error: Could not find video for index ${randomIndex}`);
+      return;
     }
-
-    const nextVideoId = cartoons[videoIndex + 1].videoId;
-    const nextVideoTitle = cartoons[videoIndex + 1].title;
-
+  
+    const nextVideoId = nextVideo.videoId;
+    const nextVideoTitle = nextVideo.title;
+  
     router.push(
       `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
       ).replace(/%20/g, "")}`
     );
   };
+  
 
   const playPrev = () => {
     setShowNoise(true);
