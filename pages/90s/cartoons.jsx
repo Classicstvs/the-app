@@ -24,6 +24,11 @@ export default function Cartoons() {
   const [videoIndex, setVideoIndex] = useState(0);
   const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
   const [title, setTitle] = useState("");
+  const [skin, setSkin] = useState(false);
+
+  const toggleSkin = () => {
+    setSkin(!skin);
+  };
 
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
@@ -42,11 +47,10 @@ export default function Cartoons() {
   //   setVideoIndex((prevIndex) => prevIndex - 1);
   // };
 
-
   useEffect(() => {
     const timer = setTimeout(() => {
       playNext();
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [videoIndex]);
@@ -71,7 +75,7 @@ export default function Cartoons() {
               height: "auto",
             }}
           />
-          <Tv />
+          <Tv skin={skin} />
           <PageInfo />
         </div>
         <div className={styles.rightSecton}>
@@ -80,11 +84,9 @@ export default function Cartoons() {
           <Controls
             // playPrev={playPrev}
             playNext={playNext}
+            toggleSkin={toggleSkin}
           />
-          <PlayInfo
-            titleTick="You can change the channels, Up and Down."
-            jsonLength={jsonLength}
-          />
+          <PlayInfo jsonLength={jsonLength} />
         </div>
       </div>
       <CardsInfo />

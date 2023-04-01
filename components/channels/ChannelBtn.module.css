@@ -16,7 +16,7 @@
 .channelBtn:hover {
     border: 2px solid #5297FF;
     color: #5297FF;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .channelBtn p {

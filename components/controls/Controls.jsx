@@ -21,6 +21,7 @@ export default function Controls({
   increaseVolume,
   decreaseVolume,
   handleClickFullscreen,
+  toggleSkin
 }) {
   const isVideoFirst = videoIndex === 0;
 
@@ -38,6 +39,8 @@ export default function Controls({
   useEffect(() => {
     setActiveRoute(router.pathname);
   }, [router.pathname]);
+
+
 
   return (
     <div className={styles.controls}>
@@ -77,7 +80,7 @@ export default function Controls({
       <div className={styles.fullScreen} onClick={handleClickFullscreen}>
         <BiFullscreen />
       </div>
-      <div className={styles.skins}>
+      <div className={styles.skins} onClick={toggleSkin}>
         <Image src="/icons/tv_blue.webp" alt="TV FAQ" width={47} height={47} />
       </div>
     </div>

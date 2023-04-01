@@ -37,6 +37,12 @@ export default function Video() {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
   const [showNoise, setShowNoise] = useState(true);
+  const [skin, setSkin] = useState(false);
+
+  //Toggle skin
+  const toggleSkin = () => {
+    setSkin(!skin);
+  };
 
   //Change channels
   const playNext = () => {
@@ -94,8 +100,6 @@ export default function Video() {
     }
   };
 
-
-
   useEffect(() => {
     if (videoTitle) {
       document.title = videoTitle;
@@ -138,7 +142,7 @@ export default function Video() {
             volume={volume}
             player={player}
           />
-          <Tv />
+          <Tv skin={skin} />
           <PageInfo />
         </div>
         <div className={styles.rightSecton}>
@@ -151,7 +155,7 @@ export default function Video() {
             increaseVolume={increaseVolume}
             decreaseVolume={decreaseVolume}
             handleClickFullscreen={handleClickFullscreen}
-        
+            toggleSkin={toggleSkin}
           />
           <PlayInfo title={title} jsonLength={jsonLength} year={year} />
         </div>

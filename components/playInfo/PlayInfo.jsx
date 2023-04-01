@@ -1,15 +1,14 @@
 import styles from "./PlayInfo.module.css";
 
-import data from "../../data/cartoons.json";
-
-export default function PlayInfo({ title, jsonLength, titleTick, year }) {
+export default function PlayInfo({ title, jsonLength, year }) {
   return (
     <div className={styles.playInfoContainer}>
-      <p>{titleTick}</p>
       <h4>
         Now playing:<span> {title}</span>
       </h4>
-      <p>Year: <span>{year}</span> </p>
+      <p>
+        Year: <span>{year}</span>{" "}
+      </p>
       <h5>
         Available cartoon channels: <span>{jsonLength}</span>
       </h5>

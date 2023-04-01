@@ -1,14 +1,17 @@
+import { useState, useEffect } from "react";
+
 import Image from "next/image";
 
 import styles from "./Tv.module.css";
 
-export default function Tv({ changeSkinTwo }) {
-  const skin1 = "/images/tv90.webp";
+export default function Tv({skin}) {
+
+
 
   return (
     <div className={styles.tvContainer}>
       <Image
-        src={skin1}
+        src={!skin ? '/images/tv90.webp' : '/images/tv90black.webp'}
         alt="Tv90"
         width={700}
         height={664}
