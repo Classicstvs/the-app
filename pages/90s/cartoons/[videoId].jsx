@@ -126,6 +126,10 @@ export default function Video() {
             className={`${styles.noise} ${
               showNoise ? styles.show : styles.hide
             }`}
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
           />
           <VideoPlayer
             videoId={cartoons[videoIndex].videoId}

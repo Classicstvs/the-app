@@ -66,6 +66,10 @@ export default function Cartoons() {
             width={615}
             height={460}
             className={styles.noise}
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
           />
           <Tv />
           <PageInfo />
