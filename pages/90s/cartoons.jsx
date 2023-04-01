@@ -24,11 +24,6 @@ export default function Cartoons() {
   const [videoIndex, setVideoIndex] = useState(0);
   const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
   const [title, setTitle] = useState("");
-  const [skin, setSkin] = useState(false);
-
-  const toggleSkin = () => {
-    setSkin(!skin);
-  };
 
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
@@ -75,7 +70,7 @@ export default function Cartoons() {
               height: "auto",
             }}
           />
-          <Tv skin={skin} />
+          <Tv />
           <PageInfo />
         </div>
         <div className={styles.rightSecton}>
@@ -84,7 +79,6 @@ export default function Cartoons() {
           <Controls
             // playPrev={playPrev}
             playNext={playNext}
-            toggleSkin={toggleSkin}
           />
           <PlayInfo jsonLength={jsonLength} />
         </div>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from 'next/link'
 
 import cn from "classnames";
 
@@ -21,7 +20,7 @@ export default function Controls({
   increaseVolume,
   decreaseVolume,
   handleClickFullscreen,
-  toggleSkin
+  toggleSkin,
 }) {
   const isVideoFirst = videoIndex === 0;
 
@@ -39,8 +38,6 @@ export default function Controls({
   useEffect(() => {
     setActiveRoute(router.pathname);
   }, [router.pathname]);
-
-
 
   return (
     <div className={styles.controls}>
@@ -81,7 +78,21 @@ export default function Controls({
         <BiFullscreen />
       </div>
       <div className={styles.skins} onClick={toggleSkin}>
-        <Image src="/icons/tv_blue.webp" alt="TV FAQ" width={47} height={47} />
+        {router.pathname === "/" ? (
+          <Image
+            src="/icons/tv_black.webp"
+            alt="TV FAQ"
+            width={47}
+            height={47}
+          />
+        ) : (
+          <Image
+            src="/icons/tv_blue.webp"
+            alt="TV FAQ"
+            width={47}
+            height={47}
+          />
+        )}
       </div>
     </div>
   );

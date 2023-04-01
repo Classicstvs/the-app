@@ -13,24 +13,17 @@ import PageInfo from "@/components/pageInfo/PageInfo";
 import CardsInfo from "@/components/cardsInfo/CardsInfo";
 
 export default function Home() {
-  const [skin, setSkin] = useState(false);
-
-  //Toggle skin
-  const toggleSkin = () => {
-    setSkin(!skin);
-  };
-
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
-          <Tv skin={skin} />
+          <Tv />
           <PageInfo />
         </div>
         <div className={styles.rightSecton}>
           <Ad />
           <Channels channels={channels} />
-          <Controls toggleSkin={toggleSkin} />
+          <Controls />
         </div>
       </div>
       <CardsInfo />
