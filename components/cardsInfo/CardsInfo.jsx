@@ -16,7 +16,7 @@ export default function CardsInfo() {
           <p>
             TV channels offer a diverse range of content catering to different
             interests and demographics. From news to sports, entertainment to
-            education, there's something for everyone.
+            education, there&apos;s something for everyone.
           </p>
         </div>
       </div>
