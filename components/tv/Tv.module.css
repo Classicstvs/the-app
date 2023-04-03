@@ -32,3 +32,13 @@
     right: 42px;
 }
 
+.mapArea{
+    cursor: pointer;
+    z-index: 5;
+    width: 22px;
+    height: 9px;
+    display: block;
+    position: relative;
+    top: -67px;
+    left: 299px;
+}
