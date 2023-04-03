@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from "./Privacy.module.css";
 
 export default function Privacy() {
