@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useCallback } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
@@ -25,7 +26,7 @@ export default function Cartoons() {
   const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
   const [title, setTitle] = useState("");
 
-  const playNext = () => {
+  const playNext = useCallback(() => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
     const nextVideoId = cartoons[videoIndex + 1].videoId;
@@ -36,7 +37,7 @@ export default function Cartoons() {
         nextVideoTitle
       ).replace(/%20/g, "")}`
     );
-  };
+  }, [cartoons, router, videoIndex]);
 
   // const playPrev = () => {
   //   setVideoIndex((prevIndex) => prevIndex - 1);
