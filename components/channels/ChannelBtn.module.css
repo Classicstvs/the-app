@@ -30,3 +30,25 @@
     border: 2px solid #5297FF;
     color: #5297FF;
 }
+
+@media only screen and (max-width: 1440px) {
+    .channelBtn {
+        margin: 4px 0;
+    }
+
+    .channelBtn p {
+        font-size: 16px;
+        letter-spacing: 0.3px;
+    }
+}
+
+@media only screen and (max-width: 1536px) {
+    .channelBtn {
+        margin: 4px 0;
+    }
+
+    .channelBtn p {
+        font-size: 16px;
+        letter-spacing: 0.3px;
+    }
+}

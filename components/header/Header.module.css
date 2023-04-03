@@ -40,7 +40,7 @@
 
 .nav .triangleUp {
   position: relative;
-  top:35px;
+  top: 35px;
   right: 61.5%;
   width: 0;
   height: 0;
@@ -61,7 +61,7 @@
 }
 
 .nav a:nth-child(2):hover~.triangleUp {
-   right: 61.5%;
+  right: 61.5%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
@@ -97,3 +97,9 @@
 
 
 
+@media only screen and (max-width: 1440px) {
+  .wrapper {
+    justify-content: space-around;
+    gap: 40%;
+  }
+}

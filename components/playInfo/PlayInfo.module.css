@@ -12,10 +12,10 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: 0.09em; 
+    letter-spacing: 0.09em;
 }
 
-.playInfoContainer span{
+.playInfoContainer span {
     color: #5297FF;
 }
 
@@ -26,23 +26,35 @@
     letter-spacing: 0.09em;
 }
 
-.playInfoContainer>p>span{
+.playInfoContainer>p>span {
     color: #5297FF;
 }
 
-.playInfoContainer p{
+.playInfoContainer p {
     margin: 8px 0;
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.09em;
-    text-align: left; 
+    text-align: left;
 }
 
-.playInfoContainer p:first-child{
+.playInfoContainer p:first-child {
     font-size: 24px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0.09em;
     color: #5297FF;
+}
+
+@media only screen and (max-width: 1440px) {
+    .playInfoContainer h4 {
+        font-size: 22px;
+        letter-spacing: 0.07em;
+    }
+
+    .playInfoContainer h5 {
+        font-size: 22px;
+        letter-spacing: 0.07em;
+    }
 }
