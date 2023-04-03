@@ -47,9 +47,10 @@ export default function Cartoons() {
     const timer = setTimeout(() => {
       playNext();
     }, 2000);
-
+  
     return () => clearTimeout(timer);
-  },[playNext]);
+  }, [playNext]);
+  
 
   return (
     <main className={styles.main}>
