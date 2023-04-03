@@ -14,7 +14,7 @@ export default function Header() {
         <div className={styles.logo}>
        <Link href="/">
        <Image
-            src="/Logo.svg"
+            src="/images/Logo.svg"
             width={222}
             height={62}
             alt="Classics TV LOGO"
