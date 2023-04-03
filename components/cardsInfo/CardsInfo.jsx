@@ -30,7 +30,7 @@ export default function CardsInfo() {
         <div className={styles.cardContent}>
           <h3>Fun and easy to use interface</h3>
           <p>
-            Classics TV channels features a user-friendly interface that's both
+            Classics TV channels features a user-friendly interface that&apos;s both
             fun and easy to navigate. Enjoy your favorite classics with just a
             few clicks!
           </p>
