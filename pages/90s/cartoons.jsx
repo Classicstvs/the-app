@@ -48,7 +48,7 @@ export default function Cartoons() {
     }, 2000);
 
     return () => clearTimeout(timer);
-  });
+  },[]);
 
   return (
     <main className={styles.main}>
