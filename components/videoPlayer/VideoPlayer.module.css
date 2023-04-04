@@ -1,8 +1,8 @@
 .videoPlayer {
     z-index: 2;
     position: absolute;
-    top: 47px;
-    left: 46px;
+    top: 39px;
+    left: 29px;
 }
 
 @media only screen and (max-width: 767px) {
