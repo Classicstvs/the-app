@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
+import{NextSeo} from 'next-seo'
+
 import Image from "next/image";
 
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
@@ -23,6 +25,7 @@ import { useRef } from "react";
 import screenfull from "screenfull";
 
 export default function Video() {
+
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
@@ -102,6 +105,18 @@ export default function Video() {
     );
   };
 
+
+  const SEO = {
+    title: `Classics Tv | 90s Cartoon Channels | Now Playnig: ${title}`,
+    description: "",
+
+    openGraph:{
+        title: "Classics Tv | 90s Cartoon Channels",
+        description: "",
+    }
+}
+
+
   //Set Volume
   const increaseVolume = () => {
     setVolume((prevVolume) => {
@@ -145,6 +160,7 @@ export default function Video() {
 
   return (
     <main className={styles.main}>
+      <NextSeo {...SEO} />
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
           <Image
