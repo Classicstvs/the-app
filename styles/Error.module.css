@@ -79,3 +79,22 @@
     justify-content: center;
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .errorNum {
+        top: -238px;
+        right: 39px;
+        font-size: 92px;
+    }
+
+    .errorMsg {
+        margin: 0 auto;
+        margin-top: -166px;
+        font-size: 25px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+}

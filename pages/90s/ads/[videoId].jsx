@@ -18,7 +18,7 @@ import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../../data/channelsList";
-import cartoonsJson from "../../../data/cartoons.json";
+import adsJson from "../../../data/ads.json";
 
 import { useRef } from "react";
 
@@ -28,12 +28,12 @@ export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = adsJson.ads.length;
 
   const [videoIndex, setVideoIndex] = useState(
-    Math.floor(Math.random() * cartoonsJson.cartoons.length)
+    Math.floor(Math.random() * adsJson.ads.length)
   );
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [ads, setCatoons] = useState(adsJson.ads);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -49,7 +49,7 @@ export default function Video() {
   //Change channels
   // const playNext = () => {
   //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex - 1]) {
+  //   if (videoIndex === jsonLength - 1 && ads && ads[videoIndex - 1]) {
   //     setVideoIndex(1);
   //   } else {
   //       setVideoIndex((prevIndex) => prevIndex + 1);
@@ -58,11 +58,11 @@ export default function Video() {
   //   const randomIndex = Math.floor(Math.random() * jsonLength);
   //   setVideoIndex(randomIndex);
 
-  //   const nextVideoId = cartoons[videoIndex + 1].videoId;
-  //   const nextVideoTitle = cartoons[videoIndex + 1].title;
+  //   const nextVideoId = ads[videoIndex + 1].videoId;
+  //   const nextVideoTitle = ads[videoIndex + 1].title;
 
   //   router.push(
-  //     `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+  //     `/90s/ads/${nextVideoId}?${encodeURIComponent(
   //       nextVideoTitle
   //     ).replace(/%20/g, "")}`
   //   );
@@ -73,7 +73,7 @@ export default function Video() {
     const randomIndex = Math.floor(Math.random() * jsonLength);
     setVideoIndex(randomIndex);
 
-    const nextVideo = cartoons[randomIndex];
+    const nextVideo = ads[randomIndex];
     if (!nextVideo) {
       console.error(`Error: Could not find video for index ${randomIndex}`);
       return;
@@ -83,7 +83,7 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+      `/90s/ads/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
       ).replace(/%20/g, "")}`
     );
@@ -93,22 +93,22 @@ export default function Video() {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
-    const prevVideoId = cartoons[videoIndex - 1].videoId;
-    const prevVideoTitle = cartoons[videoIndex - 1].title;
+    const prevVideoId = ads[videoIndex - 1].videoId;
+    const prevVideoTitle = ads[videoIndex - 1].title;
 
     router.push(
-      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(
+      `/90s/ads/${prevVideoId}?${encodeURIComponent(
         prevVideoTitle
       ).replace(/%20/g, "")}`
     );
   };
 
   const SEO = {
-    title: `Classics Tv | 90s Cartoon Channels | Now Playnig: ${title}`,
+    title: `Classics Tv | 90s Commercials and Ads Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics Tv | 90s Cartoon Channels",
+      title: "Classics Tv | 90s Commercials and Ads Channels",
       description: "",
     },
   };
@@ -141,8 +141,8 @@ export default function Video() {
       document.title = videoTitle;
     }
 
-    setYear(cartoons[videoIndex].year);
-  }, [videoTitle, cartoons, videoIndex]);
+    setYear(ads[videoIndex].year);
+  }, [videoTitle, ads, videoIndex]);
 
   useEffect(() => {
     if (showNoise) {
@@ -173,7 +173,7 @@ export default function Video() {
             }}
           />
           <VideoPlayer
-            videoId={cartoons[videoIndex].videoId}
+            videoId={ads[videoIndex].videoId}
             onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
@@ -198,10 +198,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo=" Cartoon channels from the 90s were a treasure trove of classic animated
-        shows. From Rugrats to Powerpuff Girls, they shaped a generation's
-        childhoods with memorable characters and storylines that still hold up
-        today."
+            channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
           />
         </div>
       </div>

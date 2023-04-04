@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Tv from "../components/tv/Tv";
 import Channels from "@/components/channels/Channels";
 import Ad from "@/components/ad/Ad";
@@ -11,6 +9,8 @@ import Controls from "@/components/controls/Controls";
 import PlayInfo from "@/components/playInfo/PlayInfo";
 import PageInfo from "@/components/pageInfo/PageInfo";
 import CardsInfo from "@/components/cardsInfo/CardsInfo";
+
+
 
 export default function Home() {
   return (

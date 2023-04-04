@@ -11,7 +11,7 @@ function Error({ statusCode }) {
   useEffect(() => {
     const timer = setTimeout(() => {
         router.push('/')
-    },5000);
+    },50000000);
 
     return ()=> clearTimeout(timer)
   },[router]);
