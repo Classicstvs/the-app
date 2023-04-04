@@ -8,7 +8,6 @@
 .error {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .errorNum {
@@ -58,6 +57,7 @@
     border: 2px solid transparent;
     margin: 10px 0;
     text-align: center;
+   
 }
 
 .channelBtn:hover {
