@@ -7,14 +7,14 @@
 
 @media only screen and (max-width: 767px) {
     .reactPlayer {
-        width: 352px !important;
-        height: 271px !important;
+        width: 380px !important;
+        height: 290px !important;
     }
 
     .videoPlayer {
         z-index: 2;
         position: absolute;
         top: 20px;
-        left: 19px;
+        left: 17px;
     }
 }
