@@ -77,6 +77,23 @@
         position: relative;
         top: -387px;
     }
+
+    .leftSecton>img {
+        top: 51px;
+        left: 91px;
+    }
+
+    .blackScreen {
+        max-width: 639px;
+        max-height: 501px;
+        top: 32px;
+        right: 97px;
+    }
+
+    .videoPlayer {
+        top: 52px;
+        left: 87px;
+    }
 }
 
 @media only screen and (max-width: 767px) {

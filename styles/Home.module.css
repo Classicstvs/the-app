@@ -55,6 +55,10 @@
         position: relative;
         top: -387px;
     }
+
+    .main{
+        background: linear-gradient(to top, #3F3C3C 0%, #3F3C3C 50%, #D9D9D91F 0%, #D9D9D91F 100%);
+    }
 }
 
 @media only screen and (max-width: 767px) {
