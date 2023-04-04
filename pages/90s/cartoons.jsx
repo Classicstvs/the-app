@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
+import{NextSeo} from 'next-seo'
+
 import styles from "../../styles/allChannels.module.css";
 
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
@@ -17,6 +19,18 @@ import { channels } from "../../data/channelsList";
 import cartoonsJson from "../../data/cartoons.json";
 
 export default function Cartoons() {
+
+  const SEO = {
+    title: "Classics Tv | 90s Cartoon Channels",
+    description: "",
+
+    openGraph:{
+        title: "Classics Tv | 90s Cartoon Channels",
+        description: "",
+    }
+}
+
+
   const router = useRouter();
 
   const jsonLength = cartoonsJson.cartoons.length;
@@ -52,6 +66,7 @@ export default function Cartoons() {
 
   return (
     <main className={styles.main}>
+      <NextSeo {...SEO} />
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
           {/* <VideoPlayer
