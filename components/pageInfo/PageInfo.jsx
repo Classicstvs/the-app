@@ -1,8 +1,18 @@
+import { useRouter } from "next/router";
+
 import styles from "./PageInfo.module.css";
 
+
 export default function PageInfo() {
+
+const router = useRouter()
+
+const pageInfoWrapperClass = router.pathname === '/'
+? styles.pageInfoWrapper 
+: styles.pageInfoWrapperRes
+
   return (
-    <div className={styles.pageInfoWrapper}>
+    <div className={pageInfoWrapperClass}>
       <h1>
         <span>90s</span> TV Classics
       </h1>

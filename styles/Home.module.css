@@ -1,4 +1,4 @@
-.main{
+.main {
     background: linear-gradient(to top,
             #3F3C3C 0%,
             #3F3C3C 55.2%,
@@ -9,8 +9,68 @@
 .mainWrapper {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 31px 0 ;
+    padding: 31px 0;
     display: flex;
     gap: 6%;
 }
 
+
+@media only screen and (max-width: 1536px) {
+    .leftSecton {
+        margin-left: 30px;
+    }
+
+    .rightSecton {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .mainWrapper {
+        gap: 2%;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .mainWrapper {
+        gap: 2% !important;
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .mainWrapper {
+        gap: 0%;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+
+    .leftSecton {
+        margin-left: 0px;
+    }
+
+    .rightSecton {
+        margin-right: 0px;
+        position: relative;
+        top: -387px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mainWrapper {
+        gap: 0%;
+        margin-left: 0px;
+        margin: 0 auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .leftSecton {
+        margin-left: 0px;
+    }
+
+    .rightSecton {
+        margin-right: 0px;
+    }
+}

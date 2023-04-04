@@ -16,7 +16,7 @@
     filter: drop-shadow(3px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
-.crtScanlines{
+.crtScanlines {
     background-image: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 2px);
 }
 
@@ -32,7 +32,7 @@
     right: 42px;
 }
 
-.mapArea{
+.mapArea {
     cursor: pointer;
     z-index: 5;
     width: 22px;
@@ -41,4 +41,99 @@
     position: relative;
     top: -67px;
     left: 299px;
+}
+
+@media only screen and (max-width: 1536px) {
+    .blackScreen {
+        right: 0px;
+    }
+
+    .blob {
+        top: 57px;
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .blackScreen {
+        top: 4px;
+        right: 77px;
+    }
+
+    .blob {
+        top: -4px;
+        right: 26px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+    .blackScreen {
+        top: 4px;
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .blackScreen {
+        top: 20px;
+        right: 10px;
+        max-width: 626px;
+        max-height: 545px;
+    }
+
+    .blob {
+        top: 52px;
+        right: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .blackScreen {
+        max-width: 546px;
+        max-height: 464px;
+        top: 4px;
+        right: 42px;
+    }
+
+    .blob {
+        top: 53px;
+        right: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .tvContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blob {
+        top: -22px;
+        right: 17px;
+    }
+
+    .blackScreen {
+        max-width: 596px;
+        max-height: 501px;
+        top: 20px;
+        right: 130px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .blackScreen {
+        max-width: 546px;
+        max-height: 280px;
+        top: 29px;
+        right: 1px;
+    }
+
+    .blob {
+        display: none;
+    }
 }

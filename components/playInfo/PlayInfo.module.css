@@ -57,4 +57,39 @@
         font-size: 22px;
         letter-spacing: 0.07em;
     }
+
+    .playInfoContainer {
+        max-width: 585px;
+    }
 }
+
+@media only screen and (max-width: 767px) {
+    .playInfoContainer {
+        max-width: 585px;
+        position: relative;
+        top: -301px;
+        border-radius: 0px;
+    }
+
+    .playInfoContainer h4 {
+        font-size: 18px !important;
+        letter-spacing: 0.05em;
+        line-height: 23px;
+    }
+
+    .playInfoContainer h5 {
+        font-size: 18px;
+        letter-spacing: 0.05em;
+    }
+
+    .playInfoContainer p {
+        margin: 8px 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.07em;
+        text-align: left;
+    }
+}
+
+

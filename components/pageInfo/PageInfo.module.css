@@ -17,3 +17,117 @@
     letter-spacing: 0.09em;
     color: #D9D9D9;
 }
+
+.pageInfoWrapperRes h1{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 56px;
+    color: #D9D9D9;
+    margin: 40px 0 10px 0;
+}
+
+.pageInfoWrapperRes h1 span{
+    color: #5297FF;
+}
+
+.pageInfoWrapperRes p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.09em;
+    color: #D9D9D9;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .pageInfoWrapper h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 40px 0 10px 20px;
+    }
+
+    .pageInfoWrapper p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.07em;
+        color: #D9D9D9;
+        margin-left: 20px;
+    }
+
+    .pageInfoWrapperRes {
+        position: relative;
+        top: 623px !important;
+    }
+
+    .pageInfoWrapperRes h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 40px 0 10px 20px;
+    }
+
+    .pageInfoWrapperRes p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.07em;
+        color: #D9D9D9;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .pageInfoWrapper {
+        position: relative;
+        top: 311px;
+    }
+
+    .pageInfoWrapperRes {
+        position: relative;
+        top: 311px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .pageInfoWrapper {
+        position: relative;
+        top: 308px;
+    }
+
+    .pageInfoWrapperRes {
+        position: relative;
+        top: 600px !important;
+    }
+
+
+    .pageInfoWrapper p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.07em;
+        margin: 0 20px 17px 20px;
+    }
+
+    .pageInfoWrapperRes h1 {
+        font-size: 36px;
+        line-height: 50px;
+        padding: 0 0;
+        margin: 9px 0 10px 20px;
+    }
+
+    .pageInfoWrapperRes p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.07em;
+        margin: 0 20px 17px 20px;
+    }
+
+    .pageInfoWrapper h1 {
+        font-size: 36px;
+        line-height: 50px;
+        padding: 0 0;
+        margin: 9px 0 10px 20px;
+    }
+}
