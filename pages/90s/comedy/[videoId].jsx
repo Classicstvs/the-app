@@ -18,7 +18,7 @@ import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../../data/channelsList";
-import cartoonsJson from "../../../data/cartoons.json";
+import comedyJson from "../../../data/comedy.json";
 
 import { useRef } from "react";
 
@@ -28,12 +28,12 @@ export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = comedyJson.comedy.length;
 
   const [videoIndex, setVideoIndex] = useState(
-    Math.floor(Math.random() * cartoonsJson.cartoons.length)
+    Math.floor(Math.random() * comedyJson.comedy.length)
   );
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [comedy, setCatoons] = useState(comedyJson.comedy);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -49,7 +49,7 @@ export default function Video() {
   //Change channels
   // const playNext = () => {
   //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex - 1]) {
+  //   if (videoIndex === jsonLength - 1 && comedy && comedy[videoIndex - 1]) {
   //     setVideoIndex(1);
   //   } else {
   //       setVideoIndex((prevIndex) => prevIndex + 1);
@@ -58,11 +58,11 @@ export default function Video() {
   //   const randomIndex = Math.floor(Math.random() * jsonLength);
   //   setVideoIndex(randomIndex);
 
-  //   const nextVideoId = cartoons[videoIndex + 1].videoId;
-  //   const nextVideoTitle = cartoons[videoIndex + 1].title;
+  //   const nextVideoId = comedy[videoIndex + 1].videoId;
+  //   const nextVideoTitle = comedy[videoIndex + 1].title;
 
   //   router.push(
-  //     `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+  //     `/90s/comedy/${nextVideoId}?${encodeURIComponent(
   //       nextVideoTitle
   //     ).replace(/%20/g, "")}`
   //   );
@@ -73,7 +73,7 @@ export default function Video() {
     const randomIndex = Math.floor(Math.random() * jsonLength);
     setVideoIndex(randomIndex);
 
-    const nextVideo = cartoons[randomIndex];
+    const nextVideo = comedy[randomIndex];
     if (!nextVideo) {
       console.error(`Error: Could not find video for index ${randomIndex}`);
       return;
@@ -83,9 +83,10 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-        nextVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/comedy/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
@@ -93,22 +94,23 @@ export default function Video() {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
-    const prevVideoId = cartoons[videoIndex - 1].videoId;
-    const prevVideoTitle = cartoons[videoIndex - 1].title;
+    const prevVideoId = comedy[videoIndex - 1].videoId;
+    const prevVideoTitle = comedy[videoIndex - 1].title;
 
     router.push(
-      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(
-        prevVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/comedy/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
   const SEO = {
-    title: `Classics Tv | 90s Cartoon Channels | Now Playnig: ${title}`,
+    title: `Classics Tv | 90s Comedy Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics Tv | 90s Cartoon Channels",
+      title: "Classics Tv | 90s Comedy Channels",
       description: "",
     },
   };
@@ -141,8 +143,8 @@ export default function Video() {
       document.title = videoTitle;
     }
 
-    setYear(cartoons[videoIndex].year);
-  }, [videoTitle, cartoons, videoIndex]);
+    setYear(comedy[videoIndex].year);
+  }, [videoTitle, comedy, videoIndex]);
 
   useEffect(() => {
     if (showNoise) {
@@ -173,7 +175,7 @@ export default function Video() {
             }}
           />
           <VideoPlayer
-            videoId={cartoons[videoIndex].videoId}
+            videoId={comedy[videoIndex].videoId}
             onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
@@ -198,10 +200,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo=" Cartoon channels from the 90s were a treasure trove of classic animated
-        shows. From Rugrats to Powerpuff Girls, they shaped a generation's
-        childhoods with memorable characters and storylines that still hold up
-        today."
+            channelInfo="The 90s was a decade of great comedy television channels, featuring some of the most beloved and iconic sitcoms of all time. Networks like NBC, ABC, and FOX brought us shows that made us laugh, cry, and think, with memorable characters and hilarious writing that still holds up today. From family-friendly sitcoms to edgier, more irreverent fare, these channels paved the way for the future of comedy television and left a lasting impact on popular culture."
           />
         </div>
       </div>

@@ -6,7 +6,6 @@ import { NextSeo } from "next-seo";
 
 import styles from "../../styles/allChannels.module.css";
 
-import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import Tv from "../../components/tv/Tv";
 import Channels from "../../components/channels/Channels";
 import Ad from "../../components/ad/Ad";
@@ -16,37 +15,38 @@ import PageInfo from "../../components/pageInfo/PageInfo";
 import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
-import cartoonsJson from "../../data/cartoons.json";
+import adsJson from "../../data/ads.json";
 
-export default function Cartoons() {
+export default function Ads() {
   const SEO = {
-    title: "Classics Tv | 90s Cartoon Channels",
+    title: "Classics Tv | 90s Commercials and Ads Channels",
     description: "",
 
     openGraph: {
-      title: "Classics Tv | 90s Cartoon Channels",
+      title: "Classics Tv | 90s Commercials and Ads Channels",
       description: "",
     },
   };
 
   const router = useRouter();
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = adsJson.ads.length;
 
   const [videoIndex, setVideoIndex] = useState(0);
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [ads, setCatoons] = useState(adsJson.ads);
   const [title, setTitle] = useState("");
 
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
-    const nextVideoId = cartoons[videoIndex + 1].videoId;
-    const nextVideoTitle = cartoons[videoIndex + 1].title;
+    const nextVideoId = ads[videoIndex + 1].videoId;
+    const nextVideoTitle = ads[videoIndex + 1].title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-        nextVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
@@ -95,10 +95,7 @@ export default function Cartoons() {
           />
           <PlayInfo
             jsonLength={jsonLength}
-            channelInfo=" Cartoon channels from the 90s were a treasure trove of classic animated
-            shows. From Rugrats to Powerpuff Girls, they shaped a generation's
-            childhoods with memorable characters and storylines that still hold up
-            today."
+            channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import styles from "./PlayInfo.module.css";
 
-export default function PlayInfo({ title, jsonLength, year }) {
+export default function PlayInfo({ title, jsonLength, year, channelInfo }) {
   return (
     <div className={styles.playInfoContainer}>
       <h4>
@@ -12,12 +12,7 @@ export default function PlayInfo({ title, jsonLength, year }) {
       <h5>
         Available cartoon channels: <span>{jsonLength}</span>
       </h5>
-      <p>
-        Cartoon channels from the 90s were a treasure trove of classic animated
-        shows. From Rugrats to Powerpuff Girls, they shaped a generation&apos;s
-        childhoods with memorable characters and storylines that still hold up
-        today.
-      </p>
+      <p>{channelInfo}</p>
     </div>
   );
 }

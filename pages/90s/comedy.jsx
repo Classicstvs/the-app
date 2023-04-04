@@ -6,7 +6,6 @@ import { NextSeo } from "next-seo";
 
 import styles from "../../styles/allChannels.module.css";
 
-import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import Tv from "../../components/tv/Tv";
 import Channels from "../../components/channels/Channels";
 import Ad from "../../components/ad/Ad";
@@ -16,37 +15,38 @@ import PageInfo from "../../components/pageInfo/PageInfo";
 import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
-import cartoonsJson from "../../data/cartoons.json";
+import comedyJson from "../../data/comedy.json";
 
-export default function Cartoons() {
+export default function Comedy() {
   const SEO = {
-    title: "Classics Tv | 90s Cartoon Channels",
+    title: "Classics Tv | 90s Comedy Channels",
     description: "",
 
     openGraph: {
-      title: "Classics Tv | 90s Cartoon Channels",
+      title: "Classics Tv | 90s Comedy Channels",
       description: "",
     },
   };
 
   const router = useRouter();
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = comedyJson.comedy.length;
 
   const [videoIndex, setVideoIndex] = useState(0);
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [comedy, setCatoons] = useState(comedyJson.comedy);
   const [title, setTitle] = useState("");
 
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
-    const nextVideoId = cartoons[videoIndex + 1].videoId;
-    const nextVideoTitle = cartoons[videoIndex + 1].title;
+    const nextVideoId = comedy[videoIndex + 1].videoId;
+    const nextVideoTitle = comedy[videoIndex + 1].title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-        nextVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/comedy/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
@@ -95,10 +95,7 @@ export default function Cartoons() {
           />
           <PlayInfo
             jsonLength={jsonLength}
-            channelInfo=" Cartoon channels from the 90s were a treasure trove of classic animated
-            shows. From Rugrats to Powerpuff Girls, they shaped a generation's
-            childhoods with memorable characters and storylines that still hold up
-            today."
+            channelInfo="The 90s was a decade of great comedy television channels, featuring some of the most beloved and iconic sitcoms of all time. Networks like NBC, ABC, and FOX brought us shows that made us laugh, cry, and think, with memorable characters and hilarious writing that still holds up today. From family-friendly sitcoms to edgier, more irreverent fare, these channels paved the way for the future of comedy television and left a lasting impact on popular culture."
           />
         </div>
       </div>
