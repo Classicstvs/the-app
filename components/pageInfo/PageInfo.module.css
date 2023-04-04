@@ -104,12 +104,12 @@
 @media only screen and (max-width: 767px) {
     .pageInfoWrapper {
         position: relative;
-        top: 308px;
+        top: 339px;
     }
 
     .pageInfoWrapperRes {
         position: relative;
-        top: 600px !important;
+        top: 623px !important;
     }
 
 
