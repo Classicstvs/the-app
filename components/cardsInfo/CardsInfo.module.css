@@ -114,7 +114,7 @@
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        margin: -59px auto 19px auto;
+        margin: -30px auto 19px auto;
     }
 
     .card {
@@ -124,6 +124,11 @@
     }
 
     .card h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .card h3 {
         font-size: 18px;
         line-height: 22px;
     }

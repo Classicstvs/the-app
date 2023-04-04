@@ -57,7 +57,7 @@
 @media only screen and (max-width: 1440px) {
     .blackScreen {
         top: 4px;
-        right: 52px;
+        right: 77px;
     }
 
     .blob {
@@ -120,5 +120,20 @@
         max-height: 501px;
         top: 20px;
         right: 130px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .blackScreen {
+        max-width: 546px;
+        max-height: 280px;
+        top: 29px;
+        right: 1px;
+    }
+
+    .blob {
+        display: none;
     }
 }

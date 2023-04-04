@@ -23,13 +23,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+
     .channelsContainer {
         display: flex;
         flex-wrap: nowrap;
-        gap: 1%;
+        gap: 3%;
         overflow: auto;
-        margin: 25px 0 0 0;
+        margin: 55px 0 0 0;
         position: relative;
-        top: -549px;
+        top: -483px;
     }
 }
