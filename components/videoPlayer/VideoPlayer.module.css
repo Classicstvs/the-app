@@ -1,7 +1,20 @@
-.videoPlayer{
+.videoPlayer {
     z-index: 2;
     position: absolute;
     top: 47px;
     left: 46px;
 }
 
+@media only screen and (max-width: 767px) {
+    .reactPlayer {
+        width: 352px !important;
+        height: 271px !important;
+    }
+
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 20px;
+        left: 19px;
+    }
+}

@@ -32,7 +32,7 @@ const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player,onEnded }) 
   return (
     <div className={styles.videoPlayer}>
       {video ? (
-        <ReactPlayer
+        <ReactPlayer className={styles.reactPlayer}
           ref={player}
           onEnded={onEnded}
           width="615px"
