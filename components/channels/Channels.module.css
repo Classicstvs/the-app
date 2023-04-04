@@ -12,6 +12,7 @@
     }
 }
 
+
 @media screen and (min-width: 768px) and (max-width:1023px) {
     .channelsContainer {
         display: flex;
@@ -19,6 +20,15 @@
         gap: 1%;
         overflow: overlay;
         margin: 25px 0 0 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 810px) {
+
+    .channelsContainer {
+        margin: 21px 0 0 0;
     }
 }
 

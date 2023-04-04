@@ -121,6 +121,13 @@
         top: 20px;
         right: 130px;
     }
+
+    .mapArea{
+        width: 22px;
+        height: 14px;
+        top: 599px;
+        left: -402px;
+    }
 }
 
 
@@ -135,5 +142,44 @@
 
     .blob {
         display: none;
+    }
+
+    .mapArea {
+        top: -43px;
+        left: 171px;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+
+    .mapArea {
+        top: -42px;
+        left: 170px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .mapArea {
+        top: -40px;
+        left: 159px;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+
+    .mapArea {
+        top: -38px;
+        left: 148px;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+
+    .mapArea {
+        top: -40px;
+        left: 155px;
     }
 }
