@@ -22,9 +22,9 @@ const pageInfoWrapperClass = router.pathname === '/'
         of channels. Despite this, there was something special about the
         programming. From classic sitcoms to Saturday morning cartoons, viewers
         tuned in for hours on end. The TVs themselves were bulky and lacked the
-        sleek designs of modern-day sets, but they had a certain charm that's
+        sleek designs of modern-day sets, but they had a certain charm that&#39;s
         hard to replicate today. The 90s were a simpler time for television, but
-        one that's fondly remembered by many.
+        one that&#39;s fondly remembered by many.
       </p>
     </div>
   );

@@ -10,7 +10,7 @@ export default function Privacy() {
             The use of this website is subject to the following terms of use:
           </p>
           <h2>Cookies</h2>
-          <p>We do not use "cookies" on classics.tv.</p>
+          <p>We do not use &#39;cookies&#39; on classics.tv.</p>
           <p>
             Some of our business partners may use cookies on our site (for
             example, advertisers). However, we have no access to or control over
