@@ -16,7 +16,7 @@ export default function CardsInfo() {
           <p>
             TV channels offer a diverse range of content catering to different
             interests and demographics. From news to sports, entertainment to
-            education, there&apos;s something for everyone.
+            education, there&#39;s something for everyone.
           </p>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function CardsInfo() {
         <div className={styles.cardContent}>
           <h3>Fun and easy to use interface</h3>
           <p>
-            Classics TV channels features a user-friendly interface that&apos;s both
+            Classics TV channels features a user-friendly interface that's both
             fun and easy to navigate. Enjoy your favorite classics with just a
             few clicks!
           </p>
