@@ -6,7 +6,6 @@ import { NextSeo } from "next-seo";
 
 import styles from "../../styles/allChannels.module.css";
 
-import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import Tv from "../../components/tv/Tv";
 import Channels from "../../components/channels/Channels";
 import Ad from "../../components/ad/Ad";
@@ -16,37 +15,38 @@ import PageInfo from "../../components/pageInfo/PageInfo";
 import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
-import cartoonsJson from "../../data/cartoons.json";
+import specialsJson from "../../data/specials.json";
 
-export default function Cartoons() {
+export default function Specials() {
   const SEO = {
-    title: "Classics TV | 90s Cartoons TV Channels",
+    title: "Classics TV | 90s Specials TV Channels",
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Cartoons TV Channels",
+      title: "Classics TV | 90s Specials TV Channels",
       description: "",
     },
   };
 
   const router = useRouter();
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = specialsJson.specials.length;
 
   const [videoIndex, setVideoIndex] = useState(0);
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [specials, setCatoons] = useState(specialsJson.specials);
   const [title, setTitle] = useState("");
 
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
-    const nextVideoId = cartoons[videoIndex + 1].videoId;
-    const nextVideoTitle = cartoons[videoIndex + 1].title;
+    const nextVideoId = specials[videoIndex + 1].videoId;
+    const nextVideoTitle = specials[videoIndex + 1].title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-        nextVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/specials/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
@@ -95,7 +95,7 @@ export default function Cartoons() {
           />
           <PlayInfo
             jsonLength={jsonLength}
-            channelInfo="Cartoon TV channels from the 90s were a paradise for kids and adults alike who loved animated shows. From classic series like Looney Tunes and Tom and Jerry to modern hits like Animaniacs and Rugrats, they brought us some of the most memorable and iconic cartoon characters of all time. These channels provided us with a chance to escape into different worlds, filled with adventure, humor, and heartwarming stories that taught us important lessons. Whether you were a fan of superheroes, talking animals, or mischievous kids, there was always something to watch on cartoon TV channels in the 90s. Even today, these shows continue to hold a special place in the hearts of those who grew up with them, and they remain a beloved part of popular culture around the world."
+            channelInfo="Specials TV channels from the 90s were a platform for some of the most groundbreaking and influential programs of the decade. From awards shows like the Oscars and the Grammys to special events like Live Aid and the Olympics, they brought us live coverage of some of the most significant moments in pop culture and world history. These channels provided us with a chance to witness history in the making, from the fall of the Berlin Wall to the inauguration of new presidents. They also brought us exclusive interviews and behind-the-scenes looks at the worlds of politics, entertainment, and sports. Whether you were a fan of music, sports, or current events, there was always something to watch on specials TV channels in the 90s. Even today, these programs continue to be a part of our cultural conversation, and they remain an important part of the television landscape."
           />
         </div>
       </div>

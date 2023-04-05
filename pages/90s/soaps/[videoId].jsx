@@ -18,7 +18,7 @@ import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../../data/channelsList";
-import cartoonsJson from "../../../data/cartoons.json";
+import soapsJson from "../../../data/soaps.json";
 
 import { useRef } from "react";
 
@@ -28,12 +28,12 @@ export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = soapsJson.soaps.length;
 
   const [videoIndex, setVideoIndex] = useState(
-    Math.floor(Math.random() * cartoonsJson.cartoons.length)
+    Math.floor(Math.random() * soapsJson.soaps.length)
   );
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [soaps, setCatoons] = useState(soapsJson.soaps);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -46,34 +46,13 @@ export default function Video() {
     setSkin(!skin);
   };
 
-  //Change channels
-  // const playNext = () => {
-  //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex - 1]) {
-  //     setVideoIndex(1);
-  //   } else {
-  //       setVideoIndex((prevIndex) => prevIndex + 1);
-  //   }
-
-  //   const randomIndex = Math.floor(Math.random() * jsonLength);
-  //   setVideoIndex(randomIndex);
-
-  //   const nextVideoId = cartoons[videoIndex + 1].videoId;
-  //   const nextVideoTitle = cartoons[videoIndex + 1].title;
-
-  //   router.push(
-  //     `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-  //       nextVideoTitle
-  //     ).replace(/%20/g, "")}`
-  //   );
-  // };
 
   const playNext = () => {
     setShowNoise(true);
     const randomIndex = Math.floor(Math.random() * jsonLength);
     setVideoIndex(randomIndex);
 
-    const nextVideo = cartoons[randomIndex];
+    const nextVideo = soaps[randomIndex];
     if (!nextVideo) {
       console.error(`Error: Could not find video for index ${randomIndex}`);
       return;
@@ -83,9 +62,10 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-        nextVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/soaps/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
@@ -93,22 +73,23 @@ export default function Video() {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
-    const prevVideoId = cartoons[videoIndex - 1].videoId;
-    const prevVideoTitle = cartoons[videoIndex - 1].title;
+    const prevVideoId = soaps[videoIndex - 1].videoId;
+    const prevVideoTitle = soaps[videoIndex - 1].title;
 
     router.push(
-      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(
-        prevVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/soaps/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
   const SEO = {
-    title: `Classics TV | 90s Cartoons TV Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 90s Soaps TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Cartoons TV Channels",
+      title: "Classics TV | 90s Soaps TV Channels",
       description: "",
     },
   };
@@ -141,8 +122,8 @@ export default function Video() {
       document.title = videoTitle;
     }
 
-    setYear(cartoons[videoIndex].year);
-  }, [videoTitle, cartoons, videoIndex]);
+    setYear(soaps[videoIndex].year);
+  }, [videoTitle, soaps, videoIndex]);
 
   useEffect(() => {
     if (showNoise) {
@@ -173,7 +154,7 @@ export default function Video() {
             }}
           />
           <VideoPlayer
-            videoId={cartoons[videoIndex].videoId}
+            videoId={soaps[videoIndex].videoId}
             onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
@@ -198,7 +179,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo="Cartoon TV channels from the 90s were a paradise for kids and adults alike who loved animated shows. From classic series like Looney Tunes and Tom and Jerry to modern hits like Animaniacs and Rugrats, they brought us some of the most memorable and iconic cartoon characters of all time. These channels provided us with a chance to escape into different worlds, filled with adventure, humor, and heartwarming stories that taught us important lessons. Whether you were a fan of superheroes, talking animals, or mischievous kids, there was always something to watch on cartoon TV channels in the 90s. Even today, these shows continue to hold a special place in the hearts of those who grew up with them, and they remain a beloved part of popular culture around the world."
+            channelInfo="Soap opera TV channels from the 90s were a mainstay of daytime television and provided viewers with a daily dose of drama, romance, and intrigue. From Days of Our Lives to General Hospital, they brought us stories that kept us glued to our screens, following the lives of our favorite characters as they navigated love triangles, family feuds, and other dramatic events. These channels provided us with an escape from our own lives, as we got lost in the twists and turns of the soap opera world. Whether you were a fan of classic shows or the latest new releases, there was always something to watch on soap opera TV channels in the 90s. Even today, these shows continue to attract loyal fans, and they remain a significant part of the daytime television landscape."
           />
         </div>
       </div>

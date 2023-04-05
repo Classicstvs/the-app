@@ -48,9 +48,9 @@ export const channels = [
     height: 26,
   },
   {
-    name: "Drama",
+    name: "Shows",
     image: "/icons/drama_icon.webp",
-    url: "/90s/drama",
+    url: "/90s/shows",
     width: 26,
     height: 26,
   },

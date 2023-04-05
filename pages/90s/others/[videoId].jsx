@@ -18,7 +18,7 @@ import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../../data/channelsList";
-import cartoonsJson from "../../../data/cartoons.json";
+import othersJson from "../../../data/others.json";
 
 import { useRef } from "react";
 
@@ -28,12 +28,12 @@ export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = othersJson.others.length;
 
   const [videoIndex, setVideoIndex] = useState(
-    Math.floor(Math.random() * cartoonsJson.cartoons.length)
+    Math.floor(Math.random() * othersJson.others.length)
   );
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [others, setCatoons] = useState(othersJson.others);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -46,34 +46,13 @@ export default function Video() {
     setSkin(!skin);
   };
 
-  //Change channels
-  // const playNext = () => {
-  //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex - 1]) {
-  //     setVideoIndex(1);
-  //   } else {
-  //       setVideoIndex((prevIndex) => prevIndex + 1);
-  //   }
-
-  //   const randomIndex = Math.floor(Math.random() * jsonLength);
-  //   setVideoIndex(randomIndex);
-
-  //   const nextVideoId = cartoons[videoIndex + 1].videoId;
-  //   const nextVideoTitle = cartoons[videoIndex + 1].title;
-
-  //   router.push(
-  //     `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-  //       nextVideoTitle
-  //     ).replace(/%20/g, "")}`
-  //   );
-  // };
 
   const playNext = () => {
     setShowNoise(true);
     const randomIndex = Math.floor(Math.random() * jsonLength);
     setVideoIndex(randomIndex);
 
-    const nextVideo = cartoons[randomIndex];
+    const nextVideo = others[randomIndex];
     if (!nextVideo) {
       console.error(`Error: Could not find video for index ${randomIndex}`);
       return;
@@ -83,7 +62,7 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+      `/90s/others/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
       ).replace(/%20/g, "")}`
     );
@@ -93,22 +72,22 @@ export default function Video() {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
-    const prevVideoId = cartoons[videoIndex - 1].videoId;
-    const prevVideoTitle = cartoons[videoIndex - 1].title;
+    const prevVideoId = others[videoIndex - 1].videoId;
+    const prevVideoTitle = others[videoIndex - 1].title;
 
     router.push(
-      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(
+      `/90s/others/${prevVideoId}?${encodeURIComponent(
         prevVideoTitle
       ).replace(/%20/g, "")}`
     );
   };
 
   const SEO = {
-    title: `Classics TV | 90s Cartoons TV Channels | Now Playnig: ${title}`,
+    title: `Classics TV | TV Others 90s Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Cartoons TV Channels",
+      title: "Classics TV | TV Others 90s Channels",
       description: "",
     },
   };
@@ -141,8 +120,8 @@ export default function Video() {
       document.title = videoTitle;
     }
 
-    setYear(cartoons[videoIndex].year);
-  }, [videoTitle, cartoons, videoIndex]);
+    setYear(others[videoIndex].year);
+  }, [videoTitle, others, videoIndex]);
 
   useEffect(() => {
     if (showNoise) {
@@ -173,7 +152,7 @@ export default function Video() {
             }}
           />
           <VideoPlayer
-            videoId={cartoons[videoIndex].videoId}
+            videoId={others[videoIndex].videoId}
             onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
@@ -198,7 +177,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo="Cartoon TV channels from the 90s were a paradise for kids and adults alike who loved animated shows. From classic series like Looney Tunes and Tom and Jerry to modern hits like Animaniacs and Rugrats, they brought us some of the most memorable and iconic cartoon characters of all time. These channels provided us with a chance to escape into different worlds, filled with adventure, humor, and heartwarming stories that taught us important lessons. Whether you were a fan of superheroes, talking animals, or mischievous kids, there was always something to watch on cartoon TV channels in the 90s. Even today, these shows continue to hold a special place in the hearts of those who grew up with them, and they remain a beloved part of popular culture around the world."
+            channelInfo="Other TV channels from the 90s covered a wide variety of programming, catering to different interests and tastes. From educational channels like Discovery and National Geographic to lifestyle channels like HGTV and Food Network, there was always something to watch for viewers looking for something specific. These channels provided us with a wealth of information and entertainment, from documentaries on science and history to cooking shows and home renovation programs. They also helped us learn new skills and explore new interests. Whether you were a fan of travel, fashion, or gardening, there was always something to watch on other TV channels in the 90s. Even today, these channels continue to be a part of our television landscape, offering viewers a diverse range of programming and catering to a wide variety of interests."
           />
         </div>
       </div>
