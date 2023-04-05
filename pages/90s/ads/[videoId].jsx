@@ -47,6 +47,7 @@ export default function Video() {
   };
 
 
+
   const playNext = () => {
     setShowNoise(true);
     const randomIndex = Math.floor(Math.random() * jsonLength);

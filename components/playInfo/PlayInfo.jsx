@@ -5,14 +5,14 @@ export default function PlayInfo({ title, jsonLength, year, channelInfo }) {
     <div className={styles.playInfoContainer}>
       {title ? (
         <h4>
-          Now playing:<span>{title}</span>
+          Now playing:<span> {title}</span>
         </h4>
       ) : (
-        <h4>Loading Title...</h4>
+        <h4>Loading TV Channel...</h4>
       )}
       {year ? (
         <p>
-          Year: <span>{year}</span>
+          Year: <span> {year}</span>
         </p>
       ) : (
         ""
