@@ -10,7 +10,7 @@ export default function PlayInfo({ title, jsonLength, year, channelInfo }) {
         Year: <span>{year}</span>
       </p>
       <h5>
-        Available cartoon channels: <span>{jsonLength}</span>
+        Available channels: <span>{jsonLength}</span>
       </h5>
       <p>{channelInfo}</p>
     </div>

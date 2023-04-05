@@ -18,7 +18,7 @@ import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../../data/channelsList";
-import newsJson from "../../../data/news.json";
+import sportsJson from "../../../data/sports.json";
 
 import { useRef } from "react";
 
@@ -28,12 +28,12 @@ export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
-  const jsonLength = newsJson.news.length;
+  const jsonLength = sportsJson.sports.length;
 
   const [videoIndex, setVideoIndex] = useState(
-    Math.floor(Math.random() * newsJson.news.length)
+    Math.floor(Math.random() * sportsJson.sports.length)
   );
-  const [news, setCatoons] = useState(newsJson.news);
+  const [sports, setCatoons] = useState(sportsJson.sports);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -52,7 +52,7 @@ export default function Video() {
     const randomIndex = Math.floor(Math.random() * jsonLength);
     setVideoIndex(randomIndex);
 
-    const nextVideo = news[randomIndex];
+    const nextVideo = sports[randomIndex];
     if (!nextVideo) {
       console.error(`Error: Could not find video for index ${randomIndex}`);
       return;
@@ -62,7 +62,7 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/news/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+      `/90s/sports/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
       )}`
@@ -73,11 +73,11 @@ export default function Video() {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
-    const prevVideoId = news[videoIndex - 1].videoId;
-    const prevVideoTitle = news[videoIndex - 1].title;
+    const prevVideoId = sports[videoIndex - 1].videoId;
+    const prevVideoTitle = sports[videoIndex - 1].title;
 
     router.push(
-      `/90s/news/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
+      `/90s/sports/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
         /%20/g,
         ""
       )}`
@@ -85,11 +85,11 @@ export default function Video() {
   };
 
   const SEO = {
-    title: `Classics TV | 90s News TV Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 90s Sports TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s News TV Channels",
+      title: "Classics TV | 90s Sports TV Channels",
       description: "",
     },
   };
@@ -122,8 +122,8 @@ export default function Video() {
       document.title = videoTitle;
     }
 
-    setYear(news[videoIndex].year);
-  }, [videoTitle, news, videoIndex]);
+    setYear(sports[videoIndex].year);
+  }, [videoTitle, sports, videoIndex]);
 
   useEffect(() => {
     if (showNoise) {
@@ -154,7 +154,7 @@ export default function Video() {
             }}
           />
           <VideoPlayer
-            videoId={news[videoIndex].videoId}
+            videoId={sports[videoIndex].videoId}
             onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
@@ -179,7 +179,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo="News channels from the 90s were a vital source of information for people all around the world. From CNN to BBC, they provided us with up-to-date coverage of major events, from wars and natural disasters to politics and entertainment. These channels helped us stay informed about the world around us and shaped our understanding of current affairs. They also gave us access to a wide range of perspectives and voices, expanding our understanding of global events and issues. Today, we still rely on news channels to keep us informed, but the channels from the 90s remain an important part of the history of journalism and media."
+            channelInfo="Sports TV channels from the 90s were a dream come true for sports fans everywhere. From ESPN to Sky Sports, they brought us live coverage of some of the most exciting sports events of the decade, from the Olympics to the World Cup. These channels allowed us to cheer on our favorite teams and athletes from the comfort of our own homes, and provided us with expert analysis and commentary on the games. Whether you were a fan of basketball, football, or any other sport, there was always something to watch on sports TV channels in the 90s. Today, these channels continue to be an important part of the sports media landscape, providing us with access to live games, highlights, and expert analysis."
           />
         </div>
       </div>

@@ -104,11 +104,11 @@ export default function Video() {
   };
 
   const SEO = {
-    title: `Classics Tv | 90s Cartoon Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 90s Cartoon TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics Tv | 90s Cartoon Channels",
+      title: "Classics TV | 90s Cartoon TV Channels",
       description: "",
     },
   };

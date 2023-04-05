@@ -46,27 +46,6 @@ export default function Video() {
     setSkin(!skin);
   };
 
-  //Change channels
-  // const playNext = () => {
-  //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && ads && ads[videoIndex - 1]) {
-  //     setVideoIndex(1);
-  //   } else {
-  //       setVideoIndex((prevIndex) => prevIndex + 1);
-  //   }
-
-  //   const randomIndex = Math.floor(Math.random() * jsonLength);
-  //   setVideoIndex(randomIndex);
-
-  //   const nextVideoId = ads[videoIndex + 1].videoId;
-  //   const nextVideoTitle = ads[videoIndex + 1].title;
-
-  //   router.push(
-  //     `/90s/ads/${nextVideoId}?${encodeURIComponent(
-  //       nextVideoTitle
-  //     ).replace(/%20/g, "")}`
-  //   );
-  // };
 
   const playNext = () => {
     setShowNoise(true);
@@ -104,11 +83,11 @@ export default function Video() {
   };
 
   const SEO = {
-    title: `Classics Tv | 90s Commercials and Ads Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 90s Commercials and Ads TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics Tv | 90s Commercials and Ads Channels",
+      title: "Classics TV | 90s Commercials and Ads TV Channels",
       description: "",
     },
   };

@@ -18,7 +18,7 @@ import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../../data/channelsList";
-import newsJson from "../../../data/news.json";
+import gameshowsJson from "../../../data/gameshows.json";
 
 import { useRef } from "react";
 
@@ -28,12 +28,12 @@ export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
-  const jsonLength = newsJson.news.length;
+  const jsonLength = gameshowsJson.gameshows.length;
 
   const [videoIndex, setVideoIndex] = useState(
-    Math.floor(Math.random() * newsJson.news.length)
+    Math.floor(Math.random() * gameshowsJson.gameshows.length)
   );
-  const [news, setCatoons] = useState(newsJson.news);
+  const [gameshows, setCatoons] = useState(gameshowsJson.gameshows);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -52,7 +52,7 @@ export default function Video() {
     const randomIndex = Math.floor(Math.random() * jsonLength);
     setVideoIndex(randomIndex);
 
-    const nextVideo = news[randomIndex];
+    const nextVideo = gameshows[randomIndex];
     if (!nextVideo) {
       console.error(`Error: Could not find video for index ${randomIndex}`);
       return;
@@ -62,7 +62,7 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/news/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+      `/90s/gameshows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
       )}`
@@ -73,11 +73,11 @@ export default function Video() {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
-    const prevVideoId = news[videoIndex - 1].videoId;
-    const prevVideoTitle = news[videoIndex - 1].title;
+    const prevVideoId = gameshows[videoIndex - 1].videoId;
+    const prevVideoTitle = gameshows[videoIndex - 1].title;
 
     router.push(
-      `/90s/news/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
+      `/90s/gameshows/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
         /%20/g,
         ""
       )}`
@@ -85,11 +85,11 @@ export default function Video() {
   };
 
   const SEO = {
-    title: `Classics TV | 90s News TV Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 90s Gameshows TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s News TV Channels",
+      title: "Classics TV | 90s Gameshows TV Channels",
       description: "",
     },
   };
@@ -122,8 +122,8 @@ export default function Video() {
       document.title = videoTitle;
     }
 
-    setYear(news[videoIndex].year);
-  }, [videoTitle, news, videoIndex]);
+    setYear(gameshows[videoIndex].year);
+  }, [videoTitle, gameshows, videoIndex]);
 
   useEffect(() => {
     if (showNoise) {
@@ -154,7 +154,7 @@ export default function Video() {
             }}
           />
           <VideoPlayer
-            videoId={news[videoIndex].videoId}
+            videoId={gameshows[videoIndex].videoId}
             onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
@@ -179,7 +179,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo="News channels from the 90s were a vital source of information for people all around the world. From CNN to BBC, they provided us with up-to-date coverage of major events, from wars and natural disasters to politics and entertainment. These channels helped us stay informed about the world around us and shaped our understanding of current affairs. They also gave us access to a wide range of perspectives and voices, expanding our understanding of global events and issues. Today, we still rely on news channels to keep us informed, but the channels from the 90s remain an important part of the history of journalism and media."
+            channelInfo="Game show TV channels from the 90s were a fun and exciting way to spend an afternoon or evening. From Jeopardy! to Wheel of Fortune, they brought us some of the most iconic game shows of all time, as well as new and innovative programs that kept us guessing and entertained. These channels gave us a chance to test our knowledge and skills, compete against other contestants, and win prizes ranging from cash to cars. Whether you were a fan of classic quiz shows or modern game shows with a twist, there was always something to watch on game show TV channels in the 90s. Today, these channels may not be as prevalent as they once were, but their legacy lives on in the many game shows that continue to entertain and captivate audiences today."
           />
         </div>
       </div>

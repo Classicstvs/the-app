@@ -5,6 +5,16 @@
     left: 29px;
 }
 
+
+@media only screen and (max-width: 1920px) {
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 48px;
+        left: 46px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .reactPlayer {
         width: 380px !important;
