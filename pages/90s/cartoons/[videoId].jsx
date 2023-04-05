@@ -17,6 +17,8 @@ import PlayInfo from "../../../components/playInfo/PlayInfo";
 import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
+import useScrollPosition from "@/hooks/useScrollPosition";
+
 import { channels } from "../../../data/channelsList";
 import cartoonsJson from "../../../data/cartoons.json";
 
@@ -25,6 +27,7 @@ import { useRef } from "react";
 import screenfull from "screenfull";
 
 export default function Video() {
+  useScrollPosition()
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
@@ -46,27 +49,6 @@ export default function Video() {
     setSkin(!skin);
   };
 
-  //Change channels
-  // const playNext = () => {
-  //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex - 1]) {
-  //     setVideoIndex(1);
-  //   } else {
-  //       setVideoIndex((prevIndex) => prevIndex + 1);
-  //   }
-
-  //   const randomIndex = Math.floor(Math.random() * jsonLength);
-  //   setVideoIndex(randomIndex);
-
-  //   const nextVideoId = cartoons[videoIndex + 1].videoId;
-  //   const nextVideoTitle = cartoons[videoIndex + 1].title;
-
-  //   router.push(
-  //     `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-  //       nextVideoTitle
-  //     ).replace(/%20/g, "")}`
-  //   );
-  // };
 
   const playNext = () => {
     setShowNoise(true);

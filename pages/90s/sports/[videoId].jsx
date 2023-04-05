@@ -17,6 +17,8 @@ import PlayInfo from "../../../components/playInfo/PlayInfo";
 import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
+import useScrollPosition from "@/hooks/useScrollPosition";
+
 import { channels } from "../../../data/channelsList";
 import sportsJson from "../../../data/sports.json";
 
@@ -25,6 +27,7 @@ import { useRef } from "react";
 import screenfull from "screenfull";
 
 export default function Video() {
+  useScrollPosition()
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 

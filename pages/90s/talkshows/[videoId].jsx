@@ -17,6 +17,8 @@ import PlayInfo from "../../../components/playInfo/PlayInfo";
 import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
+import useScrollPosition from "@/hooks/useScrollPosition";
+
 import { channels } from "../../../data/channelsList";
 import talkshowsJson from "../../../data/talkshows.json";
 
@@ -25,6 +27,7 @@ import { useRef } from "react";
 import screenfull from "screenfull";
 
 export default function Video() {
+  useScrollPosition()
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
@@ -47,27 +50,6 @@ export default function Video() {
   };
 
   //Change channels
-  // const playNext = () => {
-  //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && talkshows && talkshows[videoIndex - 1]) {
-  //     setVideoIndex(1);
-  //   } else {
-  //       setVideoIndex((prevIndex) => prevIndex + 1);
-  //   }
-
-  //   const randomIndex = Math.floor(Math.random() * jsonLength);
-  //   setVideoIndex(randomIndex);
-
-  //   const nextVideoId = talkshows[videoIndex + 1].videoId;
-  //   const nextVideoTitle = talkshows[videoIndex + 1].title;
-
-  //   router.push(
-  //     `/90s/talkshows/${nextVideoId}?${encodeURIComponent(
-  //       nextVideoTitle
-  //     ).replace(/%20/g, "")}`
-  //   );
-  // };
-
   const playNext = () => {
     setShowNoise(true);
     const randomIndex = Math.floor(Math.random() * jsonLength);

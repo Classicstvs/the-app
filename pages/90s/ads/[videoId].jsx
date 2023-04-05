@@ -17,6 +17,8 @@ import PlayInfo from "../../../components/playInfo/PlayInfo";
 import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
+import useScrollPosition from "@/hooks/useScrollPosition";
+
 import { channels } from "../../../data/channelsList";
 import adsJson from "../../../data/ads.json";
 
@@ -25,6 +27,8 @@ import { useRef } from "react";
 import screenfull from "screenfull";
 
 export default function Video() {
+  useScrollPosition();
+
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
@@ -46,8 +50,6 @@ export default function Video() {
     setSkin(!skin);
   };
 
-
-
   const playNext = () => {
     setShowNoise(true);
     const randomIndex = Math.floor(Math.random() * jsonLength);
@@ -63,9 +65,10 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/ads/${nextVideoId}?${encodeURIComponent(
-        nextVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
@@ -77,9 +80,10 @@ export default function Video() {
     const prevVideoTitle = ads[videoIndex - 1].title;
 
     router.push(
-      `/90s/ads/${prevVideoId}?${encodeURIComponent(
-        prevVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/ads/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
