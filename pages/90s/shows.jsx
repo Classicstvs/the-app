@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useCallback } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
@@ -7,7 +6,6 @@ import { NextSeo } from "next-seo";
 
 import styles from "../../styles/allChannels.module.css";
 
-import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import Tv from "../../components/tv/Tv";
 import Channels from "../../components/channels/Channels";
 import Ad from "../../components/ad/Ad";
@@ -17,39 +15,40 @@ import PageInfo from "../../components/pageInfo/PageInfo";
 import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
-import cartoonsJson from "../../data/cartoons.json";
+import showsJson from "../../data/shows.json";
 
-export default function Cartoons() {
+export default function Shows() {
   const SEO = {
-    title: "Classics TV | 90s Cartoons TV Channels",
+    title: "Classics TV | 90s TV Shows Channels",
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Cartoons TV Channels",
+      title: "Classics TV | 90s TV Shows Channels",
       description: "",
     },
   };
 
   const router = useRouter();
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = showsJson.shows.length;
 
   const [videoIndex, setVideoIndex] = useState(0);
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [shows, setCatoons] = useState(showsJson.shows);
   const [title, setTitle] = useState("");
 
-  const playNext = useCallback(() => {
+  const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
-    const nextVideoId = cartoons[videoIndex + 1].videoId;
-    const nextVideoTitle = cartoons[videoIndex + 1].title;
+    const nextVideoId = shows[videoIndex + 1].videoId;
+    const nextVideoTitle = shows[videoIndex + 1].title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
-        nextVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/shows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
-  }, [cartoons, router, videoIndex]);
+  };
 
   // const playPrev = () => {
   //   setVideoIndex((prevIndex) => prevIndex - 1);
@@ -59,10 +58,9 @@ export default function Cartoons() {
     const timer = setTimeout(() => {
       playNext();
     }, 2000);
-  
+
     return () => clearTimeout(timer);
-  }, [playNext]);
-  
+  }, [videoIndex]);
 
   return (
     <main className={styles.main}>
@@ -97,7 +95,7 @@ export default function Cartoons() {
           />
           <PlayInfo
             jsonLength={jsonLength}
-            channelInfo="Cartoon TV channels from the 90s were a paradise for kids and adults alike who loved animated shows. From classic series like Looney Tunes and Tom and Jerry to modern hits like Animaniacs and Rugrats, they brought us some of the most memorable and iconic cartoon characters of all time. These channels provided us with a chance to escape into different worlds, filled with adventure, humor, and heartwarming stories that taught us important lessons. Whether you were a fan of superheroes, talking animals, or mischievous kids, there was always something to watch on cartoon TV channels in the 90s. Even today, these shows continue to hold a special place in the hearts of those who grew up with them, and they remain a beloved part of popular culture around the world."
+            channelInfo="TV show channels from the 90s were a treasure trove of beloved programs that still hold a special place in our hearts today. From Friends to Seinfeld, they brought us some of the most iconic and memorable sitcoms of all time, as well as dramas, sci-fi, and other genres that captured our imaginations. These channels gave us a chance to laugh, cry, and escape into different worlds, as we followed the lives of our favorite characters and got lost in their stories. Whether you were a fan of classic shows or the latest new releases, there was always something to watch on TV show channels in the 90s. Today, these shows continue to be a source of joy and nostalgia for those who grew up with them, and a new generation of viewers continue to discover and enjoy them today."
           />
         </div>
       </div>

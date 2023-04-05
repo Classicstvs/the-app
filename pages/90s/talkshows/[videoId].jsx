@@ -18,7 +18,7 @@ import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../../data/channelsList";
-import cartoonsJson from "../../../data/cartoons.json";
+import talkshowsJson from "../../../data/talkshows.json";
 
 import { useRef } from "react";
 
@@ -28,12 +28,12 @@ export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = talkshowsJson.talkshows.length;
 
   const [videoIndex, setVideoIndex] = useState(
-    Math.floor(Math.random() * cartoonsJson.cartoons.length)
+    Math.floor(Math.random() * talkshowsJson.talkshows.length)
   );
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [talkshows, setCatoons] = useState(talkshowsJson.talkshows);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -49,7 +49,7 @@ export default function Video() {
   //Change channels
   // const playNext = () => {
   //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex - 1]) {
+  //   if (videoIndex === jsonLength - 1 && talkshows && talkshows[videoIndex - 1]) {
   //     setVideoIndex(1);
   //   } else {
   //       setVideoIndex((prevIndex) => prevIndex + 1);
@@ -58,11 +58,11 @@ export default function Video() {
   //   const randomIndex = Math.floor(Math.random() * jsonLength);
   //   setVideoIndex(randomIndex);
 
-  //   const nextVideoId = cartoons[videoIndex + 1].videoId;
-  //   const nextVideoTitle = cartoons[videoIndex + 1].title;
+  //   const nextVideoId = talkshows[videoIndex + 1].videoId;
+  //   const nextVideoTitle = talkshows[videoIndex + 1].title;
 
   //   router.push(
-  //     `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+  //     `/90s/talkshows/${nextVideoId}?${encodeURIComponent(
   //       nextVideoTitle
   //     ).replace(/%20/g, "")}`
   //   );
@@ -73,7 +73,7 @@ export default function Video() {
     const randomIndex = Math.floor(Math.random() * jsonLength);
     setVideoIndex(randomIndex);
 
-    const nextVideo = cartoons[randomIndex];
+    const nextVideo = talkshows[randomIndex];
     if (!nextVideo) {
       console.error(`Error: Could not find video for index ${randomIndex}`);
       return;
@@ -83,7 +83,7 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+      `/90s/talkshows/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
       ).replace(/%20/g, "")}`
     );
@@ -93,22 +93,22 @@ export default function Video() {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
-    const prevVideoId = cartoons[videoIndex - 1].videoId;
-    const prevVideoTitle = cartoons[videoIndex - 1].title;
+    const prevVideoId = talkshows[videoIndex - 1].videoId;
+    const prevVideoTitle = talkshows[videoIndex - 1].title;
 
     router.push(
-      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(
+      `/90s/talkshows/${prevVideoId}?${encodeURIComponent(
         prevVideoTitle
       ).replace(/%20/g, "")}`
     );
   };
 
   const SEO = {
-    title: `Classics TV | 90s Cartoons TV Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 90s Talkshows TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Cartoons TV Channels",
+      title: "Classics TV | 90s Talkshows TV Channels",
       description: "",
     },
   };
@@ -141,8 +141,8 @@ export default function Video() {
       document.title = videoTitle;
     }
 
-    setYear(cartoons[videoIndex].year);
-  }, [videoTitle, cartoons, videoIndex]);
+    setYear(talkshows[videoIndex].year);
+  }, [videoTitle, talkshows, videoIndex]);
 
   useEffect(() => {
     if (showNoise) {
@@ -173,7 +173,7 @@ export default function Video() {
             }}
           />
           <VideoPlayer
-            videoId={cartoons[videoIndex].videoId}
+            videoId={talkshows[videoIndex].videoId}
             onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
@@ -198,7 +198,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo="Cartoon TV channels from the 90s were a paradise for kids and adults alike who loved animated shows. From classic series like Looney Tunes and Tom and Jerry to modern hits like Animaniacs and Rugrats, they brought us some of the most memorable and iconic cartoon characters of all time. These channels provided us with a chance to escape into different worlds, filled with adventure, humor, and heartwarming stories that taught us important lessons. Whether you were a fan of superheroes, talking animals, or mischievous kids, there was always something to watch on cartoon TV channels in the 90s. Even today, these shows continue to hold a special place in the hearts of those who grew up with them, and they remain a beloved part of popular culture around the world."
+            channelInfo="Talk show TV channels from the 90s were a platform for some of the most influential and entertaining personalities of the decade. From Oprah to Jerry Springer, they brought us a wide range of guests and topics, from hard-hitting political discussions to lighthearted celebrity interviews. These channels gave us a chance to hear diverse perspectives and engage in debates and conversations that were both engaging and informative. They also provided us with a window into the lives of the rich and famous, as we watched our favorite celebrities reveal intimate details of their personal lives on air. Today, talk show TV channels continue to be a popular format, but those from the 90s remain a landmark in the history of television and popular culture."
           />
         </div>
       </div>

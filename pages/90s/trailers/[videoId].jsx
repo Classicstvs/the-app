@@ -18,7 +18,7 @@ import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../../data/channelsList";
-import cartoonsJson from "../../../data/cartoons.json";
+import trailersJson from "../../../data/trailers.json";
 
 import { useRef } from "react";
 
@@ -28,12 +28,12 @@ export default function Video() {
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
-  const jsonLength = cartoonsJson.cartoons.length;
+  const jsonLength = trailersJson.trailers.length;
 
   const [videoIndex, setVideoIndex] = useState(
-    Math.floor(Math.random() * cartoonsJson.cartoons.length)
+    Math.floor(Math.random() * trailersJson.trailers.length)
   );
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
+  const [trailers, setCatoons] = useState(trailersJson.trailers);
   const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -49,7 +49,7 @@ export default function Video() {
   //Change channels
   // const playNext = () => {
   //   setShowNoise(true);
-  //   if (videoIndex === jsonLength - 1 && cartoons && cartoons[videoIndex - 1]) {
+  //   if (videoIndex === jsonLength - 1 && trailers && trailers[videoIndex - 1]) {
   //     setVideoIndex(1);
   //   } else {
   //       setVideoIndex((prevIndex) => prevIndex + 1);
@@ -58,11 +58,11 @@ export default function Video() {
   //   const randomIndex = Math.floor(Math.random() * jsonLength);
   //   setVideoIndex(randomIndex);
 
-  //   const nextVideoId = cartoons[videoIndex + 1].videoId;
-  //   const nextVideoTitle = cartoons[videoIndex + 1].title;
+  //   const nextVideoId = trailers[videoIndex + 1].videoId;
+  //   const nextVideoTitle = trailers[videoIndex + 1].title;
 
   //   router.push(
-  //     `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+  //     `/90s/trailers/${nextVideoId}?${encodeURIComponent(
   //       nextVideoTitle
   //     ).replace(/%20/g, "")}`
   //   );
@@ -73,7 +73,7 @@ export default function Video() {
     const randomIndex = Math.floor(Math.random() * jsonLength);
     setVideoIndex(randomIndex);
 
-    const nextVideo = cartoons[randomIndex];
+    const nextVideo = trailers[randomIndex];
     if (!nextVideo) {
       console.error(`Error: Could not find video for index ${randomIndex}`);
       return;
@@ -83,7 +83,7 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+      `/90s/trailers/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
       ).replace(/%20/g, "")}`
     );
@@ -93,22 +93,22 @@ export default function Video() {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
 
-    const prevVideoId = cartoons[videoIndex - 1].videoId;
-    const prevVideoTitle = cartoons[videoIndex - 1].title;
+    const prevVideoId = trailers[videoIndex - 1].videoId;
+    const prevVideoTitle = trailers[videoIndex - 1].title;
 
     router.push(
-      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(
+      `/90s/trailers/${prevVideoId}?${encodeURIComponent(
         prevVideoTitle
       ).replace(/%20/g, "")}`
     );
   };
 
   const SEO = {
-    title: `Classics TV | 90s Cartoons TV Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 90s Trailers on TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Cartoons TV Channels",
+      title: "Classics TV | 90s Trailers on TV Channels",
       description: "",
     },
   };
@@ -141,8 +141,8 @@ export default function Video() {
       document.title = videoTitle;
     }
 
-    setYear(cartoons[videoIndex].year);
-  }, [videoTitle, cartoons, videoIndex]);
+    setYear(trailers[videoIndex].year);
+  }, [videoTitle, trailers, videoIndex]);
 
   useEffect(() => {
     if (showNoise) {
@@ -173,7 +173,7 @@ export default function Video() {
             }}
           />
           <VideoPlayer
-            videoId={cartoons[videoIndex].videoId}
+            videoId={trailers[videoIndex].videoId}
             onEnded={playNext}
             onTitleChange={setTitle}
             volume={volume}
@@ -198,7 +198,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo="Cartoon TV channels from the 90s were a paradise for kids and adults alike who loved animated shows. From classic series like Looney Tunes and Tom and Jerry to modern hits like Animaniacs and Rugrats, they brought us some of the most memorable and iconic cartoon characters of all time. These channels provided us with a chance to escape into different worlds, filled with adventure, humor, and heartwarming stories that taught us important lessons. Whether you were a fan of superheroes, talking animals, or mischievous kids, there was always something to watch on cartoon TV channels in the 90s. Even today, these shows continue to hold a special place in the hearts of those who grew up with them, and they remain a beloved part of popular culture around the world."
+            channelInfo="Trailer TV channels from the 90s were a go-to destination for movie fans who wanted to catch a glimpse of the latest releases. From previews of big-budget blockbusters to indie films and cult classics, these channels provided us with a chance to see what was coming up at the cinema. They also gave us a sense of excitement and anticipation, as we eagerly awaited the release of the next big movie. These channels provided us with a valuable service, as they helped us make informed choices about what to see at the theater. Whether you were a fan of action, romance, comedy, or horror, there was always something to watch on trailer TV channels in the 90s. Even today, trailers remain an essential part of the movie-going experience, and those from the 90s continue to hold a special place in the hearts of movie fans."
           />
         </div>
       </div>
