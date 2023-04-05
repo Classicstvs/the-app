@@ -102,6 +102,12 @@
 
 
 @media only screen and (max-width: 767px) {
+
+
+    .pageInfoWrapperRes{
+        display:none;
+    }
+
     .pageInfoWrapper {
         position: relative;
         top: 339px;

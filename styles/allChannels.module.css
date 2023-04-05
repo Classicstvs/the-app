@@ -4,8 +4,8 @@
             #3F3C3C 30.5%,
             #D9D9D91F 0%,
             #D9D9D91F 100%);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .mainWrapper {
@@ -39,7 +39,29 @@
     animation: fade-out 5s ease-in-out;
 }
 
-@media only screen and (max-width: 1536px) {
+@media only screen and (max-width: 1750px) {
+    .main {
+        background: linear-gradient(to top,
+                #3F3C3C 0%,
+                #3F3C3C 23.5%,
+                #D9D9D91F 0%,
+                #D9D9D91F 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (max-width: 1540px) {
+    .main {
+        background: linear-gradient(to top,
+                #3F3C3C 0%,
+                #3F3C3C 17%,
+                #D9D9D91F 0%,
+                #D9D9D91F 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     .leftSecton {
         margin-left: 30px;
     }
@@ -54,12 +76,44 @@
         gap: 2%;
         margin-left: 0px;
     }
+
+    .main {
+        background: linear-gradient(to top,
+                #3F3C3C 0%,
+                #3F3C3C 15.5%,
+                #D9D9D91F 0%,
+                #D9D9D91F 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .main {
+        background: linear-gradient(to top,
+                #3F3C3C 0%,
+                #3F3C3C 11%,
+                #D9D9D91F 0%,
+                #D9D9D91F 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
     .mainWrapper {
         gap: 2% !important;
         margin-left: 0px !important;
+    }
+
+    .main {
+        background: linear-gradient(to top,
+                #3F3C3C 0%,
+                #3F3C3C 4.5%,
+                #D9D9D91F 0%,
+                #D9D9D91F 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 
