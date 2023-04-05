@@ -15,35 +15,35 @@ import PageInfo from "../../components/pageInfo/PageInfo";
 import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
-import adsJson from "../../data/ads.json";
+import sportsJson from "../../data/sports.json";
 
-export default function Ads() {
+export default function Sports() {
   const SEO = {
-    title: "Classics TV | 90s Commercials and Ads TV Channels",
+    title: "Classics TV | 90s Sports TV Channels",
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Commercials and Ads TV Channels",
+      title: "Classics TV | 90s Sports TV Channels",
       description: "",
     },
   };
 
   const router = useRouter();
 
-  const jsonLength = adsJson.ads.length;
+  const jsonLength = sportsJson.sports.length;
 
   const [videoIndex, setVideoIndex] = useState(0);
-  const [ads, setCatoons] = useState(adsJson.ads);
+  const [sports, setCatoons] = useState(sportsJson.sports);
   const [title, setTitle] = useState("");
 
   const playNext = () => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
-    const nextVideoId = ads[videoIndex + 1].videoId;
-    const nextVideoTitle = ads[videoIndex + 1].title;
+    const nextVideoId = sports[videoIndex + 1].videoId;
+    const nextVideoTitle = sports[videoIndex + 1].title;
 
     router.push(
-      `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+      `/90s/sports/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
       )}`
@@ -95,7 +95,7 @@ export default function Ads() {
           />
           <PlayInfo
             jsonLength={jsonLength}
-            channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
+            channelInfo="Sports TV channels from the 90s were a dream come true for sports fans everywhere. From ESPN to Sky Sports, they brought us live coverage of some of the most exciting sports events of the decade, from the Olympics to the World Cup. These channels allowed us to cheer on our favorite teams and athletes from the comfort of our own homes, and provided us with expert analysis and commentary on the games. Whether you were a fan of basketball, football, or any other sport, there was always something to watch on sports TV channels in the 90s. Today, these channels continue to be an important part of the sports media landscape, providing us with access to live games, highlights, and expert analysis."
           />
         </div>
       </div>

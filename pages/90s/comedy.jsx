@@ -19,11 +19,11 @@ import comedyJson from "../../data/comedy.json";
 
 export default function Comedy() {
   const SEO = {
-    title: "Classics Tv | 90s Comedy Channels",
+    title: "Classics TV | 90s Comedy TV Channels",
     description: "",
 
     openGraph: {
-      title: "Classics Tv | 90s Comedy Channels",
+      title: "Classics TV | 90s Comedy TV Channels",
       description: "",
     },
   };

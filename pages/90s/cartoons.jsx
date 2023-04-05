@@ -20,11 +20,11 @@ import cartoonsJson from "../../data/cartoons.json";
 
 export default function Cartoons() {
   const SEO = {
-    title: "Classics Tv | 90s Cartoon Channels",
+    title: "Classics TV | 90s Cartoon TV Channels",
     description: "",
 
     openGraph: {
-      title: "Classics Tv | 90s Cartoon Channels",
+      title: "Classics TV | 90s Cartoon TV Channels",
       description: "",
     },
   };

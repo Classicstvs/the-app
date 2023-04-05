@@ -32,6 +32,7 @@ export default function Tv({ skin }) {
           height: "auto",
         }}
         key={activeRoute}
+        draggable="false"
       />
       <div className={`${styles.blackScreen} ${styles.crtScanlines}`}></div>
       <Image
@@ -45,6 +46,7 @@ export default function Tv({ skin }) {
           maxWidth: "100%",
           height: "auto",
         }}
+        draggable="false"
       />
       <map
         id="tv"
