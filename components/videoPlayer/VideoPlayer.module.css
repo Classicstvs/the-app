@@ -1,8 +1,9 @@
 .videoPlayer {
     z-index: 2;
     position: absolute;
-    top: 39px;
-    left: 29px;
+    top: 50px;
+    left: 41px;
+    max-width: 100%;
 }
 
 
@@ -24,7 +25,58 @@
     .videoPlayer {
         z-index: 2;
         position: absolute;
-        top: 26px;
-        left: 24px;
+        top: 21px;
+        left: 28px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .reactPlayer {
+        width: 358px !important;
+        height: 271px !important;
+    }
+
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 20px !important;
+        left: 27px !important;
+    }
+}
+
+
+@media only screen and (max-width: 391px) {
+    .reactPlayer {
+        width: 338px !important;
+        height: 260px !important;
+    }
+}
+
+
+@media only screen and (max-width: 384px) {
+    .reactPlayer {
+        width: 332px !important;
+        height: 252px !important;
+    }
+
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 20px !important;
+        left: 26px !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .reactPlayer {
+        width: 308px !important;
+        height: 235px !important;
+    }
+
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 20px !important;
+        left: 26px !important;
     }
 }

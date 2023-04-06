@@ -139,6 +139,8 @@
         left: 91px;
     }
 
+
+
     .blackScreen {
         max-width: 639px;
         max-height: 501px;
@@ -163,6 +165,7 @@
 
     .leftSecton {
         margin-left: 0px;
+        text-align: center;
     }
 
     .rightSecton {
@@ -170,13 +173,15 @@
     }
 
     .leftSecton>img {
-        max-width: 97% !important;
+        max-width: 90% !important;
         color: transparent;
         position: absolute;
-        top: 6px;
-        left: 7px;
+        top: 20px;
+        left: 20px;
         z-index: 4;
     }
+
+
 
     .main {
         background: linear-gradient(to top,
