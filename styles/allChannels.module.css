@@ -18,6 +18,7 @@
 
 .leftSecton {
     position: relative;
+    z-index: 0;
 }
 
 .leftSecton>img {

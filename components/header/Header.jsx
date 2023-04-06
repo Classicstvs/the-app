@@ -47,6 +47,7 @@ export default function Header({ openModal}) {
           <Link
             className={router.pathname === "#" ? styles["activePath"] : ""}
             href="#"
+            onClick={handleModalClick}
           >
             80s
           </Link>
@@ -54,6 +55,7 @@ export default function Header({ openModal}) {
           <Link
             className={router.pathname === "#" ? styles["activePath"] : ""}
             href="#"
+            onClick={handleModalClick}
           >
             70s
           </Link>
@@ -61,6 +63,7 @@ export default function Header({ openModal}) {
           <Link
             className={router.pathname === "#" ? styles["activePath"] : ""}
             href="#"
+            onClick={handleModalClick}
           >
             60s
           </Link>
@@ -68,6 +71,7 @@ export default function Header({ openModal}) {
           <Link
             className={router.pathname === "#" ? styles["activePath"] : ""}
             href="#"
+            onClick={handleModalClick}
           >
             50s
           </Link>
