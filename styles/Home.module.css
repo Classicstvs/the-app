@@ -70,8 +70,21 @@
         margin: 0 auto;
     }
 
+    .tv{
+        max-width: 95% !important;
+    }
+
+    .blackScreen{
+        width: 532px;
+        height: 264px;
+        top: 16px;
+        right: 17px;
+        max-width: 91%;
+    }
+
     .leftSecton {
         margin-left: 0px;
+        text-align: center;
     }
 
     .rightSecton {
