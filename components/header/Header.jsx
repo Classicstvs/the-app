@@ -18,7 +18,7 @@ export default function Header({ openModal}) {
         <div className={styles.logo}>
           <Link href="/">
             <Image
-              src="/Logo.svg"
+              src="/Logo.webp"
               width={222}
               height={62}
               alt="Classics TV LOGO"
