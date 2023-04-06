@@ -16,6 +16,18 @@
     }
 }
 
+@media only screen and (max-width: 1280px) {
+    .videoPlayer{
+        top: 44px !important;
+        left: 32px !important;
+    }
+
+    .reactPlayer {
+        width: 522px !important;
+        height: 383px !important;
+    }
+}
+
 
 @media only screen and (max-width: 920px) {
 
