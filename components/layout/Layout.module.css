@@ -1,12 +1,107 @@
-.modalWrapper{
-    width: 600px;
-    height: 400px;
-    background-color: #3F3C3C;
+.modalWrapper {
+    max-width: 500px;
+    height: 365px;
+    background-color: #3F77AB;
     position: fixed;
     z-index: 7;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    border-radius: 15px;
+    background-image: url('/images/tv_pop.webp');
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: 372px 267px;
+    z-index: 9;
 }
 
+.modalWrapper p:first-of-type {
+    text-align: center;
+    font-weight: bolder;
+    color: #D9D9D9;
+    font-size: 50px;
+    padding: 30px 25px 25px 25px;
+}
+
+.modalWrapper p:last-of-type {
+    padding: 0 25px 25px 25px;
+    font-weight: 400;
+    color: #D9D9D9;
+    font-size: 16px;
+}
+
+.modalWrapper button {
+    padding: 0 0 0 25px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #3D3A3A;
+    transition: 3s;
+}
+
+.modalWrapper button:hover {
+    color: black;
+}
+
+.closeBnt {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #3D3A3A;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black background */
+    z-index: 1;
+    /* set a lower z-index than the modal */
+}
+
+@media only screen and (max-width: 920px) {
+
+    .modalWrapper {
+        max-width: 500px;
+        height: 340px;
+        background-color: #3F77AB;
+        position: fixed;
+        z-index: 7;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        z-index: 9;
+    }
+
+    .modalWrapper p:first-of-type {
+        text-align: center;
+        font-weight: bolder;
+        color: #D9D9D9;
+        font-size: 22px;
+        padding: 20px 20px 10px 20px;
+    }
+
+    .modalWrapper p:last-of-type {
+        padding: 0 20px 10px 20px;
+        font-weight: 400;
+        color: #D9D9D9;
+        font-size: 12px;
+    }
+
+    .closeBnt {
+        position: absolute;
+        font-size: 12px;
+        top: 12px;
+        right: 12px;
+        color: #3D3A3A;
+        cursor: pointer;
+    }
+
+}
