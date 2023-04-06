@@ -127,7 +127,7 @@
         right: 130px;
     }
 
-    .mapArea{
+    .mapArea {
         width: 22px;
         height: 14px;
         top: 599px;
@@ -135,10 +135,30 @@
     }
 }
 
+@media only screen and (max-width: 820px) {
+    .blackScreen {
+
+        right: 95px !important;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .blob {
+        display: none;
+    }
+
+    .blackScreen {
+        max-width: 629px;
+        max-height: 501px;
+        top: 34px;
+        right: 154px;
+    }
+}
+
 
 @media only screen and (max-width: 767px) {
 
-    .tv{
+    .tv {
         max-width: 95% !important;
     }
 
@@ -160,15 +180,53 @@
     }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 540px) {
+    .blackScreen {
+        width: 480px;
+        height: 348px;
+        top: 34px;
+        right: 28px !important;
+        max-width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    .blackScreen {
+        width: 370px;
+        height: 281px;
+        top: 25px;
+        right: 28px !important;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
 
     .mapArea {
         top: -42px;
         left: 170px;
     }
+
+    .blackScreen {
+        width: 356px;
+        height: 348px;
+        top: 8px;
+        right: 28px !important;
+        max-width: 100%;
+    }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 394px) {
+
+    .blackScreen {
+        width: 334px !important;
+        height: 325px !important;
+        top: 24px;
+        right: 24px !important;
+        max-width: 100%;
+    }
 
     .mapArea {
         top: -40px;
@@ -176,12 +234,40 @@
     }
 }
 
+@media only screen and (max-width: 380px) {
+
+    .blackScreen {
+        width: 334px !important;
+        height: 318px !important;
+        top: 0px;
+        right: 24px !important;
+        max-width: 100%;
+    }
+}
+
 
 @media only screen and (max-width: 360px) {
-
+    .blackScreen {
+        width: 334px !important;
+        height: 282px !important;
+        top: 8px;
+        right: 12px !important;
+        max-width: 100%;
+    }
     .mapArea {
         top: -38px;
         left: 148px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .blackScreen {
+        width: 280px !important;
+        height: 267px !important;
+        top: 4px !important;
+        right: 24px !important;
+        right: 20px !important;
+        max-width: 100%;
     }
 }
 
@@ -191,5 +277,16 @@
     .mapArea {
         top: -40px;
         left: 155px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .blackScreen {
+        width: 242px !important;
+        height: 200px !important;
+        top: 4px !important;
+        right: 24px !important;
+        right: 20px !important;
+        max-width: 100%;
     }
 }

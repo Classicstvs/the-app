@@ -50,3 +50,9 @@
     }
 
 }
+
+/* @media only screen and (max-width: 450px) {
+    .channelsContainer {
+        top: -481px;
+    }
+} */
