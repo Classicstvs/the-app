@@ -29,6 +29,11 @@
 
     .channelsContainer {
         margin: 21px 0 0 0;
+
+    }
+
+    .channelsContainer::-webkit-scrollbar {
+        display: none;
     }
 }
 
@@ -43,4 +48,5 @@
         position: relative;
         top: -216px;
     }
+
 }
