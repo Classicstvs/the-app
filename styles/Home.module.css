@@ -99,3 +99,36 @@
                 #D9D9D91F 100%);
     }
 }
+
+
+@media only screen and (max-width: 542px) {
+    .rightSecton {
+        margin-right: 0px;
+        position: relative;
+        top: -227px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .rightSecton {
+        margin-right: 0px;
+        position: relative;
+        top: -265px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .rightSecton {
+        margin-right: 0px;
+        position: relative;
+        top: -396px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .rightSecton {
+        margin-right: 0px;
+        position: relative;
+        top: -480px;
+    }
+}
