@@ -29,6 +29,10 @@
     color: #5297FF;
 }
 
+.footerContainer li p{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1440px) {
     .footerContainer {
         gap: 56%;
