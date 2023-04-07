@@ -31,6 +31,7 @@
 
 .footerContainer li p{
     cursor: pointer;
+    -webkit-user-select: none;
 }
 
 @media only screen and (max-width: 1440px) {

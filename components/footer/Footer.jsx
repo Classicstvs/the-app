@@ -4,9 +4,7 @@ import styles from "./Footer.module.css";
 import Subscribe from "../subscribe/Subscribe";
 import { useState } from "react";
 
-export default function Footer({openSub}) {
-
-
+export default function Footer({ openSub }) {
   const handleSubClick = () => {
     openSub();
   };
@@ -17,13 +15,10 @@ export default function Footer({openSub}) {
         <div>
           <p>Copyright © Classics TV 2023</p>
         </div>
-     
         <div className={styles.footerMenu}>
-     
           <ul>
-           
             <li>
-              <p onClick={handleSubClick}>Subscribe</p>
+              <p onClick={handleSubClick} >Subscribe</p>
             </li>
             <li>
               <Link href="/terms">Terms and Conditions</Link>
