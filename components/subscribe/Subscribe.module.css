@@ -1,0 +1,27 @@
+.wrapper{
+    position: absolute;
+    left: 809px;
+    top: 1447px;
+}
+
+
+.wrapper input{
+    background-color: #d9d9d96c;
+    border-style: none;
+    border-radius: 8px 0  0 8px;
+    padding: 10px;
+    color: white;
+}
+
+.wrapper input::placeholder{
+    color: #C3C3C3;
+}
+
+.wrapper button{
+    background-color: #d9d9d96c;
+    padding: 11px;
+    font-size: 11px;
+    border: none;
+    border-radius: 0 8px  8px 0;
+    cursor: pointer;
+}

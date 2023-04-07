@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import Subscribe from "../subscribe/Subscribe";
 
 import { GrClose } from "react-icons/gr";
 
@@ -11,6 +12,7 @@ import styles from "./Layout.module.css";
 
 export default function Layout({ children }) {
   const [showModal, setShowModal] = useState(false);
+  const [sub, setSub] = useState(false);
 
   const openModal = () => {
     setShowModal(!showModal);
@@ -19,6 +21,10 @@ export default function Layout({ children }) {
   const closeModal = () => {
     setShowModal("");
   };
+
+  const openSub =()=>{
+    setSub(!sub)
+  }
 
   return (
     <>
@@ -41,7 +47,8 @@ export default function Layout({ children }) {
         </div>
       )}
       {children}
-      <Footer />
+      {sub && <Subscribe/>}
+      <Footer openSub={openSub}/>
     </>
   );
 }
