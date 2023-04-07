@@ -39,7 +39,8 @@
 
 .channels label {
     margin: 5px 0 0 0;
-    color: #5297FF;
+    /* color: #5297FF; */
+    color: white;
 }
 
 .channelDown {
@@ -80,7 +81,8 @@
 }
 
 .volume label {
-    color: #5297FF;
+    /* color: #5297FF; */
+    color: white;
 }
 
 .volumeDown {

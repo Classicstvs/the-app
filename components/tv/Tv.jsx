@@ -33,7 +33,7 @@ export default function Tv({ skin }) {
         }}
         key={activeRoute}
         draggable="false"
-        loading="lazy"
+        priority="high"
       />
       <div className={`${styles.blackScreen} ${styles.crtScanlines}`}></div>
       <Image
