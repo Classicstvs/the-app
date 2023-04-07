@@ -1,7 +1,7 @@
 .wrapper{
     position: absolute;
-    left: 809px;
-    top: 1447px;
+    left: 828px;
+    margin-top: 13px;
 }
 
 
@@ -24,4 +24,52 @@
     border: none;
     border-radius: 0 8px  8px 0;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1920px) {
+    .wrapper{
+        left: 1002px;
+    }
+    
+}
+
+@media only screen and (max-width: 1750px) {
+    .wrapper{
+        left: 920px;
+    }
+}
+
+@media only screen and (max-width: 1540px) {
+    .wrapper{
+        left: 813px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .wrapper{
+        left: 793px;
+    }
+}
+
+@media only screen and (max-width: 1372px) {
+    .wrapper{
+        left: 703px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .wrapper{
+        left: 624px;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    .wrapper{
+        position: static;
+        left: 0;
+        top: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
