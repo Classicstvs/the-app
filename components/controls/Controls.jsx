@@ -80,10 +80,11 @@ export default function Controls({
       <div className={styles.skins} onClick={toggleSkin}>
         {router.pathname === "/" ? (
           <Image
-            src="/icons/tv_grey.webp"
+            src="/icons/tv_black.webp"
             alt="TV FAQ"
             width={47}
             height={47}
+            style={{opacity:'0.3'}}
           />
         ) : (
           <Image
