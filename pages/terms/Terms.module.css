@@ -18,13 +18,16 @@
     font-size: 2.2vh;
 }
 
-.wrapper{
+.wrapper {
     background-color: #9D9D9F;
     padding: 30px 50px 50px 50px;
     border-radius: 0 0 30px 0;
+    background-image: url('/images/tv_left.webp');
+    background-repeat: no-repeat;
+    background-position: 990px 200px;
 }
 
-.content{
+.content {
     max-width: 900px;
-    text-align: justify;
+    text-align: left;
 }

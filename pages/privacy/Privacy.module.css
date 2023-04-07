@@ -15,11 +15,15 @@
     background-color: #9D9D9F;
     padding: 30px 50px 50px 50px;
     border-radius: 0 0 30px 0;
+    background-image: url('/images/tv_right.webp');
+    background-repeat: no-repeat;
+    background-position: 1049px 148px;
+    background-size: contain;
 }
 
 .content {
     max-width: 900px;
-    text-align: justify;
+    text-align: left;
 }
 
 .content h1 {

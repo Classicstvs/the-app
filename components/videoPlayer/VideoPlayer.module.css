@@ -16,8 +16,21 @@
     }
 }
 
+
+@media only screen and (max-width: 1540px) {
+    .videoPlayer {
+        top: 48px !important;
+        left: 46px !important;
+    }
+
+    .reactPlayer {
+        width: 583px !important;
+        height: 438px !important;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
-    .videoPlayer{
+    .videoPlayer {
         top: 44px !important;
         left: 32px !important;
     }
@@ -89,6 +102,18 @@
     .reactPlayer {
         width: 382px !important;
         height: 278px !important;
+    }
+}
+
+@media only screen and (max-width: 433px) {
+    .reactPlayer {
+        width: 367px !important;
+        height: 278px !important;
+    }
+
+    .videoPlayer {
+        top: 25px !important;
+        left: 33px !important;
     }
 }
 
