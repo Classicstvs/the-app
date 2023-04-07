@@ -32,10 +32,9 @@ export default function Layout({ children }) {
               Our team is dedicated to providing the best viewing experience for
               our audience. We are constantly working to release new channels
               from all years, ensuring that our viewers have access to a diverse
-              range of content. Additionally, we believe in rewarding our loyal
-              viewers with fresh and engaging programming. So, stay tuned for
-              more exciting updates as we continue to expand our offerings and
-              provide the best content possible!
+              range of content. Stay tuned for more exciting updates as we
+              continue to expand our offerings and provide the best content
+              possible!
             </p>
             <button onClick={closeModal}>Go Back to 90s</button>
           </div>
