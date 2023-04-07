@@ -1,6 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./AbouUs.module.css";
+
+import { BsLinkedin } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 export default function AboutUs() {
   return (
@@ -32,6 +36,42 @@ export default function AboutUs() {
         </div>
         <div className={styles.contentAbout}>
           <h2>Our Team:</h2>
+          <div className={styles.teamContainer}>
+            <div className={styles.dev1}>
+              <p>Viktor Andonov</p>
+              <ul>
+                <li>Front-End Developer</li>
+                <li>Content Developer</li>
+                <li>SEO and Digital Marketing</li>
+                <li>
+                  <Link href="" alt="Mail Me">
+                    <MdEmail />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.dev2}>
+              <p>Yosif Georgiev</p>
+              <ul>
+                <li>Front-End / React Js Developer</li>
+                <li>UI/UX Designer</li>
+                <li>SEO</li>
+                <li>
+                  <Link href="mailto:iodesign@live.com" alt="Mail Me">
+                    <BsLinkedin />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/yosif-georgiev-08829180/"
+                    alt="Find Me in Linked In"
+                    target="_blank"
+                  >
+                    {" "}
+                    <MdEmail />{" "}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </main>
