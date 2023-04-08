@@ -57,3 +57,30 @@
     list-style: none;
     margin: 6px 0;
 }
+
+.teamContainer li a{
+    margin-right:  8px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .wrapper{
+        padding: 30px 20px 50px 20px;
+        margin: 0 20px;
+    }
+    
+    .contentAbout h1 {
+        font-size: 38px;
+    }
+
+    .contentAbout h2 {
+        font-size: 30px;
+    }
+
+    .teamContainer {
+        gap: 0%;
+        flex-direction: column;
+    }
+}

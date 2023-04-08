@@ -38,3 +38,19 @@
     font-size: 32px;
     color: #D9D9D9;
 }
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        margin: 0 20px;
+        padding: 30px 30px 50px 30px;
+    }
+
+    .content h1 {
+        font-size: 38px;
+    }
+
+    .content h2 {
+        margin-top: 22px;
+        font-size: 30px;
+    }
+}

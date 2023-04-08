@@ -69,7 +69,7 @@
 
     .modalWrapper {
         max-width: 500px;
-        height: 340px;
+        height: 305px;
         background-color: #3F77AB;
         position: fixed;
         z-index: 7;

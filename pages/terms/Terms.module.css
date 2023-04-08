@@ -31,3 +31,17 @@
     max-width: 900px;
     text-align: left;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+    .wrapper{
+        margin: 0 20px;
+        padding: 30px 30px 50px 30px;
+    }
+
+    .content h1 {
+        font-size: 38px;
+        line-height:40px;
+    }
+}

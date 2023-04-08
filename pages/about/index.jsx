@@ -53,20 +53,20 @@ export default function AboutUs() {
             <div className={styles.dev2}>
               <p>Yosif Georgiev</p>
               <ul>
-                <li>Front-End / React Js Developer</li>
+                <li>Front-End Developer</li>
+                <li>React Js Developer</li>
                 <li>UI/UX Designer</li>
                 <li>SEO</li>
                 <li>
-                  <Link href="mailto:iodesign@live.com" alt="Mail Me">
-                    <BsLinkedin />
-                  </Link>
                   <Link
                     href="https://www.linkedin.com/in/yosif-georgiev-08829180/"
                     alt="Find Me in Linked In"
                     target="_blank"
                   >
-                    {" "}
-                    <MdEmail />{" "}
+                    <BsLinkedin />
+                  </Link>
+                  <Link href="mailto:iodesign@live.com" alt="Mail Me">
+                    <MdEmail style={{fontSize:'22px'}}/>
                   </Link>
                 </li>
               </ul>

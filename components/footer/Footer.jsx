@@ -12,7 +12,7 @@ export default function Footer({ openSub }) {
   return (
     <footer className={styles.footerWrapper}>
       <div className={styles.footerContainer}>
-        <div>
+        <div className={styles.copyRight}>
           <p>Copyright © Classics TV 2023</p>
         </div>
         <div className={styles.footerMenu}>
