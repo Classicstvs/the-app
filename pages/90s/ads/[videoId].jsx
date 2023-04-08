@@ -64,13 +64,16 @@ export default function Video() {
     const nextVideoId = nextVideo.videoId;
     const nextVideoTitle = nextVideo.title;
 
-    router.push(
-      `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`
-    );
+
+    
   };
+
+
+  useEffect(() => {
+    if (videoTitle) {
+      router.replace(`/videos/${videoId}/${videoTitle}`);
+    }
+  }, [videoId, videoTitle]);
 
   const playPrev = () => {
     setShowNoise(true);
@@ -128,6 +131,7 @@ export default function Video() {
     setYear(ads[videoIndex].year);
   }, [videoTitle, ads, videoIndex]);
 
+
   useEffect(() => {
     if (showNoise) {
       const timer = setTimeout(() => {
@@ -182,7 +186,7 @@ export default function Video() {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
+            channelInfo=""
           />
         </div>
       </div>
@@ -190,3 +194,27 @@ export default function Video() {
     </main>
   );
 }
+
+export const getStaticPaths = async () => {
+
+  const paths = adsJson.ads.map((ad) => ({
+    params: { videoId: ad.videoId.toString() },
+  }));
+
+  return { paths, fallback: false };
+};
+
+
+
+export const getStaticProps = async ({ params }) => {
+  const { videoId } = params;
+  const ad = adsJson.ads.find((ad) => ad.videoId.toString() === videoId);
+
+  return {
+    props: {
+      ad,
+    },
+  };
+};
+
+
