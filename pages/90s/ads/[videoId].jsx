@@ -26,11 +26,12 @@ import { useRef } from "react";
 
 import screenfull from "screenfull";
 
-export default function Video() {
+export default function Video({ title }) {
   useScrollPosition();
 
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
+  console.log(router.query);
 
   const jsonLength = adsJson.ads.length;
 
@@ -38,7 +39,7 @@ export default function Video() {
     Math.floor(Math.random() * adsJson.ads.length)
   );
   const [ads, setCatoons] = useState(adsJson.ads);
-  const [title, setTitle] = useState("");
+  // const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
@@ -168,7 +169,7 @@ export default function Video() {
           <VideoPlayer
             videoId={ads[videoIndex].videoId}
             onEnded={playNext}
-            onTitleChange={setTitle}
+            // onTitleChange={setTitle}
             volume={volume}
             player={player}
           />
@@ -209,17 +210,13 @@ export const getStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-
-
-export const getStaticProps = async ({ params }) => {
+export async function getStaticProps({ params }) {
   const { videoId } = params;
-  const ad = adsJson.ads.find((ad) => ad.videoId.toString() === videoId);
+  const { title } = adsJson.ads.find((ad) => ad.videoId === videoId);
 
   return {
     props: {
-      ad,
+      title,
     },
   };
-};
-
-
+}
