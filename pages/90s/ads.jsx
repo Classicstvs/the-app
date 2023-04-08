@@ -19,7 +19,7 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 import { channels } from "../../data/channelsList";
 import adsJson from "../../data/ads.json";
 
-export default function Ads({ads}) {
+export default function Ads() {
   const SEO = {
     title: "Classics TV  | 90s Commercials and Ads TV Channels",
     description: "",
@@ -52,7 +52,9 @@ export default function Ads({ads}) {
     );
   };
 
-
+  // const playPrev = () => {
+  //   setVideoIndex((prevIndex) => prevIndex - 1);
+  // };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -85,6 +87,7 @@ export default function Ads({ads}) {
           <Ad />
           <Channels channels={channels} />
           <Controls
+            // playPrev={playPrev}
             playNext={playNext}
           />
           <PlayInfo
@@ -96,50 +99,4 @@ export default function Ads({ads}) {
       <CardsInfo />
     </main>
   );
-}
-
-
-export async function getServerSideProps() {
-  const apiKey = process.env.API_KEY;
-  const ads = adsJson.ads;
-
-  const videoId = ads[0].videoId;
-  const url = `https://www.youtube.com/watch?v=${videoId}`;
-
-  try {
-    const response = await axios.get(
-      `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`
-    );
-    const title = response.data.items[0].snippet.title;
-    const encodedTitle = encodeURIComponent(title).replace(/%20/g, "");
-    const channelTitle = response.data.items[0].snippet.channelTitle;
-
-    const SEO = {
-      title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
-      openGraph: {
-        title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
-      },
-    };
-
-    return {
-      props: {
-        ads,
-        video: {
-          url,
-          title,
-        },
-        SEO,
-        channelInfo: {
-          title: channelTitle,
-        },
-      },
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      props: {},
-    };
-  }
 }
