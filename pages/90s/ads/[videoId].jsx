@@ -31,6 +31,7 @@ export default function Video() {
 
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
+  console.log(router.query)
 
   const jsonLength = adsJson.ads.length;
 
@@ -70,15 +71,13 @@ export default function Video() {
         ""
       )}`
     );
-    
   };
 
-
-  useEffect(() => {
-    if (videoTitle) {
-      router.replace(`/videos/${videoId}/${videoTitle}`);
-    }
-  }, [videoId, videoTitle]);
+  // useEffect(() => {
+  //   if (videoTitle) {
+  //     router.replace(`/90s/ads/${videoId}/${videoTitle}`);
+  //   }
+  // }, [videoId, videoTitle]);
 
   const playPrev = () => {
     setShowNoise(true);
@@ -135,7 +134,6 @@ export default function Video() {
 
     setYear(ads[videoIndex].year);
   }, [videoTitle, ads, videoIndex]);
-
 
   useEffect(() => {
     if (showNoise) {
@@ -201,15 +199,12 @@ export default function Video() {
 }
 
 export const getStaticPaths = async () => {
-
   const paths = adsJson.ads.map((ad) => ({
     params: { videoId: ad.videoId.toString() },
   }));
 
   return { paths, fallback: false };
 };
-
-
 
 export const getStaticProps = async ({ params }) => {
   const { videoId } = params;
@@ -221,5 +216,3 @@ export const getStaticProps = async ({ params }) => {
     },
   };
 };
-
-
