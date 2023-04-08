@@ -64,7 +64,12 @@ export default function Video() {
     const nextVideoId = nextVideo.videoId;
     const nextVideoTitle = nextVideo.title;
 
-
+    router.push(
+      `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
+    );
     
   };
 
