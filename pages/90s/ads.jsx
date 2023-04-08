@@ -19,7 +19,7 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 import { channels } from "../../data/channelsList";
 import adsJson from "../../data/ads.json";
 
-export default function Ads({ ads }) {
+export default function Ads({ads}) {
   const SEO = {
     title: "Classics TV  | 90s Commercials and Ads TV Channels",
     description: "",
@@ -52,6 +52,8 @@ export default function Ads({ ads }) {
     );
   };
 
+
+
   useEffect(() => {
     const timer = setTimeout(() => {
       playNext();
@@ -82,7 +84,9 @@ export default function Ads({ ads }) {
         <div className={styles.rightSecton}>
           <Ad />
           <Channels channels={channels} />
-          <Controls playNext={playNext} />
+          <Controls
+            playNext={playNext}
+          />
           <PlayInfo
             jsonLength={jsonLength}
             channelInfo=""
@@ -93,6 +97,7 @@ export default function Ads({ ads }) {
     </main>
   );
 }
+
 
 export async function getServerSideProps() {
   const apiKey = process.env.API_KEY;
