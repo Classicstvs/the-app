@@ -26,8 +26,9 @@ import { useRef } from "react";
 
 import screenfull from "screenfull";
 
-export default function Video() {
-  useScrollPosition()
+export default function Video({ title }) {
+  useScrollPosition();
+
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
@@ -37,9 +38,9 @@ export default function Video() {
     Math.floor(Math.random() * talkshowsJson.talkshows.length)
   );
   const [talkshows, setCatoons] = useState(talkshowsJson.talkshows);
-  const [title, setTitle] = useState("");
+  // const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
-  const [isFullScreen, setIsFullScreen] = useState(false);
+  // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
   const [showNoise, setShowNoise] = useState(true);
   const [skin, setSkin] = useState(false);
@@ -49,7 +50,6 @@ export default function Video() {
     setSkin(!skin);
   };
 
-  //Change channels
   const playNext = () => {
     setShowNoise(true);
     const randomIndex = Math.floor(Math.random() * jsonLength);
@@ -65,9 +65,10 @@ export default function Video() {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/talkshows/${nextVideoId}?${encodeURIComponent(
-        nextVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/talkshows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
@@ -79,9 +80,10 @@ export default function Video() {
     const prevVideoTitle = talkshows[videoIndex - 1].title;
 
     router.push(
-      `/90s/talkshows/${prevVideoId}?${encodeURIComponent(
-        prevVideoTitle
-      ).replace(/%20/g, "")}`
+      `/90s/talkshows/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
+        /%20/g,
+        ""
+      )}`
     );
   };
 
@@ -157,7 +159,7 @@ export default function Video() {
           <VideoPlayer
             videoId={talkshows[videoIndex].videoId}
             onEnded={playNext}
-            onTitleChange={setTitle}
+            // onTitleChange={setTitle}
             volume={volume}
             player={player}
           />
@@ -187,4 +189,26 @@ export default function Video() {
       <CardsInfo />
     </main>
   );
+}
+
+export const getStaticPaths = async () => {
+  const paths = talkshowsJson.talkshows.map((ad) => ({
+    params: {
+      videoId: ad.videoId.toString(),
+      videoTitle: ad.title.replace(/ /g, "-").toLowerCase(),
+    },
+  }));
+
+  return { paths, fallback: false };
+};
+
+export async function getStaticProps({ params }) {
+  const { videoId } = params;
+  const { title } = talkshowsJson.talkshows.find((ad) => ad.videoId === videoId);
+
+  return {
+    props: {
+      title,
+    },
+  };
 }

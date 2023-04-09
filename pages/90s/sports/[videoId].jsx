@@ -26,8 +26,9 @@ import { useRef } from "react";
 
 import screenfull from "screenfull";
 
-export default function Video() {
-  useScrollPosition()
+export default function Video({ title }) {
+  useScrollPosition();
+
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
@@ -37,9 +38,9 @@ export default function Video() {
     Math.floor(Math.random() * sportsJson.sports.length)
   );
   const [sports, setCatoons] = useState(sportsJson.sports);
-  const [title, setTitle] = useState("");
+  // const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
-  const [isFullScreen, setIsFullScreen] = useState(false);
+  // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
   const [showNoise, setShowNoise] = useState(true);
   const [skin, setSkin] = useState(false);
@@ -48,7 +49,6 @@ export default function Video() {
   const toggleSkin = () => {
     setSkin(!skin);
   };
-
 
   const playNext = () => {
     setShowNoise(true);
@@ -159,7 +159,7 @@ export default function Video() {
           <VideoPlayer
             videoId={sports[videoIndex].videoId}
             onEnded={playNext}
-            onTitleChange={setTitle}
+            // onTitleChange={setTitle}
             volume={volume}
             player={player}
           />
@@ -189,4 +189,26 @@ export default function Video() {
       <CardsInfo />
     </main>
   );
+}
+
+export const getStaticPaths = async () => {
+  const paths = sportsJson.sports.map((ad) => ({
+    params: {
+      videoId: ad.videoId.toString(),
+      videoTitle: ad.title.replace(/ /g, "-").toLowerCase(),
+    },
+  }));
+
+  return { paths, fallback: false };
+};
+
+export async function getStaticProps({ params }) {
+  const { videoId } = params;
+  const { title } = sportsJson.sports.find((ad) => ad.videoId === videoId);
+
+  return {
+    props: {
+      title,
+    },
+  };
 }

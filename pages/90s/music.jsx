@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
+import axios from "axios";
+
 import { NextSeo } from "next-seo";
 
 import styles from "../../styles/allChannels.module.css";
@@ -17,13 +19,13 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 import { channels } from "../../data/channelsList";
 import musicJson from "../../data/music.json";
 
-export default function Music() {
+export default function Music({music}) {
   const SEO = {
-    title: "Classics TV | 90s Music TV Channels",
+    title: "Classics TV | 90s Greatests Music TV Channels",
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Music TV Channels",
+      title: "Classics TV | 90s Greatests Music TV Channels",
       description: "",
     },
   };
@@ -33,7 +35,7 @@ export default function Music() {
   const jsonLength = musicJson.music.length;
 
   const [videoIndex, setVideoIndex] = useState(0);
-  const [music, setCatoons] = useState(musicJson.music);
+  // const [music, setCatoons] = useState(musicJson.music);
   const [title, setTitle] = useState("");
 
   const playNext = () => {
@@ -50,9 +52,7 @@ export default function Music() {
     );
   };
 
-  // const playPrev = () => {
-  //   setVideoIndex((prevIndex) => prevIndex - 1);
-  // };
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -67,11 +67,6 @@ export default function Music() {
       <NextSeo {...SEO} />
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
-          {/* <VideoPlayer
-            videoId={cartoons[videoIndex].videoId}
-            onEnd={playNext}
-            onTitleChange={setTitle}
-          /> */}
           <Image
             src="/images/noize.gif"
             alt="TV Noise"
@@ -90,7 +85,6 @@ export default function Music() {
           <Ad />
           <Channels channels={channels} />
           <Controls
-            // playPrev={playPrev}
             playNext={playNext}
           />
           <PlayInfo
@@ -102,4 +96,50 @@ export default function Music() {
       <CardsInfo />
     </main>
   );
+}
+
+
+export async function getServerSideProps() {
+  const apiKey = process.env.API_KEY;
+  const music = musicJson.music;
+
+  const videoId = music[0].videoId;
+  const url = `https://www.youtube.com/watch?v=${videoId}`;
+
+  try {
+    const response = await axios.get(
+      `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`
+    );
+    const title = response.data.items[0].snippet.title;
+    const encodedTitle = encodeURIComponent(title).replace(/%20/g, "");
+    const channelTitle = response.data.items[0].snippet.channelTitle;
+
+    const SEO = {
+      title: `Classics TV | ${channelTitle} ${title}`,
+      description: "",
+      openGraph: {
+        title: `Classics TV | ${channelTitle} ${title}`,
+        description: "",
+      },
+    };
+
+    return {
+      props: {
+        music,
+        video: {
+          url,
+          title,
+        },
+        SEO,
+        channelInfo: {
+          title: channelTitle,
+        },
+      },
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      props: {},
+    };
+  }
 }

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
+import axios from "axios";
+
 import { NextSeo } from "next-seo";
 
 import styles from "../../styles/allChannels.module.css";
@@ -17,7 +19,7 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 import { channels } from "../../data/channelsList";
 import kidsJson from "../../data/kids.json";
 
-export default function Kids() {
+export default function Kids({kids}) {
   const SEO = {
     title: "Classics TV | 90s Kids TV Channels",
     description: "",
@@ -33,7 +35,7 @@ export default function Kids() {
   const jsonLength = kidsJson.kids.length;
 
   const [videoIndex, setVideoIndex] = useState(0);
-  const [kids, setCatoons] = useState(kidsJson.kids);
+  // const [kids, setCatoons] = useState(kidsJson.kids);
   const [title, setTitle] = useState("");
 
   const playNext = () => {
@@ -50,9 +52,7 @@ export default function Kids() {
     );
   };
 
-  // const playPrev = () => {
-  //   setVideoIndex((prevIndex) => prevIndex - 1);
-  // };
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -67,11 +67,6 @@ export default function Kids() {
       <NextSeo {...SEO} />
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
-          {/* <VideoPlayer
-            videoId={cartoons[videoIndex].videoId}
-            onEnd={playNext}
-            onTitleChange={setTitle}
-          /> */}
           <Image
             src="/images/noize.gif"
             alt="TV Noise"
@@ -90,7 +85,6 @@ export default function Kids() {
           <Ad />
           <Channels channels={channels} />
           <Controls
-            // playPrev={playPrev}
             playNext={playNext}
           />
           <PlayInfo
@@ -102,4 +96,50 @@ export default function Kids() {
       <CardsInfo />
     </main>
   );
+}
+
+
+export async function getServerSideProps() {
+  const apiKey = process.env.API_KEY;
+  const kids = kidsJson.kids;
+
+  const videoId = kids[0].videoId;
+  const url = `https://www.youtube.com/watch?v=${videoId}`;
+
+  try {
+    const response = await axios.get(
+      `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`
+    );
+    const title = response.data.items[0].snippet.title;
+    const encodedTitle = encodeURIComponent(title).replace(/%20/g, "");
+    const channelTitle = response.data.items[0].snippet.channelTitle;
+
+    const SEO = {
+      title: `Classics TV | ${channelTitle} ${title}`,
+      description: "",
+      openGraph: {
+        title: `Classics TV | ${channelTitle} ${title}`,
+        description: "",
+      },
+    };
+
+    return {
+      props: {
+        kids,
+        video: {
+          url,
+          title,
+        },
+        SEO,
+        channelInfo: {
+          title: channelTitle,
+        },
+      },
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      props: {},
+    };
+  }
 }

@@ -21,7 +21,7 @@ import adsJson from "../../data/ads.json";
 
 export default function Ads({ads}) {
   const SEO = {
-    title: "Classics TV  | 90s Commercials and Ads TV Channels",
+    title: "Classics TV | 90s Commercials and Ads TV Channels",
     description: "",
 
     openGraph: {

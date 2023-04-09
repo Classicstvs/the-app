@@ -31,7 +31,6 @@ export default function Video({ title }) {
 
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
-  console.log(router.query);
 
   const jsonLength = adsJson.ads.length;
 
@@ -41,7 +40,7 @@ export default function Video({ title }) {
   const [ads, setCatoons] = useState(adsJson.ads);
   // const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
-  const [isFullScreen, setIsFullScreen] = useState(false);
+  // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
   const [showNoise, setShowNoise] = useState(true);
   const [skin, setSkin] = useState(false);

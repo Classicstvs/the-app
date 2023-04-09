@@ -26,9 +26,9 @@ import { useRef } from "react";
 
 import screenfull from "screenfull";
 
-export default function Video() {
+export default function Video({ title }) {
+  useScrollPosition();
 
-  useScrollPosition()
   const router = useRouter();
   const { videoId, videoTitle } = router.query;
 
@@ -38,9 +38,9 @@ export default function Video() {
     Math.floor(Math.random() * soapsJson.soaps.length)
   );
   const [soaps, setCatoons] = useState(soapsJson.soaps);
-  const [title, setTitle] = useState("");
+  // const [title, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
-  const [isFullScreen, setIsFullScreen] = useState(false);
+  // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
   const [showNoise, setShowNoise] = useState(true);
   const [skin, setSkin] = useState(false);
@@ -49,7 +49,6 @@ export default function Video() {
   const toggleSkin = () => {
     setSkin(!skin);
   };
-
 
   const playNext = () => {
     setShowNoise(true);
@@ -89,11 +88,11 @@ export default function Video() {
   };
 
   const SEO = {
-    title: `Classics TV | 90s Soaps TV Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 90s Best Soaps TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Soaps TV Channels",
+      title: "Classics TV | 90s Best Soaps TV Channels",
       description: "",
     },
   };
@@ -160,7 +159,7 @@ export default function Video() {
           <VideoPlayer
             videoId={soaps[videoIndex].videoId}
             onEnded={playNext}
-            onTitleChange={setTitle}
+            // onTitleChange={setTitle}
             volume={volume}
             player={player}
           />
@@ -190,4 +189,26 @@ export default function Video() {
       <CardsInfo />
     </main>
   );
+}
+
+export const getStaticPaths = async () => {
+  const paths = soapsJson.soaps.map((ad) => ({
+    params: {
+      videoId: ad.videoId.toString(),
+      videoTitle: ad.title.replace(/ /g, "-").toLowerCase(),
+    },
+  }));
+
+  return { paths, fallback: false };
+};
+
+export async function getStaticProps({ params }) {
+  const { videoId } = params;
+  const { title } = soapsJson.soaps.find((ad) => ad.videoId === videoId);
+
+  return {
+    props: {
+      title,
+    },
+  };
 }
