@@ -26,9 +26,9 @@ export default function Footer({ openSub }) {
             <li>
               <Link href="/privacy">Privacy Policy</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/faq">FAQ</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/about">About Us</Link>
             </li>
