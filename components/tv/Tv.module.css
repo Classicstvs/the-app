@@ -45,7 +45,9 @@
 
 @media only screen and (max-width: 1536px) {
     .blackScreen {
-        right: 0px;
+        right: 13px;
+        max-width: 641px;
+        max-height: 512px;
     }
 
     .blob {
@@ -254,6 +256,7 @@
         right: 12px !important;
         max-width: 100%;
     }
+
     .mapArea {
         top: -38px;
         left: 148px;
