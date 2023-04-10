@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import Image from "next/image";
-
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import Subscribe from "../subscribe/Subscribe";

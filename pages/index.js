@@ -10,9 +10,8 @@ import Controls from "@/components/controls/Controls";
 import PageInfo from "@/components/pageInfo/PageInfo";
 import CardsInfo from "@/components/cardsInfo/CardsInfo";
 
-
-
 export default function Home() {
+
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>

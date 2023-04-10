@@ -53,8 +53,6 @@ export default function Cartoons({cartoons}) {
     );
   }, [cartoons, router, videoIndex]);
 
-
-
   useEffect(() => {
     const timer = setTimeout(() => {
       playNext();

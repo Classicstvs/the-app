@@ -11,7 +11,7 @@ export default function ChannelBtn({ channel }) {
   const isActive = router.pathname.startsWith(channel.url);
 
   return (
-    <Link href={channel.url}>
+    <Link href={channel.url} scroll={false}>
       <button
         className={`${styles.channelBtn} ${isActive ? styles.active : ""}`}
       >

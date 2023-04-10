@@ -65,33 +65,11 @@ export default function Video({ title }) {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`
+      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+        nextVideoTitle
+      ).replace(/%20/g, "")}`
     );
   };
-
-  // const playPrev = () => {
-  //   setShowNoise(true);
-  //   const prevIndex = videoIndex - 1;
-  //   if (prevIndex < 0) {
-  //     console.error("Error: Could not find previous video");
-  //     return;
-  //   }
-  //   setVideoIndex(prevIndex);
-  
-  //   const prevVideoId = cartoons[prevIndex].videoId;
-  //   const prevVideoTitle = cartoons[prevIndex].title;
-  
-  //   router.push(
-  //     `/90s/cartoons/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
-  //       /%20/g,
-  //       ""
-  //     )}`
-  //   );
-  // };
-  
 
   const playPrev = () => {
     setShowNoise(true);
@@ -101,10 +79,9 @@ export default function Video({ title }) {
     const prevVideoTitle = cartoons[videoIndex - 1].title;
 
     router.push(
-      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`
+      `/90s/cartoons/${prevVideoId}?${encodeURIComponent(
+        prevVideoTitle
+      ).replace(/%20/g, "")}`
     );
   };
 
@@ -178,7 +155,7 @@ export default function Video({ title }) {
             }}
           />
           <VideoPlayer
-          //  videoId={videoId}
+            //  videoId={videoId}
             videoId={cartoons[videoIndex].videoId}
             onEnded={playNext}
             // onTitleChange={setTitle}
@@ -231,7 +208,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       title,
-      videoId
+      videoId,
     },
   };
 }
