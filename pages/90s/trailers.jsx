@@ -48,7 +48,7 @@ export default function Trailers({trailers}) {
       `/90s/trailers/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`, undefined, { scroll: false }
     );
   };
 

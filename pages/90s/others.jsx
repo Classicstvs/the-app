@@ -48,7 +48,7 @@ export default function Others({others}) {
       `/90s/others/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`, undefined, { scroll: false }
     );
   };
 

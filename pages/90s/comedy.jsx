@@ -48,7 +48,7 @@ export default function Comedy({comedy}) {
       `/90s/comedy/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`, undefined, { scroll: false }
     );
   };
 

@@ -68,7 +68,7 @@ export default function Video({ title }) {
       `/90s/soaps/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`, undefined, { scroll: false }
     );
   };
 

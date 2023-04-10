@@ -67,7 +67,7 @@ export default function Video({ title }) {
     router.push(
       `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
-      ).replace(/%20/g, "")}`
+      ).replace(/%20/g, "")}`, undefined, { scroll: false }
     );
   };
 

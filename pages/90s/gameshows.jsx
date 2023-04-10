@@ -48,7 +48,7 @@ export default function Gameshows({gameshows}) {
       `/90s/gameshows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`, undefined, { scroll: false }
     );
   };
 

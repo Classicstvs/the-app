@@ -68,7 +68,7 @@ export default function Video({ title }) {
       `/90s/gameshows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`, undefined, { scroll: false }
     );
   };
 

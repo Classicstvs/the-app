@@ -49,7 +49,7 @@ export default function Cartoons({cartoons}) {
       `/90s/cartoons/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`, undefined, { scroll: false }
     );
   }, [cartoons, router, videoIndex]);
 
