@@ -21,7 +21,7 @@ export default function Footer({ openSub }) {
               <p onClick={handleSubClick} >Subscribe</p>
             </li>
             <li>
-              <Link href="/terms">Terms and Conditions</Link>
+              <Link href="/terms">Terms of Service</Link>
             </li>
             <li>
               <Link href="/privacy">Privacy Policy</Link>

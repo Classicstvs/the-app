@@ -29,38 +29,38 @@
 
 @media only screen and (max-width: 1920px) {
     .wrapper{
-        left: 1039px;
+        left: 1064px;
     }
     
 }
 
 @media only screen and (max-width: 1750px) {
     .wrapper{
-        left: 956px;
+        left: 985px;
     }
 }
 
 @media only screen and (max-width: 1540px) {
     .wrapper{
-        left: 852px;
+        left: 884px;
     }
 }
 
 @media only screen and (max-width: 1440px) {
     .wrapper{
-        left: 816px;
+        left: 838px;
     }
 }
 
 @media only screen and (max-width: 1372px) {
     .wrapper{
-        left: 723px;
+        left: 740px;
     }
 }
 
 @media only screen and (max-width: 1280px) {
     .wrapper{
-        left: 645px;
+        left: 665px;
     }
 }
 
