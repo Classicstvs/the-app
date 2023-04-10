@@ -72,6 +72,27 @@ export default function Video({ title }) {
     );
   };
 
+  // const playPrev = () => {
+  //   setShowNoise(true);
+  //   const prevIndex = videoIndex - 1;
+  //   if (prevIndex < 0) {
+  //     console.error("Error: Could not find previous video");
+  //     return;
+  //   }
+  //   setVideoIndex(prevIndex);
+  
+  //   const prevVideoId = cartoons[prevIndex].videoId;
+  //   const prevVideoTitle = cartoons[prevIndex].title;
+  
+  //   router.push(
+  //     `/90s/cartoons/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
+  //       /%20/g,
+  //       ""
+  //     )}`
+  //   );
+  // };
+  
+
   const playPrev = () => {
     setShowNoise(true);
     setVideoIndex((prevIndex) => prevIndex - 1);
@@ -157,6 +178,7 @@ export default function Video({ title }) {
             }}
           />
           <VideoPlayer
+          //  videoId={videoId}
             videoId={cartoons[videoIndex].videoId}
             onEnded={playNext}
             // onTitleChange={setTitle}
@@ -209,6 +231,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       title,
+      videoId
     },
   };
 }
