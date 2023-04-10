@@ -29,42 +29,42 @@
 
 @media only screen and (max-width: 1920px) {
     .wrapper{
-        left: 1002px;
+        left: 1039px;
     }
     
 }
 
 @media only screen and (max-width: 1750px) {
     .wrapper{
-        left: 920px;
+        left: 956px;
     }
 }
 
 @media only screen and (max-width: 1540px) {
     .wrapper{
-        left: 813px;
+        left: 852px;
     }
 }
 
 @media only screen and (max-width: 1440px) {
     .wrapper{
-        left: 793px;
+        left: 816px;
     }
 }
 
 @media only screen and (max-width: 1372px) {
     .wrapper{
-        left: 703px;
+        left: 723px;
     }
 }
 
 @media only screen and (max-width: 1280px) {
     .wrapper{
-        left: 624px;
+        left: 645px;
     }
 }
 
-@media only screen and (max-width: 1290px) {
+@media only screen and (max-width: 1270px) {
     .wrapper{
         position: static;
         left: 0;
