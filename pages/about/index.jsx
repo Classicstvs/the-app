@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from "./AbouUs.module.css";
 
-import { BsLinkedin } from "react-icons/bs";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 
 export default function AboutUs() {
@@ -32,7 +32,7 @@ export default function AboutUs() {
             staying true to their mission of bringing the magic of classic TV to
             a new generation of viewers.
           </p>
-          <Image src="" alt="" />
+          <p>Contact Us at: <span><Link href="mailto:tvs.classics@gmail.com" alt="Mail Us">tvs.classics@gmail.com</Link></span></p>
         </div>
         <div className={styles.contentAbout}>
           <h2>Our Team:</h2>
@@ -63,10 +63,10 @@ export default function AboutUs() {
                     alt="Find Me in Linked In"
                     target="_blank"
                   >
-                    <BsLinkedin />
+                    <RiLinkedinBoxFill />
                   </Link>
                   <Link href="mailto:iodesign@live.com" alt="Mail Me">
-                    <MdEmail style={{fontSize:'22px'}}/>
+                    <MdEmail />
                   </Link>
                 </li>
               </ul>

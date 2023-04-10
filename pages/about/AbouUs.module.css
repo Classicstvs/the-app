@@ -26,6 +26,10 @@
     max-width: 800px;
 }
 
+.contentAbout p span{
+    color: #3F3C3C;
+}
+
 .wrapper {
     background-color: #9D9D9F;
     padding: 30px 50px 50px 50px;
