@@ -44,4 +44,9 @@
         font-size: 38px;
         line-height:40px;
     }
+
+    .wrapper{
+        background-size: 300px;
+        background-position: 191px 876px;
+    }
 }

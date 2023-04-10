@@ -26,7 +26,7 @@
     max-width: 800px;
 }
 
-.contentAbout p span{
+.contentAbout p span {
     color: #3F3C3C;
 }
 
@@ -37,7 +37,7 @@
     background-image: url('/images/tv_pop.webp');
     background-repeat: no-repeat;
     background-position: 1040px 330px;
-    background-size:450px;
+    background-size: 450px;
 }
 
 .content {
@@ -52,7 +52,7 @@
     gap: 10%;
 }
 
-.teamContainer p{
+.teamContainer p {
     font-weight: bold;
     font-size: 2.3vh;
 }
@@ -62,19 +62,19 @@
     margin: 6px 0;
 }
 
-.teamContainer li a{
-    margin-right:  8px;
+.teamContainer li a {
+    margin-right: 8px;
 }
 
 
 
 @media only screen and (max-width: 767px) {
 
-    .wrapper{
+    .wrapper {
         padding: 30px 20px 50px 20px;
         margin: 0 20px;
     }
-    
+
     .contentAbout h1 {
         font-size: 38px;
     }
@@ -86,5 +86,10 @@
     .teamContainer {
         gap: 0%;
         flex-direction: column;
+    }
+
+    .wrapper {
+        background-position: 206px 1097px;
+        background-size: 274px;
     }
 }

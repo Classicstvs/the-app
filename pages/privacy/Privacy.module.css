@@ -53,4 +53,10 @@
         margin-top: 22px;
         font-size: 30px;
     }
+
+    .wrapper{
+        background-position: 251px 423px;
+        background-size: 300px;
+
+    }
 }
