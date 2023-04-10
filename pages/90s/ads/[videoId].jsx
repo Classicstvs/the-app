@@ -191,7 +191,7 @@ export default function Video({ title }) {
             title={title}
             jsonLength={jsonLength}
             year={year}
-            channelInfo=""
+            channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
           />
         </div>
       </div>
