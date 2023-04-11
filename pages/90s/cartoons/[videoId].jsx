@@ -37,8 +37,8 @@ export default function Video({ title }) {
   const [videoIndex, setVideoIndex] = useState(
     Math.floor(Math.random() * cartoonsJson.cartoons.length)
   );
-  const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
-  // const [title, setTitle] = useState("");
+  const [cartoons, setCartoons] = useState(cartoonsJson.cartoons);
+  const [titleTab, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
@@ -67,7 +67,7 @@ export default function Video({ title }) {
     router.push(
       `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
-      ).replace(/%20/g, "")}`, undefined, { scroll: false }
+      ).replace(/%20/g, "")}`
     );
   };
 
@@ -158,7 +158,7 @@ export default function Video({ title }) {
             //  videoId={videoId}
             videoId={cartoons[videoIndex].videoId}
             onEnded={playNext}
-            // onTitleChange={setTitle}
+            onTitleChange={setTitle}
             volume={volume}
             player={player}
           />
@@ -178,7 +178,7 @@ export default function Video({ title }) {
             toggleSkin={toggleSkin}
           />
           <PlayInfo
-            title={title}
+            title={titleTab}
             jsonLength={jsonLength}
             year={year}
             channelInfo="Cartoon TV channels from the 90s were a paradise for kids and adults alike who loved animated shows. From classic series like Looney Tunes and Tom and Jerry to modern hits like Animaniacs and Rugrats, they brought us some of the most memorable and iconic cartoon characters of all time. These channels provided us with a chance to escape into different worlds, filled with adventure, humor, and heartwarming stories that taught us important lessons. Whether you were a fan of superheroes, talking animals, or mischievous kids, there was always something to watch on cartoon TV channels in the 90s. Even today, these shows continue to hold a special place in the hearts of those who grew up with them, and they remain a beloved part of popular culture around the world."

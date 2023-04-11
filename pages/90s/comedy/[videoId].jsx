@@ -37,8 +37,8 @@ export default function Video({ title }) {
   const [videoIndex, setVideoIndex] = useState(
     Math.floor(Math.random() * comedyJson.comedy.length)
   );
-  const [comedy, setCatoons] = useState(comedyJson.comedy);
-  // const [title, setTitle] = useState("");
+  const [comedy, setCartoons] = useState(comedyJson.comedy);
+  const [titleTab, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
@@ -159,7 +159,7 @@ export default function Video({ title }) {
           <VideoPlayer
             videoId={comedy[videoIndex].videoId}
             onEnded={playNext}
-            // onTitleChange={setTitle}
+            onTitleChange={setTitle}
             volume={volume}
             player={player}
           />
@@ -179,7 +179,7 @@ export default function Video({ title }) {
             toggleSkin={toggleSkin}
           />
           <PlayInfo
-            title={title}
+            title={titleTab}
             jsonLength={jsonLength}
             year={year}
             channelInfo="The 90s was a decade of great comedy television channels, featuring some of the most beloved and iconic sitcoms of all time. Networks like NBC, ABC, and FOX brought us shows that made us laugh, cry, and think, with memorable characters and hilarious writing that still holds up today. From family-friendly sitcoms to edgier, more irreverent fare, these channels paved the way for the future of comedy television and left a lasting impact on popular culture."

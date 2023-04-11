@@ -38,7 +38,7 @@ export default function Video({ title }) {
     Math.floor(Math.random() * specialsJson.specials.length)
   );
   const [specials, setCatoons] = useState(specialsJson.specials);
-  // const [title, setTitle] = useState("");
+  const [titleTab, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
@@ -159,7 +159,7 @@ export default function Video({ title }) {
           <VideoPlayer
             videoId={specials[videoIndex].videoId}
             onEnded={playNext}
-            // onTitleChange={setTitle}
+            onTitleChange={setTitle}
             volume={volume}
             player={player}
           />
@@ -179,7 +179,7 @@ export default function Video({ title }) {
             toggleSkin={toggleSkin}
           />
           <PlayInfo
-            title={title}
+            title={titleTab}
             jsonLength={jsonLength}
             year={year}
             channelInfo="Specials TV channels from the 90s were a platform for some of the most groundbreaking and influential programs of the decade. From awards shows like the Oscars and the Grammys to special events like Live Aid and the Olympics, they brought us live coverage of some of the most significant moments in pop culture and world history. These channels provided us with a chance to witness history in the making, from the fall of the Berlin Wall to the inauguration of new presidents. They also brought us exclusive interviews and behind-the-scenes looks at the worlds of politics, entertainment, and sports. Whether you were a fan of music, sports, or current events, there was always something to watch on specials TV channels in the 90s. Even today, these programs continue to be a part of our cultural conversation, and they remain an important part of the television landscape."

@@ -38,7 +38,7 @@ export default function Video({ title }) {
     Math.floor(Math.random() * newsJson.news.length)
   );
   const [news, setCatoons] = useState(newsJson.news);
-  // const [title, setTitle] = useState("");
+  const [titleTab, setTitle] = useState("");
   const [volume, setVolume] = useState(0.4);
   // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
@@ -159,7 +159,7 @@ export default function Video({ title }) {
           <VideoPlayer
             videoId={news[videoIndex].videoId}
             onEnded={playNext}
-            // onTitleChange={setTitle}
+            onTitleChange={setTitle}
             volume={volume}
             player={player}
           />
@@ -179,7 +179,7 @@ export default function Video({ title }) {
             toggleSkin={toggleSkin}
           />
           <PlayInfo
-            title={title}
+            title={titleTab}
             jsonLength={jsonLength}
             year={year}
             channelInfo="News channels from the 90s were a vital source of information for people all around the world. From CNN to BBC, they provided us with up-to-date coverage of major events, from wars and natural disasters to politics and entertainment. These channels helped us stay informed about the world around us and shaped our understanding of current affairs. They also gave us access to a wide range of perspectives and voices, expanding our understanding of global events and issues. Today, we still rely on news channels to keep us informed, but the channels from the 90s remain an important part of the history of journalism and media."
