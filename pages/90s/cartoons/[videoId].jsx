@@ -21,6 +21,7 @@ import useScrollPosition from "@/hooks/useScrollPosition";
 
 import { channels } from "../../../data/channelsList";
 import cartoonsJson from "../../../data/cartoons.json";
+import { info90s } from "@/data/infos";
 
 import { useRef } from "react";
 
@@ -163,7 +164,7 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo />
+          <PageInfo info={info90s} years="90s"/>
         </div>
         <div className={styles.rightSecton}>
           <Ad />

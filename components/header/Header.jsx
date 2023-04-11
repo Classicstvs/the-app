@@ -1,17 +1,16 @@
-import { useState } from "react";
-
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
 
-export default function Header({ openModal}) {
+export default function Header({ openModal }) {
   const router = useRouter();
 
   const handleModalClick = () => {
     openModal();
   };
+
   return (
     <header className={styles.container}>
       <div className={styles.wrapper}>
@@ -32,12 +31,11 @@ export default function Header({ openModal}) {
             onClick={handleModalClick}
           >
             2000s TV
-          
           </Link>
 
           <Link
             className={
-              router.pathname === "/" || "/90s/" ? styles["activePath"] : ""
+              router.pathname === '/' || router.pathname.startsWith('/90s') ? styles["activePath"] : ""
             }
             href="/"
           >
@@ -45,8 +43,8 @@ export default function Header({ openModal}) {
           </Link>
 
           <Link
-            className={router.pathname === "#" ? styles["activePath"] : ""}
-            href="#"
+            className={router.pathname.startsWith("/80s") ? styles["activePath"] : ""}
+            href="/80s"
             onClick={handleModalClick}
           >
             80s
@@ -75,7 +73,11 @@ export default function Header({ openModal}) {
           >
             50s
           </Link>
-          <div className={styles.triangleUp}></div>
+          <div
+            className={
+              router.pathname === "/" || router.pathname.startsWith("/90s")  ? styles.triangleUp2 : styles.triangleUp3
+            }
+          ></div>
         </nav>
       </div>
     </header>

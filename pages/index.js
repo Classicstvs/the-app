@@ -9,6 +9,7 @@ import Controls from "@/components/controls/Controls";
 
 import PageInfo from "@/components/pageInfo/PageInfo";
 import CardsInfo from "@/components/cardsInfo/CardsInfo";
+import { info90s } from "@/data/infos";
 
 export default function Home() {
 
@@ -17,7 +18,7 @@ export default function Home() {
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
           <Tv />
-          <PageInfo />
+          <PageInfo years="90s" info={info90s}/>
         </div>
         <div className={styles.rightSecton}>
           <Ad />

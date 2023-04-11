@@ -18,6 +18,7 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
 import adsJson from "../../data/ads.json";
+import { info90s } from "@/data/infos";
 
 export default function Ads({ ads }) {
   const SEO = {
@@ -77,7 +78,7 @@ export default function Ads({ ads }) {
             }}
           />
           <Tv />
-          <PageInfo />
+          <PageInfo info={info90s} years="90s"/>
         </div>
         <div className={styles.rightSecton}>
           <Ad />

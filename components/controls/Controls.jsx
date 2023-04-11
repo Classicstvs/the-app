@@ -28,7 +28,13 @@ export default function Controls({
   const [activeRoute, setActiveRoute] = useState("/");
 
   const powerOn = () => {
-    setActiveRoute(router.push("/90s/cartoons"));
+    if(activeRoute === '/'){
+      setActiveRoute(router.push("/90s/cartoons"));
+    }
+    if(activeRoute === '/80s'){
+      setActiveRoute(router.push("/80s/cartoons"));
+    }
+   
   };
 
   const powerOff = () => {
@@ -43,9 +49,9 @@ export default function Controls({
     <div className={styles.controls}>
       <div
         className={cn(styles.powerBtn, {
-          [styles.isActive]: activeRoute && activeRoute !== "/",
+          [styles.isActive]: activeRoute && activeRoute !== "/" && activeRoute && activeRoute !== "/80s",
         })}
-        onClick={activeRoute === "/" ? powerOn : powerOff}
+        onClick={activeRoute === "/" || activeRoute === "/80s" ? powerOn : powerOff}
       >
         <FaPowerOff />
       </div>
@@ -78,7 +84,7 @@ export default function Controls({
         <BiFullscreen />
       </div>
       <div className={styles.skins} onClick={toggleSkin}>
-        {router.pathname === "/" ? (
+        {router.pathname === "/" || router.pathname === "/80s" ? (
           <Image
             src="/icons/tv_black.webp"
             alt="TV FAQ"

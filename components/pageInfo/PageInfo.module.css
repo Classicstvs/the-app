@@ -26,8 +26,16 @@
     margin: 40px 0 10px 0;
 }
 
-.pageInfoWrapperRes h1 span{
+/* .pageInfoWrapperRes h1 span{
     color: #5297FF;
+} */
+
+.color90s{
+    color: #5297FF;
+}
+
+.color80s{
+    color: #f18c07;
 }
 
 .pageInfoWrapperRes p{

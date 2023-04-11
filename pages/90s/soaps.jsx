@@ -18,6 +18,7 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
 import soapsJson from "../../data/soaps.json";
+import { info90s } from "@/data/infos";
 
 export default function Soaps({soaps}) {
   const SEO = {
@@ -79,7 +80,7 @@ export default function Soaps({soaps}) {
             }}
           />
           <Tv />
-          <PageInfo />
+          <PageInfo info={info90s} years="90s"/>
         </div>
         <div className={styles.rightSecton}>
           <Ad />

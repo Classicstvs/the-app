@@ -25,6 +25,7 @@ import adsJson from "../../../data/ads.json";
 import { useRef } from "react";
 
 import screenfull from "screenfull";
+import { info90s } from "@/data/infos";
 
 export default function Video({ title }) {
   useScrollPosition();
@@ -175,7 +176,7 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo />
+          <PageInfo info={info90s} years="90s"/>
         </div>
         <div className={styles.rightSecton}>
           <Ad />
