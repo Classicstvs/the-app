@@ -7,6 +7,15 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 
 export default function AboutUs() {
+  const encMail = "dHZzLmNsYXNzaWNzQGdtYWlsLmNvbQ==";
+  const teamMail = atob(encMail);
+
+  const encYoMail = "aW9kZXNpZ25AbGl2ZS5jb20=";
+  const yoMail = atob(encYoMail);
+
+  const encVikMail = "dmlrdG9yMDk4MEBnbWFpbC5jb20=";
+  const vikMail = atob(encVikMail);
+
   return (
     <main className={styles.container}>
       <div className={styles.wrapper}>
@@ -32,7 +41,14 @@ export default function AboutUs() {
             staying true to their mission of bringing the magic of classic TV to
             a new generation of viewers.
           </p>
-          <p>Contact Us at: <span><Link href="mailto:tvs.classics@gmail.com" alt="Mail Us">tvs.classics@gmail.com</Link></span></p>
+          <p>
+            Contact Us at:{" "}
+            <span>
+              <Link href={"mailto:" + teamMail} alt="Mail Us">
+                tvs.classics@gmail.com
+              </Link>
+            </span>
+          </p>
         </div>
         <div className={styles.contentAbout}>
           <h2>Our Team:</h2>
@@ -44,7 +60,7 @@ export default function AboutUs() {
                 <li>Content Developer</li>
                 <li>SEO and Digital Marketing</li>
                 <li>
-                  <Link href="" alt="Mail Me">
+                  <Link href={"mailto:" + vikMail} alt="Mail Me">
                     <MdEmail />
                   </Link>
                 </li>
@@ -65,7 +81,7 @@ export default function AboutUs() {
                   >
                     <RiLinkedinBoxFill />
                   </Link>
-                  <Link href="mailto:iodesign@live.com" alt="Mail Me">
+                  <Link href={"mailto:" + yoMail} alt="Mail Me">
                     <MdEmail />
                   </Link>
                 </li>
