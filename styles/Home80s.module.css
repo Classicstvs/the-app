@@ -163,6 +163,42 @@
     }
 }
 
+@media only screen and (max-width: 440px) {
+    .rightSecton {
+        top: -230px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .rightSecton {
+        top: -251px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .rightSecton {
+        top: -250px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .rightSecton {
+        top: -266px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .rightSecton {
+        top: -267px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .rightSecton {
+        top: -285px;
+    }
+}
+
 @media only screen and (max-width: 330px) {
     .rightSecton {
         margin-right: 0px;
