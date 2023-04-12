@@ -200,7 +200,7 @@ export default function Video({ title }) {
               title={titleTab}
               jsonLength={jsonLength}
               year={year}
-              channelInfo="/MUST BE FOR 80s/Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
+              channelInfo="Advertisements from the 80s were iconic, with memorable jingles and celebrity endorsements used to appeal to emotions and shape brand perception. With television as the dominant medium for advertising, brands had to create ads that grabbed viewers' attention. As technology advanced, brands had to adapt to new media to stay relevant."
             />
           </div>
         </div>
