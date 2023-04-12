@@ -103,3 +103,110 @@ export const channels = [
     height: 26,
   }
 ];
+
+export const channels80s = [
+  {
+    name: "Cartoons",
+    image: "/icons/cartoons_icon.webp",
+    url: "/80s/cartoons",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Kids",
+    image: "/icons/kids_icon.webp",
+    url: "/80s/kids",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Movies",
+    image: "/icons/movies_icon.webp",
+    url: "/80s/movies",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "News",
+    image: "/icons/news_icon.webp",
+    url: "/80s/news",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Sports",
+    image: "/icons/sports_icon.webp",
+    url: "/80s/sports",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Gameshows",
+    url: "/80s/gameshows",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Comedy",
+    image: "/icons/comedy_icon.webp",
+    url: "/80s/comedy",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Shows",
+    image: "/icons/drama_icon.webp",
+    url: "/80s/shows",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Talkshows",
+    url: "/80s/talkshows",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Music",
+    image: "/icons/music_icon.webp",
+    url: "/80s/music",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Soaps",
+    image: "/icons/soaps_icon.webp",
+    url: "/80s/soaps",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Ads",
+    image: "/icons/ads_icon.webp",
+    url: "/80s/ads",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Specials",
+    image: "/icons/specials_icon.webp",
+    url: "/80s/specials",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Trailers",
+    image: "/icons/trailers_icon.webp",
+    url: "/80s/trailers",
+    width: 26,
+    height: 26,
+  },
+  {
+    name: "Others",
+    image: "/icons/others_icon.webp",
+    url: "/80s/others",
+    width: 26,
+    height: 26,
+  }
+];
+

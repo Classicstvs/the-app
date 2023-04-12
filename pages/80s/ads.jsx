@@ -16,17 +16,17 @@ import PlayInfo from "../../components/playInfo/PlayInfo";
 import PageInfo from "../../components/pageInfo/PageInfo";
 import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
-import { channels } from "../../data/channelsList";
+import { channels80s } from "../../data/channelsList";
 import adsJson from "../../data/ads.json";
-import { info90s } from "@/data/infos";
+import { info80s } from "@/data/infos";
 
 export default function Ads({ ads }) {
   const SEO = {
-    title: "Classics TV | 90s Commercials and Ads TV Channels",
+    title: "Classics TV | 80s Commercials and Ads TV Channels",
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Commercials and Ads TV Channels",
+      title: "Classics TV | 80s Commercials and Ads TV Channels",
       description: "",
     },
   };
@@ -46,10 +46,12 @@ export default function Ads({ ads }) {
     const nextVideoTitle = ads[videoIndex + 1].title;
 
     router.push(
-      `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+      `/80s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -79,24 +81,24 @@ export default function Ads({ ads }) {
           />
           <Tv />
           <div className={styles.pageInfo}>
-          <PageInfo info={info90s} years="90s"/>
+            <PageInfo info={info80s} years="80s" />
           </div>
         </div>
         <div className={styles.rightSecton}>
-        <div className={styles.ad}>
-          <Ad />
+          <div className={styles.ad}>
+            <Ad />
           </div>
           <div className={styles.channels}>
-          <Channels channels={channels} />
+            <Channels channels={channels80s} />
           </div>
           <div className={styles.controls}>
-          <Controls playNext={playNext} />
+            <Controls playNext={playNext} />
           </div>
           <div className={styles.playInfo}>
-          <PlayInfo
-            jsonLength={jsonLength}
-            channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
-          />
+            <PlayInfo
+              jsonLength={jsonLength}
+              channelInfo="/MUST BE FOR 80s/Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
+            />
           </div>
         </div>
       </div>

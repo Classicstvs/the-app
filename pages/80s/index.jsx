@@ -1,17 +1,24 @@
+import { useRouter } from "next/router";
+
 import Tv from "../../components/tv/Tv";
 import Channels from "@/components/channels/Channels";
 import Ad from "@/components/ad/Ad";
 
 import styles from "../../styles/Home80s.module.css";
 
-import { channels } from "../../data/channelsList";
+import { channels80s } from "../../data/channelsList";
+
 import Controls from "@/components/controls/Controls";
 
 import PageInfo from "@/components/pageInfo/PageInfo";
 import CardsInfo from "@/components/cardsInfo/CardsInfo";
+
 import { info80s } from "@/data/infos";
 
 export default function Home80s() {
+
+const router = useRouter()
+
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>
@@ -26,7 +33,7 @@ export default function Home80s() {
             <Ad />
           </div>
           <div className={styles.channels}>
-            <Channels channels={channels} />
+           <Channels channels={channels80s} />
           </div>
           <div className={styles.controls}>
             <Controls />

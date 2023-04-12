@@ -19,13 +19,13 @@ import CardsInfo from "../../../components/cardsInfo/CardsInfo";
 
 import useScrollPosition from "@/hooks/useScrollPosition";
 
-import { channels } from "../../../data/channelsList";
+import { channels80s } from "../../../data/channelsList";
 import adsJson from "../../../data/ads.json";
 
 import { useRef } from "react";
 
 import screenfull from "screenfull";
-import { info90s } from "@/data/infos";
+import { info80s } from "@/data/infos";
 
 export default function Video({ title }) {
   useScrollPosition();
@@ -66,7 +66,7 @@ export default function Video({ title }) {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
+      `/80s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
       )}`,
@@ -89,7 +89,7 @@ export default function Video({ title }) {
     const prevVideoTitle = ads[videoIndex - 1].title;
 
     router.push(
-      `/90s/ads/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
+      `/80s/ads/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
         /%20/g,
         ""
       )}`
@@ -97,11 +97,11 @@ export default function Video({ title }) {
   };
 
   const SEO = {
-    title: `Classics TV | 90s Commercials and Ads TV Channels | Now Playnig: ${title}`,
+    title: `Classics TV | 80s Commercials and Ads TV Channels | Now Playnig: ${title}`,
     description: "",
 
     openGraph: {
-      title: "Classics TV | 90s Commercials and Ads TV Channels",
+      title: "Classics TV | 80s Commercials and Ads TV Channels",
       description: "",
     },
   };
@@ -174,7 +174,7 @@ export default function Video({ title }) {
           />
           <Tv skin={skin} />
           <div className={styles.pageInfo}>
-            <PageInfo info={info90s} years="90s" />
+            <PageInfo info={info80s} years="80s" />
           </div>
         </div>
         <div className={styles.rightSecton}>
@@ -182,7 +182,7 @@ export default function Video({ title }) {
             <Ad />
           </div>
           <div className={styles.channels}>
-            <Channels channels={channels} />
+            <Channels channels={channels80s} />
           </div>
           <div className={styles.controls}>
             <Controls
@@ -200,7 +200,7 @@ export default function Video({ title }) {
               title={titleTab}
               jsonLength={jsonLength}
               year={year}
-              channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
+              channelInfo="/MUST BE FOR 80s/Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
             />
           </div>
         </div>
