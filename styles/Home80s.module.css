@@ -1,20 +1,20 @@
 .main {
     background: linear-gradient(to top,
-            #3F3C3C 0%,
-            #3F3C3C 55.2%,
-            #D9D9D91F 0%,
-            #D9D9D91F 100%);
+            #3F3C3C 0px,
+            #3F3C3C 711px,
+            #D9D9D91F 0px,
+            #D9D9D91F 100px)
 }
 
 .mainWrapper {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 31px 0 0 0; 
+    padding: 31px 0 0 0;
     display: flex;
     gap: 6%;
 }
 
-.leftSecton{
+.leftSecton {
     z-index: 0;
 }
 
@@ -60,13 +60,17 @@
         top: -387px;
     }
 
-    .main{
+    .main {
         background: linear-gradient(to top, #3F3C3C 0%, #3F3C3C 50%, #D9D9D91F 0%, #D9D9D91F 100%);
     }
 }
 
 @media only screen and (max-width: 815px) {
-    .channels, .controls, .ad, .pageInfo {
+
+    .channels,
+    .controls,
+    .ad,
+    .pageInfo {
         position: relative;
     }
 
@@ -96,11 +100,11 @@
         margin: 0 auto;
     }
 
-    .tv{
+    .tv {
         max-width: 95% !important;
     }
 
-    .blackScreen{
+    .blackScreen {
         width: 532px;
         height: 264px;
         top: 16px;
@@ -125,22 +129,22 @@
                 #D9D9D91F 100%);
     }
 
-    .channels{
+    .channels {
         position: relative;
         top: -235px;
     }
 
-    .controls{
+    .controls {
         position: relative;
         top: -222px;
     }
 
-    .ad{
+    .ad {
         position: relative;
         top: 70px;
     }
 
-    .pageInfo{
+    .pageInfo {
         position: relative;
         top: 312px;
     }
