@@ -48,9 +48,7 @@ export default function Trailers({ trailers }) {
     router.push(
       `/90s/trailers/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
-      ).replace(/%20/g, "")}`,
-      undefined,
-      { scroll: false }
+      ).replace(/%20/g, "")}`
     );
   };
 

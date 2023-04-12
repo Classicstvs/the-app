@@ -49,9 +49,7 @@ export default function Shows({ shows }) {
       `/90s/shows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`,
-      undefined,
-      { scroll: false }
+      )}`
     );
   };
 

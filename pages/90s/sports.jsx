@@ -49,9 +49,7 @@ export default function Sports({ sports }) {
       `/90s/sports/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`,
-      undefined,
-      { scroll: false }
+      )}`
     );
   };
 

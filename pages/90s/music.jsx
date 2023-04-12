@@ -49,9 +49,7 @@ export default function Music({ music }) {
       `/90s/music/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`,
-      undefined,
-      { scroll: false }
+      )}`
     );
   };
 

@@ -48,9 +48,7 @@ export default function Gameshows({ gameshows }) {
     router.push(
       `/90s/gameshows/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
-      ).replace(/%20/g, "")}`,
-      undefined,
-      { scroll: false }
+      ).replace(/%20/g, "")}`
     );
   };
 

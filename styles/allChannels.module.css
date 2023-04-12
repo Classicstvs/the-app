@@ -159,7 +159,7 @@
     }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 825px) {
     .leftSecton>img {
         top: 50px !important;
         left: 88px !important;
@@ -188,15 +188,7 @@
         top: 324px;
     }
 
-    .videoPlayer{
-        top: 48px !important;
-        left: 91px !important;
-    }
 
-    .reactPlayer {
-        width: 611px !important;
-        height: 466px !important;
-    }
 
 }
 

@@ -49,7 +49,7 @@ export default function Talkshows({talkshows}) {
       `/90s/talkshows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`
     );
   };
 
