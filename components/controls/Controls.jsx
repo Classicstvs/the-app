@@ -25,6 +25,18 @@ export default function Controls({
   const isVideoFirst = videoIndex === 0;
 
   const router = useRouter();
+
+  const [labelColor, setLabelColor] = useState()
+
+  useEffect(()=>{
+    if(router.pathname.startsWith('/') || router.pathname.startsWith('/90s')){
+      setLabelColor("#5297FF")
+    }
+    if(router.pathname.startsWith('/80s')){
+      setLabelColor("#f18c07")
+    }
+  }, [router.pathname])
+
   const [activeRoute, setActiveRoute] = useState("/");
 
   const powerOn = () => {
@@ -65,7 +77,7 @@ export default function Controls({
         <div className={styles.channelUp} onClick={playNext}>
           <FaPlay />
         </div>
-        <label>
+        <label style={{color: labelColor}}>
           <strong>CHANNEL</strong>
         </label>
       </div>
@@ -76,7 +88,7 @@ export default function Controls({
         <div className={styles.volumeUp} onClick={increaseVolume}>
           <ImVolumeIncrease />
         </div>
-        <label>
+        <label style={{color: labelColor}}>
           <strong>VOLUME</strong>
         </label>
       </div>

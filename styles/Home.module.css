@@ -1,9 +1,9 @@
 .main {
     background: linear-gradient(to top,
-            #3F3C3C 0%,
-            #3F3C3C 55.2%,
-            #D9D9D91F 0%,
-            #D9D9D91F 100%);
+            #3F3C3C 0px,
+            #3F3C3C 711px,
+            #D9D9D91F 0px,
+            #D9D9D91F 100px)
 }
 
 .mainWrapper {
@@ -44,7 +44,11 @@
 }
 
 @media only screen and (max-width: 825px) {
-    .channels, .controls, .ad, .pageInfo {
+
+    .channels,
+    .controls,
+    .ad,
+    .pageInfo {
         position: relative;
     }
 
@@ -66,7 +70,11 @@
 }
 
 @media only screen and (max-width: 815px) {
-    .channels, .controls, .ad, .pageInfo {
+
+    .channels,
+    .controls,
+    .ad,
+    .pageInfo {
         position: relative;
     }
 
@@ -147,7 +155,10 @@
                 #D9D9D91F 100%);
     }
 
-    .channels, .controls, .ad, .pageInfo {
+    .channels,
+    .controls,
+    .ad,
+    .pageInfo {
         position: relative;
     }
 
