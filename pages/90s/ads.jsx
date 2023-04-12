@@ -78,16 +78,26 @@ export default function Ads({ ads }) {
             }}
           />
           <Tv />
+          <div className={styles.pageInfo}>
           <PageInfo info={info90s} years="90s"/>
+          </div>
         </div>
         <div className={styles.rightSecton}>
+        <div className={styles.ad}>
           <Ad />
+          </div>
+          <div className={styles.channels}>
           <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
           <Controls playNext={playNext} />
+          </div>
+          <div className={styles.playInfo}>
           <PlayInfo
             jsonLength={jsonLength}
             channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
           />
+          </div>
         </div>
       </div>
       <CardsInfo />

@@ -8,10 +8,6 @@ export default function PageInfo({years, info}) {
 
 const router = useRouter()
 
-const pageInfoWrapperClass = router.pathname === '/'
-? styles.pageInfoWrapper 
-: styles.pageInfoWrapperRes
-
 const [yearColor, setYearColor] = useState()
 
 useEffect(()=>{
@@ -24,7 +20,7 @@ useEffect(()=>{
 }, [router.pathname])
 
   return (
-    <div className={pageInfoWrapperClass}>
+    <div className={styles.pageInfoWrapper}>
       <h1>
         <span className={styles[yearColor]}>{years}</span> TV Classics
       </h1>

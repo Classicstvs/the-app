@@ -18,8 +18,9 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
 import moviesJson from "../../data/movies.json";
+import { info90s } from "@/data/infos";
 
-export default function Movies({movies}) {
+export default function Movies({ movies }) {
   const SEO = {
     title: "Classics TV | 90s Best Movies TV Channels ",
     description: "",
@@ -48,11 +49,11 @@ export default function Movies({movies}) {
       `/90s/movies/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
-
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -79,25 +80,32 @@ export default function Movies({movies}) {
             }}
           />
           <Tv />
-          <PageInfo />
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playNext={playNext}
-          />
-          <PlayInfo
-            jsonLength={jsonLength}
-            channelInfo="Movie TV channels from the 90s were a paradise for cinephiles and movie lovers of all ages. From the thrilling action movies like Terminator 2 and Die Hard to the heartwarming family films like Home Alone and The Lion King, there was something for everyone. These channels brought the magic of the big screen into our homes, allowing us to experience some of the greatest movies of all time whenever we wanted. Today, these films remain timeless classics that continue to entertain and captivate audiences around the world."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls playNext={playNext} />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              jsonLength={jsonLength}
+              channelInfo="Movie TV channels from the 90s were a paradise for cinephiles and movie lovers of all ages. From the thrilling action movies like Terminator 2 and Die Hard to the heartwarming family films like Home Alone and The Lion King, there was something for everyone. These channels brought the magic of the big screen into our homes, allowing us to experience some of the greatest movies of all time whenever we wanted. Today, these films remain timeless classics that continue to entertain and captivate audiences around the world."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />
     </main>
   );
 }
-
 
 export async function getServerSideProps() {
   const apiKey = process.env.API_KEY;

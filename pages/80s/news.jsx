@@ -18,8 +18,9 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
 import newsJson from "../../data/news.json";
+import { info90s } from "@/data/infos";
 
-export default function News({news}) {
+export default function News({ news }) {
   const SEO = {
     title: "Classics TV | 90s News TV Channels",
     description: "",
@@ -48,11 +49,11 @@ export default function News({news}) {
       `/90s/news/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
-
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -79,25 +80,32 @@ export default function News({news}) {
             }}
           />
           <Tv />
-          <PageInfo />
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playNext={playNext}
-          />
-          <PlayInfo
-            jsonLength={jsonLength}
-            channelInfo="News channels from the 90s were a vital source of information for people all around the world. From CNN to BBC, they provided us with up-to-date coverage of major events, from wars and natural disasters to politics and entertainment. These channels helped us stay informed about the world around us and shaped our understanding of current affairs. They also gave us access to a wide range of perspectives and voices, expanding our understanding of global events and issues. Today, we still rely on news channels to keep us informed, but the channels from the 90s remain an important part of the history of journalism and media."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls playNext={playNext} />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              jsonLength={jsonLength}
+              channelInfo="News channels from the 90s were a vital source of information for people all around the world. From CNN to BBC, they provided us with up-to-date coverage of major events, from wars and natural disasters to politics and entertainment. These channels helped us stay informed about the world around us and shaped our understanding of current affairs. They also gave us access to a wide range of perspectives and voices, expanding our understanding of global events and issues. Today, we still rely on news channels to keep us informed, but the channels from the 90s remain an important part of the history of journalism and media."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />
     </main>
   );
 }
-
 
 export async function getServerSideProps() {
   const apiKey = process.env.API_KEY;

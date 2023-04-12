@@ -25,6 +25,7 @@ import specialsJson from "../../../data/specials.json";
 import { useRef } from "react";
 
 import screenfull from "screenfull";
+import { info90s } from "@/data/infos";
 
 export default function Video({ title }) {
   useScrollPosition();
@@ -65,10 +66,11 @@ export default function Video({ title }) {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/specials/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`, undefined, { scroll: false }
+      `/90s/specials/${nextVideoId}?${encodeURIComponent(
+        nextVideoTitle
+      ).replace(/%20/g, "")}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -80,10 +82,9 @@ export default function Video({ title }) {
     const prevVideoTitle = specials[videoIndex - 1].title;
 
     router.push(
-      `/90s/specials/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`
+      `/90s/specials/${prevVideoId}?${encodeURIComponent(
+        prevVideoTitle
+      ).replace(/%20/g, "")}`
     );
   };
 
@@ -164,26 +165,36 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo />
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playPrev={playPrev}
-            playNext={playNext}
-            videoIndex={videoIndex}
-            increaseVolume={increaseVolume}
-            decreaseVolume={decreaseVolume}
-            handleClickFullscreen={handleClickFullscreen}
-            toggleSkin={toggleSkin}
-          />
-          <PlayInfo
-            title={titleTab}
-            jsonLength={jsonLength}
-            year={year}
-            channelInfo="Specials TV channels from the 90s were a platform for some of the most groundbreaking and influential programs of the decade. From awards shows like the Oscars and the Grammys to special events like Live Aid and the Olympics, they brought us live coverage of some of the most significant moments in pop culture and world history. These channels provided us with a chance to witness history in the making, from the fall of the Berlin Wall to the inauguration of new presidents. They also brought us exclusive interviews and behind-the-scenes looks at the worlds of politics, entertainment, and sports. Whether you were a fan of music, sports, or current events, there was always something to watch on specials TV channels in the 90s. Even today, these programs continue to be a part of our cultural conversation, and they remain an important part of the television landscape."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls
+              playPrev={playPrev}
+              playNext={playNext}
+              videoIndex={videoIndex}
+              increaseVolume={increaseVolume}
+              decreaseVolume={decreaseVolume}
+              handleClickFullscreen={handleClickFullscreen}
+              toggleSkin={toggleSkin}
+            />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              title={titleTab}
+              jsonLength={jsonLength}
+              year={year}
+              channelInfo="Specials TV channels from the 90s were a platform for some of the most groundbreaking and influential programs of the decade. From awards shows like the Oscars and the Grammys to special events like Live Aid and the Olympics, they brought us live coverage of some of the most significant moments in pop culture and world history. These channels provided us with a chance to witness history in the making, from the fall of the Berlin Wall to the inauguration of new presidents. They also brought us exclusive interviews and behind-the-scenes looks at the worlds of politics, entertainment, and sports. Whether you were a fan of music, sports, or current events, there was always something to watch on specials TV channels in the 90s. Even today, these programs continue to be a part of our cultural conversation, and they remain an important part of the television landscape."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />

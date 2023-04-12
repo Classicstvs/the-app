@@ -80,18 +80,28 @@ export default function Soaps({soaps}) {
             }}
           />
           <Tv />
+          <div className={styles.pageInfo}>
           <PageInfo info={info90s} years="90s"/>
+          </div>
         </div>
         <div className={styles.rightSecton}>
+        <div className={styles.ad}>
           <Ad />
+          </div>
+          <div className={styles.channels}>
           <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
           <Controls
             playNext={playNext}
           />
+          </div>
+          <div className={styles.playInfo}>
           <PlayInfo
             jsonLength={jsonLength}
             channelInfo="Soap opera TV channels from the 90s were a mainstay of daytime television and provided viewers with a daily dose of drama, romance, and intrigue. From Days of Our Lives to General Hospital, they brought us stories that kept us glued to our screens, following the lives of our favorite characters as they navigated love triangles, family feuds, and other dramatic events. These channels provided us with an escape from our own lives, as we got lost in the twists and turns of the soap opera world. Whether you were a fan of classic shows or the latest new releases, there was always something to watch on soap opera TV channels in the 90s. Even today, these shows continue to attract loyal fans, and they remain a significant part of the daytime television landscape."
           />
+          </div>
         </div>
       </div>
       <CardsInfo />

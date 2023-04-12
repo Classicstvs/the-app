@@ -2,7 +2,7 @@ import Tv from "../../components/tv/Tv";
 import Channels from "@/components/channels/Channels";
 import Ad from "@/components/ad/Ad";
 
-import styles from "@/styles/Home.module.css";
+import styles from "../../styles/Home80s.module.css";
 
 import { channels } from "../../data/channelsList";
 import Controls from "@/components/controls/Controls";
@@ -12,18 +12,25 @@ import CardsInfo from "@/components/cardsInfo/CardsInfo";
 import { info80s } from "@/data/infos";
 
 export default function Home80s() {
-
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
           <Tv />
-          <PageInfo info={info80s} years="80s" />
+          <div className={styles.pageInfo}>
+            <PageInfo years="80s" info={info80s} />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls />
+          </div>
         </div>
       </div>
       <CardsInfo />

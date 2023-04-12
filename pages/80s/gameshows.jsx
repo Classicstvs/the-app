@@ -18,8 +18,9 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
 import gameshowsJson from "../../data/gameshows.json";
+import { info90s } from "@/data/infos";
 
-export default function Gameshows({gameshows}) {
+export default function Gameshows({ gameshows }) {
   const SEO = {
     title: "Classics TV | 90s Gameshows TV Channels ",
     description: "",
@@ -45,14 +46,13 @@ export default function Gameshows({gameshows}) {
     const nextVideoTitle = gameshows[videoIndex + 1].title;
 
     router.push(
-      `/90s/gameshows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`, undefined, { scroll: false }
+      `/90s/gameshows/${nextVideoId}?${encodeURIComponent(
+        nextVideoTitle
+      ).replace(/%20/g, "")}`,
+      undefined,
+      { scroll: false }
     );
   };
-
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -79,25 +79,32 @@ export default function Gameshows({gameshows}) {
             }}
           />
           <Tv />
-          <PageInfo />
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playNext={playNext}
-          />
-          <PlayInfo
-            jsonLength={jsonLength}
-            channelInfo="Game show TV channels from the 90s were a fun and exciting way to spend an afternoon or evening. From Jeopardy! to Wheel of Fortune, they brought us some of the most iconic game shows of all time, as well as new and innovative programs that kept us guessing and entertained. These channels gave us a chance to test our knowledge and skills, compete against other contestants, and win prizes ranging from cash to cars. Whether you were a fan of classic quiz shows or modern game shows with a twist, there was always something to watch on game show TV channels in the 90s. Today, these channels may not be as prevalent as they once were, but their legacy lives on in the many game shows that continue to entertain and captivate audiences today."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls playNext={playNext} />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              jsonLength={jsonLength}
+              channelInfo="Game show TV channels from the 90s were a fun and exciting way to spend an afternoon or evening. From Jeopardy! to Wheel of Fortune, they brought us some of the most iconic game shows of all time, as well as new and innovative programs that kept us guessing and entertained. These channels gave us a chance to test our knowledge and skills, compete against other contestants, and win prizes ranging from cash to cars. Whether you were a fan of classic quiz shows or modern game shows with a twist, there was always something to watch on game show TV channels in the 90s. Today, these channels may not be as prevalent as they once were, but their legacy lives on in the many game shows that continue to entertain and captivate audiences today."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />
     </main>
   );
 }
-
 
 export async function getServerSideProps() {
   const apiKey = process.env.API_KEY;

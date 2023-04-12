@@ -69,7 +69,9 @@ export default function Video({ title }) {
       `/90s/shows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -165,26 +167,36 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo info={info90s} years="90s"/>
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playPrev={playPrev}
-            playNext={playNext}
-            videoIndex={videoIndex}
-            increaseVolume={increaseVolume}
-            decreaseVolume={decreaseVolume}
-            handleClickFullscreen={handleClickFullscreen}
-            toggleSkin={toggleSkin}
-          />
-          <PlayInfo
-            title={titleTab}
-            jsonLength={jsonLength}
-            year={year}
-            channelInfo="TV show channels from the 90s were a treasure trove of beloved programs that still hold a special place in our hearts today. From Friends to Seinfeld, they brought us some of the most iconic and memorable sitcoms of all time, as well as dramas, sci-fi, and other genres that captured our imaginations. These channels gave us a chance to laugh, cry, and escape into different worlds, as we followed the lives of our favorite characters and got lost in their stories. Whether you were a fan of classic shows or the latest new releases, there was always something to watch on TV show channels in the 90s. Today, these shows continue to be a source of joy and nostalgia for those who grew up with them, and a new generation of viewers continue to discover and enjoy them today."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls
+              playPrev={playPrev}
+              playNext={playNext}
+              videoIndex={videoIndex}
+              increaseVolume={increaseVolume}
+              decreaseVolume={decreaseVolume}
+              handleClickFullscreen={handleClickFullscreen}
+              toggleSkin={toggleSkin}
+            />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              title={titleTab}
+              jsonLength={jsonLength}
+              year={year}
+              channelInfo="TV show channels from the 90s were a treasure trove of beloved programs that still hold a special place in our hearts today. From Friends to Seinfeld, they brought us some of the most iconic and memorable sitcoms of all time, as well as dramas, sci-fi, and other genres that captured our imaginations. These channels gave us a chance to laugh, cry, and escape into different worlds, as we followed the lives of our favorite characters and got lost in their stories. Whether you were a fan of classic shows or the latest new releases, there was always something to watch on TV show channels in the 90s. Today, these shows continue to be a source of joy and nostalgia for those who grew up with them, and a new generation of viewers continue to discover and enjoy them today."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />

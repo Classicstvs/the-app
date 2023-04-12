@@ -25,6 +25,7 @@ import talkshowsJson from "../../../data/talkshows.json";
 import { useRef } from "react";
 
 import screenfull from "screenfull";
+import { info90s } from "@/data/infos";
 
 export default function Video({ title }) {
   useScrollPosition();
@@ -65,10 +66,11 @@ export default function Video({ title }) {
     const nextVideoTitle = nextVideo.title;
 
     router.push(
-      `/90s/talkshows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`, undefined, { scroll: false }
+      `/90s/talkshows/${nextVideoId}?${encodeURIComponent(
+        nextVideoTitle
+      ).replace(/%20/g, "")}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -80,10 +82,9 @@ export default function Video({ title }) {
     const prevVideoTitle = talkshows[videoIndex - 1].title;
 
     router.push(
-      `/90s/talkshows/${prevVideoId}?${encodeURIComponent(prevVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`
+      `/90s/talkshows/${prevVideoId}?${encodeURIComponent(
+        prevVideoTitle
+      ).replace(/%20/g, "")}`
     );
   };
 
@@ -164,26 +165,36 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo />
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playPrev={playPrev}
-            playNext={playNext}
-            videoIndex={videoIndex}
-            increaseVolume={increaseVolume}
-            decreaseVolume={decreaseVolume}
-            handleClickFullscreen={handleClickFullscreen}
-            toggleSkin={toggleSkin}
-          />
-          <PlayInfo
-            title={titleTab}
-            jsonLength={jsonLength}
-            year={year}
-            channelInfo="Talk show TV channels from the 90s were a platform for some of the most influential and entertaining personalities of the decade. From Oprah to Jerry Springer, they brought us a wide range of guests and topics, from hard-hitting political discussions to lighthearted celebrity interviews. These channels gave us a chance to hear diverse perspectives and engage in debates and conversations that were both engaging and informative. They also provided us with a window into the lives of the rich and famous, as we watched our favorite celebrities reveal intimate details of their personal lives on air. Today, talk show TV channels continue to be a popular format, but those from the 90s remain a landmark in the history of television and popular culture."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls
+              playPrev={playPrev}
+              playNext={playNext}
+              videoIndex={videoIndex}
+              increaseVolume={increaseVolume}
+              decreaseVolume={decreaseVolume}
+              handleClickFullscreen={handleClickFullscreen}
+              toggleSkin={toggleSkin}
+            />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              title={titleTab}
+              jsonLength={jsonLength}
+              year={year}
+              channelInfo="Talk show TV channels from the 90s were a platform for some of the most influential and entertaining personalities of the decade. From Oprah to Jerry Springer, they brought us a wide range of guests and topics, from hard-hitting political discussions to lighthearted celebrity interviews. These channels gave us a chance to hear diverse perspectives and engage in debates and conversations that were both engaging and informative. They also provided us with a window into the lives of the rich and famous, as we watched our favorite celebrities reveal intimate details of their personal lives on air. Today, talk show TV channels continue to be a popular format, but those from the 90s remain a landmark in the history of television and popular culture."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />
@@ -204,7 +215,9 @@ export const getStaticPaths = async () => {
 
 export async function getStaticProps({ params }) {
   const { videoId } = params;
-  const { title } = talkshowsJson.talkshows.find((ad) => ad.videoId === videoId);
+  const { title } = talkshowsJson.talkshows.find(
+    (ad) => ad.videoId === videoId
+  );
 
   return {
     props: {

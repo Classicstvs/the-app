@@ -25,6 +25,7 @@ import newsJson from "../../../data/news.json";
 import { useRef } from "react";
 
 import screenfull from "screenfull";
+import { info90s } from "@/data/infos";
 
 export default function Video({ title }) {
   useScrollPosition();
@@ -68,7 +69,9 @@ export default function Video({ title }) {
       `/90s/news/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -164,26 +167,36 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo />
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playPrev={playPrev}
-            playNext={playNext}
-            videoIndex={videoIndex}
-            increaseVolume={increaseVolume}
-            decreaseVolume={decreaseVolume}
-            handleClickFullscreen={handleClickFullscreen}
-            toggleSkin={toggleSkin}
-          />
-          <PlayInfo
-            title={titleTab}
-            jsonLength={jsonLength}
-            year={year}
-            channelInfo="News channels from the 90s were a vital source of information for people all around the world. From CNN to BBC, they provided us with up-to-date coverage of major events, from wars and natural disasters to politics and entertainment. These channels helped us stay informed about the world around us and shaped our understanding of current affairs. They also gave us access to a wide range of perspectives and voices, expanding our understanding of global events and issues. Today, we still rely on news channels to keep us informed, but the channels from the 90s remain an important part of the history of journalism and media."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls
+              playPrev={playPrev}
+              playNext={playNext}
+              videoIndex={videoIndex}
+              increaseVolume={increaseVolume}
+              decreaseVolume={decreaseVolume}
+              handleClickFullscreen={handleClickFullscreen}
+              toggleSkin={toggleSkin}
+            />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              title={titleTab}
+              jsonLength={jsonLength}
+              year={year}
+              channelInfo="News channels from the 90s were a vital source of information for people all around the world. From CNN to BBC, they provided us with up-to-date coverage of major events, from wars and natural disasters to politics and entertainment. These channels helped us stay informed about the world around us and shaped our understanding of current affairs. They also gave us access to a wide range of perspectives and voices, expanding our understanding of global events and issues. Today, we still rely on news channels to keep us informed, but the channels from the 90s remain an important part of the history of journalism and media."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />

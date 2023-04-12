@@ -80,18 +80,28 @@ export default function Specials({specials}) {
             }}
           />
           <Tv />
+          <div className={styles.pageInfo}>
           <PageInfo info={info90s} years="90s"/>
+          </div>
         </div>
         <div className={styles.rightSecton}>
+        <div className={styles.ad}>
           <Ad />
+          </div>
+          <div className={styles.channels}>
           <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
           <Controls
             playNext={playNext}
           />
+         </div>
+         <div className={styles.playInfo}>
           <PlayInfo
             jsonLength={jsonLength}
             channelInfo="Specials TV channels from the 90s were a platform for some of the most groundbreaking and influential programs of the decade. From awards shows like the Oscars and the Grammys to special events like Live Aid and the Olympics, they brought us live coverage of some of the most significant moments in pop culture and world history. These channels provided us with a chance to witness history in the making, from the fall of the Berlin Wall to the inauguration of new presidents. They also brought us exclusive interviews and behind-the-scenes looks at the worlds of politics, entertainment, and sports. Whether you were a fan of music, sports, or current events, there was always something to watch on specials TV channels in the 90s. Even today, these programs continue to be a part of our cultural conversation, and they remain an important part of the television landscape."
           />
+          </div>
         </div>
       </div>
       <CardsInfo />

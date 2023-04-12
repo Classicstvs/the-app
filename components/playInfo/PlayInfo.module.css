@@ -67,8 +67,8 @@
     .playInfoContainer {
         margin: 0 auto;
         position: relative;
-        top: 222px;
-        margin-bottom: 42px;
+        /* top: 222px; */
+        /* margin-bottom: 42px; */
     }
 }
 
@@ -77,8 +77,7 @@
 
     .playInfoContainer {
         max-width: 585px;
-        position: relative;
-        top: 212px;
+        /* top: 212px; */
         margin: 0 auto;
     }
 }
@@ -86,8 +85,7 @@
 @media only screen and (max-width: 767px) {
     .playInfoContainer {
         max-width: 585px;
-        position: relative;
-        top: 10px;
+        /* top: 10px; */
         border-radius: 0px;
         padding: 33px 17px 17px 17px;
     }

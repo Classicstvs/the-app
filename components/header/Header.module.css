@@ -139,8 +139,18 @@
   }
 
   .nav .triangleUp {
-    top: 26px;
+    top: 26px ;
     right: 61.5%;
+  }
+
+   .nav .triangleUp2 {
+    top: 26px ;
+    right: 61.5%;
+  }
+
+    .nav .triangleUp3 {
+    top: 26px ;
+    right: 49.5%;
   }
 
 

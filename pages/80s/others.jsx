@@ -18,8 +18,9 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
 import othersJson from "../../data/others.json";
+import { info90s } from "@/data/infos";
 
-export default function Others({others}) {
+export default function Others({ others }) {
   const SEO = {
     title: "Classics TV | Other 90s TV Channels",
     description: "",
@@ -48,11 +49,11 @@ export default function Others({others}) {
       `/90s/others/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
-
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -79,25 +80,32 @@ export default function Others({others}) {
             }}
           />
           <Tv />
-          <PageInfo />
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playNext={playNext}
-          />
-          <PlayInfo
-            jsonLength={jsonLength}
-            channelInfo="Other TV channels from the 90s covered a wide variety of programming, catering to different interests and tastes. From educational channels like Discovery and National Geographic to lifestyle channels like HGTV and Food Network, there was always something to watch for viewers looking for something specific. These channels provided us with a wealth of information and entertainment, from documentaries on science and history to cooking shows and home renovation programs. They also helped us learn new skills and explore new interests. Whether you were a fan of travel, fashion, or gardening, there was always something to watch on other TV channels in the 90s. Even today, these channels continue to be a part of our television landscape, offering viewers a diverse range of programming and catering to a wide variety of interests."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls playNext={playNext} />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              jsonLength={jsonLength}
+              channelInfo="Other TV channels from the 90s covered a wide variety of programming, catering to different interests and tastes. From educational channels like Discovery and National Geographic to lifestyle channels like HGTV and Food Network, there was always something to watch for viewers looking for something specific. These channels provided us with a wealth of information and entertainment, from documentaries on science and history to cooking shows and home renovation programs. They also helped us learn new skills and explore new interests. Whether you were a fan of travel, fashion, or gardening, there was always something to watch on other TV channels in the 90s. Even today, these channels continue to be a part of our television landscape, offering viewers a diverse range of programming and catering to a wide variety of interests."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />
     </main>
   );
 }
-
 
 export async function getServerSideProps() {
   const apiKey = process.env.API_KEY;

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useCallback } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
@@ -18,9 +19,9 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
 import cartoonsJson from "../../data/cartoons.json";
-import { info80s } from "@/data/infos";
+import { info90s } from "@/data/infos";
 
-export default function Cartoons({cartoons}) {
+export default function Cartoons({ cartoons }) {
   const SEO = {
     title: "Classics TV | 90s Favourites Cartoons TV Channels",
     description: "",
@@ -39,19 +40,18 @@ export default function Cartoons({cartoons}) {
   // const [cartoons, setCatoons] = useState(cartoonsJson.cartoons);
   const [title, setTitle] = useState("");
 
-  const playNext = () => {
+  const playNext = useCallback(() => {
     setVideoIndex((prevIndex) => prevIndex + 1);
 
     const nextVideoId = cartoons[videoIndex + 1].videoId;
     const nextVideoTitle = cartoons[videoIndex + 1].title;
 
     router.push(
-      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`
+      `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
+        nextVideoTitle
+      ).replace(/%20/g, "")}`
     );
-  };
+  }, [cartoons, router, videoIndex]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -59,7 +59,7 @@ export default function Cartoons({cartoons}) {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [videoIndex]);
+  }, [playNext]);
 
   return (
     <main className={styles.main}>
@@ -78,14 +78,20 @@ export default function Cartoons({cartoons}) {
             }}
           />
           <Tv />
-          <PageInfo info={info80s} years="80s"/>
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playNext={playNext}
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls playNext={playNext} />
+          </div>
           <PlayInfo
             jsonLength={jsonLength}
             channelInfo="Cartoon TV channels from the 90s were a paradise for kids and adults alike who loved animated shows. From classic series like Looney Tunes and Tom and Jerry to modern hits like Animaniacs and Rugrats, they brought us some of the most memorable and iconic cartoon characters of all time. These channels provided us with a chance to escape into different worlds, filled with adventure, humor, and heartwarming stories that taught us important lessons. Whether you were a fan of superheroes, talking animals, or mischievous kids, there was always something to watch on cartoon TV channels in the 90s. Even today, these shows continue to hold a special place in the hearts of those who grew up with them, and they remain a beloved part of popular culture around the world."
@@ -96,7 +102,6 @@ export default function Cartoons({cartoons}) {
     </main>
   );
 }
-
 
 export async function getServerSideProps() {
   const apiKey = process.env.API_KEY;

@@ -69,7 +69,9 @@ export default function Video({ title }) {
       `/90s/sports/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -165,26 +167,36 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo info={info90s} years="90s"/>
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playPrev={playPrev}
-            playNext={playNext}
-            videoIndex={videoIndex}
-            increaseVolume={increaseVolume}
-            decreaseVolume={decreaseVolume}
-            handleClickFullscreen={handleClickFullscreen}
-            toggleSkin={toggleSkin}
-          />
-          <PlayInfo
-            title={titleTab}
-            jsonLength={jsonLength}
-            year={year}
-            channelInfo="Sports TV channels from the 90s were a dream come true for sports fans everywhere. From ESPN to Sky Sports, they brought us live coverage of some of the most exciting sports events of the decade, from the Olympics to the World Cup. These channels allowed us to cheer on our favorite teams and athletes from the comfort of our own homes, and provided us with expert analysis and commentary on the games. Whether you were a fan of basketball, football, or any other sport, there was always something to watch on sports TV channels in the 90s. Today, these channels continue to be an important part of the sports media landscape, providing us with access to live games, highlights, and expert analysis."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls
+              playPrev={playPrev}
+              playNext={playNext}
+              videoIndex={videoIndex}
+              increaseVolume={increaseVolume}
+              decreaseVolume={decreaseVolume}
+              handleClickFullscreen={handleClickFullscreen}
+              toggleSkin={toggleSkin}
+            />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              title={titleTab}
+              jsonLength={jsonLength}
+              year={year}
+              channelInfo="Sports TV channels from the 90s were a dream come true for sports fans everywhere. From ESPN to Sky Sports, they brought us live coverage of some of the most exciting sports events of the decade, from the Olympics to the World Cup. These channels allowed us to cheer on our favorite teams and athletes from the comfort of our own homes, and provided us with expert analysis and commentary on the games. Whether you were a fan of basketball, football, or any other sport, there was always something to watch on sports TV channels in the 90s. Today, these channels continue to be an important part of the sports media landscape, providing us with access to live games, highlights, and expert analysis."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />

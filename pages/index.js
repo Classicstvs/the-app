@@ -12,18 +12,25 @@ import CardsInfo from "@/components/cardsInfo/CardsInfo";
 import { info90s } from "@/data/infos";
 
 export default function Home() {
-
   return (
     <main className={styles.main}>
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
           <Tv />
-          <PageInfo years="90s" info={info90s}/>
+          <div className={styles.pageInfo}>
+          <PageInfo years="90s" info={info90s} />
+          </div>
         </div>
         <div className={styles.rightSecton}>
+          <div className={styles.ad}>
           <Ad />
+          </div>
+          <div className={styles.channels}>
           <Channels channels={channels} />
-          <Controls />
+          </div>
+          <div className={styles.controls}>
+            <Controls />
+          </div>
         </div>
       </div>
       <CardsInfo />

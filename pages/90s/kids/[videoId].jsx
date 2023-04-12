@@ -69,7 +69,9 @@ export default function Video({ title }) {
       `/90s/kids/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -165,26 +167,36 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo info={info90s} years="90s"/>
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playPrev={playPrev}
-            playNext={playNext}
-            videoIndex={videoIndex}
-            increaseVolume={increaseVolume}
-            decreaseVolume={decreaseVolume}
-            handleClickFullscreen={handleClickFullscreen}
-            toggleSkin={toggleSkin}
-          />
-          <PlayInfo
-            title={titleTab}
-            jsonLength={jsonLength}
-            year={year}
-            channelInfo="Kids TV channels from the 90s were a wonderland of fantastic shows that children loved to watch. From beloved classics like Pokemon and Sailor Moon to iconic series like Teenage Mutant Ninja Turtles and The Animaniacs, they filled our afternoons with adventure, humor, and excitement. Even today, these shows remain a source of joy and nostalgia for adults who grew up with them and continue to delight a new generation of children."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls
+              playPrev={playPrev}
+              playNext={playNext}
+              videoIndex={videoIndex}
+              increaseVolume={increaseVolume}
+              decreaseVolume={decreaseVolume}
+              handleClickFullscreen={handleClickFullscreen}
+              toggleSkin={toggleSkin}
+            />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              title={titleTab}
+              jsonLength={jsonLength}
+              year={year}
+              channelInfo="Kids TV channels from the 90s were a wonderland of fantastic shows that children loved to watch. From beloved classics like Pokemon and Sailor Moon to iconic series like Teenage Mutant Ninja Turtles and The Animaniacs, they filled our afternoons with adventure, humor, and excitement. Even today, these shows remain a source of joy and nostalgia for adults who grew up with them and continue to delight a new generation of children."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />

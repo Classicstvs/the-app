@@ -69,7 +69,9 @@ export default function Video({ title }) {
       `/90s/music/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -165,26 +167,36 @@ export default function Video({ title }) {
             player={player}
           />
           <Tv skin={skin} />
-          <PageInfo info={info90s} years="90s"/>
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playPrev={playPrev}
-            playNext={playNext}
-            videoIndex={videoIndex}
-            increaseVolume={increaseVolume}
-            decreaseVolume={decreaseVolume}
-            handleClickFullscreen={handleClickFullscreen}
-            toggleSkin={toggleSkin}
-          />
-          <PlayInfo
-            title={titleTab}
-            jsonLength={jsonLength}
-            year={year}
-            channelInfo="Music TV channels from the 90s were a revolution in the way we consumed music and entertainment. From MTV to VH1, they brought us music videos, live performances, and interviews with some of the biggest names in the music industry. These channels allowed us to discover new artists, stay up-to-date with the latest music trends, and connect with other fans who shared our love of music. Whether you were a fan of rock, pop, hip hop, or any other genre, there was always something to watch on music TV channels in the 90s. They also gave us a glimpse into the lifestyles of our favorite musicians, and helped shape the fashion and cultural trends of the decade. Today, music channels may have evolved and expanded, but those from the 90s remain an iconic part of the music and entertainment industry."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls
+              playPrev={playPrev}
+              playNext={playNext}
+              videoIndex={videoIndex}
+              increaseVolume={increaseVolume}
+              decreaseVolume={decreaseVolume}
+              handleClickFullscreen={handleClickFullscreen}
+              toggleSkin={toggleSkin}
+            />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              title={titleTab}
+              jsonLength={jsonLength}
+              year={year}
+              channelInfo="Music TV channels from the 90s were a revolution in the way we consumed music and entertainment. From MTV to VH1, they brought us music videos, live performances, and interviews with some of the biggest names in the music industry. These channels allowed us to discover new artists, stay up-to-date with the latest music trends, and connect with other fans who shared our love of music. Whether you were a fan of rock, pop, hip hop, or any other genre, there was always something to watch on music TV channels in the 90s. They also gave us a glimpse into the lifestyles of our favorite musicians, and helped shape the fashion and cultural trends of the decade. Today, music channels may have evolved and expanded, but those from the 90s remain an iconic part of the music and entertainment industry."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />

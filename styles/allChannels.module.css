@@ -164,6 +164,50 @@
         top: 50px !important;
         left: 88px !important;
     }
+    .playInfo{
+        position: relative;
+        top: 221px;
+    }
+
+    .pageInfo{
+        display: none;
+    }
+    .channels, .controls, .ad {
+        position: relative;
+    }
+
+    .channels {
+        top: -2px;
+    }
+
+    .controls {
+        top: 9px;
+    }
+
+    .ad {
+        top: 324px;
+    }
+
+    .videoPlayer{
+        top: 48px !important;
+        left: 91px !important;
+    }
+
+    .reactPlayer {
+        width: 611px !important;
+        height: 466px !important;
+    }
+
+}
+
+@media only screen and (max-width: 770px) {
+    .videoPlayer{
+        left: 67px !important;
+    }
+    .leftSecton>img {
+
+        left: 67px !important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -201,6 +245,30 @@
                 #3F3C3C 29%,
                 #D9D9D91F 0%,
                 #D9D9D91F 100%);
+    }
+
+    .pageInfo{
+        display: none !important;
+    }
+
+    .channels, .controls, .ad, .playInfo {
+        position: relative;
+    }
+
+    .channels {
+        top: -168px;
+    }
+
+    .controls {
+        top: -165px;
+    }
+
+    .ad {
+        top: 128px;
+    }
+
+    .playInfo{
+        top:39px
     }
 
 }

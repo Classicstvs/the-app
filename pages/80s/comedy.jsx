@@ -18,8 +18,9 @@ import CardsInfo from "../../components/cardsInfo/CardsInfo";
 
 import { channels } from "../../data/channelsList";
 import comedyJson from "../../data/comedy.json";
+import { info90s } from "@/data/infos";
 
-export default function Comedy({comedy}) {
+export default function Comedy({ comedy }) {
   const SEO = {
     title: "Classics TV  | Classics TV | 90s Funniests Comedy TV Channels",
     description: "",
@@ -48,11 +49,11 @@ export default function Comedy({comedy}) {
       `/90s/comedy/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
-
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -79,25 +80,32 @@ export default function Comedy({comedy}) {
             }}
           />
           <Tv />
-          <PageInfo />
+          <div className={styles.pageInfo}>
+            <PageInfo info={info90s} years="90s" />
+          </div>
         </div>
         <div className={styles.rightSecton}>
-          <Ad />
-          <Channels channels={channels} />
-          <Controls
-            playNext={playNext}
-          />
-          <PlayInfo
-            jsonLength={jsonLength}
-            channelInfo="The 90s was a decade of great comedy television channels, featuring some of the most beloved and iconic sitcoms of all time. Networks like NBC, ABC, and FOX brought us shows that made us laugh, cry, and think, with memorable characters and hilarious writing that still holds up today. From family-friendly sitcoms to edgier, more irreverent fare, these channels paved the way for the future of comedy television and left a lasting impact on popular culture."
-          />
+          <div className={styles.ad}>
+            <Ad />
+          </div>
+          <div className={styles.channels}>
+            <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
+            <Controls playNext={playNext} />
+          </div>
+          <div className={styles.playInfo}>
+            <PlayInfo
+              jsonLength={jsonLength}
+              channelInfo="The 90s was a decade of great comedy television channels, featuring some of the most beloved and iconic sitcoms of all time. Networks like NBC, ABC, and FOX brought us shows that made us laugh, cry, and think, with memorable characters and hilarious writing that still holds up today. From family-friendly sitcoms to edgier, more irreverent fare, these channels paved the way for the future of comedy television and left a lasting impact on popular culture."
+            />
+          </div>
         </div>
       </div>
       <CardsInfo />
     </main>
   );
 }
-
 
 export async function getServerSideProps() {
   const apiKey = process.env.API_KEY;

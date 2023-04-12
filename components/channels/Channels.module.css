@@ -8,7 +8,7 @@
 @media only screen and (max-width: 1440px) {
     .channelsContainer {
         gap: 1%;
-        margin: 12px 0 0 0;
+        /* margin: 12px 0 0 0; */
     }
 }
 
@@ -19,7 +19,7 @@
         flex-wrap: nowrap;
         gap: 1%;
         overflow: overlay;
-        margin: 25px 0 0 0;
+        /* margin: 25px 0 0 0; */
     }
 }
 
@@ -28,7 +28,7 @@
 @media only screen and (max-width: 810px) {
 
     .channelsContainer {
-        margin: 21px 0 0 0;
+        /* margin: 21px 0 0 0; */
 
     }
 
@@ -44,15 +44,11 @@
         flex-wrap: nowrap;
         gap: 3%;
         overflow: auto;
-        margin: 55px 0 0 0;
-        position: relative;
-        top: -216px;
+        /* margin: 55px 0 0 0; */
+        /* top: -197px; */
+        margin: 0;
+        padding: 0;
+
     }
 
 }
-
-/* @media only screen and (max-width: 450px) {
-    .channelsContainer {
-        top: -481px;
-    }
-} */

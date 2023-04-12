@@ -80,18 +80,28 @@ export default function Talkshows({talkshows}) {
             }}
           />
           <Tv />
+          <div className={styles.pageInfo}>
           <PageInfo info={info90s} years="90s"/>
+          </div>
         </div>
         <div className={styles.rightSecton}>
+        <div className={styles.ad}>
           <Ad />
+          </div>
+          <div className={styles.channels}>
           <Channels channels={channels} />
+          </div>
+          <div className={styles.controls}>
           <Controls
             playNext={playNext}
           />
+          </div>
+          <div className={styles.playInfo}>
           <PlayInfo
             jsonLength={jsonLength}
             channelInfo="Talk show TV channels from the 90s were a platform for some of the most influential and entertaining personalities of the decade. From Oprah to Jerry Springer, they brought us a wide range of guests and topics, from hard-hitting political discussions to lighthearted celebrity interviews. These channels gave us a chance to hear diverse perspectives and engage in debates and conversations that were both engaging and informative. They also provided us with a window into the lives of the rich and famous, as we watched our favorite celebrities reveal intimate details of their personal lives on air. Today, talk show TV channels continue to be a popular format, but those from the 90s remain a landmark in the history of television and popular culture."
           />
+          </div>
         </div>
       </div>
       <CardsInfo />
