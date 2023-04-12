@@ -15,10 +15,9 @@ export default function Document() {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="228" />
         <meta property="og:image:height" content="122" />
-        <meta name="description" content="" />
-        <meta property="og:title" content="" />
-        {/* page url */}
-        <meta property="og:url" content="" />
+        <meta name="description" content="Relive the golden age of television with our classic TV channels from the past. Big collection of vintage TV channels will transport you back in time. Tune in to our channels and enjoy the best of classic TV from the 50s, 60s, 70s, 80s, 90s, and 2000s." />
+        <meta property="og:title" content="Classics TV" />
+        <meta property="og:url" content="www.classicstv.net" />
         <meta property="og:type" content="website" />
       </Head>
       <body>
