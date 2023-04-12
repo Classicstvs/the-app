@@ -49,9 +49,7 @@ export default function Kids({ kids }) {
       `/90s/kids/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`,
-      undefined,
-      { scroll: false }
+      )}`
     );
   };
 

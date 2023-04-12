@@ -69,9 +69,7 @@ export default function Video({ title }) {
       `/90s/movies/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`,
-      undefined,
-      { scroll: false }
+      )}`
     );
   };
 

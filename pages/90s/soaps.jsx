@@ -49,7 +49,7 @@ export default function Soaps({soaps}) {
       `/90s/soaps/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`
     );
   };
 

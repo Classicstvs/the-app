@@ -49,7 +49,7 @@ export default function Ads({ ads }) {
       `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`, undefined, { scroll: false }
+      )}`
     );
   };
 
