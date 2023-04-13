@@ -1,18 +1,3511 @@
 {
     "news": [
-        {
-            "title": "KSDK St. Louis Commercials w/ local news break - 1993",
-            "videoId": "CZcEa6aJK7M",
-            "year": "1993",
-            "description": "        ",
-            "id": 1
-        },
-        {
-            "title": "KSDK St. Louis Commercials w/ local news break - 1993",
-            "videoId": "VWpfJ6VvSsg",
-            "year": "1993",
-            "description": "        ",
-            "id": 2
-        }
+      {
+        "title": "WHAS 5:30 Action 11 News Louisville KY Complete w/Commercials March 26 1990",
+        "videoId": "n3Hc0dFIQSo",
+        "year": "1990",
+        "description": "        ",
+        "id": 1
+      },
+      {
+        "title": "ITN News start - From a satellite feed recorded on November 29 1990",
+        "videoId": "7Ex8b65mToc",
+        "year": "1990",
+        "description": "        ",
+        "id": 2
+      },
+      {
+        "title": "WJBK TV TV 2 Eyewitness Newsbreak 6:55am December 20, 1990",
+        "videoId": "JkOgT1nA6Go",
+        "year": "1990",
+        "description": "        ",
+        "id": 3
+      },
+      {
+        "title": "3/9/1990 KTVK Newscast 80% complete (last 80% no open)",
+        "videoId": "zeOiLL8qCGk",
+        "year": "1990",
+        "description": "        ",
+        "id": 4
+      },
+      {
+        "title": "CBS Evening News July 19, 1990 Part 2",
+        "videoId": "mjz5KJ9R74k",
+        "year": "1990",
+        "description": "        ",
+        "id": 5
+      },
+      {
+        "title": "WAFB Newsline 9 10 PM news open November 1990 (Newschannel, Baton Rouge)",
+        "videoId": "fDNWya3nWC0",
+        "year": "1990",
+        "description": "        ",
+        "id": 6
+      },
+      {
+        "title": "Nixon on Larry King Live 1990",
+        "videoId": "JcO7OaiQeTo",
+        "year": "1990",
+        "description": "        ",
+        "id": 7
+      },
+      {
+        "title": "TV Commercials + News  April 29th, 1990",
+        "videoId": "s9NjDtub_Fc",
+        "year": "1990",
+        "description": "        ",
+        "id": 8
+      },
+      {
+        "title": "KLM TV Juli 1990",
+        "videoId": "QyMbLztPVqE",
+        "year": "1990",
+        "description": "        ",
+        "id": 9
+      },
+      {
+        "title": "KJRH 2 Tulsa Tornado Alley 1990",
+        "videoId": "o80seAStsTc",
+        "year": "1990",
+        "description": "        ",
+        "id": 10
+      },
+      {
+        "title": "5/5/1990 WRC Channel 4 Washington DC Promos & News Tease",
+        "videoId": "2Zo2jevmImE",
+        "year": "1990",
+        "description": "        ",
+        "id": 11
+      },
+      {
+        "title": "Promoting the 1st Top Ten Book on Letterman & Live at Five, October 9, 1990",
+        "videoId": "5JqAs_UASYk",
+        "year": "1990",
+        "description": "        ",
+        "id": 12
+      },
+      {
+        "title": "Turgut Özal - 1990 interview with CNN about Iraq Crisis",
+        "videoId": "6qy_hwTIWvM",
+        "year": "1990",
+        "description": "        ",
+        "id": 13
+      },
+      {
+        "title": "OLD NEWS BROADCAST - CBS - JUNE 5, 1990",
+        "videoId": "ZEKbo7skRr4",
+        "year": "1990",
+        "description": "        ",
+        "id": 14
+      },
+      {
+        "title": "The Lively Arts: Eduardo Lopez-'Spanish Eyes' (December 2, 1990)",
+        "videoId": "rSFGQcQDi-Q",
+        "year": "1990",
+        "description": "        ",
+        "id": 15
+      },
+      {
+        "title": "Roma Torre: News 12 Compilation (Circa 1990)",
+        "videoId": "IvULCBO8BnQ",
+        "year": "1990",
+        "description": "        ",
+        "id": 16
+      },
+      {
+        "title": "WMAQ TV NBC Channel 5 News at Noon Chicago June 1, 1990",
+        "videoId": "tzqaIsLhQGY",
+        "year": "1990",
+        "description": "        ",
+        "id": 17
+      },
+      {
+        "title": "CBS Evening News July 19, 1990 Part 1",
+        "videoId": "tF8oa9AvBAs",
+        "year": "1990",
+        "description": "        ",
+        "id": 18
+      },
+      {
+        "title": "4/2/1990 AMC Newsreel Theater \"Spring 1950 Base Ball - Play Ball\"",
+        "videoId": "ElktnmwQGLQ",
+        "year": "1990",
+        "description": "        ",
+        "id": 19
+      },
+      {
+        "title": "Financial News Network ( FNN ) Primtime Promo Feb. 1990",
+        "videoId": "qWRm7K3NwAw",
+        "year": "1990",
+        "description": "        ",
+        "id": 20
+      },
+      {
+        "title": "KING-TV: Thanksgiving 1990-A Weekend To Remember",
+        "videoId": "lXUI2Qw53XA",
+        "year": "1990",
+        "description": "        ",
+        "id": 21
+      },
+      {
+        "title": "KJRH 2 Midday Oklahoma November 23, 1990",
+        "videoId": "OkU3TCqn_U8",
+        "year": "1990",
+        "description": "        ",
+        "id": 22
+      },
+      {
+        "title": "KPRC TV Channel 2 Ron Stone's Scene at Five Houston February 20, 1990",
+        "videoId": "BWANROW3KwE",
+        "year": "1990",
+        "description": "        ",
+        "id": 23
+      },
+      {
+        "title": "CNN - Iraqi War Begins - August 2, 1990 - Part 2",
+        "videoId": "K8Qh4cQiCEg",
+        "year": "1990",
+        "description": "        ",
+        "id": 24
+      },
+      {
+        "title": "KLM TV September 1990",
+        "videoId": "OpK8U12vkq8",
+        "year": "1990",
+        "description": "        ",
+        "id": 25
+      },
+      {
+        "title": "Gang shooting at Manual arts high school in 1990",
+        "videoId": "8UH8lRTPS9k",
+        "year": "1990",
+        "description": "        ",
+        "id": 26
+      },
+      {
+        "title": "OLD NEWS BROADCAST - CBS - FEBRUARY 20, 1990",
+        "videoId": "cpoicM_vze0",
+        "year": "1990",
+        "description": "        ",
+        "id": 27
+      },
+      {
+        "title": "KOTV 6 The News on 6 The 6 O'Clock Edition Partial Show Tulsa August 8, 1990",
+        "videoId": "BhukWY4RX1w",
+        "year": "1990",
+        "description": "        ",
+        "id": 28
+      },
+      {
+        "title": "NBC News Today August 8, 1990",
+        "videoId": "BRLUJIW2kK4",
+        "year": "1990",
+        "description": "        ",
+        "id": 29
+      },
+      {
+        "title": "OLD NEWS BROADCAST - NBC - JANUARY 3, 1990",
+        "videoId": "yr9e7wBjMJ0",
+        "year": "1990",
+        "description": "        ",
+        "id": 30
+      },
+      {
+        "title": "WETM-TV 18 11:00 Report July 10, 1990",
+        "videoId": "HFRFbmVpBpM",
+        "year": "1990",
+        "description": "        ",
+        "id": 31
+      },
+      {
+        "title": "MacNeil/Lehrer Newshour Funding & Closing (1990)/ PBS ID (1989)",
+        "videoId": "24K43oNWMvg",
+        "year": "1990",
+        "description": "        ",
+        "id": 32
+      },
+      {
+        "title": "WLS-TV Eyewitness News Tonight (5/16/1990)",
+        "videoId": "U--LNTrm5bI",
+        "year": "1990",
+        "description": "        ",
+        "id": 33
+      },
+      {
+        "title": "WBRZ 1990 news open (On Your Side)",
+        "videoId": "CPUhJah_U4M",
+        "year": "1990",
+        "description": "        ",
+        "id": 34
+      },
+      {
+        "title": "One Network News Update 1990",
+        "videoId": "kDVhc-VrlQw",
+        "year": "1990",
+        "description": "        ",
+        "id": 35
+      },
+      {
+        "title": "WGRZ Channel 2 Buffalo - News [Partial] - 1990",
+        "videoId": "Us2rc3BTR3k",
+        "year": "1990",
+        "description": "        ",
+        "id": 36
+      },
+      {
+        "title": "NBC News Brief Iraq Chuck Scarborough (December 1990)",
+        "videoId": "OjgxE1NqIo8",
+        "year": "1990",
+        "description": "        ",
+        "id": 37
+      },
+      {
+        "title": "39KHTV Houston TV News October 2, 1990",
+        "videoId": "b8v2CP1_fuU",
+        "year": "1990",
+        "description": "        ",
+        "id": 38
+      },
+      {
+        "title": "CBS Evening News January 19, 1990 part 1",
+        "videoId": "iVncpaZWxZE",
+        "year": "1990",
+        "description": "        ",
+        "id": 39
+      },
+      {
+        "title": "WNEV 11 PM News- February 9, 1990 (partial)",
+        "videoId": "0fyICjWG7KM",
+        "year": "1990",
+        "description": "        ",
+        "id": 40
+      },
+      {
+        "title": "ABC World News Tonight With Peter Jennings Open July 6, 1990",
+        "videoId": "uyBoorfDL9U",
+        "year": "1990",
+        "description": "        ",
+        "id": 41
+      },
+      {
+        "title": "KSAT news clip (March 1990)",
+        "videoId": "z6P_fvqNNb8",
+        "year": "1990",
+        "description": "        ",
+        "id": 42
+      },
+      {
+        "title": "OLD NEWS BROADCAST - NBC - JUNE 11, 1990",
+        "videoId": "OFSBLqn8AFs",
+        "year": "1990",
+        "description": "        ",
+        "id": 43
+      },
+      {
+        "title": "OLD NEWS BROADCAST - ABC - JUNE 28, 1990",
+        "videoId": "s4DnyWLQjXI",
+        "year": "1990",
+        "description": "        ",
+        "id": 44
+      },
+      {
+        "title": "CBC Television CBC at 11 Toronto December 21, 1990",
+        "videoId": "AFNf4axKbVw",
+        "year": "1990",
+        "description": "        ",
+        "id": 45
+      },
+      {
+        "title": "KTUL 8 News at 10 Tulsa November 30, 1990",
+        "videoId": "4SOE4seo-0Y",
+        "year": "1990",
+        "description": "        ",
+        "id": 46
+      },
+      {
+        "title": "11/9/1990 KPNX Tonight Newscast Channel 12 (open and 1st 3min)  Phoenix,AZ",
+        "videoId": "j4UPWCl0vqE",
+        "year": "1990",
+        "description": "        ",
+        "id": 47
+      },
+      {
+        "title": "WHEC 6 PM News- May 21, 1990 (most)",
+        "videoId": "ZCrhWxqDSbc",
+        "year": "1990",
+        "description": "        ",
+        "id": 48
+      },
+      {
+        "title": "WBBM-TV Chicago - The 5 O'Clock News (May 15, 1990)",
+        "videoId": "Cj6hRfxv92k",
+        "year": "1990",
+        "description": "        ",
+        "id": 49
+      },
+      {
+        "title": "CKVR Total News - Friday, Nov. 9th 1990",
+        "videoId": "Neae--wgNjg",
+        "year": "1990",
+        "description": "        ",
+        "id": 50
+      },
+      {
+        "title": "WCBS TV CBS 2 News at 6 New York June 1991",
+        "videoId": "myE1ueGlY5M",
+        "year": "1991",
+        "description": "        ",
+        "id": 51
+      },
+      {
+        "title": "WABC TV 7 Eyewitness News At 5 New York June 1991",
+        "videoId": "ZK9k2q2YM6s",
+        "year": "1991",
+        "description": "        ",
+        "id": 52
+      },
+      {
+        "title": "News 5 Rochester - The 10 O'Clock Report (1991)",
+        "videoId": "5nz9NO0q-Kc",
+        "year": "1991",
+        "description": "        ",
+        "id": 53
+      },
+      {
+        "title": "CBC's The Journal, Mar 14 1991 (Part 1 of 2)",
+        "videoId": "P8k7qo_v8jQ",
+        "year": "1991",
+        "description": "        ",
+        "id": 54
+      },
+      {
+        "title": "ABC News The Gulf War February 23, 1991 Partial",
+        "videoId": "MjNZ2_URDnA",
+        "year": "1991",
+        "description": "        ",
+        "id": 55
+      },
+      {
+        "title": "FNN Shoptalk April 1991",
+        "videoId": "rUoBLFG7XOA",
+        "year": "1991",
+        "description": "        ",
+        "id": 56
+      },
+      {
+        "title": "Pan Am shut down on this day in 1991 | Eyewitness News Vault",
+        "videoId": "b-KarUJQ6v0",
+        "year": "1991",
+        "description": "        ",
+        "id": 57
+      },
+      {
+        "title": "CNN Gulf War Coverage January 17, 1991",
+        "videoId": "sdBHUO_IqNQ",
+        "year": "1991",
+        "description": "        ",
+        "id": 58
+      },
+      {
+        "title": "WSVN TV Channel 7 News at 6:30 Partial Show Miami July 2, 1991",
+        "videoId": "46uolR-lfow",
+        "year": "1991",
+        "description": "        ",
+        "id": 59
+      },
+      {
+        "title": "WWL-TV CH4 Eyewitness News Nightwatch March 1, 1991",
+        "videoId": "2yf_yYg8D34",
+        "year": "1991",
+        "description": "        ",
+        "id": 60
+      },
+      {
+        "title": "WXYZ TV Channel 7 Action News 5pm Detroit December 24, 1991",
+        "videoId": "pAlZTVEMnWI",
+        "year": "1991",
+        "description": "        ",
+        "id": 61
+      },
+      {
+        "title": "9/21/1991 WJW Channel NewsCenter 8 News Teases and Promos Cleveland Ohio",
+        "videoId": "q_nt7wzcOTE",
+        "year": "1991",
+        "description": "        ",
+        "id": 62
+      },
+      {
+        "title": "WHYY News (July 8, 1991)",
+        "videoId": "TsGSf910Fk0",
+        "year": "1991",
+        "description": "        ",
+        "id": 63
+      },
+      {
+        "title": "KABC TV Channel 7 Eyewitness News This Morning 6:30am Gates Bombshell Los Angeles July 12, 1991",
+        "videoId": "yMVEBwpF1Ec",
+        "year": "1991",
+        "description": "        ",
+        "id": 64
+      },
+      {
+        "title": "CBS Evening News February 14, 1991 Part 2",
+        "videoId": "qpuRmkygnac",
+        "year": "1991",
+        "description": "        ",
+        "id": 65
+      },
+      {
+        "title": "CTV News - Nov. 10th 1991 [Partial]",
+        "videoId": "FAMwT_KbhU4",
+        "year": "1991",
+        "description": "        ",
+        "id": 66
+      },
+      {
+        "title": "KCBS TV Channel 2 Action News Nightcast 11pm Los Angeles July 12, 1991",
+        "videoId": "2C4yMfU1HpY",
+        "year": "1991",
+        "description": "        ",
+        "id": 67
+      },
+      {
+        "title": "George Bush Gulf War Speech 1991",
+        "videoId": "fR_9aICL8xM",
+        "year": "1991",
+        "description": "        ",
+        "id": 68
+      },
+      {
+        "title": "WSVN TV Channel 7 News at 10pm Eastern Airlines Shutdown Coverage January 18, 1991",
+        "videoId": "OfjVo5kk0jc",
+        "year": "1991",
+        "description": "        ",
+        "id": 69
+      },
+      {
+        "title": "1991 NBC Soviet Union Fall News Statues Removed Clip",
+        "videoId": "3nHWXWi6Qz4",
+        "year": "1991",
+        "description": "        ",
+        "id": 70
+      },
+      {
+        "title": "CBC Newsworld The CBC Morning News Toronto December 24, 1991",
+        "videoId": "S_EW4VxjE_0",
+        "year": "1991",
+        "description": "        ",
+        "id": 71
+      },
+      {
+        "title": "Battle of Khafji Gulf War 1991",
+        "videoId": "B7RSf2iDpyw",
+        "year": "1991",
+        "description": "        ",
+        "id": 72
+      },
+      {
+        "title": "NBC Today Miami 8:30am January 18, 1991",
+        "videoId": "TT5vWF0iWNg",
+        "year": "1991",
+        "description": "        ",
+        "id": 73
+      },
+      {
+        "title": "San Diego friends remember Dr. Seuss after his death in 1991",
+        "videoId": "JmAMCcvjVR8",
+        "year": "1991",
+        "description": "        ",
+        "id": 74
+      },
+      {
+        "title": "KNBC TV Channel 4 News 11pm Partial Show Los Angeles July 6, 1991",
+        "videoId": "bttbb7YzOMs",
+        "year": "1991",
+        "description": "        ",
+        "id": 75
+      },
+      {
+        "title": "KCBS TV Channel 2 Action News at 6pm Los Angeles July 8, 1991",
+        "videoId": "j5OrU_5VMlY",
+        "year": "1991",
+        "description": "        ",
+        "id": 76
+      },
+      {
+        "title": "NBC Nightly News With Tom Brokaw Miami December 18, 1991",
+        "videoId": "XkjRuJGgrW4",
+        "year": "1991",
+        "description": "        ",
+        "id": 77
+      },
+      {
+        "title": "Weather Channel Business Travel Forecast June 22, 1991",
+        "videoId": "vHVpTyVjb30",
+        "year": "1991",
+        "description": "        ",
+        "id": 78
+      },
+      {
+        "title": "ABC World News August 16, 1991 Part 2.",
+        "videoId": "IdTSAucWypA",
+        "year": "1991",
+        "description": "        ",
+        "id": 79
+      },
+      {
+        "title": "Gulf War Coverage from CNN - January 17, 1991 (Part 1)",
+        "videoId": "GTfpaTvrWXE",
+        "year": "1991",
+        "description": "        ",
+        "id": 80
+      },
+      {
+        "title": "NBC Today America At War 7am January 17, 1991",
+        "videoId": "7Dw5P-wPQpU",
+        "year": "1991",
+        "description": "        ",
+        "id": 81
+      },
+      {
+        "title": "WATE-TV 6pm News, February 3, 1991",
+        "videoId": "dDkGNU7kgUE",
+        "year": "1991",
+        "description": "        ",
+        "id": 82
+      },
+      {
+        "title": "WCIX TV Channel 6 Action News at 6pm Countdown To War Miami January 14, 1991",
+        "videoId": "Xcr__f2FFvI",
+        "year": "1991",
+        "description": "        ",
+        "id": 83
+      },
+      {
+        "title": "CNN Special Report US Air Flight 1493 Crash Coverage February 1, 1991",
+        "videoId": "ylqJCtGW0Xs",
+        "year": "1991",
+        "description": "        ",
+        "id": 84
+      },
+      {
+        "title": "KCBS TV Channel 2 Action News AM 6am Los Angeles July 10, 1991",
+        "videoId": "FdP8GpvTxb8",
+        "year": "1991",
+        "description": "        ",
+        "id": 85
+      },
+      {
+        "title": "CNN Gulf War In Iraq February 1991",
+        "videoId": "bjrn3u_WDvQ",
+        "year": "1991",
+        "description": "        ",
+        "id": 86
+      },
+      {
+        "title": "CNN Gulf War Evening Coverage January 18, 1991",
+        "videoId": "XpO2Q3dI2E4",
+        "year": "1991",
+        "description": "        ",
+        "id": 87
+      },
+      {
+        "title": "NBC Nightside (November 25, 1991)",
+        "videoId": "7bsGvbGP1E8",
+        "year": "1991",
+        "description": "        ",
+        "id": 88
+      },
+      {
+        "title": "WJBK TV TV 2 Eyewitness News at 11pm Detroit December 23, 1991",
+        "videoId": "9ly5qa9b-jM",
+        "year": "1991",
+        "description": "        ",
+        "id": 89
+      },
+      {
+        "title": "Discovery Channel The Christian Science Monitor World Monitor February 6, 1991",
+        "videoId": "_RTIOumCjRE",
+        "year": "1991",
+        "description": "        ",
+        "id": 90
+      },
+      {
+        "title": "KSTP October 14, 1991 overnight news",
+        "videoId": "KrKZ16kOu0g",
+        "year": "1991",
+        "description": "        ",
+        "id": 91
+      },
+      {
+        "title": "CNN Headline News March 19, 1991",
+        "videoId": "__IG_oHs6os",
+        "year": "1991",
+        "description": "        ",
+        "id": 92
+      },
+      {
+        "title": "FNN Marketwatch PM April 1991",
+        "videoId": "TGOLicICQAs",
+        "year": "1991",
+        "description": "        ",
+        "id": 93
+      },
+      {
+        "title": "President George H.W. Bush State of the Union Address - January 29, 1991 (Part 1/5)",
+        "videoId": "rbrMK5Qwwx0",
+        "year": "1991",
+        "description": "        ",
+        "id": 94
+      },
+      {
+        "title": "WTVJ TV Channel 4 News Nightcast 11pm Miami July 2, 1991",
+        "videoId": "BLppJJm_1X0",
+        "year": "1991",
+        "description": "        ",
+        "id": 95
+      },
+      {
+        "title": "KTTV FOX 11 FOX News Los Angeles July 8, 1991",
+        "videoId": "K42adtwbzoI",
+        "year": "1991",
+        "description": "        ",
+        "id": 96
+      },
+      {
+        "title": "CNN Prime News Soviet Coup August 19, 1991",
+        "videoId": "Q2JHwlnQFzk",
+        "year": "1991",
+        "description": "        ",
+        "id": 97
+      },
+      {
+        "title": "KOTV 6 Tulsa The News on 6 10 O'Clock Update Tulsa April 8, 1991",
+        "videoId": "cpHmQhh3mY8",
+        "year": "1991",
+        "description": "        ",
+        "id": 98
+      },
+      {
+        "title": "3/19/1991 WROC Channel 8  News Teases and Promo Rochester New York",
+        "videoId": "8Wg6Zz_y-hE",
+        "year": "1991",
+        "description": "        ",
+        "id": 99
+      },
+      {
+        "title": "WXYZ January 20, 1991 News Brief",
+        "videoId": "qvw263pix4Y",
+        "year": "1991",
+        "description": "        ",
+        "id": 100
+      },
+      {
+        "title": "WSVN TV Channel 7 News at 10:00 Miami February 19, 1992",
+        "videoId": "eMzDeDO4CXY",
+        "year": "1992",
+        "description": "        ",
+        "id": 101
+      },
+      {
+        "title": "WWL-TV News Watch Len Cannon Jan 27, 1992",
+        "videoId": "Z8Y509ildLw",
+        "year": "1992",
+        "description": "        ",
+        "id": 102
+      },
+      {
+        "title": "D.C.'s Lounge in Gretna, The Bombshells 1992 Ad",
+        "videoId": "QfUu-3m9zPE",
+        "year": "1992",
+        "description": "        ",
+        "id": 103
+      },
+      {
+        "title": "KCAL TV California 9 Prime 9 News at Eight Storm of '92 February Flood Los Angeles February 12, 1992",
+        "videoId": "KRG7OcE1UTw",
+        "year": "1992",
+        "description": "        ",
+        "id": 104
+      },
+      {
+        "title": "World News April 16, 1992 Part 1",
+        "videoId": "CR1sNoDDhx8",
+        "year": "1992",
+        "description": "        ",
+        "id": 105
+      },
+      {
+        "title": "NCAA Today (January 28, 1992)",
+        "videoId": "2apV_Gemydk",
+        "year": "1992",
+        "description": "        ",
+        "id": 106
+      },
+      {
+        "title": "48 Hours: JFK (February 5th, 1992) *Re-upload*",
+        "videoId": "m4QRd2LviQo",
+        "year": "1992",
+        "description": "        ",
+        "id": 107
+      },
+      {
+        "title": "1992 ABC News Brief - 2/2/92",
+        "videoId": "BxeVg8L47Z0",
+        "year": "1992",
+        "description": "        ",
+        "id": 108
+      },
+      {
+        "title": "WTVJ TV The 4 News Now Real Life Real News Promo August 1992",
+        "videoId": "zAkjj8qbNTo",
+        "year": "1992",
+        "description": "        ",
+        "id": 109
+      },
+      {
+        "title": "Agenda 21 talked about on the house floor [10-2-1992]",
+        "videoId": "XUBwIJWH7ew",
+        "year": "1992",
+        "description": "        ",
+        "id": 110
+      },
+      {
+        "title": "11/15/1992 KTSM Channel 9 El Paso TX  News Teases and Newscast Open plus the first few minutes.",
+        "videoId": "JqAS2Bpusvk",
+        "year": "1992",
+        "description": "        ",
+        "id": 111
+      },
+      {
+        "title": "WCVB \"Five Turns Twenty\" (1992) - selected segment #12",
+        "videoId": "xeG-fzDw4A0",
+        "year": "1992",
+        "description": "        ",
+        "id": 112
+      },
+      {
+        "title": "Popeyes Chicken- Pop of the Game, Oct 11, 1992 New Orleans",
+        "videoId": "-i_P3lI_rus",
+        "year": "1992",
+        "description": "        ",
+        "id": 113
+      },
+      {
+        "title": "1992 6-17 TV 6 News",
+        "videoId": "J9YA31OLL88",
+        "year": "1992",
+        "description": "        ",
+        "id": 114
+      },
+      {
+        "title": "WAVY 11pm News, 5/19/1992",
+        "videoId": "Cyx68TG2e28",
+        "year": "1992",
+        "description": "        ",
+        "id": 115
+      },
+      {
+        "title": "NY1 News: October 1992",
+        "videoId": "IGh5NQflHn0",
+        "year": "1992",
+        "description": "        ",
+        "id": 116
+      },
+      {
+        "title": "Live Regis & Kathie Lee Jan 27, 1992 WWL-TV New Orleans",
+        "videoId": "Vy3laZljy2o",
+        "year": "1992",
+        "description": "        ",
+        "id": 117
+      },
+      {
+        "title": "WUSA 11 PM News (December 20, 1992)",
+        "videoId": "SMc61SCGk5Y",
+        "year": "1992",
+        "description": "        ",
+        "id": 118
+      },
+      {
+        "title": "Clinton-Bush Oct. 11, 1992 Debate - Character",
+        "videoId": "APkTYP9gvqY",
+        "year": "1992",
+        "description": "        ",
+        "id": 119
+      },
+      {
+        "title": "WOKR NewsSource 13 - Updates and Promo (1992)",
+        "videoId": "H6c0yUTLtBE",
+        "year": "1992",
+        "description": "        ",
+        "id": 120
+      },
+      {
+        "title": "WWL TV Regis and Kathie Lee CH4 New Orleans July3 1992",
+        "videoId": "EFyTJ5THE3o",
+        "year": "1992",
+        "description": "        ",
+        "id": 121
+      },
+      {
+        "title": "WWL-TV CH4 News 8-25-1992 Hurricane Andrew New Orleans",
+        "videoId": "IzEZ6sjDZQo",
+        "year": "1992",
+        "description": "        ",
+        "id": 122
+      },
+      {
+        "title": "WPBF 6pm News, October 13, 1992",
+        "videoId": "X3ZX6ipzF_w",
+        "year": "1992",
+        "description": "        ",
+        "id": 123
+      },
+      {
+        "title": "Batman Costume 1992 News 36 _ Morris Costumes Brings to the Market Clip 1",
+        "videoId": "4U6LG3DFOao",
+        "year": "1992",
+        "description": "        ",
+        "id": 124
+      },
+      {
+        "title": "WSVN TV Channel 7 News at 6:00 Miami August 17, 1992",
+        "videoId": "SUf-UfaPjWo",
+        "year": "1992",
+        "description": "        ",
+        "id": 125
+      },
+      {
+        "title": "Evening News June 1992 Part 2",
+        "videoId": "pFhQkW_8N3I",
+        "year": "1992",
+        "description": "        ",
+        "id": 126
+      },
+      {
+        "title": "KWTV 9 TV 9 Mornings 6am Oklahoma City September 8, 1992",
+        "videoId": "pxIawyn2C4U",
+        "year": "1992",
+        "description": "        ",
+        "id": 127
+      },
+      {
+        "title": "Vice Presidential Debate 1992",
+        "videoId": "z5Jbmaq4YHA",
+        "year": "1992",
+        "description": "        ",
+        "id": 128
+      },
+      {
+        "title": "World News Nov. 4, 1992 Part 2.mpg",
+        "videoId": "F52nfDGW_dY",
+        "year": "1992",
+        "description": "        ",
+        "id": 129
+      },
+      {
+        "title": "WWL TV Family Feud Challenge CH4 New Orleans July 1992",
+        "videoId": "4Evhu0ozQJ0",
+        "year": "1992",
+        "description": "        ",
+        "id": 130
+      },
+      {
+        "title": "WEVV-TV 9pm News, November 1992",
+        "videoId": "lMtZz8uBfu0",
+        "year": "1992",
+        "description": "        ",
+        "id": 131
+      },
+      {
+        "title": "WSVN TV Channel 7 News at 5:30 Miami August 17, 1992",
+        "videoId": "C1tsNrCDFu0",
+        "year": "1992",
+        "description": "        ",
+        "id": 132
+      },
+      {
+        "title": "WSB TV Ch 2 Action News Nightbeat 11pm Atlanta April 4, 1992",
+        "videoId": "EI_GEDrAD3E",
+        "year": "1992",
+        "description": "        ",
+        "id": 133
+      },
+      {
+        "title": "ABC World News Tonight 6:30pm May 1, 1992 Partial Show",
+        "videoId": "EPTljYwdhLM",
+        "year": "1992",
+        "description": "        ",
+        "id": 134
+      },
+      {
+        "title": "WHEC-TV: News 10 @ 11 Open (1992)",
+        "videoId": "EQ6WQqkw65U",
+        "year": "1992",
+        "description": "        ",
+        "id": 135
+      },
+      {
+        "title": "KHON TV Channel 2 News at 6pm Hawaii December 6, 1992",
+        "videoId": "JCgbOhrLR_w",
+        "year": "1992",
+        "description": "        ",
+        "id": 136
+      },
+      {
+        "title": "WXIA TV 11 Alive News Tonight Atlanta April 4, 1992",
+        "videoId": "GIq8DkqHrso",
+        "year": "1992",
+        "description": "        ",
+        "id": 137
+      },
+      {
+        "title": "WSVN 7 Channel 7 News 5:30pm Miami May 1, 1992",
+        "videoId": "ik-bWSRLtSo",
+        "year": "1992",
+        "description": "        ",
+        "id": 138
+      },
+      {
+        "title": "KTUL 8 Tulsa News at 5 Fall 1992",
+        "videoId": "i3DaoHz2ty8",
+        "year": "1992",
+        "description": "        ",
+        "id": 139
+      },
+      {
+        "title": "Roma Torre Interviews Hillary Clinton (January 1992)",
+        "videoId": "MR36Jr6Lruc",
+        "year": "1992",
+        "description": "        ",
+        "id": 140
+      },
+      {
+        "title": "KMSP January 23, 1992",
+        "videoId": "65qiqR-CLls",
+        "year": "1992",
+        "description": "        ",
+        "id": 141
+      },
+      {
+        "title": "WWL TV The Price is Right CH4 New Orleans July 1992",
+        "videoId": "cZo4LXEI8Do",
+        "year": "1992",
+        "description": "        ",
+        "id": 142
+      },
+      {
+        "title": "Los Angeles Riots April 30, 1992 CNN Report",
+        "videoId": "spnrRSNkq38",
+        "year": "1992",
+        "description": "        ",
+        "id": 143
+      },
+      {
+        "title": "WSB TV Ch 2 Action News at Noon Atlanta April 1992",
+        "videoId": "mj0s-8mWnKo",
+        "year": "1992",
+        "description": "        ",
+        "id": 144
+      },
+      {
+        "title": "NBC News Today 7am December 29, 1992",
+        "videoId": "0-DBdvzHNCc",
+        "year": "1992",
+        "description": "        ",
+        "id": 145
+      },
+      {
+        "title": "WTVJ TV NBC 4 Hurricane Andrew As it Happened Miami 1992",
+        "videoId": "2pkPekoEixo",
+        "year": "1992",
+        "description": "        ",
+        "id": 146
+      },
+      {
+        "title": "10/24/1992 KTSP Channel 10 Newscast (50% 2nd half)",
+        "videoId": "uxEE7euXUFc",
+        "year": "1992",
+        "description": "        ",
+        "id": 147
+      },
+      {
+        "title": "Hell's Kitchen AIDS Project (1992) and Essays (1994, NY1 News)",
+        "videoId": "IrWFDSyO0H8",
+        "year": "1992",
+        "description": "        ",
+        "id": 148
+      },
+      {
+        "title": "12/4/1992 WHEC Channel 10 News Tease and Promo NBC Rochester,NY",
+        "videoId": "UEYaE1pvURs",
+        "year": "1992",
+        "description": "        ",
+        "id": 149
+      },
+      {
+        "title": "CBS 6 Video Vault: 1992 - October 10 - Ridgefield Parkway opens in Henrico's West End",
+        "videoId": "q3ryiBJdfyc",
+        "year": "1993",
+        "description": "        ",
+        "id": 150
+      },
+      {
+        "title": "4/22/1993 ABC News Brief \"WACO hearings\" Drug Czar",
+        "videoId": "uKgu2ZNxeSs",
+        "year": "1993",
+        "description": "        ",
+        "id": 151
+      },
+      {
+        "title": "WSVN TV Channel 7 News at 6:30 Miami March 11, 1993",
+        "videoId": "uQD7zN2iZ_Y",
+        "year": "1993",
+        "description": "        ",
+        "id": 152
+      },
+      {
+        "title": "WLS-TV 4pm News, May 18, 1993",
+        "videoId": "bUwqcmDf-rg",
+        "year": "1993",
+        "description": "        ",
+        "id": 153
+      },
+      {
+        "title": "WMAQ TV Channel 5 News at 5pm Chicago August 19, 1993",
+        "videoId": "ZO9sXLCKWos",
+        "year": "1993",
+        "description": "        ",
+        "id": 154
+      },
+      {
+        "title": "Nick-News Episode #44 November 20, 1993",
+        "videoId": "XM3aYh_jQeA",
+        "year": "1993",
+        "description": "        ",
+        "id": 155
+      },
+      {
+        "title": "CBS This Morning January 20, 1993 Partial Show",
+        "videoId": "7EVGTAH8tVM",
+        "year": "1993",
+        "description": "        ",
+        "id": 156
+      },
+      {
+        "title": "KNBC TV Entertainment Tonight Monday August 30, 1993",
+        "videoId": "H9OqSNNrGQ0",
+        "year": "1993",
+        "description": "        ",
+        "id": 157
+      },
+      {
+        "title": "NEWS 12 LONG ISLAND, NY-November 6, 1993-Joe Moskowitz, Doug Geed",
+        "videoId": "4Q4pUInk_20",
+        "year": "1993",
+        "description": "        ",
+        "id": 158
+      },
+      {
+        "title": "WTOG 10pm News, December 1, 1993",
+        "videoId": "Fi8dbLXs3i8",
+        "year": "1993",
+        "description": "        ",
+        "id": 159
+      },
+      {
+        "title": "WHOI 6pm News, April 5, 1993",
+        "videoId": "epnfyzprhqY",
+        "year": "1993",
+        "description": "        ",
+        "id": 160
+      },
+      {
+        "title": "WABC 7 Eyewitness News New York City January 18, 1993",
+        "videoId": "SoBrGRuApm8",
+        "year": "1993",
+        "description": "        ",
+        "id": 161
+      },
+      {
+        "title": "WNBC NY LIVE AT FIVE-September 3, 1993-Matt Lauer, Jane Hanson",
+        "videoId": "HtkRUVb1ZTw",
+        "year": "1993",
+        "description": "        ",
+        "id": 162
+      },
+      {
+        "title": "Eyewitness News Archives: 1993 coverage over Waco Siege",
+        "videoId": "A7d6ZqVgR74",
+        "year": "1993",
+        "description": "        ",
+        "id": 163
+      },
+      {
+        "title": "The Simpsons - -Lady Bouvier's Lover- Season 5",
+        "videoId": "GyCjURaxEsg",
+        "year": "1993",
+        "description": "        ",
+        "id": 164
+      },
+      {
+        "title": "WWL-TV Ch4 Eyewitness News Nightwatch Dec 24, 1993",
+        "videoId": "1_DIH-9dbXs",
+        "year": "1993",
+        "description": "        ",
+        "id": 165
+      },
+      {
+        "title": "WPIX TV Ch 11 News at 10pm January 19, 1993",
+        "videoId": "9ZvrMr2dp-A",
+        "year": "1993",
+        "description": "        ",
+        "id": 166
+      },
+      {
+        "title": "WNYW NY NEWS AT NOON-November 8, 1993-Lyn Brown",
+        "videoId": "i33NY0-ZZuA",
+        "year": "1993",
+        "description": "        ",
+        "id": 167
+      },
+      {
+        "title": "HTV The News at 6 United Kingdom December 1993",
+        "videoId": "Cf3R43cbm7k",
+        "year": "1993",
+        "description": "        ",
+        "id": 168
+      },
+      {
+        "title": "WAVE 3 Nightcast News Louisville KY Oct 2 1993",
+        "videoId": "z2zSipTHcNI",
+        "year": "1993",
+        "description": "        ",
+        "id": 169
+      },
+      {
+        "title": "WPEC TV Channel 12 Eyewitness News at 11pm Thanksgiving West Palm Beach November 25, 1993",
+        "videoId": "zvJSFmfhCcI",
+        "year": "1993",
+        "description": "        ",
+        "id": 170
+      },
+      {
+        "title": "Eye on LC (October 1993)",
+        "videoId": "ZCrwYZr3ByY",
+        "year": "1993",
+        "description": "        ",
+        "id": 171
+      },
+      {
+        "title": "WITI-TV 10pm News Segment, January 1993",
+        "videoId": "cdHXFDiyvks",
+        "year": "1993",
+        "description": "        ",
+        "id": 172
+      },
+      {
+        "title": "WXII-12 News May 19, 1993 (Partial)",
+        "videoId": "ep3kpNDJkPk",
+        "year": "1993",
+        "description": "        ",
+        "id": 173
+      },
+      {
+        "title": "Roma Torre: Interview and Behind the Scenes at NY1 (March 1993)",
+        "videoId": "JX1ipjCHGaU",
+        "year": "1993",
+        "description": "        ",
+        "id": 174
+      },
+      {
+        "title": "WNYW TV Fox 5 10pm News New YorkJanuary 1993",
+        "videoId": "6qkyRVLas1U",
+        "year": "1993",
+        "description": "        ",
+        "id": 175
+      },
+      {
+        "title": "ABC News PrimeTime Live- May 6, 1993",
+        "videoId": "UHuQDsDFVUM",
+        "year": "1993",
+        "description": "        ",
+        "id": 176
+      },
+      {
+        "title": "KPWB TV Channel 31 News Nightcast 9:30 Sacramento July 13, 1993",
+        "videoId": "aj_BkFXGoxo",
+        "year": "1993",
+        "description": "        ",
+        "id": 177
+      },
+      {
+        "title": "Looking Back: CBS2's Dana Tyler Covering Arthur Ashe's Funeral In 1993",
+        "videoId": "FbUBRig7IVk",
+        "year": "1993",
+        "description": "        ",
+        "id": 178
+      },
+      {
+        "title": "1993 Year in Review CNN Part 4",
+        "videoId": "Gg_XJ4xHCIQ",
+        "year": "1993",
+        "description": "        ",
+        "id": 179
+      },
+      {
+        "title": "Hurricane Warning Bob Breck WVUE TV8 New Orleans 1993",
+        "videoId": "WZMLkjqkW5E",
+        "year": "1993",
+        "description": "        ",
+        "id": 180
+      },
+      {
+        "title": "WABC NY EYEWITNESS NEWS-November 20, 1993-Sarah Wallace, Harry Martin",
+        "videoId": "FjP-IBvbsvs",
+        "year": "1993",
+        "description": "        ",
+        "id": 181
+      },
+      {
+        "title": "Daybreak KVOA April 20 1993",
+        "videoId": "KgiCT_nw5cY",
+        "year": "1993",
+        "description": "        ",
+        "id": 182
+      },
+      {
+        "title": "WSVN TV Channel 7 News First at 5:00 Thanksgiving Miami November 25, 1993",
+        "videoId": "NH8Evd6W8XU",
+        "year": "1993",
+        "description": "        ",
+        "id": 183
+      },
+      {
+        "title": "CBS News Special Report World Trade Center Bombing (2/26/1993)",
+        "videoId": "sPiKS99Npls",
+        "year": "1993",
+        "description": "        ",
+        "id": 184
+      },
+      {
+        "title": "WHO-TV Newscenter 13 at Ten (May 23, 1993)",
+        "videoId": "Bhy3qUCay3M",
+        "year": "1993",
+        "description": "        ",
+        "id": 185
+      },
+      {
+        "title": "WCBS May 17 1993 -11pm News Segment 2",
+        "videoId": "NCRjfoqwfZ4",
+        "year": "1993",
+        "description": "        ",
+        "id": 186
+      },
+      {
+        "title": "Evening News April 22, 1993 Part 2",
+        "videoId": "jbUSLW-KQls",
+        "year": "1993",
+        "description": "        ",
+        "id": 187
+      },
+      {
+        "title": "Nightly News March 23, 1993 Part 1",
+        "videoId": "BIufB4rJH00",
+        "year": "1993",
+        "description": "        ",
+        "id": 188
+      },
+      {
+        "title": "President Bill Clinton prepares for Oval Office Address 1993",
+        "videoId": "XPgn_uBS4Ow",
+        "year": "1993",
+        "description": "        ",
+        "id": 189
+      },
+      {
+        "title": "WWL-TV New Orleans Eyewitness News Nightwatch Segments - 7/13/1993",
+        "videoId": "NMXgX-zigqQ",
+        "year": "1993",
+        "description": "        ",
+        "id": 190
+      },
+      {
+        "title": "CBS Evening News With Dan Rather & Connie Chung July 21, 1993",
+        "videoId": "LAazz7mIrEE",
+        "year": "1993",
+        "description": "        ",
+        "id": 191
+      },
+      {
+        "title": "Celebration in the Oaks, 1993 Promo Ch4 New Orleans",
+        "videoId": "3JXuzWJa20Q",
+        "year": "1993",
+        "description": "        ",
+        "id": 192
+      },
+      {
+        "title": "Nightly News March 23, 1993 Part 2",
+        "videoId": "HP6ePq2K8iI",
+        "year": "1993",
+        "description": "        ",
+        "id": 193
+      },
+      {
+        "title": "Audio DXing from Western Indiana, Part 2. 1993-94",
+        "videoId": "-i4XVbreDbA",
+        "year": "1993",
+        "description": "        ",
+        "id": 194
+      },
+      {
+        "title": "WHEC-TV News 10 at 6 - August 6, 1993",
+        "videoId": "EvL6IGLbiCA",
+        "year": "1993",
+        "description": "        ",
+        "id": 195
+      },
+      {
+        "title": "WFLD TV Fox News Chicago 9pm August 20, 1993",
+        "videoId": "PO09zt4Y1Cw",
+        "year": "1993",
+        "description": "        ",
+        "id": 196
+      },
+      {
+        "title": "1993: Make your own THUNDERBIRDS TRACY ISLAND | Blue Peter | Childhood Nostalgia | BBC Archive",
+        "videoId": "ZM_iV7R8rTM",
+        "year": "1993",
+        "description": "        ",
+        "id": 197
+      },
+      {
+        "title": "WLFI 6pm News, December 14, 1993",
+        "videoId": "3v4kcvt4tj4",
+        "year": "1993",
+        "description": "        ",
+        "id": 198
+      },
+      {
+        "title": "WABC NY EYEWITNESS NEWS-December 22, 1993-Roz Abrams, Bill Beutel",
+        "videoId": "6B8Vxcf_yDo",
+        "year": "1993",
+        "description": "        ",
+        "id": 199
+      },
+      {
+        "title": "NBC ID Light Bright Etch-a-Sketch 1993",
+        "videoId": "Mb3lLFOwXu8",
+        "year": "1993",
+        "description": "        ",
+        "id": 200
+      },
+      {
+        "title": "1994 Jeffrey Dahmer's death - Headline News",
+        "videoId": "fPgjeD_8VfY",
+        "year": "1994",
+        "description": "        ",
+        "id": 201
+      },
+      {
+        "title": "1994 WVEC 13 News at 11 (9-30-94: Part 2)",
+        "videoId": "mZUWNeQi93M",
+        "year": "1994",
+        "description": "        ",
+        "id": 202
+      },
+      {
+        "title": "ABC World News Tonight Thursday June 23, 1994 Part 1",
+        "videoId": "MMmHuDyKGtU",
+        "year": "1994",
+        "description": "        ",
+        "id": 203
+      },
+      {
+        "title": "1994 Year in Review CNN Part 2",
+        "videoId": "ZfJN18tsi7U",
+        "year": "1994",
+        "description": "        ",
+        "id": 204
+      },
+      {
+        "title": "8/9/1994 KPNX Channel 12 News Teases NBC",
+        "videoId": "CU3Lyk1Ns-c",
+        "year": "1994",
+        "description": "        ",
+        "id": 205
+      },
+      {
+        "title": "OLD NEWS BROADCAST - NBC - OCTOBER 7, 1994",
+        "videoId": "Sshr4z_eqfI",
+        "year": "1994",
+        "description": "        ",
+        "id": 206
+      },
+      {
+        "title": "KCBS TV Action News at 11pm First Broadcast in New Studio Los Angeles April 25, 1994",
+        "videoId": "R9W2cTQx2ck",
+        "year": "1994",
+        "description": "        ",
+        "id": 207
+      },
+      {
+        "title": "WHAS 11 Louisville KY Morning News w/Commercials Jan 18 1994 Winter Storm Coverage",
+        "videoId": "fYvRuhOey1Q",
+        "year": "1994",
+        "description": "        ",
+        "id": 208
+      },
+      {
+        "title": "KCBS TV Action 2 News Breaking News Northridge Earthquake Los Angeles January 17, 1994",
+        "videoId": "Qo4kUgdU1vQ",
+        "year": "1994",
+        "description": "        ",
+        "id": 209
+      },
+      {
+        "title": "CBS Evening News Wednesday May 25, 1994 Part 2",
+        "videoId": "0_jg1ETogYs",
+        "year": "1994",
+        "description": "        ",
+        "id": 210
+      },
+      {
+        "title": "WPVI-TV 6pm News, January 6, 1994",
+        "videoId": "k2DLUkD2U0Q",
+        "year": "1994",
+        "description": "        ",
+        "id": 211
+      },
+      {
+        "title": "WTHI-TV 6pm News, October 31, 1994",
+        "videoId": "-EopOMWeGX4",
+        "year": "1994",
+        "description": "        ",
+        "id": 212
+      },
+      {
+        "title": "Nightly News Thursday April 21, 1994 Part 1",
+        "videoId": "iMJPe_KmljM",
+        "year": "1994",
+        "description": "        ",
+        "id": 213
+      },
+      {
+        "title": "1994: \"Today Show\": \"What is the Internet, Anyway?\"",
+        "videoId": "UlJku_CSyNg",
+        "year": "1994",
+        "description": "        ",
+        "id": 214
+      },
+      {
+        "title": "WAGA Eyewitness News at 5:00PM (5/23/1994)",
+        "videoId": "gZy4g8JciqI",
+        "year": "1994",
+        "description": "        ",
+        "id": 215
+      },
+      {
+        "title": "CBS Evening News Wednesday Feb. 23, 1994 Part 2",
+        "videoId": "XVjz_V89xtY",
+        "year": "1994",
+        "description": "        ",
+        "id": 216
+      },
+      {
+        "title": "KSAZ Channel 10 News at 10:00 PM (6/30/1994)",
+        "videoId": "V2cc5wYpSYI",
+        "year": "1994",
+        "description": "        ",
+        "id": 217
+      },
+      {
+        "title": "WFAA News 8 Update at 10:00PM (1/28/1994)",
+        "videoId": "7IcN_ZsopjE",
+        "year": "1994",
+        "description": "        ",
+        "id": 218
+      },
+      {
+        "title": "Adam Lynch: Final WTAE Newscasts (January 14, 1994)",
+        "videoId": "kTkt-mVMFbw",
+        "year": "1994",
+        "description": "        ",
+        "id": 219
+      },
+      {
+        "title": "WBZ-TV Newscasts (July 7, 1994)",
+        "videoId": "dPBSqhWgP50",
+        "year": "1994",
+        "description": "        ",
+        "id": 220
+      },
+      {
+        "title": "5/9/1994 KSAZ News Tease and Newscast Intro Phoenix, AZ",
+        "videoId": "FnPAApOR7Cw",
+        "year": "1994",
+        "description": "        ",
+        "id": 221
+      },
+      {
+        "title": "Apollo 11 25th Anniversary - ABC News (July 20th, 1994)",
+        "videoId": "nptoBJazdyA",
+        "year": "1994",
+        "description": "        ",
+        "id": 222
+      },
+      {
+        "title": "CNN | CNN & Company (September 5, 1994)",
+        "videoId": "ZtBiX4s3yq4",
+        "year": "1994",
+        "description": "        ",
+        "id": 223
+      },
+      {
+        "title": "1994 WVEC 13 News at 11 (9-30-1994: Part 1)",
+        "videoId": "aJb_33tIrz0",
+        "year": "1994",
+        "description": "        ",
+        "id": 224
+      },
+      {
+        "title": "KJRH 2 News Tulsa July 1994",
+        "videoId": "_HxP9iOam2Y",
+        "year": "1994",
+        "description": "        ",
+        "id": 225
+      },
+      {
+        "title": "WCJB-TV 6pm News, February 23, 1994",
+        "videoId": "A6IEYyrE6gE",
+        "year": "1994",
+        "description": "        ",
+        "id": 226
+      },
+      {
+        "title": "WCBS-TV 7pm News, January 29, 1994",
+        "videoId": "6edA407o8l0",
+        "year": "1994",
+        "description": "        ",
+        "id": 227
+      },
+      {
+        "title": "KSDK St. Louis Commercials w/ news update 27 - 5/17/1994",
+        "videoId": "zFjBFyewEQQ",
+        "year": "1994",
+        "description": "        ",
+        "id": 228
+      },
+      {
+        "title": "ABC News June 17, 1994 OJ Simpson Coverage",
+        "videoId": "XapTyomqOYQ",
+        "year": "1994",
+        "description": "        ",
+        "id": 229
+      },
+      {
+        "title": "Christian Weston Chandler - Super Sonic Winner!!",
+        "videoId": "UFQrhp84jDo",
+        "year": "1994",
+        "description": "        ",
+        "id": 230
+      },
+      {
+        "title": "12/8/1994 KPHO CBS 5 Minute Newscast at 10PM Phoenix,AZ",
+        "videoId": "XdVQwaGHkXo",
+        "year": "1994",
+        "description": "        ",
+        "id": 231
+      },
+      {
+        "title": "New Orleans School Changes its name from former Slave Owner 1994",
+        "videoId": "8fvh3XQsQpQ",
+        "year": "1994",
+        "description": "        ",
+        "id": 232
+      },
+      {
+        "title": "WVUE TV Channel 8 News 8 6pm New Orleans June 9, 1994",
+        "videoId": "arjk3_lfffY",
+        "year": "1994",
+        "description": "        ",
+        "id": 233
+      },
+      {
+        "title": "1994: Are YOU Ready for the INTERNET? | Tomorrow's World | Retro Tech | BBC Archive",
+        "videoId": "XpZ5STahhPE",
+        "year": "1994",
+        "description": "        ",
+        "id": 234
+      },
+      {
+        "title": "CNN | CNN NewsDay (September 5, 1994)",
+        "videoId": "fV9BQpZuI2Y",
+        "year": "1994",
+        "description": "        ",
+        "id": 235
+      },
+      {
+        "title": "WISC CBS 3 News at 5 | Jeffrey Dahmer Death | November 28, 1994",
+        "videoId": "3KFHA0mGZlA",
+        "year": "1994",
+        "description": "        ",
+        "id": 236
+      },
+      {
+        "title": "Frank Davis Fish & Game Report WWL-TV CH4 New Orleans 1994",
+        "videoId": "dKH8bM-aqbY",
+        "year": "1994",
+        "description": "        ",
+        "id": 237
+      },
+      {
+        "title": "WYNW Fox 5 Good Day New York June 1994 _01",
+        "videoId": "qFVAIC5lHa4",
+        "year": "1994",
+        "description": "        ",
+        "id": 238
+      },
+      {
+        "title": "Franks Davis in the kitchen Franksgiving 1994 Promo WWL TV",
+        "videoId": "uo2FY6HUkW8",
+        "year": "1994",
+        "description": "        ",
+        "id": 239
+      },
+      {
+        "title": "OLD NEWS BROADCAST - ABC - MARCH 31, 1994",
+        "videoId": "pt4FtY4ivlQ",
+        "year": "1994",
+        "description": "        ",
+        "id": 240
+      },
+      {
+        "title": "ABC World News Tonight Friday November 18, 1994 Part 2",
+        "videoId": "aln2hpo-4B0",
+        "year": "1994",
+        "description": "        ",
+        "id": 241
+      },
+      {
+        "title": "Kurt Cobain suicide report on Fox",
+        "videoId": "-Acm21zjsxM",
+        "year": "1994",
+        "description": "        ",
+        "id": 242
+      },
+      {
+        "title": "WSVN 5pm & 6pm News, October 15, 1994",
+        "videoId": "v8wHG2iF6SU",
+        "year": "1994",
+        "description": "        ",
+        "id": 243
+      },
+      {
+        "title": "KTLA TV Channel 5 News Special Report Northridge Earthquake Los Angeles January 17, 1994",
+        "videoId": "EjQs7bs_FK0",
+        "year": "1994",
+        "description": "        ",
+        "id": 244
+      },
+      {
+        "title": "Headline News (August 2, 1994)",
+        "videoId": "s_j0j9oCRgw",
+        "year": "1994",
+        "description": "        ",
+        "id": 245
+      },
+      {
+        "title": "HISTORY: O.J. Simpson news day two: Tuesday 14 June 1994",
+        "videoId": "jUQfjlaMdn4",
+        "year": "1994",
+        "description": "        ",
+        "id": 246
+      },
+      {
+        "title": "WKBD TV FOX 50 Ten O'Clock News US Air Flight 1016 Crash Detroit July 3, 1994",
+        "videoId": "R5BEZSprh4Q",
+        "year": "1994",
+        "description": "        ",
+        "id": 247
+      },
+      {
+        "title": "OLD NEWS BROADCAST - ABC - MAY 20, 1994",
+        "videoId": "5bgIbnuvUDU",
+        "year": "1994",
+        "description": "        ",
+        "id": 248
+      },
+      {
+        "title": "12/8/1994 KPHO Channel 5 \"5 Minute\" News Tease",
+        "videoId": "hKTDubayWgw",
+        "year": "1994",
+        "description": "        ",
+        "id": 249
+      },
+      {
+        "title": "KNAZ 6pm News, May 2, 1994",
+        "videoId": "BVbpMhFUIjE",
+        "year": "1994",
+        "description": "        ",
+        "id": 250
+      },
+      {
+        "title": "KYTV 10pm News, December 20, 1995",
+        "videoId": "i_L__fbaRoA",
+        "year": "1995",
+        "description": "        ",
+        "id": 251
+      },
+      {
+        "title": "World News Sept 11, 1995 with Peter Jennings Part 1",
+        "videoId": "r9-m3OS7tsI",
+        "year": "1995",
+        "description": "        ",
+        "id": 252
+      },
+      {
+        "title": "WBBM 2 News at 6 Chicago 1995",
+        "videoId": "k2b4S-7fLWQ",
+        "year": "1995",
+        "description": "        ",
+        "id": 253
+      },
+      {
+        "title": "Nightly News August 28, 1995 Part 2",
+        "videoId": "_uCBSeOdOi0",
+        "year": "1995",
+        "description": "        ",
+        "id": 254
+      },
+      {
+        "title": "WMBD 6pm News, February 9, 1995",
+        "videoId": "ufaivILXtEY",
+        "year": "1995",
+        "description": "        ",
+        "id": 255
+      },
+      {
+        "title": "CNN: Crime Reporting on Local TV News, 1995",
+        "videoId": "IDra9XGsmWo",
+        "year": "1995",
+        "description": "        ",
+        "id": 256
+      },
+      {
+        "title": "KVEW News Brief Trova Hutchins December 14, 1995",
+        "videoId": "vHf-TPlt3JE",
+        "year": "1995",
+        "description": "        ",
+        "id": 257
+      },
+      {
+        "title": "WABC TV Channel 7 Eyewitness News 11pm New York June 30, 1995",
+        "videoId": "iVcorVNOaNI",
+        "year": "1995",
+        "description": "        ",
+        "id": 258
+      },
+      {
+        "title": "NBC2000 Overview Promax 1995",
+        "videoId": "UaxqB1lka18",
+        "year": "1995",
+        "description": "        ",
+        "id": 259
+      },
+      {
+        "title": "World News January 26, 1995 Part 1",
+        "videoId": "tBV8HeMJyNY",
+        "year": "1995",
+        "description": "        ",
+        "id": 260
+      },
+      {
+        "title": "WSBK TV UPN 38 Prime News at 10pm Boston December 13, 1995",
+        "videoId": "GV7xBJWt48Q",
+        "year": "1995",
+        "description": "        ",
+        "id": 261
+      },
+      {
+        "title": "E! O.J. Simpson Trial footage (September 14, 1995)",
+        "videoId": "TKtm3qMuncQ",
+        "year": "1995",
+        "description": "        ",
+        "id": 262
+      },
+      {
+        "title": "Взгляд 1995 (08.12.1995)",
+        "videoId": "g3ArCZs-ups",
+        "year": "1995",
+        "description": "        ",
+        "id": 263
+      },
+      {
+        "title": "WCIX Montage Sept 8, 1995.avi",
+        "videoId": "YBgsfQI6ykU",
+        "year": "1995",
+        "description": "        ",
+        "id": 264
+      },
+      {
+        "title": "Evening News February 21, 1995 Part 1",
+        "videoId": "FiACWTh266M",
+        "year": "1995",
+        "description": "        ",
+        "id": 265
+      },
+      {
+        "title": "Evening News April 28, 1995 Part 2",
+        "videoId": "SPbgUIFLP3w",
+        "year": "1995",
+        "description": "        ",
+        "id": 266
+      },
+      {
+        "title": "WPXY Radio on WOKR News, Spot 3 (January 17, 1995)",
+        "videoId": "Pos-7tedxoY",
+        "year": "1995",
+        "description": "        ",
+        "id": 267
+      },
+      {
+        "title": "KSTW TV 11 News at 11 Seattle July 31, 1995",
+        "videoId": "BcCrULSRbLI",
+        "year": "1995",
+        "description": "        ",
+        "id": 268
+      },
+      {
+        "title": "WREX 13 Eyewitness News 08/13/1995",
+        "videoId": "Ni9m02TCdOw",
+        "year": "1995",
+        "description": "        ",
+        "id": 269
+      },
+      {
+        "title": "KWTV News 9 A Time to Heal Oklahoma City May 29, 1995",
+        "videoId": "Rv16N_QUSR0",
+        "year": "1995",
+        "description": "        ",
+        "id": 270
+      },
+      {
+        "title": "Banner Years: A Boston Garden Farewell + Newscast WBZ-TV (September 1995)",
+        "videoId": "WsdUgkg1f30",
+        "year": "1995",
+        "description": "        ",
+        "id": 271
+      },
+      {
+        "title": "1995: MEAT LOAF has sage advice for young James Corden | Classic Celebrity Interviews | BBC Archive",
+        "videoId": "F9CnE3aEZ0Y",
+        "year": "1995",
+        "description": "        ",
+        "id": 272
+      },
+      {
+        "title": "4/14/1995 WJBK Channel 2 Detroit News Teases and promos",
+        "videoId": "fKivH7LktDc",
+        "year": "1995",
+        "description": "        ",
+        "id": 273
+      },
+      {
+        "title": "WBBM TV Chicago 2 News at 4pm March 22, 1995",
+        "videoId": "3yib72ve1kY",
+        "year": "1995",
+        "description": "        ",
+        "id": 274
+      },
+      {
+        "title": "WCAU-TV 12pm News, August 1995",
+        "videoId": "u-aYj6yEzLE",
+        "year": "1995",
+        "description": "        ",
+        "id": 275
+      },
+      {
+        "title": "WTKR 5pm News, 3/23/1995 (partial)",
+        "videoId": "9pedRqkV3E8",
+        "year": "1995",
+        "description": "        ",
+        "id": 276
+      },
+      {
+        "title": "World News May 26, 1995 Part 1",
+        "videoId": "o8RVLuchHfg",
+        "year": "1995",
+        "description": "        ",
+        "id": 277
+      },
+      {
+        "title": "WBZ 5PM News Open - 10/3/95",
+        "videoId": "FPH7GVOmFCU",
+        "year": "1995",
+        "description": "        ",
+        "id": 278
+      },
+      {
+        "title": "KCNC Denver Affiliation Switch Package & Liveshot (September 9, 1995)",
+        "videoId": "BDtT2e0Yhs0",
+        "year": "1995",
+        "description": "        ",
+        "id": 279
+      },
+      {
+        "title": "WBBM 2 News at 10 Chicago 1995",
+        "videoId": "jrLp5waZkTg",
+        "year": "1995",
+        "description": "        ",
+        "id": 280
+      },
+      {
+        "title": "1995 : BLUE PETER discovers the INTERNET | Retro Tech | BBC Archive",
+        "videoId": "L59xEQsy2r4",
+        "year": "1995",
+        "description": "        ",
+        "id": 281
+      },
+      {
+        "title": "KNBC TV Channel 4 News at 5pm Los Angeles September 6, 1995",
+        "videoId": "XQZilRXWhiE",
+        "year": "1995",
+        "description": "        ",
+        "id": 282
+      },
+      {
+        "title": "WHDH TV 7 News at 11 Boston December 13, 1995",
+        "videoId": "89hp6sy6bOg",
+        "year": "1995",
+        "description": "        ",
+        "id": 283
+      },
+      {
+        "title": "KLAS TV Channel 8 CBS Evening News with Dan Rather August 9, 1995",
+        "videoId": "7QsHYu_WdP8",
+        "year": "1995",
+        "description": "        ",
+        "id": 284
+      },
+      {
+        "title": "Oklahoma City Bombing Coverage, April 19-21, 1995 (Part 2)",
+        "videoId": "koTdJAwrvPY",
+        "year": "1995",
+        "description": "        ",
+        "id": 285
+      },
+      {
+        "title": "KSTW The Ten O'Clock News (3/9/1995)",
+        "videoId": "OdNaSAbdSig",
+        "year": "1995",
+        "description": "        ",
+        "id": 286
+      },
+      {
+        "title": "Flashback! The Internet In 1995 | Archives | TODAY",
+        "videoId": "95-yZ-31j9A",
+        "year": "1995",
+        "description": "        ",
+        "id": 287
+      },
+      {
+        "title": "KING 6:30pm News, April 3, 1995",
+        "videoId": "1G5oSkyKExA",
+        "year": "1995",
+        "description": "        ",
+        "id": 288
+      },
+      {
+        "title": "KVIA 10 PM News (January 30, 1995)",
+        "videoId": "m51U82j-ttY",
+        "year": "1995",
+        "description": "        ",
+        "id": 289
+      },
+      {
+        "title": "October 17, 1995 NBC Nightly News Close",
+        "videoId": "b_GYWI9Vk_I",
+        "year": "1995",
+        "description": "        ",
+        "id": 290
+      },
+      {
+        "title": "WRC TV News 4 at 11 Washington DC June 5, 1995",
+        "videoId": "9ePQEeVHorw",
+        "year": "1995",
+        "description": "        ",
+        "id": 291
+      },
+      {
+        "title": "WJLA 11 PM News- June 14, 1995 (partial)",
+        "videoId": "rBUCJTHVIEM",
+        "year": "1995",
+        "description": "        ",
+        "id": 292
+      },
+      {
+        "title": "CBS News KTVT 11 Dallas Texas November 14 1995",
+        "videoId": "xq_ohtd2zSA",
+        "year": "1995",
+        "description": "        ",
+        "id": 293
+      },
+      {
+        "title": "KPRC/NBC Local 2 News (Spring 1995) (PARTIAL)",
+        "videoId": "l4fJRjHws_w",
+        "year": "1995",
+        "description": "        ",
+        "id": 294
+      },
+      {
+        "title": "KMVT 10pm News, August 14, 1995",
+        "videoId": "kl9jOlpMMJY",
+        "year": "1995",
+        "description": "        ",
+        "id": 295
+      },
+      {
+        "title": "KOMO TV News 4 at 6:30pm Seattle July 31, 1995",
+        "videoId": "s8icR_LoSv4",
+        "year": "1995",
+        "description": "        ",
+        "id": 296
+      },
+      {
+        "title": "CBS 6 Video Vault - 1995 - June 29 - Flooding in Wolftown, Va.",
+        "videoId": "W2Md3RA33G4",
+        "year": "1995",
+        "description": "        ",
+        "id": 297
+      },
+      {
+        "title": "Early TV Program Preservation (1995)",
+        "videoId": "qpxbWApa9Pw",
+        "year": "1995",
+        "description": "        ",
+        "id": 298
+      },
+      {
+        "title": "KFOR 4 News Oklahoma City Bombing April 19, 1995",
+        "videoId": "huEyE2tGydI",
+        "year": "1995",
+        "description": "        ",
+        "id": 299
+      },
+      {
+        "title": "WBTV 11pm News, 10/17/1995",
+        "videoId": "Ls9MDOlSWyk",
+        "year": "1995",
+        "description": "        ",
+        "id": 300
+      },
+      {
+        "title": "CNN | CNN WorldView (April 3, 1996)",
+        "videoId": "-S6O1fJeCO0",
+        "year": "1996",
+        "description": "        ",
+        "id": 301
+      },
+      {
+        "title": "ABC News Nightline With Ted Koppel Seattle November 6, 1996",
+        "videoId": "f2YBfBqhtFo",
+        "year": "1996",
+        "description": "        ",
+        "id": 302
+      },
+      {
+        "title": "WSVN TV Channel 7 News First At 5:00 Miami June 11, 1996",
+        "videoId": "X4f2qJ2ips0",
+        "year": "1996",
+        "description": "        ",
+        "id": 303
+      },
+      {
+        "title": "WNEP-TV 11pm News,  August 17, 1996",
+        "videoId": "znpL_bftSRI",
+        "year": "1996",
+        "description": "        ",
+        "id": 304
+      },
+      {
+        "title": "1996 Atlanta Olympic Park Bombing Part 12",
+        "videoId": "-Ld5Ownf3b0",
+        "year": "1996",
+        "description": "        ",
+        "id": 305
+      },
+      {
+        "title": "1996 Atlanta Olympic Park Bombing Part 17",
+        "videoId": "54MikphUtL4",
+        "year": "1996",
+        "description": "        ",
+        "id": 306
+      },
+      {
+        "title": "WFOR TV News 4 South Florida 11pm June 10, 1996",
+        "videoId": "d27NBhW1gBw",
+        "year": "1996",
+        "description": "        ",
+        "id": 307
+      },
+      {
+        "title": "CNN | Inside Politics (April 3, 1996)",
+        "videoId": "GCYYPezgY3Q",
+        "year": "1996",
+        "description": "        ",
+        "id": 308
+      },
+      {
+        "title": "BBC 1 News West Evening News United Kingdom December 1996",
+        "videoId": "W3GqwqyaVbs",
+        "year": "1996",
+        "description": "        ",
+        "id": 309
+      },
+      {
+        "title": "CNN | Moneyline with Lou Dobbs (April 3, 1996)",
+        "videoId": "6OxWO-NcGQQ",
+        "year": "1996",
+        "description": "        ",
+        "id": 310
+      },
+      {
+        "title": "KTLA News Early Edition at 5 and 5h30 a.m. Fri Oct 4, 1996",
+        "videoId": "P1_1t-L6WR8",
+        "year": "1996",
+        "description": "        ",
+        "id": 311
+      },
+      {
+        "title": "NBC Nightly News With Tom Brokaw Open November 12, 1996",
+        "videoId": "0vuEdxMaWho",
+        "year": "1996",
+        "description": "        ",
+        "id": 312
+      },
+      {
+        "title": "CBS Evening News, Jan Pergoli, February 10, 1996",
+        "videoId": "T3Zen7gD0RM",
+        "year": "1996",
+        "description": "        ",
+        "id": 313
+      },
+      {
+        "title": "KSTP 5pm April 26, 1996",
+        "videoId": "Cj2tGbKx6Wk",
+        "year": "1996",
+        "description": "        ",
+        "id": 314
+      },
+      {
+        "title": "The Weather Channel Tornado Chase '96 Special w/Commercials Sept 15 1996",
+        "videoId": "xG4t6zxts4s",
+        "year": "1996",
+        "description": "        ",
+        "id": 315
+      },
+      {
+        "title": "KABC TV Channel 7 Eyewitness News at 5pm Los Angeles October 16, 1996",
+        "videoId": "uiZRee4E-v8",
+        "year": "1996",
+        "description": "        ",
+        "id": 316
+      },
+      {
+        "title": "KFOR 4 News at 10 Oklahoma City March 1996",
+        "videoId": "0PxFmceYdHg",
+        "year": "1996",
+        "description": "        ",
+        "id": 317
+      },
+      {
+        "title": "CNN | CNN & Company (September 27, 1996)",
+        "videoId": "SaaxI-35OQE",
+        "year": "1996",
+        "description": "        ",
+        "id": 318
+      },
+      {
+        "title": "News Wildfeeds - January 3 1996",
+        "videoId": "OUbfhHHs9XY",
+        "year": "1996",
+        "description": "        ",
+        "id": 319
+      },
+      {
+        "title": "Michael Jackson - rare 1996 NZ feature!!!",
+        "videoId": "hmxi2Dd_SkU",
+        "year": "1996",
+        "description": "        ",
+        "id": 320
+      },
+      {
+        "title": "WFSB 11pm News, May 2, 1996 (Part 1)",
+        "videoId": "rp5ESiPXa0c",
+        "year": "1996",
+        "description": "        ",
+        "id": 321
+      },
+      {
+        "title": "KXAN News 36 at 6:00PM (4/12/1996)",
+        "videoId": "_7x2JjcVIkk",
+        "year": "1996",
+        "description": "        ",
+        "id": 322
+      },
+      {
+        "title": "NBC News Today Los Angeles November 15, 1996",
+        "videoId": "16vP_PZKMAw",
+        "year": "1996",
+        "description": "        ",
+        "id": 323
+      },
+      {
+        "title": "KSTP 6pm, April 26, 1996",
+        "videoId": "Lplxhy_lNxM",
+        "year": "1996",
+        "description": "        ",
+        "id": 324
+      },
+      {
+        "title": "KYTV 6pm News, January 2, 1996",
+        "videoId": "Hehq4kTiiIU",
+        "year": "1996",
+        "description": "        ",
+        "id": 325
+      },
+      {
+        "title": "WEVV 12pm News, July 16, 1996",
+        "videoId": "mDNXMwgs7oU",
+        "year": "1996",
+        "description": "        ",
+        "id": 326
+      },
+      {
+        "title": "OLD NEWS BROADCAST - 1996 ELECTION - CBS - NOVEMBER 6, 1996 (without commercials)",
+        "videoId": "QtUg6VdIiVY",
+        "year": "1996",
+        "description": "        ",
+        "id": 327
+      },
+      {
+        "title": "MSNBC's On-Air Launch 1996-07-15",
+        "videoId": "WSS2s-4PrNQ",
+        "year": "1996",
+        "description": "        ",
+        "id": 328
+      },
+      {
+        "title": "HTV News For the West Evening News United Kingdom December 1996",
+        "videoId": "bv1GAbJYYp4",
+        "year": "1996",
+        "description": "        ",
+        "id": 329
+      },
+      {
+        "title": "KTLA TV Channel 5 KTLA Morning News 5th Anniversary 6am Los Angeles July 11, 1996",
+        "videoId": "G91SZXUdAbc",
+        "year": "1996",
+        "description": "        ",
+        "id": 330
+      },
+      {
+        "title": "1996 News: Thanksgiving Eve and Day Weather - Aired November 27, 1996",
+        "videoId": "BEyzINKEgIk",
+        "year": "1996",
+        "description": "        ",
+        "id": 331
+      },
+      {
+        "title": "CHRO-TV 11:30pm News, June 1996",
+        "videoId": "jb7cmAVwLfw",
+        "year": "1996",
+        "description": "        ",
+        "id": 332
+      },
+      {
+        "title": "WNBC TV News Channel 4 Live at  5pm New York November 12, 1996",
+        "videoId": "gQPV1h_kuOY",
+        "year": "1996",
+        "description": "        ",
+        "id": 333
+      },
+      {
+        "title": "KNBC TV Channel 4 Today in L A 7:26am Los Angeles November 15, 1996",
+        "videoId": "XBOtfttZcNQ",
+        "year": "1996",
+        "description": "        ",
+        "id": 334
+      },
+      {
+        "title": "News 12 Connecticut Promo - 1996",
+        "videoId": "ukyO3YsMkVA",
+        "year": "1996",
+        "description": "        ",
+        "id": 335
+      },
+      {
+        "title": "1996 Atlanta Olympic Park Bombing Part 5",
+        "videoId": "UF0GAwtxxMA",
+        "year": "1996",
+        "description": "        ",
+        "id": 336
+      },
+      {
+        "title": "Walt Disney World 25th Anniversary Good Morning America Special (1996) - DisneyAvenue.com",
+        "videoId": "cNCU6B-kxeA",
+        "year": "1996",
+        "description": "        ",
+        "id": 337
+      },
+      {
+        "title": "WCVB Newscast (December 22, 1996)",
+        "videoId": "k_EtGVJHoig",
+        "year": "1996",
+        "description": "        ",
+        "id": 338
+      },
+      {
+        "title": "Nightly Business Report- December 13, 1996 (most)",
+        "videoId": "Z4OVUVZYGTM",
+        "year": "1996",
+        "description": "        ",
+        "id": 339
+      },
+      {
+        "title": "WAVE 3 News Special Report Feb 1996",
+        "videoId": "DPiuBiqvOQc",
+        "year": "1996",
+        "description": "        ",
+        "id": 340
+      },
+      {
+        "title": "12/10/1996 KPNX Channel 12 News tease and Holiday Promos",
+        "videoId": "ta6wnYigKuc",
+        "year": "1996",
+        "description": "        ",
+        "id": 341
+      },
+      {
+        "title": "WFMY News 2 11:00 From 1996",
+        "videoId": "qmNAtgzyyNw",
+        "year": "1996",
+        "description": "        ",
+        "id": 342
+      },
+      {
+        "title": "KXLY-TV 11pm News, May 5, 1996",
+        "videoId": "5rP1L6KTy5g",
+        "year": "1996",
+        "description": "        ",
+        "id": 343
+      },
+      {
+        "title": "WCVB NewsCenter 5 Promos (1996)",
+        "videoId": "TpPiQWJ5QXU",
+        "year": "1996",
+        "description": "        ",
+        "id": 344
+      },
+      {
+        "title": "6/17/1996 KPHO Newscast *Last 2 Minutes*",
+        "videoId": "NVSkUuyWIyg",
+        "year": "1996",
+        "description": "        ",
+        "id": 345
+      },
+      {
+        "title": "MSNBC Network Launch July 15, 1996",
+        "videoId": "loNKTED0DIc",
+        "year": "1996",
+        "description": "        ",
+        "id": 346
+      },
+      {
+        "title": "WFSB 11pm News, May 2, 1996 (Part 2)",
+        "videoId": "M4UIYllTTg0",
+        "year": "1996",
+        "description": "        ",
+        "id": 347
+      },
+      {
+        "title": "",
+        "videoId": "3jROfCDU",
+        "year": "1996",
+        "description": "        ",
+        "id": 348
+      },
+      {
+        "title": "WFMY News 2 11:00 News May 12, 1996 (Full Show)",
+        "videoId": "sF6Xtsbzar0",
+        "year": "1996",
+        "description": "        ",
+        "id": 349
+      },
+      {
+        "title": "KSAZ TV FOX 10 Arizona Prime News at 9pm Phoenix September 17, 1996",
+        "videoId": "Qtn86um58AQ",
+        "year": "1996",
+        "description": "        ",
+        "id": 350
+      },
+      {
+        "title": "WESH TV NBC News Channel 2 News at 5pm Orlando November 28, 1997",
+        "videoId": "h6PRwqhW2pc",
+        "year": "1997",
+        "description": "        ",
+        "id": 351
+      },
+      {
+        "title": "Drs. David Harlan & Allan Kirk with Tom Bergeron on Good Morning America (1997)",
+        "videoId": "jEyOH24GieY",
+        "year": "1997",
+        "description": "        ",
+        "id": 352
+      },
+      {
+        "title": "hbk vs hhh 12.22.97",
+        "videoId": "SIKXCTkH0Ps",
+        "year": "1997",
+        "description": "        ",
+        "id": 353
+      },
+      {
+        "title": "Channel 5 News Update at 8PM United Kingdom June 1, 1997",
+        "videoId": "NaSPMt1uWaM",
+        "year": "1997",
+        "description": "        ",
+        "id": 354
+      },
+      {
+        "title": "NBC Nightly News With Tom Brokaw Open November 27, 1997",
+        "videoId": "MSyHjnwx-48",
+        "year": "1997",
+        "description": "        ",
+        "id": 355
+      },
+      {
+        "title": "WFOR TV News 4 South Florida at 11:00 Miami July 3, 1997",
+        "videoId": "bQ-Cn6Onp6g",
+        "year": "1997",
+        "description": "        ",
+        "id": 356
+      },
+      {
+        "title": "USA Update (1997) News - USA Network - Mike Johnson",
+        "videoId": "hgys_EzbFQg",
+        "year": "1997",
+        "description": "        ",
+        "id": 357
+      },
+      {
+        "title": "KGW 11pm News, February 17, 1997",
+        "videoId": "-MJmC0yVjfA",
+        "year": "1997",
+        "description": "        ",
+        "id": 358
+      },
+      {
+        "title": "2/5/1997 KSAZ Channel 10 \"Arizona Prime\" 9PM Newscast open",
+        "videoId": "s23LxvpQ3W4",
+        "year": "1997",
+        "description": "        ",
+        "id": 359
+      },
+      {
+        "title": "WOKR NewsSource13 at 6 - December 27, 1997",
+        "videoId": "G67ob0htoV4",
+        "year": "1997",
+        "description": "        ",
+        "id": 360
+      },
+      {
+        "title": "WGN TV Morning News 7am Chicago June 4, 1997",
+        "videoId": "BGpVT5sBUCA",
+        "year": "1997",
+        "description": "        ",
+        "id": 361
+      },
+      {
+        "title": "1997 WDSU-TV6 News Promo, Kid Talk Today, New Orleans",
+        "videoId": "Zmb_9FPfL90",
+        "year": "1997",
+        "description": "        ",
+        "id": 362
+      },
+      {
+        "title": "Nightly Business Report (April 30, 1997)",
+        "videoId": "-J-mSu3QKEw",
+        "year": "1997",
+        "description": "        ",
+        "id": 363
+      },
+      {
+        "title": "SPECIAL ON THE DEATH OF JIMMY STEWART - ABC - JULY 2, 1997 (without commercials)",
+        "videoId": "anW_s-XLsek",
+        "year": "1997",
+        "description": "        ",
+        "id": 364
+      },
+      {
+        "title": "Korn : Lollapalooza News Clips 1997",
+        "videoId": "KY_v1U5XFRY",
+        "year": "1997",
+        "description": "        ",
+        "id": 365
+      },
+      {
+        "title": "WRC 11 PM News- July 16, 1997 (partial)",
+        "videoId": "qCTrWPfCaHs",
+        "year": "1997",
+        "description": "        ",
+        "id": 366
+      },
+      {
+        "title": "CNN story on \"Nightstand With Dick Dietrick\"",
+        "videoId": "6aLOjceHRyg",
+        "year": "1997",
+        "description": "        ",
+        "id": 367
+      },
+      {
+        "title": "Watchdog - 16th October 1997",
+        "videoId": "AgV-zMVMUo0",
+        "year": "1997",
+        "description": "        ",
+        "id": 368
+      },
+      {
+        "title": "WNDU TV News Center 16 at 6pm South Bend June 2, 1997",
+        "videoId": "E90lEjVNghQ",
+        "year": "1997",
+        "description": "        ",
+        "id": 369
+      },
+      {
+        "title": "KTLA 5 News @ Ten Los Angeles November 27, 1997",
+        "videoId": "44s4eUlS0a0",
+        "year": "1997",
+        "description": "        ",
+        "id": 370
+      },
+      {
+        "title": "WJXT TV News Channel 4 Eyewitness News at 6pm Jacksonville November 28, 1997",
+        "videoId": "rvqMcKTaRSI",
+        "year": "1997",
+        "description": "        ",
+        "id": 371
+      },
+      {
+        "title": "CLTV News Chicago June 3, 1997",
+        "videoId": "UP__N4yvZE8",
+        "year": "1997",
+        "description": "        ",
+        "id": 372
+      },
+      {
+        "title": "WUSA 11 PM News- January 29, 1997 (partial)",
+        "videoId": "fxNfrCBuUlQ",
+        "year": "1997",
+        "description": "        ",
+        "id": 373
+      },
+      {
+        "title": "WLS TV ABC 7 News at 4pm Chicago June 3, 1997",
+        "videoId": "fAKqLpKqWnk",
+        "year": "1997",
+        "description": "        ",
+        "id": 374
+      },
+      {
+        "title": "News coverage of the funeral of Mother Teresa part 1 - WCAU NBC10",
+        "videoId": "3QyAbujW9Wk",
+        "year": "1997",
+        "description": "        ",
+        "id": 375
+      },
+      {
+        "title": "CLTV News 7pm Chicago June 3, 1997",
+        "videoId": "8YHKYkLBC2k",
+        "year": "1997",
+        "description": "        ",
+        "id": 376
+      },
+      {
+        "title": "WWL-TV News Promo Dave McNamara 1997 Special Report",
+        "videoId": "0q2eVxy-Vws",
+        "year": "1997",
+        "description": "        ",
+        "id": 377
+      },
+      {
+        "title": "Live Regis & Kathy Lee from New Orleans Jan.17, 1997 WWL-TV",
+        "videoId": "jC_-oR5smhM",
+        "year": "1997",
+        "description": "        ",
+        "id": 378
+      },
+      {
+        "title": "WTLV 40th Anniversary (1997)",
+        "videoId": "gsvTb50ng6o",
+        "year": "1997",
+        "description": "        ",
+        "id": 379
+      },
+      {
+        "title": "Germany - Major airlines form alliance",
+        "videoId": "BXqaTCYJtHg",
+        "year": "1997",
+        "description": "        ",
+        "id": 380
+      },
+      {
+        "title": "WGN TV News at Nine Chicago November 28, 1997",
+        "videoId": "0-oSNkpqQzA",
+        "year": "1997",
+        "description": "        ",
+        "id": 381
+      },
+      {
+        "title": "KNBC TV Channel 4 News at 6pm Los Angeles November 27, 1997",
+        "videoId": "-WNBY6S3JTA",
+        "year": "1997",
+        "description": "        ",
+        "id": 382
+      },
+      {
+        "title": "NBC KXAS 5 News Promo December 10 1997",
+        "videoId": "MkQ9z7Lhon8",
+        "year": "1997",
+        "description": "        ",
+        "id": 383
+      },
+      {
+        "title": "WPIX TV WB 11 News at Ten New York November 27, 1997",
+        "videoId": "iLZNLGht9fU",
+        "year": "1997",
+        "description": "        ",
+        "id": 384
+      },
+      {
+        "title": "CBS Evening News With Dan Rather Open June 2, 1997",
+        "videoId": "DzNULu7tik8",
+        "year": "1997",
+        "description": "        ",
+        "id": 385
+      },
+      {
+        "title": "WRTV 5 & 6 PM News (May 13, 1997)",
+        "videoId": "KOHQz6YO2Qs",
+        "year": "1997",
+        "description": "        ",
+        "id": 386
+      },
+      {
+        "title": "WDSU TV6 \"Kid Talk Today\" 1997 Promo CH6 News New Orleans",
+        "videoId": "V8ceMA4h-qo",
+        "year": "1997",
+        "description": "        ",
+        "id": 387
+      },
+      {
+        "title": "1997 SPECIAL REPORT: \"FAKE NEWS ON THE INTERNET\"",
+        "videoId": "ieJtlWlWsWw",
+        "year": "1997",
+        "description": "        ",
+        "id": 388
+      },
+      {
+        "title": "New Orleans Superbowl XXXI Host Commitee 1997 WWL-TV4",
+        "videoId": "ARsy78Ny_kk",
+        "year": "1997",
+        "description": "        ",
+        "id": 389
+      },
+      {
+        "title": "ITN News at Ten,  April 1997",
+        "videoId": "YseDEUald-4",
+        "year": "1997",
+        "description": "        ",
+        "id": 390
+      },
+      {
+        "title": "ABC News Nightline (May 16, 1997)",
+        "videoId": "L2iEu0iHmN4",
+        "year": "1997",
+        "description": "        ",
+        "id": 391
+      },
+      {
+        "title": "WXYZ 11 PM News- November 9, 1997 (partial)",
+        "videoId": "a298FRN-fRw",
+        "year": "1997",
+        "description": "        ",
+        "id": 392
+      },
+      {
+        "title": "Super Bowl XXXI post-game show/WFXT Newscast (January 26, 1997) (deprecated)",
+        "videoId": "XdrYgWWnsyI",
+        "year": "1997",
+        "description": "        ",
+        "id": 393
+      },
+      {
+        "title": "Silver King Broadcasting 1997",
+        "videoId": "znI4D3AV-ro",
+        "year": "1997",
+        "description": "        ",
+        "id": 394
+      },
+      {
+        "title": "5/12/1997 KTVK Channel 3 News \"Tonight Arizona\" Partial Newscast",
+        "videoId": "u-Gkdxc5GnA",
+        "year": "1997",
+        "description": "        ",
+        "id": 395
+      },
+      {
+        "title": "WWL-TV & Radiofone 4 WARN  Promo Package 1997",
+        "videoId": "AAAAPIcn_Yg",
+        "year": "1997",
+        "description": "        ",
+        "id": 396
+      },
+      {
+        "title": "Bill Clinton 2nd Presidential Inauguration CBS Jan. 20, 1997",
+        "videoId": "x1VMYLDEmCw",
+        "year": "1997",
+        "description": "        ",
+        "id": 397
+      },
+      {
+        "title": "KPDX 10pm News Segment, November 16, 1997",
+        "videoId": "jiY1Uh27xvs",
+        "year": "1997",
+        "description": "        ",
+        "id": 398
+      },
+      {
+        "title": "WJLA 11 PM News (May 16, 1997)",
+        "videoId": "4a4HUWrv-HU",
+        "year": "1997",
+        "description": "        ",
+        "id": 399
+      },
+      {
+        "title": "WDSU TV6 \"Imax Theater\" 1997 Promo CH6 New Orleans",
+        "videoId": "eUlkx6sZxfQ",
+        "year": "1997",
+        "description": "        ",
+        "id": 400
+      },
+      {
+        "title": "WDRB FOX 41 News at 10 Louisville KY March 2 1997 w/Commercials",
+        "videoId": "cecuk5uCvpc",
+        "year": "1997",
+        "description": "        ",
+        "id": 401
+      },
+      {
+        "title": "WNYW 10pm News, July 2, 1997",
+        "videoId": "ttm3_bq070Y",
+        "year": "1997",
+        "description": "        ",
+        "id": 402
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon opening (October 22, 1998)",
+        "videoId": "wRatL5iaxDM",
+        "year": "1998",
+        "description": "        ",
+        "id": 403
+      },
+      {
+        "title": "NY1 News (August 12, 1998)",
+        "videoId": "Qtg_IsAkJy4",
+        "year": "1998",
+        "description": "        ",
+        "id": 404
+      },
+      {
+        "title": "KPIX 6:30pm News, Oct  29, 1998",
+        "videoId": "H7y6gb_Cj8E",
+        "year": "1998",
+        "description": "        ",
+        "id": 405
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon (July 16, 1998) | partial",
+        "videoId": "IHhphfbQuG4",
+        "year": "1998",
+        "description": "        ",
+        "id": 406
+      },
+      {
+        "title": "KCCI First News at Five opening (November 19, 1998)",
+        "videoId": "YTKXl2v1e78",
+        "year": "1998",
+        "description": "        ",
+        "id": 407
+      },
+      {
+        "title": "CNN Showbiz Today (August 17, 1998)",
+        "videoId": "m1FcvRDwVqs",
+        "year": "1998",
+        "description": "        ",
+        "id": 408
+      },
+      {
+        "title": "WAVE 3 News at 6:00 Nov 7 1998 Louisville KY Complete w/Commercials",
+        "videoId": "MkAKqLFpOBg",
+        "year": "1998",
+        "description": "        ",
+        "id": 409
+      },
+      {
+        "title": "WAFB 6pm News, February 13, 1998",
+        "videoId": "JV7w5SY0QNU",
+        "year": "1998",
+        "description": "        ",
+        "id": 410
+      },
+      {
+        "title": "NBC News Headlines (1998) - Fredricka Whitfield",
+        "videoId": "ejXrGQPH-SE",
+        "year": "1998",
+        "description": "        ",
+        "id": 411
+      },
+      {
+        "title": "Bill Clinton Impeachment: House Debate (December 18, 1998)",
+        "videoId": "CXUsSivik34",
+        "year": "1998",
+        "description": "        ",
+        "id": 412
+      },
+      {
+        "title": "1998: BISCUIT DUNKING - the SCIENTIFIC method | BBC News | Weird and Wonderful | BBC Archive",
+        "videoId": "5fMI8v0n3Ds",
+        "year": "1998",
+        "description": "        ",
+        "id": 413
+      },
+      {
+        "title": "HTV ITN Early Evening News UK August 20, 1998",
+        "videoId": "ZNcQ2Qw-kKw",
+        "year": "1998",
+        "description": "        ",
+        "id": 414
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon opening (August 26, 1998)",
+        "videoId": "VyAINyzn6EU",
+        "year": "1998",
+        "description": "        ",
+        "id": 415
+      },
+      {
+        "title": "WPXI/WTAE News (April 26, 1998)",
+        "videoId": "1oc7lg3rD8A",
+        "year": "1998",
+        "description": "        ",
+        "id": 416
+      },
+      {
+        "title": "WISH-TV 11pm News, May 13, 1998",
+        "videoId": "A3uV5S3SMQw",
+        "year": "1998",
+        "description": "        ",
+        "id": 417
+      },
+      {
+        "title": "The Weather Channel Hurricane Earl 1998",
+        "videoId": "StIGNKzyhy4",
+        "year": "1998",
+        "description": "        ",
+        "id": 418
+      },
+      {
+        "title": "KCCI News Channel 8 at Six (October 27, 1998)",
+        "videoId": "Sb3RA-KWmTw",
+        "year": "1998",
+        "description": "        ",
+        "id": 419
+      },
+      {
+        "title": "WSLS 11pm News, 5/23/1998",
+        "videoId": "yJBmuuUzuUU",
+        "year": "1998",
+        "description": "        ",
+        "id": 420
+      },
+      {
+        "title": "KBFX-LP 10pm News, July 18, 1998",
+        "videoId": "pA_g6bm2r-o",
+        "year": "1998",
+        "description": "        ",
+        "id": 421
+      },
+      {
+        "title": "KVOA-TV 10pm News, April 16, 1998",
+        "videoId": "n2RPUJJHqnk",
+        "year": "1998",
+        "description": "        ",
+        "id": 422
+      },
+      {
+        "title": "WXIN 10pm News, May 1998 (Part 1)",
+        "videoId": "39AvmhuD7XQ",
+        "year": "1998",
+        "description": "        ",
+        "id": 423
+      },
+      {
+        "title": "CNN story on Bill Clinton scandal 1998",
+        "videoId": "GpnxFNftg5M",
+        "year": "1998",
+        "description": "        ",
+        "id": 424
+      },
+      {
+        "title": "WTVT 6pm News, September 19, 1998",
+        "videoId": "qIkI9BQ_REs",
+        "year": "1998",
+        "description": "        ",
+        "id": 425
+      },
+      {
+        "title": "GMTV News 8AM United Kingdom August 1998",
+        "videoId": "jzArt87qViE",
+        "year": "1998",
+        "description": "        ",
+        "id": 426
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon (August 3, 1998) | partial",
+        "videoId": "dcNgScEjijg",
+        "year": "1998",
+        "description": "        ",
+        "id": 427
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon opening (November 12, 1998)",
+        "videoId": "HkhBntcJjtU",
+        "year": "1998",
+        "description": "        ",
+        "id": 428
+      },
+      {
+        "title": "12/27/1998 KSAZ Fox 10 News Tease and Promo",
+        "videoId": "BeX4tMa1zAQ",
+        "year": "1998",
+        "description": "        ",
+        "id": 429
+      },
+      {
+        "title": "BBC 1 UK Breakfast News 7AM United Kingdom August 1998",
+        "videoId": "KfxUgDnXrVk",
+        "year": "1998",
+        "description": "        ",
+        "id": 430
+      },
+      {
+        "title": "WXLV 6pm News, November 4, 1998",
+        "videoId": "LKMj77fGCa0",
+        "year": "1998",
+        "description": "        ",
+        "id": 431
+      },
+      {
+        "title": "Breaking News documentary KCBS 1998 Part Four",
+        "videoId": "Vn_mOup7tw4",
+        "year": "1998",
+        "description": "        ",
+        "id": 432
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon opening (October 15, 1998)",
+        "videoId": "6W5jrnGtqEo",
+        "year": "1998",
+        "description": "        ",
+        "id": 433
+      },
+      {
+        "title": "WDBJ 11pm News, 5/24/1998",
+        "videoId": "lpjyeY5_4bk",
+        "year": "1998",
+        "description": "        ",
+        "id": 434
+      },
+      {
+        "title": "KSAZ-TV 5pm News, December 3, 1998",
+        "videoId": "qqKw1K-oMyI",
+        "year": "1998",
+        "description": "        ",
+        "id": 435
+      },
+      {
+        "title": "WAMI The Times 1998",
+        "videoId": "ni4-nqOEr94",
+        "year": "1998",
+        "description": "        ",
+        "id": 436
+      },
+      {
+        "title": "Bill Clinton impeachment inquiry begins in the House (1998)",
+        "videoId": "9_6uFchzork",
+        "year": "1998",
+        "description": "        ",
+        "id": 437
+      },
+      {
+        "title": "KCCI First News at Five (May 1, 1998)",
+        "videoId": "yetZ-pbCQzM",
+        "year": "1998",
+        "description": "        ",
+        "id": 438
+      },
+      {
+        "title": "ITV GMTV United Kingdom 1998",
+        "videoId": "rZtFTKercIw",
+        "year": "1998",
+        "description": "        ",
+        "id": 439
+      },
+      {
+        "title": "Breaking News documentary KCBS 1998 Part Five",
+        "videoId": "bXX3m9oMvAA",
+        "year": "1998",
+        "description": "        ",
+        "id": 440
+      },
+      {
+        "title": "OLD NEWS BROADCAST - ABC - APRIL 7, 1998",
+        "videoId": "QpuMYTGEyKI",
+        "year": "1998",
+        "description": "        ",
+        "id": 441
+      },
+      {
+        "title": "WBZ-TV 11pm News, September 28, 1998",
+        "videoId": "cOUr7xinTSw",
+        "year": "1998",
+        "description": "        ",
+        "id": 442
+      },
+      {
+        "title": "Fox News Interview May 22, 1998",
+        "videoId": "PEM-nhkjGDY",
+        "year": "1998",
+        "description": "        ",
+        "id": 443
+      },
+      {
+        "title": "OLD NEWS BROADCAST - ABC - APRIL 7, 1998",
+        "videoId": "JWj9x_bwL2E",
+        "year": "1998",
+        "description": "        ",
+        "id": 444
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon opening (November 16, 1998)",
+        "videoId": "pbg-QyKgBt8",
+        "year": "1998",
+        "description": "        ",
+        "id": 445
+      },
+      {
+        "title": "PCNC Night Talk (October 22, 1998)",
+        "videoId": "oC7DtUPk6xY",
+        "year": "1998",
+        "description": "        ",
+        "id": 446
+      },
+      {
+        "title": "A Dialogue on Race With President Bill Clinton - July 9, 1998 - PBS",
+        "videoId": "kwlEIPfb_Wo",
+        "year": "1998",
+        "description": "        ",
+        "id": 447
+      },
+      {
+        "title": "ABC News 20/20- September 20, 1998 (First Sunday edition, most)",
+        "videoId": "0nd8gdQnTv0",
+        "year": "1998",
+        "description": "        ",
+        "id": 448
+      },
+      {
+        "title": "ABC WFAA 8 News Dallas Texas January 18 1998",
+        "videoId": "BON7a9GWf9k",
+        "year": "1998",
+        "description": "        ",
+        "id": 449
+      },
+      {
+        "title": "Ringtones on ITV Central TV News - 26th October 1998.",
+        "videoId": "vD0OQ1y03kQ",
+        "year": "1998",
+        "description": "        ",
+        "id": 450
+      },
+      {
+        "title": "Star Wars The Phantom Menace Memorial Day Weekend Box Office Fox News Story (1999)",
+        "videoId": "PW78GAToLI4",
+        "year": "1999",
+        "description": "        ",
+        "id": 451
+      },
+      {
+        "title": "Decision 99 - TVNZ (1999 Election Night in New Zealand) [Part 2]",
+        "videoId": "BFo5VL7-UAU",
+        "year": "1999",
+        "description": "        ",
+        "id": 452
+      },
+      {
+        "title": "WCCO 6pm News, February 2, 1999 (Part 1)",
+        "videoId": "I-L-2x2YBZ4",
+        "year": "1999",
+        "description": "        ",
+        "id": 453
+      },
+      {
+        "title": "WDJT-TV 6pm News, November 1999",
+        "videoId": "s_NyhzYnW6M",
+        "year": "1999",
+        "description": "        ",
+        "id": 454
+      },
+      {
+        "title": "OLD NEWS BROADCAST - NBC - JUNE 1, 1999",
+        "videoId": "6fBVtB5xDSo",
+        "year": "1999",
+        "description": "        ",
+        "id": 455
+      },
+      {
+        "title": "WDAY 6:30am News, October 28, 1999",
+        "videoId": "aayLswkpB4A",
+        "year": "1999",
+        "description": "        ",
+        "id": 456
+      },
+      {
+        "title": "The Weather Network Local Forecast - 18 May 1999",
+        "videoId": "_A04XVBVnrU",
+        "year": "1999",
+        "description": "        ",
+        "id": 457
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon opening (August 6, 1999)",
+        "videoId": "GIh5feVfJAg",
+        "year": "1999",
+        "description": "        ",
+        "id": 458
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon opening (July 30, 1999)",
+        "videoId": "GC_OySp-ujA",
+        "year": "1999",
+        "description": "        ",
+        "id": 459
+      },
+      {
+        "title": "Sixty Minutes - August 1 1999: \"Spy?\" - Wen Ho Lee",
+        "videoId": "c_4e5axT3WY",
+        "year": "1999",
+        "description": "        ",
+        "id": 460
+      },
+      {
+        "title": "KTRK-TV 10pm News, August 3, 1999",
+        "videoId": "RKS8ydeBBk8",
+        "year": "1999",
+        "description": "        ",
+        "id": 461
+      },
+      {
+        "title": "KARK 10pm News, November 22, 1999",
+        "videoId": "RHv9AatQdxY",
+        "year": "1999",
+        "description": "        ",
+        "id": 462
+      },
+      {
+        "title": "KTUL 8 Tulsa News 8 at 10 1999",
+        "videoId": "I0QQXcyt6y4",
+        "year": "1999",
+        "description": "        ",
+        "id": 463
+      },
+      {
+        "title": "Columbine High School Shootings (April 20, 1999)",
+        "videoId": "YpuecuBunGo",
+        "year": "1999",
+        "description": "        ",
+        "id": 464
+      },
+      {
+        "title": "BBC Nine O'Clock News Announces Jill Dando's Death (BBC 1999)",
+        "videoId": "knXpWD8OEYU",
+        "year": "1999",
+        "description": "        ",
+        "id": 465
+      },
+      {
+        "title": "KCCI News Channel 8 at Noon opening (March 26, 1999)",
+        "videoId": "-Uci8I9wvzM",
+        "year": "1999",
+        "description": "        ",
+        "id": 466
+      },
+      {
+        "title": "WTVH Channel 5 News w/ David Muir & Maureen Green - 6/14/99",
+        "videoId": "smqF0xrftZI",
+        "year": "1999",
+        "description": "        ",
+        "id": 467
+      },
+      {
+        "title": "News 2 Houston at 10 (May 20, 1999) - PARTIAL",
+        "videoId": "JdED6rN-icA",
+        "year": "1999",
+        "description": "        ",
+        "id": 468
+      },
+      {
+        "title": "WPHL-TV 10pm News, June 1999",
+        "videoId": "0kIdaKxLoKA",
+        "year": "1999",
+        "description": "        ",
+        "id": 469
+      },
+      {
+        "title": "Star Wars: The Phantom Menace - Just 14 days away  ( circa 1999 )",
+        "videoId": "KyC5mjGZ2m4",
+        "year": "1999",
+        "description": "        ",
+        "id": 470
+      },
+      {
+        "title": "KHQ-TV 11pm News, April 6, 1999",
+        "videoId": "FfD91HTJpFk",
+        "year": "1999",
+        "description": "        ",
+        "id": 471
+      },
+      {
+        "title": "WCCO 6pm News, February 2, 1999 (Part 2)",
+        "videoId": "fVPLhhZ_bac",
+        "year": "1999",
+        "description": "        ",
+        "id": 472
+      },
+      {
+        "title": "WPMI 6pm News, June 2, 1999",
+        "videoId": "oTuJbXtrcL4",
+        "year": "1999",
+        "description": "        ",
+        "id": 473
+      },
+      {
+        "title": "WEAR-TV 10pm News, May 31, 1999",
+        "videoId": "s9-7hSKLa54",
+        "year": "1999",
+        "description": "        ",
+        "id": 474
+      },
+      {
+        "title": "KKYK-LP 9pm News, September 1, 1999",
+        "videoId": "fETWCMq0X9Q",
+        "year": "1999",
+        "description": "        ",
+        "id": 475
+      },
+      {
+        "title": "News 2 Houston at 10 (May 6, 1999) (VERY PARTIAL)",
+        "videoId": "ll0KzljRls4",
+        "year": "1999",
+        "description": "        ",
+        "id": 476
+      },
+      {
+        "title": "WJXX 6pm News, November 5, 1999",
+        "videoId": "LJHiQjs0UPk",
+        "year": "1999",
+        "description": "        ",
+        "id": 477
+      },
+      {
+        "title": "WAMI The Times 1999",
+        "videoId": "hYqVPoSNBJg",
+        "year": "1999",
+        "description": "        ",
+        "id": 478
+      },
+      {
+        "title": "WLKY 32 Louisville KY Weather Promo (1999)",
+        "videoId": "GWR0gZPiMG0",
+        "year": "1999",
+        "description": "        ",
+        "id": 479
+      },
+      {
+        "title": "KDFW-TV 9pm News, March 1999",
+        "videoId": "mrhEC7ShVIg",
+        "year": "1999",
+        "description": "        ",
+        "id": 480
+      },
+      {
+        "title": "KCEN/NBC 6 News 10pm - December 16, 1999 (FULL)",
+        "videoId": "J6TtztjayWY",
+        "year": "1999",
+        "description": "        ",
+        "id": 481
+      },
+      {
+        "title": "KPIX 6pm News,  Aug 16, 1999",
+        "videoId": "RrIt3xTv-CE",
+        "year": "1999",
+        "description": "        ",
+        "id": 482
+      },
+      {
+        "title": "WOKR NewsSource 13 at 11 - September 13, 1999",
+        "videoId": "EdWuhibaebo",
+        "year": "1999",
+        "description": "        ",
+        "id": 483
+      },
+      {
+        "title": "Y2K: A Date with Disaster",
+        "videoId": "1xWNm_w8uVg",
+        "year": "1999",
+        "description": "        ",
+        "id": 484
+      },
+      {
+        "title": "KSTP-TV 6pm and 6:30pm News, February 1, 1999",
+        "videoId": "wQBU8h7HOQo",
+        "year": "1999",
+        "description": "        ",
+        "id": 485
+      },
+      {
+        "title": "Bill Clinton Impeachment Trial: Senate Results (February 12, 1999)",
+        "videoId": "FE5_pOXmIEM",
+        "year": "1999",
+        "description": "        ",
+        "id": 486
+      },
+      {
+        "title": "KAMR 6pm News, July 26, 1999",
+        "videoId": "1N8cfPyFdVA",
+        "year": "1999",
+        "description": "        ",
+        "id": 487
+      },
+      {
+        "title": "WAPT 10pm News, February 15, 1999",
+        "videoId": "nCLmLPiZ3KE",
+        "year": "1999",
+        "description": "        ",
+        "id": 488
+      },
+      {
+        "title": "KCCI First News at Five opening (December 2, 1999)",
+        "videoId": "ecWGEOTcbzA",
+        "year": "1999",
+        "description": "        ",
+        "id": 489
+      },
+      {
+        "title": "CBS 11 Dallas Texas KTVT News April 10 1999",
+        "videoId": "CAaxoA4vXYM",
+        "year": "1999",
+        "description": "        ",
+        "id": 490
+      },
+      {
+        "title": "KTVX 10pm News, April 15, 1999",
+        "videoId": "NjAcK71kC9g",
+        "year": "1999",
+        "description": "        ",
+        "id": 491
+      },
+      {
+        "title": "WHTM 6pm News, June 1999",
+        "videoId": "61cC8lI5R1g",
+        "year": "1999",
+        "description": "        ",
+        "id": 492
+      },
+      {
+        "title": "WVII 6pm News, April 1999",
+        "videoId": "z3vpDnOJjgY",
+        "year": "1999",
+        "description": "        ",
+        "id": 493
+      },
+      {
+        "title": "Decision 99 - TVNZ (1999 Election Night in New Zealand) [Part 1]",
+        "videoId": "nyTeyRIU22I",
+        "year": "1999",
+        "description": "        ",
+        "id": 494
+      },
+      {
+        "title": "WICS 6pm News, August 1999",
+        "videoId": "DphkQ5mcm_k",
+        "year": "1999",
+        "description": "        ",
+        "id": 495
+      },
+      {
+        "title": "JFK JR.'S PLANE IS MISSING (LIVE TELEVISION NEWS COVERAGE FROM JULY 17, 1999)",
+        "videoId": "jfO-JX8LsTc",
+        "year": "1999",
+        "description": "        ",
+        "id": 496
+      },
+      {
+        "title": "Texas A&M Bonfire Collapse KNDU News 11/18/1999",
+        "videoId": "nsiZ0VVkG3s",
+        "year": "1999",
+        "description": "        ",
+        "id": 497
+      },
+      {
+        "title": "KJRH 2 Tulsa Live at 6 News 1999",
+        "videoId": "n1BQCwCe-kE",
+        "year": "1999",
+        "description": "        ",
+        "id": 498
+      },
+      {
+        "title": "Μαρίνος Ριτσούδης (3)",
+        "videoId": "Bq6qKeu69Cg",
+        "year": "1999",
+        "description": "        ",
+        "id": 499
+      },
+      {
+        "title": "Decision 99 - TVNZ (1999 Election Night in New Zealand) [Part 3]",
+        "videoId": "VQGH504Ec5o",
+        "year": "1999",
+        "description": "        ",
+        "id": 500
+      },
+      {
+        "title": "KHOU 11 News at 10:00PM (7/2/1999)",
+        "videoId": "Ou-a35hvTRs",
+        "year": "1999",
+        "description": "        ",
+        "id": 501
+      }
     ]
-}
+  }
