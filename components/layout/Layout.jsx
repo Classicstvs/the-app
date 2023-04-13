@@ -32,18 +32,17 @@ export default function Layout({ children }) {
       {showModal && (
         <div className={styles.overlay}>
           <div className={styles.modalWrapper}>
+            <GrClose className={styles.closeBnt} onClick={closeModal} />
+            <p>Coming Soon</p>
+            <p>
+              Our team is dedicated to providing the best viewing experience for
+              our audience. We are constantly working to release new channels
+              from all years, ensuring that our viewers have access to a diverse
+              range of content. Stay tuned for more exciting updates as we
+              continue to expand our offerings and provide the best content
+              possible!
+            </p>
             <Link href="/">
-              <GrClose className={styles.closeBnt} onClick={closeModal} />
-              <p>Coming Soon</p>
-              <p>
-                Our team is dedicated to providing the best viewing experience
-                for our audience. We are constantly working to release new
-                channels from all years, ensuring that our viewers have access
-                to a diverse range of content. Stay tuned for more exciting
-                updates as we continue to expand our offerings and provide the
-                best content possible!
-              </p>
-
               <button onClick={closeModal}>Go Back to 90s</button>
             </Link>
           </div>
