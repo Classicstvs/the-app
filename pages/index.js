@@ -11,22 +11,35 @@ import PageInfo from "@/components/pageInfo/PageInfo";
 import CardsInfo from "@/components/cardsInfo/CardsInfo";
 import { info90s } from "@/data/infos";
 
+import { NextSeo } from "next-seo";
+
+const SEO = {
+  title: "Classics TV | 90s Favourites TV Channels",
+  description: "",
+
+  openGraph: {
+    title: "Classics TV | 90s Favourites TV Channels",
+    description: "",
+  },
+};
+
 export default function Home() {
   return (
     <main className={styles.main}>
+      <NextSeo {...SEO} />
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
           <Tv />
           <div className={styles.pageInfo}>
-          <PageInfo years="90s" info={info90s} />
+            <PageInfo years="90s" info={info90s} />
           </div>
         </div>
         <div className={styles.rightSecton}>
           <div className={styles.ad}>
-          <Ad />
+            <Ad />
           </div>
           <div className={styles.channels}>
-          <Channels channels={channels} />
+            <Channels channels={channels} />
           </div>
           <div className={styles.controls}>
             <Controls />

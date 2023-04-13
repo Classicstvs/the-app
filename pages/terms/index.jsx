@@ -1,8 +1,21 @@
 import styles from "./Terms.module.css";
 
+import { NextSeo } from "next-seo";
+
+const SEO = {
+  title: "Classics TV | Terms of Service",
+  description: "",
+
+  openGraph: {
+    title: "Classics TV | Terms of Service",
+    description: "",
+  },
+};
+
 export default function Terms() {
   return (
     <main className={styles.container}>
+      <NextSeo {...SEO} />
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h1>Terms of Service</h1>

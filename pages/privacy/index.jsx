@@ -1,8 +1,21 @@
 import styles from "./Privacy.module.css";
 
+import { NextSeo } from "next-seo";
+
+const SEO = {
+  title: "Classics TV | Privacy Policy",
+  description: "",
+
+  openGraph: {
+    title: "Classics TV | Privacy Policy",
+    description: "",
+  },
+};
+
 export default function Privacy() {
   return (
     <main className={styles.container}>
+      <NextSeo {...SEO} />
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h1>Privacy Policy</h1>
