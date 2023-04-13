@@ -23,7 +23,7 @@ export default function Tv({ skin }) {
       <Image
         useMap="#tv"
         src={!skin ? "/images/tv90.webp" : "/images/tv90black.webp"}
-        alt="Tv90"
+        alt="90s TV"
         width={700}
         height={664}
         className={styles.tv}
