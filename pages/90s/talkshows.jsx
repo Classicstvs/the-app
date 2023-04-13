@@ -61,7 +61,7 @@ export default function Talkshows({talkshows}) {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [videoIndex]);
+  });
 
   return (
     <main className={styles.main}>

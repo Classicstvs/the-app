@@ -59,7 +59,7 @@ export default function Shows({ shows }) {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [videoIndex]);
+  });
 
   return (
     <main className={styles.main}>

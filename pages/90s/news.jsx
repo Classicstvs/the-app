@@ -59,7 +59,7 @@ export default function News({ news }) {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [videoIndex]);
+  });
 
   return (
     <main className={styles.main}>
