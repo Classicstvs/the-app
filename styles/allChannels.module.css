@@ -159,20 +159,81 @@
     }
 }
 
+
+@media only screen and (max-width: 920px) {
+    .rightSecton{
+        margin-right: 0px;
+        position: relative;
+        top: 13px !important;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .leftSecton>img {
+        top: 45px !important;
+        left: 126px !important;
+        max-width: 95% !important;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .leftSecton>img {
+        top: 45px !important;
+        left: 126px !important;
+        max-width: 95% !important;
+    }
+
+    .blackScreen{
+        max-width: 629px;
+        max-height: 501px;
+        top: 34px;
+        right: 133px;
+    }
+
+    .rightSecton {
+        position: relative !important;
+        top: -194px !important;
+    }
+
+    .pageInfo {
+        position: relative;
+        top: 295px;
+    }
+
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 50px !important;
+        left: 100px !important;
+    }
+
+    .leftSecton>img {
+        top: 45px !important;
+        left: 100px !important;
+        max-width: 95% !important;
+    }
+}
+
 @media only screen and (max-width: 825px) {
     .leftSecton>img {
         top: 50px !important;
         left: 88px !important;
     }
-    .playInfo{
+
+    .playInfo {
         position: relative;
         top: 221px;
     }
 
-    .pageInfo{
+    .pageInfo {
         display: none;
     }
-    .channels, .controls, .ad {
+
+    .channels,
+    .controls,
+    .ad {
         position: relative;
     }
 
@@ -188,14 +249,20 @@
         top: 324px;
     }
 
+    .rightSecton{
+        position: relative !important;
+        top: -168px !important;
+    }
+
 
 
 }
 
 @media only screen and (max-width: 770px) {
-    .videoPlayer{
+    .videoPlayer {
         left: 67px !important;
     }
+
     .leftSecton>img {
 
         left: 67px !important;
@@ -239,11 +306,14 @@
                 #D9D9D91F 100%);
     }
 
-    .pageInfo{
+    .pageInfo {
         display: none !important;
     }
 
-    .channels, .controls, .ad, .playInfo {
+    .channels,
+    .controls,
+    .ad,
+    .playInfo {
         position: relative;
     }
 
@@ -259,15 +329,69 @@
         top: 128px;
     }
 
-    .playInfo{
-        top:39px
+    .playInfo {
+        top: 39px
     }
 
 }
 
-@media only screen and (max-width: 540px) {
+
+@media only screen and (max-width: 667px) {
+    .pageInfo {
+        display: none;
+    }
+
+    .blackScreen {
+        width: 589px;
+        height: 420px;
+        top: 50px;
+        right: 59px !important;
+        max-width: 91%;
+    }
+
+    .rightSecton {
+        top: 43px;
+        position: relative;
+    }
+
+    .reactPlayer {
+        width: 545px !important;
+        height: 428px !important;
+    }
+
+    .videoPlayer {
+        left: 65px !important;
+        top: 50px !important;
+    }
+
+    .leftSecton>img {
+        left: 36px !important;
+        top: 13px !important;
+    }
+}
+
+@media only screen and (max-width: 542px) {
     .leftSecton>img {
         top: 20px !important;
         left: 26px !important;
+    }
+    .rightSecton{
+        position: relative !important;
+        top: 7px !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .rightSecton{
+        position: relative !important;
+        top: 7px !important;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+    .rightSecton{
+        position: relative !important;
+        top: 7px !important;
     }
 }

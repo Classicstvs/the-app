@@ -47,15 +47,26 @@
     .videoPlayer {
         z-index: 2;
         position: absolute;
-        top: 52px;
-        left: 136px;
+        top: 52px !important;
+        left: 136px !important;
     }
 
     .reactPlayer {
-        width: 615px;
-        height: 460px;
+        width: 615px !important;
+        height: 460px !important;
     }
 }
+
+@media only screen and (max-width: 850px) {
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 52px !important;
+        left: 101px !important;
+    }
+}
+
+
 
 @media only screen and (max-width: 820px) {
     .reactPlayer {
@@ -94,7 +105,7 @@
     .videoPlayer {
         z-index: 2;
         position: absolute;
-        top: 34px;
+        top: 50px;
         left: 44px;
     }
 

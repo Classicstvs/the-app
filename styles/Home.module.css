@@ -43,6 +43,47 @@
     }
 }
 
+
+@media only screen and (max-width: 850px) {
+    .leftSecton>img {
+        top: 45px !important;
+        left: 126px !important;
+        max-width: 95% !important;
+    }
+
+
+    .rightSecton {
+        position: relative !important;
+        top: -194px !important;
+    }
+
+    .pageInfo {
+        position: relative;
+        top: 295px;
+    }
+
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 50px !important;
+        left: 100px !important;
+    }
+
+    .leftSecton>img {
+        top: 45px !important;
+        left: 100px !important;
+        max-width: 95% !important;
+    }
+
+    .blackScreen {
+        max-width: 629px;
+        max-height: 501px;
+        top: 45px;
+        right: 137px !important;
+    }
+}
+
+
 @media only screen and (max-width: 825px) {
 
     .channels,
@@ -177,6 +218,26 @@
     .pageInfo {
         top: 312px;
     }
+}
+
+@media only screen and (max-width: 667px) {
+    .pageInfo {
+        display: none;
+    }
+
+    .blackScreen {
+        width: 589px;
+        height: 420px;
+        top: 50px;
+        right: 59px !important;
+        max-width: 91%;
+    }
+
+    .rightSecton {
+        top: 43px;
+        position: relative;
+    }
+
 }
 
 
