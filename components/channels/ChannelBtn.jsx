@@ -11,34 +11,67 @@ export default function ChannelBtn({ channel }) {
 
   const isActive = router.pathname.startsWith(channel.url);
 
-  const [channelBtnColor , setChannelBtnColor] = useState()
+  const [channelBtnColor, setChannelBtnColor] = useState();
 
-useEffect(()=>{
-  if(router.pathname.startsWith('/') || router.pathname.startsWith('/90s')){
-    setChannelBtnColor('channelBtn')
-  }
-  if(router.pathname.startsWith('/80s')){
-    setChannelBtnColor('channelBtn80s')
-  }
-},[router.pathname])
+  const [activeBtn, setActiveBtn] = useState();
 
+  useEffect(() => {
+    if (router.pathname.startsWith("/") || router.pathname.startsWith("/90s")) {
+      setChannelBtnColor("channelBtn");
+    }
+    if (router.pathname.startsWith("/80s")) {
+      setChannelBtnColor("channelBtn80s");
+    }
+  }, [router.pathname]);
+
+  useEffect(() => {
+    if (router.pathname.startsWith("/") || router.pathname.startsWith("/90s")) {
+      setActiveBtn(btn90s);
+    }
+    if (router.pathname.startsWith("/80s")) {
+      setActiveBtn(btn80s);
+    }
+  }, [router.pathname]);
+
+  const btn90s = (
+    <button
+      className={`${styles["channelBtn"]} 
+  ${isActive && styles["active"]}`}
+    >
+      <p>{channel.name}</p>
+
+      {channel.image && (
+        <Image
+          src={channel.image}
+          alt={channel.name}
+          width={channel.width}
+          height={channel.height}
+        />
+      )}
+    </button>
+  );
+
+  const btn80s = (
+    <button
+      className={`${styles["channelBtn80s"]} 
+  ${isActive && styles["active80s"]}`}
+    >
+      <p>{channel.name}</p>
+
+      {channel.image && (
+        <Image
+          src={channel.image}
+          alt={channel.name}
+          width={channel.width}
+          height={channel.height}
+        />
+      )}
+    </button>
+  );
 
   return (
     <Link href={channel.url} scroll={false}>
-      <button
-        className={`${styles[channelBtnColor]} ${isActive ? styles.active : ""}`}
-      >
-        <p>{channel.name}</p>
-
-        {channel.image && (
-          <Image
-            src={channel.image}
-            alt={channel.name}
-            width={channel.width}
-            height={channel.height}
-          />
-        )}
-      </button>
+      {activeBtn}
     </Link>
   );
 }

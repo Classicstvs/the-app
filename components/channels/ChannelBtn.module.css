@@ -31,6 +31,11 @@
     color: #5297FF;
 }
 
+.active80s {
+    border: 2px solid #5297FF;
+    color: red;
+}
+
 .channelBtn80s {
     width: 141px;
     height: 51px;
@@ -74,7 +79,7 @@
         letter-spacing: 0.3px;
     }
 
-     .channelBtn80s {
+    .channelBtn80s {
         margin: 4px 0;
     }
 
@@ -94,7 +99,7 @@
         letter-spacing: 0.3px;
     }
 
-        .channelBtn80s {
+    .channelBtn80s {
         margin: 4px 0;
     }
 

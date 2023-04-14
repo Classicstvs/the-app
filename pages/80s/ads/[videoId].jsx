@@ -44,6 +44,7 @@ export default function Video({ title }) {
   // const [isFullScreen, setIsFullScreen] = useState(false);
   const [year, setYear] = useState(null);
   const [showNoise, setShowNoise] = useState(true);
+  const [noise, setNoise]= useState("")
   const [skin, setSkin] = useState(false);
 
   //Toggle skin
@@ -147,6 +148,16 @@ export default function Video({ title }) {
     }
   }, [showNoise]);
 
+
+  useEffect(()=>{
+    if(router.pathname.startsWith('/') || router.pathname.startsWith('/90s')){
+      setNoise("noise")
+    }
+    if(router.pathname.startsWith('/80s')){
+      setNoise("noise80s")
+    }
+  },[router])
+
   return (
     <main className={styles.main}>
       <NextSeo {...SEO} />
@@ -157,7 +168,7 @@ export default function Video({ title }) {
             alt="TV Noise"
             width={615}
             height={460}
-            className={`${styles.noise} ${
+            className={`${styles[noise]} ${
               showNoise ? styles.show : styles.hide
             }`}
             style={{
