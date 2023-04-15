@@ -6,17 +6,18 @@ import SEO from "../next-seo.config";
 
 import { Roboto } from "next/font/google";
 
- 
+import { GoogleAnalytics } from "nextjs-google-analytics";
+
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
 });
 
 export default function App({ Component, pageProps }) {
-
   return (
     <>
       <DefaultSeo {...SEO} />
+      <GoogleAnalytics trackPageViews />
       <Layout className={roboto.className}>
         <Component {...pageProps} />
       </Layout>
