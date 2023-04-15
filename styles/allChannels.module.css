@@ -392,6 +392,23 @@
     }
 }
 
+
+@media only screen and (max-width: 460px) {
+  
+    .channels{
+        top: -313px;
+    }
+
+    .controls {
+        top: -306px;
+    }
+
+    .ad {
+        top: 136px;
+    }
+
+}
+
 @media only screen and (max-width: 420px) {
     .rightSecton{
         position: relative !important;

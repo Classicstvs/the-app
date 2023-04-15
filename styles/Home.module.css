@@ -284,6 +284,22 @@
         display: block;
     }
 
+    .channels{
+        top: -313px;
+    }
+
+    .controls {
+        top: -306px;
+    }
+
+    .pageInfo {
+        top: 466px;
+    }
+
+    .ad {
+        top: 136px;
+    }
+
 }
 
 @media only screen and (max-width: 440px) {
