@@ -306,6 +306,22 @@
     .rightSecton {
         top: -230px !important;
     }
+
+    .channels {
+        top: -391px;
+    }
+
+    .controls {
+        top: -378px;
+    }
+
+    .ad{
+        top: 122px;
+    }
+
+    .pageInfo {
+        top: 524px;
+    }
 }
 
 @media only screen and (max-width: 430px) {

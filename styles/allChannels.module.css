@@ -409,6 +409,21 @@
 
 }
 
+@media only screen and (max-width: 440px) {
+
+    .channels {
+        top: -363px;
+    }
+
+    .controls {
+        top: -350px;
+    }
+
+    .ad{
+        top: 145px;
+    }
+}
+
 @media only screen and (max-width: 420px) {
     .rightSecton{
         position: relative !important;
