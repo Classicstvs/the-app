@@ -1,31 +1,31 @@
 .container {
     height: 164px;
     width: 620px;
-    background-color: white;
-    color: black;
+    /* background-color: white;
+    color: black; */
 }
 
-.container p {
+/* .container p {
     padding: 15px;
-}
+} */
 
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) {
     .container {
         width: 582px;
     }
-}
+} */
 
 
-@media screen and (min-width: 768px) and (max-width:1023px) {
+/* @media screen and (min-width: 768px) and (max-width:1023px) {
     .container {
         width: 100%  !important;
-        /* top: 336px; */
+        top: 336px;
     }
-}
+} */
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     .container {
         width: 100% !important;
-        /* top: 106px; */
+        top: 106px;
     }
-}
+} */
