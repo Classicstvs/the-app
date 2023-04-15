@@ -159,10 +159,22 @@
 }
 
 @media only screen and (max-width: 821px) {
-    .rightSecton{
+    .rightSecton {
         position: relative !important;
         top: -377px !important;
     }
+
+    .channels {
+        top: -164px;
+    }
+
+    .controls {
+        top: -157px;
+    }
+
+    .pageInfo {
+    top: 458px;
+}
 }
 
 @media only screen and (max-width: 769px) {
@@ -303,6 +315,18 @@
 @media only screen and (max-width: 380px) {
     .rightSecton {
         top: -267px !important;
+    }
+
+    .pageInfo {
+        top: 479px;
+    }
+
+    .channels {
+        top: -357px;
+    }
+
+    .controls {
+        top: -348px;
     }
 }
 

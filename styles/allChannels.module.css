@@ -254,6 +254,17 @@
         top: -168px !important;
     }
 
+}
+
+@media only screen and (max-width: 821px) {
+
+    .channels {
+        top: -164px;
+    }
+
+    .controls {
+        top: -157px;
+    }
 
 
 }
@@ -393,5 +404,14 @@
     .rightSecton{
         position: relative !important;
         top: 7px !important;
+    }
+
+
+    .channels {
+        top: -357px;
+    }
+
+    .controls {
+        top: -348px;
     }
 }
