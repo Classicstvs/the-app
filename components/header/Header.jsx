@@ -44,7 +44,7 @@ export default function Header({ openModal }) {
 
           <Link
             className={router.pathname.startsWith("/80s") ? styles["activePath"] : ""}
-            href="/80s"
+            href="#"
             onClick={handleModalClick}
           >
             80s

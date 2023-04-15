@@ -42,7 +42,7 @@ export default function Layout({ children }) {
               continue to expand our offerings and provide the best content
               possible!
             </p>
-            <Link href="/">
+            <Link href="#">
               <button onClick={closeModal}>Go Back to 90s</button>
             </Link>
           </div>
