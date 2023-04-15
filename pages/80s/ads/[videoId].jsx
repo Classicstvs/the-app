@@ -80,7 +80,7 @@ export default function Video({ title }) {
     if (videoTitle) {
       router.replace(`/videos/${videoId}/${videoTitle}`);
     }
-  }, [videoId, videoTitle]);
+  }, [router, videoId, videoTitle]);
 
   const playPrev = () => {
     setShowNoise(true);
