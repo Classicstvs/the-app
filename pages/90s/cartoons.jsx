@@ -24,11 +24,11 @@ import { info90s } from "@/data/infos";
 export default function Cartoons({ cartoons }) {
   const SEO = {
     title: "Classics TV | 90s Favourites Cartoons TV Channels",
-    description: "",
+    description: "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
 
     openGraph: {
       title: "Classics TV | 90s Favourites Cartoons TV Channels",
-      description: "",
+      description: "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
     },
   };
 
@@ -120,10 +120,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
       },
     };
 

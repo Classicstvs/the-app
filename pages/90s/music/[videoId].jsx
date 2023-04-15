@@ -90,11 +90,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Greatests Music TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Relive the music revolution of the 90s with iconic music TV channels, bringing us live performances, interviews, and fashion trends. Discover the biggest names in music and connect with other fans",
 
     openGraph: {
-      title: "Classics TV | 90s Greatests Music TV Channels",
-      description: "",
+      title: `Classics TV | 90s Greatests Music TV Channels | Now Playnig: ${title}`,
+      description: "Relive the music revolution of the 90s with iconic music TV channels, bringing us live performances, interviews, and fashion trends. Discover the biggest names in music and connect with other fans",
     },
   };
 

@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Kids({ kids }) {
   const SEO = {
     title: "Classics TV | 90s Kids TV Channels",
-    description: "",
+    description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
 
     openGraph: {
       title: "Classics TV | 90s Kids TV Channels",
-      description: "",
+      description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
     },
   };
 
@@ -122,10 +122,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
       },
     };
 

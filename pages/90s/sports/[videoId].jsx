@@ -90,11 +90,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Sports TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
 
     openGraph: {
-      title: "Classics TV | 90s Sports TV Channels",
-      description: "",
+      title: `Classics TV | 90s Sports TV Channels | Now Playnig: ${title}`,
+      description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
     },
   };
 

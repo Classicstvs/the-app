@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Sports({ sports }) {
   const SEO = {
     title: "Classics TV | 90s Sports TV Channels",
-    description: "",
+    description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
 
     openGraph: {
       title: "Classics TV | 90s Sports TV Channels",
-      description: "",
+      description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
     },
   };
 
@@ -122,10 +122,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
       },
     };
 

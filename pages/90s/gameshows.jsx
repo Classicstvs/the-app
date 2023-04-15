@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Gameshows({ gameshows }) {
   const SEO = {
     title: "Classics TV | 90s Gameshows TV Channels ",
-    description: "",
+    description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
 
     openGraph: {
       title: "Classics TV | 90s Gameshows TV Channels ",
-      description: "",
+      description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
     },
   };
 
@@ -121,10 +121,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
       },
     };
 

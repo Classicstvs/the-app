@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function News({ news }) {
   const SEO = {
     title: "Classics TV | 90s News TV Channels",
-    description: "",
+    description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
 
     openGraph: {
       title: "Classics TV | 90s News TV Channels",
-      description: "",
+      description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
     },
   };
 
@@ -122,10 +122,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
       },
     };
 

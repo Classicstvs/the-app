@@ -90,11 +90,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Kids TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
 
     openGraph: {
-      title: "Classics TV | 90s Kids TV Channels",
-      description: "",
+      title: `Classics TV | 90s Kids TV Channels | Now Playnig: ${title}`,
+      description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
     },
   };
 

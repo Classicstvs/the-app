@@ -90,11 +90,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s TV Shows Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
 
     openGraph: {
-      title: "Classics TV | 90s TV Shows Channels",
-      description: "",
+      title: `Classics TV | 90s TV Shows Channels | Now Playnig: ${title}`,
+      description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
     },
   };
 

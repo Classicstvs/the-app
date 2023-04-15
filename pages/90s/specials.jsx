@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Specials({ specials }) {
   const SEO = {
     title: "Classics TV | 90s Specials TV Channels",
-    description: "",
+    description: "Experience the groundbreaking and influential specials TV channels of the 90s, featuring live coverage of significant moments in pop culture and world history. Witness history in the making and exclusive behind-the-scenes looks.",
 
     openGraph: {
       title: "Classics TV | 90s Specials TV Channels",
-      description: "",
+      description: "Experience the groundbreaking and influential specials TV channels of the 90s, featuring live coverage of significant moments in pop culture and world history. Witness history in the making and exclusive behind-the-scenes looks.",
     },
   };
 
@@ -121,10 +121,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Experience the groundbreaking and influential specials TV channels of the 90s, featuring live coverage of significant moments in pop culture and world history. Witness history in the making and exclusive behind-the-scenes looks.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Experience the groundbreaking and influential specials TV channels of the 90s, featuring live coverage of significant moments in pop culture and world history. Witness history in the making and exclusive behind-the-scenes looks.",
       },
     };
 

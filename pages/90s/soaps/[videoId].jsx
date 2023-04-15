@@ -90,11 +90,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Best Soaps TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Step into the dramatic world of 90s soap opera TV channels with captivating storylines, love triangles, and family feuds. Escape into an entertaining world of your favorite characters.",
 
     openGraph: {
-      title: "Classics TV | 90s Best Soaps TV Channels",
-      description: "",
+      title: `Classics TV | 90s Best Soaps TV Channels | Now Playnig: ${title}`,
+      description: "Step into the dramatic world of 90s soap opera TV channels with captivating storylines, love triangles, and family feuds. Escape into an entertaining world of your favorite characters.",
     },
   };
 

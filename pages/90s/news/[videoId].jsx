@@ -90,11 +90,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s News TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
 
     openGraph: {
-      title: "Classics TV | 90s News TV Channels",
-      description: "",
+      title: `Classics TV | 90s News TV Channels | Now Playnig: ${title}`,
+      description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
     },
   };
 

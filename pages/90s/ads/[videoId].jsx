@@ -98,11 +98,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Commercials and Ads TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
 
     openGraph: {
-      title: "Classics TV | 90s Commercials and Ads TV Channels",
-      description: "",
+      title: `Classics TV | 90s Commercials and Ads TV Channels | Now Playnig: ${title}`,
+      description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
     },
   };
 

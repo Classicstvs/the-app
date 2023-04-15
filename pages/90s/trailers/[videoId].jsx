@@ -88,11 +88,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Trailers on TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
 
     openGraph: {
-      title: "Classics TV | 90s Trailers on TV Channels",
-      description: "",
+      title: `Classics TV | 90s Trailers on TV Channels | Now Playnig: ${title}`,
+      description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
     },
   };
 

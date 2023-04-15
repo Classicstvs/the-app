@@ -88,11 +88,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Gameshows TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
 
     openGraph: {
-      title: "Classics TV | 90s Gameshows TV Channels",
-      description: "",
+      title: `Classics TV | 90s Gameshows TV Channels | Now Playnig: ${title}`,
+      description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
     },
   };
 

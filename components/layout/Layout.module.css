@@ -38,7 +38,7 @@
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
-    color: #3D3A3A;
+    color: #f8f407;
     transition: 2s;
     margin-top: 20px;
 }
@@ -78,6 +78,10 @@
         transform: translate(-50%, -50%);
         border-radius: 10px;
         z-index: 9;
+        background-image: url(/images/tv_pop.webp);
+        background-repeat: no-repeat;
+        background-size: 94px;
+        background-position: 142px 258px;
     }
 
     .modalWrapper p:first-of-type {
@@ -106,8 +110,8 @@
     }
 
     .modalWrapper button {
-        margin: 3px 20px 0 20px ;
-        font-size:16px;
+        margin: 3px 20px 0 20px;
+        font-size: 16px;
         padding: 0;
     }
 

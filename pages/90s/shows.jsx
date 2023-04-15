@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Shows({ shows }) {
   const SEO = {
     title: "Classics TV | 90s TV Shows Channels",
-    description: "",
+    description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
 
     openGraph: {
       title: "Classics TV | 90s TV Shows Channels",
-      description: "",
+      description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
     },
   };
 
@@ -122,10 +122,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
       },
     };
 

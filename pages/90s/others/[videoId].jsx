@@ -90,11 +90,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | Other 90s TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Discover diverse programming from the 90s on other TV channels - from educational shows on science and history to lifestyle programs like cooking and home renovation.",
 
     openGraph: {
-      title: "Classics TV | Other 90s TV Channels",
-      description: "",
+      title: `Classics TV | Other 90s TV Channels | Now Playnig: ${title}`,
+      description: "Discover diverse programming from the 90s on other TV channels - from educational shows on science and history to lifestyle programs like cooking and home renovation.",
     },
   };
 

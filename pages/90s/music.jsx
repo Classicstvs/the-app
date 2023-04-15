@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Music({ music }) {
   const SEO = {
     title: "Classics TV | 90s Greatests Music TV Channels",
-    description: "",
+    description: "Relive the music revolution of the 90s with iconic music TV channels, bringing us live performances, interviews, and fashion trends. Discover the biggest names in music and connect with other fans",
 
     openGraph: {
       title: "Classics TV | 90s Greatests Music TV Channels",
-      description: "",
+      description: "Relive the music revolution of the 90s with iconic music TV channels, bringing us live performances, interviews, and fashion trends. Discover the biggest names in music and connect with other fans",
     },
   };
 
@@ -122,10 +122,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Relive the music revolution of the 90s with iconic music TV channels, bringing us live performances, interviews, and fashion trends. Discover the biggest names in music and connect with other fans",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Relive the music revolution of the 90s with iconic music TV channels, bringing us live performances, interviews, and fashion trends. Discover the biggest names in music and connect with other fans",
       },
     };
 

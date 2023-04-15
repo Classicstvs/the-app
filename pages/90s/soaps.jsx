@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Soaps({soaps}) {
   const SEO = {
     title: "Classics TV | 90s Best Soaps TV Channels",
-    description: "",
+    description: "Step into the dramatic world of 90s soap opera TV channels with captivating storylines, love triangles, and family feuds. Escape into an entertaining world of your favorite characters.",
 
     openGraph: {
       title: "Classics TV | 90s Best Soaps TV Channels",
-      description: "",
+      description: "Step into the dramatic world of 90s soap opera TV channels with captivating storylines, love triangles, and family feuds. Escape into an entertaining world of your favorite characters.",
     },
   };
 
@@ -127,10 +127,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Step into the dramatic world of 90s soap opera TV channels with captivating storylines, love triangles, and family feuds. Escape into an entertaining world of your favorite characters.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Step into the dramatic world of 90s soap opera TV channels with captivating storylines, love triangles, and family feuds. Escape into an entertaining world of your favorite characters.",
       },
     };
 

@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Trailers({ trailers }) {
   const SEO = {
     title: "Classics TV | 90s Trailers on TV Channels",
-    description: "",
+    description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
 
     openGraph: {
       title: "Classics TV | 90s Trailers on TV Channels",
-      description: "",
+      description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
     },
   };
 
@@ -121,10 +121,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
       },
     };
 

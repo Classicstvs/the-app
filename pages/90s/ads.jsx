@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Ads({ ads }) {
   const SEO = {
     title: "Classics TV | 90s Commercials and Ads TV Channels",
-    description: "",
+    description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
 
     openGraph: {
       title: "Classics TV | 90s Commercials and Ads TV Channels",
-      description: "",
+      description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
     },
   };
 
@@ -122,10 +122,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
       },
     };
 

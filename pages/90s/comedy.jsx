@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Comedy({ comedy }) {
   const SEO = {
     title: "Classics TV  | Classics TV | 90s Funniests Comedy TV Channels",
-    description: "",
+    description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
 
     openGraph: {
       title: "Classics TV | Classics TV | 90s Funniests Comedy TV Channels",
-      description: "",
+      description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
     },
   };
 
@@ -122,10 +122,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
       },
     };
 

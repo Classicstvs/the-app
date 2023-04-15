@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Others({ others }) {
   const SEO = {
     title: "Classics TV | Other 90s TV Channels",
-    description: "",
+    description: "Discover diverse programming from the 90s on other TV channels - from educational shows on science and history to lifestyle programs like cooking and home renovation.",
 
     openGraph: {
       title: "Classics TV | Other 90s TV Channels",
-      description: "",
+      description: "Discover diverse programming from the 90s on other TV channels - from educational shows on science and history to lifestyle programs like cooking and home renovation.",
     },
   };
 
@@ -122,10 +122,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Discover diverse programming from the 90s on other TV channels - from educational shows on science and history to lifestyle programs like cooking and home renovation.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Discover diverse programming from the 90s on other TV channels - from educational shows on science and history to lifestyle programs like cooking and home renovation.",
       },
     };
 

@@ -23,11 +23,11 @@ import { info90s } from "@/data/infos";
 export default function Talkshows({talkshows}) {
   const SEO = {
     title: "Classics TV | 90s Talkshows TV Channels",
-    description: "",
+    description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
 
     openGraph: {
       title: "Classics TV | 90s Talkshows TV Channels",
-      description: "",
+      description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
     },
   };
 
@@ -127,10 +127,10 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "",
+      description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "",
+        description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
       },
     };
 

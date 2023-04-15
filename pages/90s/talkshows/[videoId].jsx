@@ -88,11 +88,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Talkshows TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
 
     openGraph: {
-      title: "Classics TV | 90s Talkshows TV Channels",
-      description: "",
+      title: `Classics TV | 90s Talkshows TV Channels | Now Playnig: ${title}`,
+      description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
     },
   };
 

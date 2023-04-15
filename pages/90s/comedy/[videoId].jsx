@@ -90,11 +90,11 @@ export default function Video({ title }) {
 
   const SEO = {
     title: `Classics TV | 90s Funniests Comedy TV Channels | Now Playnig: ${title}`,
-    description: "",
+    description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
 
     openGraph: {
-      title: "Classics TV  | Classics TV | 90s Funniests Comedy TV Channels",
-      description: "",
+      title: `Classics TV | 90s Funniests Comedy TV Channels | Now Playnig: ${title}`,
+      description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
     },
   };
 

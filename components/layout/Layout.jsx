@@ -32,7 +32,7 @@ export default function Layout({ children }) {
       {showModal && (
         <div className={styles.overlay}>
           <div className={styles.modalWrapper}>
-            <GrClose className={styles.closeBnt} onClick={closeModal} />
+            {/* <GrClose className={styles.closeBnt} onClick={closeModal} /> */}
             <p>Coming Soon</p>
             <p>
               Our team is dedicated to providing the best viewing experience for
