@@ -1,26 +1,19 @@
-import { useEffect } from "react";
 import styles from "./Ad.module.css";
 
+import { Adsense } from "@ctrl/react-adsense";
+
 export default function Ad() {
-  useEffect(() => {
-    var ads = document.getElementsByClassName("adsbygoogle").length;
-      for (var i = 0; i < ads; i++) {
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (e) { }
-      }
-  }, []);
+
 
   return (
     <div className={styles.container}>
-      <ins
-        className="adsbygoogle"
+      <Adsense
         style={{ display: "block" }}
-        data-ad-client="ca-pub-4275984189085881"
-        data-ad-slot="3375378818"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
+        client="ca-pub-4275984189085881"
+        slot="3375378818"
+        format="auto"
+        responsive="true"
+      />
     </div>
   );
 }

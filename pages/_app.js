@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import Layout from "@/components/layout/Layout";
 
+import Script from "next/script";
+
 import Head from "next/head";
 
 import { DefaultSeo } from "next-seo";
@@ -21,6 +23,11 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        strategy="afterInteractive"
+      />
       <DefaultSeo {...SEO} />
       <GoogleAnalytics trackPageViews />
       <Layout className={roboto.className}>
