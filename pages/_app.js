@@ -11,6 +11,7 @@ import SEO from "../next-seo.config";
 import { Roboto } from "next/font/google";
 
 import { GoogleAnalytics } from "nextjs-google-analytics";
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -28,11 +29,12 @@ export default function App({ Component, pageProps }) {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         strategy="afterInteractive"
       />
-    
+
       <DefaultSeo {...SEO} />
       <GoogleAnalytics trackPageViews />
       <Layout className={roboto.className}>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </>
   );
