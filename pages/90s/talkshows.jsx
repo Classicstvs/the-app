@@ -52,7 +52,7 @@ export default function Talkshows({ talkshows }) {
         nextVideoTitle
       ).replace(/%20/g, "")}`,
       undefined,
-      {scroll: false }
+      { scroll: false }
     );
   };
 
