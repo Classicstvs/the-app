@@ -395,7 +395,7 @@
 
 @media only screen and (max-width: 460px) {
   
-    .channels{
+    /* .channels{
         top: -313px;
     }
 
@@ -405,13 +405,13 @@
 
     .ad {
         top: 136px;
-    }
+    } */
 
 }
 
 @media only screen and (max-width: 440px) {
 
-    .channels {
+    /* .channels {
         top: -363px;
     }
 
@@ -421,7 +421,7 @@
 
     .ad{
         top: 145px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 420px) {
@@ -438,12 +438,11 @@
         top: 7px !important;
     }
 
-
-    .channels {
+    /* .channels {
         top: -357px;
     }
 
     .controls {
         top: -348px;
-    }
+    } */
 }
