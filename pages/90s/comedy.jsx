@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function Comedy({ comedy }) {
   const SEO = {
     title: "Classics TV  | Classics TV | 90s Funniests Comedy TV Channels",
-    description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
+    description:
+      "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
 
     openGraph: {
       title: "Classics TV | Classics TV | 90s Funniests Comedy TV Channels",
-      description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
+      description:
+        "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
     },
   };
 
@@ -49,7 +51,9 @@ export default function Comedy({ comedy }) {
       `/90s/comedy/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`,
+      undefined,
+      {scroll: false }
     );
   };
 
@@ -122,10 +126,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
+      description:
+        "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
+        description:
+          "The 90s comedy TV channels brought us iconic sitcoms with memorable characters and hilarious writing that still holds up today. Their legacy still impacts popular culture and paved the way for the future of comedy television.",
       },
     };
 

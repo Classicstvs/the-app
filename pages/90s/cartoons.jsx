@@ -24,11 +24,13 @@ import { info90s } from "@/data/infos";
 export default function Cartoons({ cartoons }) {
   const SEO = {
     title: "Classics TV | 90s Favourites Cartoons TV Channels",
-    description: "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
+    description:
+      "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
 
     openGraph: {
       title: "Classics TV | 90s Favourites Cartoons TV Channels",
-      description: "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
+      description:
+        "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
     },
   };
 
@@ -49,7 +51,9 @@ export default function Cartoons({ cartoons }) {
     router.push(
       `/90s/cartoons/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
-      ).replace(/%20/g, "")}`
+      ).replace(/%20/g, "")}`,
+      undefined,
+      {scroll: false }
     );
   }, [cartoons, router, videoIndex]);
 
@@ -120,10 +124,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
+      description:
+        "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
+        description:
+          "Relive your childhood memories with iconic cartoon TV channels from the 90s! Escape to different worlds filled with adventure, humor and heartwarming stories.",
       },
     };
 

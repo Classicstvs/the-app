@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function Kids({ kids }) {
   const SEO = {
     title: "Classics TV | 90s Kids TV Channels",
-    description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
+    description:
+      "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
 
     openGraph: {
       title: "Classics TV | 90s Kids TV Channels",
-      description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
+      description:
+        "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
     },
   };
 
@@ -49,7 +51,9 @@ export default function Kids({ kids }) {
       `/90s/kids/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -122,10 +126,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
+      description:
+        "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
+        description:
+          "Rediscover the magic of 90s kids TV! From Pokemon to Animaniacs, these shows filled afternoons with adventure and excitement. Relive fond memories or share with a new generation.",
       },
     };
 

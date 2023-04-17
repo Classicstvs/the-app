@@ -20,14 +20,16 @@ import { channels } from "../../data/channelsList";
 import talkshowsJson from "../../data/talkshows.json";
 import { info90s } from "@/data/infos";
 
-export default function Talkshows({talkshows}) {
+export default function Talkshows({ talkshows }) {
   const SEO = {
     title: "Classics TV | 90s Talkshows TV Channels",
-    description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
+    description:
+      "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
 
     openGraph: {
       title: "Classics TV | 90s Talkshows TV Channels",
-      description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
+      description:
+        "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
     },
   };
 
@@ -46,14 +48,13 @@ export default function Talkshows({talkshows}) {
     const nextVideoTitle = talkshows[videoIndex + 1].title;
 
     router.push(
-      `/90s/talkshows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
-        /%20/g,
-        ""
-      )}`
+      `/90s/talkshows/${nextVideoId}?${encodeURIComponent(
+        nextVideoTitle
+      ).replace(/%20/g, "")}`,
+      undefined,
+      {scroll: false }
     );
   };
-
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -81,26 +82,24 @@ export default function Talkshows({talkshows}) {
           />
           <Tv />
           <div className={styles.pageInfo}>
-          <PageInfo info={info90s} years="90s"/>
+            <PageInfo info={info90s} years="90s" />
           </div>
         </div>
         <div className={styles.rightSecton}>
-        <div className={styles.ad}>
-          <Ad />
+          <div className={styles.ad}>
+            <Ad />
           </div>
           <div className={styles.channels}>
-          <Channels channels={channels} />
+            <Channels channels={channels} />
           </div>
           <div className={styles.controls}>
-          <Controls
-            playNext={playNext}
-          />
+            <Controls playNext={playNext} />
           </div>
           <div className={styles.playInfo}>
-          <PlayInfo
-            jsonLength={jsonLength}
-            channelInfo="Talk show TV channels from the 90s were a platform for some of the most influential and entertaining personalities of the decade. From Oprah to Jerry Springer, they brought us a wide range of guests and topics, from hard-hitting political discussions to lighthearted celebrity interviews. These channels gave us a chance to hear diverse perspectives and engage in debates and conversations that were both engaging and informative. They also provided us with a window into the lives of the rich and famous, as we watched our favorite celebrities reveal intimate details of their personal lives on air. Today, talk show TV channels continue to be a popular format, but those from the 90s remain a landmark in the history of television and popular culture."
-          />
+            <PlayInfo
+              jsonLength={jsonLength}
+              channelInfo="Talk show TV channels from the 90s were a platform for some of the most influential and entertaining personalities of the decade. From Oprah to Jerry Springer, they brought us a wide range of guests and topics, from hard-hitting political discussions to lighthearted celebrity interviews. These channels gave us a chance to hear diverse perspectives and engage in debates and conversations that were both engaging and informative. They also provided us with a window into the lives of the rich and famous, as we watched our favorite celebrities reveal intimate details of their personal lives on air. Today, talk show TV channels continue to be a popular format, but those from the 90s remain a landmark in the history of television and popular culture."
+            />
           </div>
         </div>
       </div>
@@ -108,7 +107,6 @@ export default function Talkshows({talkshows}) {
     </main>
   );
 }
-
 
 export async function getServerSideProps() {
   const apiKey = process.env.API_KEY;
@@ -127,10 +125,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
+      description:
+        "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
+        description:
+          "Explore the influential and entertaining talk show TV channels of the 90s, featuring diverse perspectives and celebrity interviews. A landmark in TV history.",
       },
     };
 

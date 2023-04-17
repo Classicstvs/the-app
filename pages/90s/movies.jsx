@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function Movies({ movies }) {
   const SEO = {
     title: "Classics TV | 90s Best Movies TV Channels ",
-    description: "Travel back in time to 90s movie TV channels! From Die Hard to The Lion King, they brought the big screen to our homes. Relive timeless classics or introduce a new generation to these beloved films.",
+    description:
+      "Travel back in time to 90s movie TV channels! From Die Hard to The Lion King, they brought the big screen to our homes. Relive timeless classics or introduce a new generation to these beloved films.",
 
     openGraph: {
       title: "Classics TV | 90s Best Movies TV Channels ",
-      description: "Travel back in time to 90s movie TV channels! From Die Hard to The Lion King, they brought the big screen to our homes. Relive timeless classics or introduce a new generation to these beloved films.",
+      description:
+        "Travel back in time to 90s movie TV channels! From Die Hard to The Lion King, they brought the big screen to our homes. Relive timeless classics or introduce a new generation to these beloved films.",
     },
   };
 
@@ -49,7 +51,9 @@ export default function Movies({ movies }) {
       `/90s/movies/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -122,10 +126,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Travel back in time to 90s movie TV channels! From Die Hard to The Lion King, they brought the big screen to our homes. Relive timeless classics or introduce a new generation to these beloved films.",
+      description:
+        "Travel back in time to 90s movie TV channels! From Die Hard to The Lion King, they brought the big screen to our homes. Relive timeless classics or introduce a new generation to these beloved films.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Travel back in time to 90s movie TV channels! From Die Hard to The Lion King, they brought the big screen to our homes. Relive timeless classics or introduce a new generation to these beloved films.",
+        description:
+          "Travel back in time to 90s movie TV channels! From Die Hard to The Lion King, they brought the big screen to our homes. Relive timeless classics or introduce a new generation to these beloved films.",
       },
     };
 

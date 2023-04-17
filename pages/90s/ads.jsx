@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function Ads({ ads }) {
   const SEO = {
     title: "Classics TV | 90s Commercials and Ads TV Channels",
-    description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
+    description:
+      "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
 
     openGraph: {
       title: "Classics TV | 90s Commercials and Ads TV Channels",
-      description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
+      description:
+        "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
     },
   };
 
@@ -49,7 +51,9 @@ export default function Ads({ ads }) {
       `/90s/ads/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -59,7 +63,7 @@ export default function Ads({ ads }) {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, );
+  });
 
   return (
     <main className={styles.main}>
@@ -79,24 +83,24 @@ export default function Ads({ ads }) {
           />
           <Tv />
           <div className={styles.pageInfo}>
-          <PageInfo info={info90s} years="90s"/>
+            <PageInfo info={info90s} years="90s" />
           </div>
         </div>
         <div className={styles.rightSecton}>
-        <div className={styles.ad}>
-          <Ad />
+          <div className={styles.ad}>
+            <Ad />
           </div>
           <div className={styles.channels}>
-          <Channels channels={channels} />
+            <Channels channels={channels} />
           </div>
           <div className={styles.controls}>
-          <Controls playNext={playNext} />
+            <Controls playNext={playNext} />
           </div>
           <div className={styles.playInfo}>
-          <PlayInfo
-            jsonLength={jsonLength}
-            channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
-          />
+            <PlayInfo
+              jsonLength={jsonLength}
+              channelInfo="Commercials and ads from the 90s were memorable and influential, with campaigns like 'Got Milk?' and the Budweiser Frogs becoming iconic. These ads utilized catchy jingles and celebrity endorsements to appeal to emotions and shape our perception of brands. As technology advanced, brands had to adapt to new forms of media to stay relevant."
+            />
           </div>
         </div>
       </div>
@@ -122,10 +126,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
+      description:
+        "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
+        description:
+          "Relive the memorable and influential commercials from the 90s, featuring catchy jingles and celebrity endorsements. Explore how brands adapted to new media and stayed relevant over time.",
       },
     };
 

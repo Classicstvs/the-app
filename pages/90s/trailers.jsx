@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function Trailers({ trailers }) {
   const SEO = {
     title: "Classics TV | 90s Trailers on TV Channels",
-    description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
+    description:
+      "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
 
     openGraph: {
       title: "Classics TV | 90s Trailers on TV Channels",
-      description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
+      description:
+        "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
     },
   };
 
@@ -48,7 +50,9 @@ export default function Trailers({ trailers }) {
     router.push(
       `/90s/trailers/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
-      ).replace(/%20/g, "")}`
+      ).replace(/%20/g, "")}`,
+      undefined,
+      { scroll: false }
     );
   };
 
@@ -121,10 +125,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
+      description:
+        "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
+        description:
+          "Get a sneak peek of the latest movies with 90s trailer TV channels, featuring blockbusters, indie films, and cult classics. Make informed choices and get excited for the next big movie release.",
       },
     };
 

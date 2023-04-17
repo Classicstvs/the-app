@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function Sports({ sports }) {
   const SEO = {
     title: "Classics TV | 90s Sports TV Channels",
-    description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
+    description:
+      "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
 
     openGraph: {
       title: "Classics TV | 90s Sports TV Channels",
-      description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
+      description:
+        "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
     },
   };
 
@@ -49,7 +51,9 @@ export default function Sports({ sports }) {
       `/90s/sports/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`,
+      undefined,
+      {scroll: false }
     );
   };
 
@@ -122,10 +126,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
+      description:
+        "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
+        description:
+          "Relive the excitement of 90s sports TV channels! From the Olympics to the World Cup, ESPN to Sky Sports brought us live coverage and expert analysis. Today, they remain an important part of sports media.",
       },
     };
 

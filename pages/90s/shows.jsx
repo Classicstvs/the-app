@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function Shows({ shows }) {
   const SEO = {
     title: "Classics TV | 90s TV Shows Channels",
-    description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
+    description:
+      "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
 
     openGraph: {
       title: "Classics TV | 90s TV Shows Channels",
-      description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
+      description:
+        "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
     },
   };
 
@@ -49,7 +51,9 @@ export default function Shows({ shows }) {
       `/90s/shows/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`,
+      undefined,
+      {scroll: false }
     );
   };
 
@@ -122,10 +126,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
+      description:
+        "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
+        description:
+          "Relive the 90s with iconic TV shows! From Friends to Seinfeld, these channels brought beloved sitcoms and dramas that still captivate audiences today.",
       },
     };
 

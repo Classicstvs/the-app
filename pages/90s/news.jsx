@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function News({ news }) {
   const SEO = {
     title: "Classics TV | 90s News TV Channels",
-    description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
+    description:
+      "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
 
     openGraph: {
       title: "Classics TV | 90s News TV Channels",
-      description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
+      description:
+        "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
     },
   };
 
@@ -49,7 +51,9 @@ export default function News({ news }) {
       `/90s/news/${nextVideoId}?${encodeURIComponent(nextVideoTitle).replace(
         /%20/g,
         ""
-      )}`
+      )}`,
+      undefined,
+      {scroll: false }
     );
   };
 
@@ -122,10 +126,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
+      description:
+        "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
+        description:
+          "Stay informed with 90s news channels! From CNN to BBC, they covered major events and shaped our understanding of the world. Discover their vital role in journalism and media history.",
       },
     };
 

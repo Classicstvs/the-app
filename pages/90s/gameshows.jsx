@@ -23,11 +23,13 @@ import { info90s } from "@/data/infos";
 export default function Gameshows({ gameshows }) {
   const SEO = {
     title: "Classics TV | 90s Gameshows TV Channels ",
-    description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
+    description:
+      "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
 
     openGraph: {
       title: "Classics TV | 90s Gameshows TV Channels ",
-      description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
+      description:
+        "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
     },
   };
 
@@ -48,7 +50,9 @@ export default function Gameshows({ gameshows }) {
     router.push(
       `/90s/gameshows/${nextVideoId}?${encodeURIComponent(
         nextVideoTitle
-      ).replace(/%20/g, "")}`
+      ).replace(/%20/g, "")}`,
+      undefined,
+      {scroll: false }
     );
   };
 
@@ -58,7 +62,7 @@ export default function Gameshows({ gameshows }) {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, );
+  });
 
   return (
     <main className={styles.main}>
@@ -121,10 +125,12 @@ export async function getServerSideProps() {
 
     const SEO = {
       title: `Classics TV | ${channelTitle} ${title}`,
-      description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
+      description:
+        "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
       openGraph: {
         title: `Classics TV | ${channelTitle} ${title}`,
-        description: "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
+        description:
+          "Step back in time to 90s game show TV channels! From Jeopardy! to Wheel of Fortune, they offered iconic and innovative programs. Test your knowledge, compete, and win prizes.",
       },
     };
 
