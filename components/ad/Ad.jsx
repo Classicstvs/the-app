@@ -9,7 +9,7 @@ export default function Ad() {
     <div className={styles.container}>
       <Adsense
         style={{height:'164px' }}
-        client="ca-pub-4275984189085881"
+        client="ca-pub-4803482388154607"
         slot="3375378818"
         // format="auto"
         responsive="true"
