@@ -18,6 +18,7 @@ export default function Document() {
         <meta property="og:title" content="Classics TV" />
         <meta property="og:url" content="www.classicstv.net" />
         <meta property="og:type" content="website" />
+        <meta name="google-site-verification" content="QUg1r1-ry6ZhM9aQdj6P44wgf8NiJ79QZP3IHlIaIl4" />
       </Head>
       <body>
         <Main />
