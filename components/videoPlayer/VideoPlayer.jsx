@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import ReactPlayer from "react-player";
 
@@ -7,6 +7,7 @@ import styles from "./VideoPlayer.module.css";
 const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player,onEnded }) => {
   const [video, setVideo] = useState(null);
   const [videoTitle, setVideoTitle] = useState();
+    const playerRef = useRef(null);
 
   const apiKey = process.env.API_KEY;
   useEffect(() => {
@@ -29,6 +30,43 @@ const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player,onEnded }) 
       );
   });
 
+ useEffect(() => {
+    const player = playerRef.current;
+    if (player) {
+      const handlePlayerReady = () => {
+        player.getInternalPlayer().playVideo();
+      };
+      player.on("ready", handlePlayerReady);
+      return () => {
+        player.off("ready", handlePlayerReady);
+      };
+    }
+  }, []);
+
+// useEffect(() => {
+//   const handleVisibilityChange = () => {
+//     if (document.visibilityState === 'visible' && document.hasFocus()) {
+//       player.current?.getInternalPlayer()?.playVideo();
+//     }
+//   };
+
+//   document.addEventListener('visibilitychange', handleVisibilityChange);
+
+//   // Check if the page is currently visible and has focus before autoplaying the video
+//   if (document.visibilityState === 'visible' && document.hasFocus()) {
+//     player.current?.getInternalPlayer()?.playVideo();
+//   }
+
+//   return () => {
+//     document.removeEventListener('visibilitychange', handleVisibilityChange);
+//   };
+// }, [player]);
+
+
+
+
+
+
   return (
     <div className={styles.videoPlayer}>
       {video ? (
@@ -42,11 +80,11 @@ const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player,onEnded }) 
           controls={false}
           loop={false}
           volume={volume}
-          muted={muted}
+          // muted={muted}
           config={{
             youtube: {
               playerVars: {
-                autoplay: 0,
+                autoplay: 1,
                 modestbranding: 1,
                 disablekb: 1,
                 showinfo: 0,
