@@ -1,9 +1,11 @@
 .main {
     background: linear-gradient(to top,
-            #3F3C3C 0px,
-            #3F3C3C 711px,
-            #D9D9D91F 0px,
-            #D9D9D91F 100px)
+            #3F3C3C 0%,
+            #3F3C3C 17%,
+            #D9D9D91F 0%,
+            #D9D9D91F 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .mainWrapper {
@@ -173,8 +175,8 @@
     }
 
     .pageInfo {
-    top: 458px;
-}
+        top: 458px;
+    }
 }
 
 @media only screen and (max-width: 769px) {
