@@ -32,9 +32,10 @@
 }
 
 .active80s {
-    border: 2px solid #5297FF;
-    color: red;
+    border: 2px solid #f18c07 !important;
+    color: #f18c07 !important;
 }
+
 
 .channelBtn80s {
     width: 141px;
@@ -64,10 +65,7 @@
     letter-spacing: 0em;
 }
 
-.active80s {
-    border: 2px solid #f18c07;
-    color: #f18c07;
-}
+
 
 @media only screen and (max-width: 1440px) {
     .channelBtn {

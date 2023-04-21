@@ -15,23 +15,23 @@ export default function ChannelBtn({ channel }) {
 
   const [activeBtn, setActiveBtn] = useState();
 
-  useEffect(() => {
-    if (router.pathname.startsWith("/") || router.pathname.startsWith("/90s")) {
-      setChannelBtnColor("channelBtn");
-    }
-    if (router.pathname.startsWith("/80s")) {
-      setChannelBtnColor("channelBtn80s");
-    }
-  }, [router.pathname]);
+  const btn80s = (
+    <button
+      className={`${styles["channelBtn80s"]} 
+  ${isActive && styles["active80s"]}`}
+    >
+      <p>{channel.name}</p>
 
-  useEffect(() => {
-    if (router.pathname.startsWith("/") || router.pathname.startsWith("/90s")) {
-      setActiveBtn(btn90s);
-    }
-    if (router.pathname.startsWith("/80s")) {
-      setActiveBtn(btn80s);
-    }
-  }, [router.pathname]);
+      {channel.image && (
+        <Image
+          src={channel.image}
+          alt={channel.name}
+          width={channel.width}
+          height={channel.height}
+        />
+      )}
+    </button>
+  );
 
   const btn90s = (
     <button
@@ -51,23 +51,29 @@ export default function ChannelBtn({ channel }) {
     </button>
   );
 
-  const btn80s = (
-    <button
-      className={`${styles["channelBtn80s"]} 
-  ${isActive && styles["active80s"]}`}
-    >
-      <p>{channel.name}</p>
 
-      {channel.image && (
-        <Image
-          src={channel.image}
-          alt={channel.name}
-          width={channel.width}
-          height={channel.height}
-        />
-      )}
-    </button>
-  );
+
+  useEffect(() => {
+    if (router.pathname.startsWith("/") || router.pathname.startsWith("/90s")) {
+      setChannelBtnColor("channelBtn");
+    }
+    if (router.pathname.startsWith("/80s")) {
+      setChannelBtnColor("channelBtn80s");
+    }
+  }, [router.pathname]);
+
+  useEffect(() => {
+    if (router.pathname.startsWith("/") || router.pathname.startsWith("/90s")) {
+      setActiveBtn(btn90s);
+    }
+    if (router.pathname.startsWith("/80s")) {
+      setActiveBtn(btn80s);
+    }
+  }, [router.pathname]);
+
+
+
+
 
   return (
     <Link href={channel.url} scroll={false}>

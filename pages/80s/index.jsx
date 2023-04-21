@@ -6,7 +6,9 @@ import Ad from "@/components/ad/Ad";
 
 import styles from "../../styles/Home80s.module.css";
 
-import { channels80s } from "../../data/channelsList";
+import { channels } from "../../data/channelsList";
+
+import {channels80s} from '../../data/channelsList'
 
 import Controls from "@/components/controls/Controls";
 
