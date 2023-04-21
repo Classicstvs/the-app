@@ -161,10 +161,43 @@
 
 
 @media only screen and (max-width: 920px) {
-    .rightSecton{
+    .rightSecton {
         margin-right: 0px;
         position: relative;
         top: 13px !important;
+    }
+
+    .pageInfoWrapper {
+        top: 294px !important;
+    }
+
+    .ad {
+        position: relative;
+        top: 158px;
+    }
+
+    .pageInfo {
+        display: none;
+    }
+
+    .controls {
+        top: -151px;
+        position: relative;
+    }
+
+    .channels {
+        position: relative;
+        top: -176px;
+    }
+
+    .playInfo {
+        position: relative;
+        top: 42px;
+    }
+
+    .leftSecton>img {
+        top: 52px !important;
+        left: 136px !important;
     }
 }
 
@@ -185,7 +218,7 @@
         max-width: 95% !important;
     }
 
-    .blackScreen{
+    .blackScreen {
         max-width: 629px;
         max-height: 501px;
         top: 34px;
@@ -238,18 +271,18 @@
     }
 
     .channels {
-        top: -2px;
+        top: 4px !important;
     }
 
     .controls {
-        top: 9px;
+        top: 28px !important;
     }
 
     .ad {
-        top: 324px;
+        top: 337px;
     }
 
-    .rightSecton{
+    .rightSecton {
         position: relative !important;
         top: -168px !important;
     }
@@ -386,15 +419,24 @@
         top: 20px !important;
         left: 26px !important;
     }
-    .rightSecton{
+
+    .rightSecton {
         position: relative !important;
         top: 7px !important;
+    }
+
+    .channels {
+        top: -177px !important;
+    }
+
+    .controls {
+        top: -167px !important;
     }
 }
 
 
 @media only screen and (max-width: 460px) {
-  
+
     /* .channels{
         top: -313px;
     }
@@ -425,24 +467,32 @@
 }
 
 @media only screen and (max-width: 420px) {
-    .rightSecton{
+    .rightSecton {
         position: relative !important;
         top: 7px !important;
+    }
+
+    .channels {
+        top: -172px !important;
+    }
+
+    .controls {
+        top: -158px !important;
     }
 }
 
 
 @media only screen and (max-width: 380px) {
-    .rightSecton{
+    .rightSecton {
         position: relative !important;
         top: 7px !important;
     }
 
-    /* .channels {
-        top: -357px;
+    .channels {
+        top: -172px !important;
     }
 
     .controls {
-        top: -348px;
-    } */
+        top: -158px !important;
+    }
 }
