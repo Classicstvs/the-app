@@ -46,6 +46,28 @@
 }
 
 
+@media only screen and (max-width: 920px) {
+    .pageInfoWrapper {
+        top: 294px !important;
+    }
+
+    .ad {
+        position: relative;
+        top: 320px;
+    }
+
+    .pageInfo {
+        position: relative;
+        top: 297px;
+    }
+
+    .controls {
+        top: 9px;
+        position: relative;
+    }
+}
+
+
 @media only screen and (max-width: 850px) {
     .leftSecton>img {
         top: 45px !important;
@@ -96,21 +118,40 @@
     }
 
     .channels {
-        top: -2px;
+        top: -193px;
     }
 
     .controls {
-        top: 9px;
+        top: -172px;
     }
 
     .ad {
-        top: 318px;
+        top: 143px;
     }
 
     .pageInfo {
-        top: 340px;
+        top: 303px;
     }
 }
+
+/* @media only screen and (max-width: 821px) {
+    .rightSecton {
+        position: relative !important;
+        top: -377px !important;
+    }
+
+    .channels {
+        top: -164px;
+    }
+
+    .controls {
+        top: -157px;
+    }
+
+    .pageInfo {
+        top: 458px;
+    }
+} */
 
 @media only screen and (max-width: 815px) {
 
@@ -160,24 +201,7 @@
     }
 }
 
-@media only screen and (max-width: 821px) {
-    .rightSecton {
-        position: relative !important;
-        top: -377px !important;
-    }
 
-    .channels {
-        top: -164px;
-    }
-
-    .controls {
-        top: -157px;
-    }
-
-    .pageInfo {
-        top: 458px;
-    }
-}
 
 @media only screen and (max-width: 769px) {
     .mainWrapper {
@@ -233,7 +257,7 @@
     }
 
     .ad {
-        top: 110px;
+        top: 126px;
     }
 
     .pageInfo {
@@ -269,11 +293,12 @@
 
 @media only screen and (max-width: 542px) {
     .rightSecton {
-        margin-right: 0px;
-        position: relative;
-        top: -227px;
+        position: relative !important;
+        top: 31px !important;
     }
 }
+
+
 
 @media only screen and (max-width: 460px) {
     .rightSecton {
@@ -385,5 +410,13 @@
         margin-right: 0px;
         position: relative;
         top: -480px !important;
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .rightSecton {
+        margin-right: 0px;
+        position: relative;
+        top: -452px !important;
     }
 }
