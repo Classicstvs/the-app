@@ -6,6 +6,19 @@
     max-width: 100%;
 }
 
+.videoPlayer80s {
+    z-index: 2;
+    position: absolute;
+    top: 46px !important;
+    left: 62px !important;
+}
+
+.reactPlayer80s {
+    width: 514px !important;
+    height: 392px !important;
+}
+
+
 
 @media only screen and (max-width: 1920px) {
     .videoPlayer {
@@ -27,6 +40,33 @@
         width: 583px !important;
         height: 438px !important;
     }
+
+
+    .reactPlayer80s {
+        width: 465px !important;
+        height: 356px !important;
+    }
+}
+
+
+@media only screen and (max-width: 1450px) {
+
+    .videoPlayer80s {
+        top: 52px !important;
+        left: 71px !important;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .videoPlayer80s {
+        top: 41px !important;
+        left: 56px !important;
+    }
+
+    .reactPlayer80s {
+        width: 441px !important;
+        height: 337px !important;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -38,6 +78,11 @@
     .reactPlayer {
         width: 522px !important;
         height: 383px !important;
+    }
+
+    .reactPlayer80s{
+        width: 373px !important;
+        height: 285px !important;
     }
 }
 
