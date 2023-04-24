@@ -43,25 +43,70 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:1023px) {
-    .mainWrapper {
-        gap: 0%;
-        margin-left: 0px;
-        flex-direction: column;
+
+@media only screen and (max-width: 850px) {
+    .leftSecton>img {
+        top: 45px !important;
+        left: 126px !important;
+        max-width: 95% !important;
     }
 
-    .leftSecton {
-        margin-left: 0px;
-    }
 
     .rightSecton {
-        margin-right: 0px;
-        position: relative;
-        top: -387px;
+        position: relative !important;
+        top: -194px !important;
     }
 
-    .main {
-        background: linear-gradient(to top, #3F3C3C 0%, #3F3C3C 50%, #D9D9D91F 0%, #D9D9D91F 100%);
+    .pageInfo {
+        position: relative;
+        top: 295px;
+    }
+
+    .videoPlayer {
+        z-index: 2;
+        position: absolute;
+        top: 50px !important;
+        left: 100px !important;
+    }
+
+    .leftSecton>img {
+        top: 45px !important;
+        left: 100px !important;
+        max-width: 95% !important;
+    }
+
+    .blackScreen {
+        max-width: 629px;
+        max-height: 501px;
+        top: 45px;
+        right: 137px !important;
+    }
+}
+
+
+@media only screen and (max-width: 825px) {
+
+    .channels,
+    .controls,
+    .ad,
+    .pageInfo {
+        position: relative;
+    }
+
+    .channels {
+        top: -2px;
+    }
+
+    .controls {
+        top: 9px;
+    }
+
+    .ad {
+        top: 318px;
+    }
+
+    .pageInfo {
+        top: 340px;
     }
 }
 
@@ -91,7 +136,36 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .mainWrapper {
+        gap: 0%;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+
+    .leftSecton {
+        margin-left: 0px;
+    }
+
+    .rightSecton {
+        margin-right: 0px;
+        position: relative;
+        top: -387px;
+    }
+
+    .main {
+        background: linear-gradient(to top, #3F3C3C 0%, #3F3C3C 50%, #D9D9D91F 0%, #D9D9D91F 100%);
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    .rightSecton{
+        position: relative !important;
+        top: -377px !important;
+    }
+}
+
+@media only screen and (max-width: 769px) {
     .mainWrapper {
         gap: 0%;
         margin-left: 0px;
@@ -129,25 +203,53 @@
                 #D9D9D91F 100%);
     }
 
-    .channels {
+    .channels,
+    .controls,
+    .ad,
+    .pageInfo {
         position: relative;
-        top: -235px;
+    }
+
+    .channels {
+        top: -200px;
     }
 
     .controls {
-        position: relative;
-        top: -222px;
+        top: -187px;
     }
 
     .ad {
-        position: relative;
-        top: 70px;
+        top: 110px;
     }
 
     .pageInfo {
-        position: relative;
         top: 312px;
     }
+
+    .rightSecton {
+        position: relative !important;
+        top: -193px !important;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .pageInfo {
+        display: none;
+    }
+
+    .blackScreen {
+        width: 589px;
+        height: 420px;
+        top: 50px;
+        right: 59px !important;
+        max-width: 91%;
+    }
+
+    .rightSecton {
+        top: 43px;
+        position: relative;
+    }
+
 }
 
 
@@ -163,43 +265,51 @@
     .rightSecton {
         margin-right: 0px;
         position: relative;
-        top: -265px;
+        top: -265px !important;
     }
+
+    .pageInfo {
+        display: block;
+    }
+
 }
 
 @media only screen and (max-width: 440px) {
     .rightSecton {
-        top: -230px;
+        top: -230px !important;
     }
 }
 
 @media only screen and (max-width: 430px) {
     .rightSecton {
-        top: -251px;
+        top: -251px !important;
     }
 }
 
+
 @media only screen and (max-width: 420px) {
     .rightSecton {
-        top: -250px;
+        top: -250px !important;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .rightSecton {
-        top: -266px;
+        top: -266px !important;
     }
 }
+
 
 @media only screen and (max-width: 380px) {
     .rightSecton {
-        top: -267px;
+        top: -267px !important;
     }
 }
 
+
 @media only screen and (max-width: 360px) {
     .rightSecton {
-        top: -285px;
+        top: -285px !important;
     }
 }
 
@@ -207,14 +317,15 @@
     .rightSecton {
         margin-right: 0px;
         position: relative;
-        top: -396px;
+        top: -396px !important;
     }
 }
+
 
 @media only screen and (max-width: 290px) {
     .rightSecton {
         margin-right: 0px;
         position: relative;
-        top: -480px;
+        top: -480px !important;
     }
 }
