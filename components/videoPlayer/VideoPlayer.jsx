@@ -2,12 +2,25 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import ReactPlayer from "react-player";
 
+import { useRouter } from "next/router";
+
 import styles from "./VideoPlayer.module.css";
 
-const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player,onEnded }) => {
+const VideoPlayer = ({
+  videoId,
+  muted,
+  onTitleChange,
+  volume,
+  player,
+  onEnded,
+}) => {
+  const router = useRouter();
+
   const [video, setVideo] = useState(null);
   const [videoTitle, setVideoTitle] = useState();
-    const playerRef = useRef(null);
+  const [videoPlayer, setPlayer] = useState();
+  const [reactPlayer, setReactPlayer] = useState();
+  const playerRef = useRef(null);
 
   const apiKey = process.env.API_KEY;
   useEffect(() => {
@@ -30,7 +43,7 @@ const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player,onEnded }) 
       );
   });
 
- useEffect(() => {
+  useEffect(() => {
     const player = playerRef.current;
     if (player) {
       const handlePlayerReady = () => {
@@ -43,34 +56,29 @@ const VideoPlayer = ({ videoId, muted, onTitleChange, volume, player,onEnded }) 
     }
   }, []);
 
-// useEffect(() => {
-//   const handleVisibilityChange = () => {
-//     if (document.visibilityState === 'visible' && document.hasFocus()) {
-//       player.current?.getInternalPlayer()?.playVideo();
-//     }
-//   };
+  useEffect(() => {
+    if (router.pathname.startsWith("/") || router.pathname.startsWith("/90s")) {
+      setPlayer("videoPlayer");
+    }
+    if (router.pathname.startsWith("/80s")) {
+      setPlayer("videoPlayer80s");
+    }
+  },[]);
 
-//   document.addEventListener('visibilitychange', handleVisibilityChange);
-
-//   // Check if the page is currently visible and has focus before autoplaying the video
-//   if (document.visibilityState === 'visible' && document.hasFocus()) {
-//     player.current?.getInternalPlayer()?.playVideo();
-//   }
-
-//   return () => {
-//     document.removeEventListener('visibilitychange', handleVisibilityChange);
-//   };
-// }, [player]);
-
-
-
-
-
+  useEffect(() => {
+    if (router.pathname.startsWith("/") || router.pathname.startsWith("/90s")) {
+      setReactPlayer("reactPlayer");
+    }
+    if (router.pathname.startsWith("/80s")) {
+      setReactPlayer("reactPlayer80s");
+    }
+  },[router.pathname]);
 
   return (
-    <div className={styles.videoPlayer}>
+    <div className={styles[videoPlayer]}>
       {video ? (
-        <ReactPlayer className={styles.reactPlayer}
+        <ReactPlayer
+          className={styles[reactPlayer]}
           ref={player}
           onEnded={onEnded}
           width="615px"
