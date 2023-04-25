@@ -80,7 +80,7 @@
         height: 383px !important;
     }
 
-    .reactPlayer80s{
+    .reactPlayer80s {
         width: 373px !important;
         height: 285px !important;
     }
@@ -100,6 +100,16 @@
         width: 615px !important;
         height: 460px !important;
     }
+
+    .videoPlayer80s {
+        top: 53px !important;
+        left: 72px !important;
+    }
+
+    .reactPlayer80s {
+        width: 585px !important;
+        height: 431px !important;
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -108,6 +118,11 @@
         position: absolute;
         top: 52px !important;
         left: 101px !important;
+    }
+
+    .videoPlayer80s {
+        top: 53px !important;
+        left: 43px !important;
     }
 }
 
@@ -123,12 +138,26 @@
         top: 50px !important;
         left: 91px !important;
     }
+
+    .videoPlayer80s {
+        top: 53px !important;
+        left: 49px !important;
+    }
+
+    .reactPlayer80s {
+        width: 551px !important;
+        height: 388px !important;
+    }
 }
 
 
 @media only screen and (max-width: 770px) {
     .videoPlayer {
         left: 65px !important;
+    }
+    .videoPlayer80s{
+        top: 34px !important;
+        left: 30px !important;
     }
 }
 
@@ -157,6 +186,16 @@
     .reactPlayer {
         width: 451px !important;
         height: 342px !important;
+    }
+
+    .videoPlayer80s {
+        top: 33px !important;
+        left: 49px !important;
+    }
+
+    .reactPlayer80s {
+        width: 342px !important;
+        height: 263px !important;
     }
 }
 
@@ -187,11 +226,7 @@
 
 
 @media only screen and (max-width: 431px) {
-    .videoPlayer {
 
-        top: 16px;
-        left: 38px;
-    }
 
     .reactPlayer {
         width: 347px !important;
@@ -210,6 +245,17 @@
         top: 20px !important;
         left: 27px !important;
     }
+
+    .videoPlayer80s {
+        top: 20px !important;
+        left: 28px !important;
+    }
+
+
+    .reactPlayer80s {
+        width: 280px !important;
+        height: 207px !important;
+    }
 }
 
 @media only screen and (max-width: 394px) {
@@ -218,10 +264,12 @@
         height: 264px !important;
     }
 
-    .videoPlayer {
-        top: 18px !important;
-        left: 31px !important;
+    .videoPlayer80s {
+        top: 13px !important;
+        left: 20px !important;
     }
+
+
 }
 
 
@@ -229,6 +277,16 @@
     .reactPlayer {
         width: 338px !important;
         height: 260px !important;
+    }
+
+    .videoPlayer {
+        top: 13px !important;
+        left: 18px !important;
+    }
+
+    .videoPlayer80s {
+        top: 14px !important;
+        left: 19px !important;
     }
 }
 
@@ -244,6 +302,16 @@
         top: 20px !important;
         left: 26px !important;
     }
+
+    .videoPlayer80s {
+        top: 20px !important;
+        left: 26px !important;
+    }
+
+    .reactPlayer80s {
+        width: 251px !important;
+        height: 181px !important;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -257,6 +325,11 @@
         top: 20px !important;
         left: 26px !important;
     }
+
+    .videoPlayer80s {
+        top: 16px !important;
+        left: 21px !important;
+    }
 }
 
 
@@ -264,5 +337,17 @@
     .reactPlayer {
         width: 268px !important;
         height: 205px !important;
+    }
+}
+
+@media only screen and (max-width: 282px) {
+    .reactPlayer80s {
+        width: 178px !important;
+        height: 139px !important;
+    }
+
+    .videoPlayer80s {
+        top: 16px !important;
+        left: 26px !important;
     }
 }

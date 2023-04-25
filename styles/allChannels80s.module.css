@@ -21,7 +21,7 @@
     z-index: 0;
 }
 
-.noise80s{
+.noise80s {
     color: transparent;
     position: absolute;
     top: 6px;
@@ -71,7 +71,7 @@
         margin-right: 30px;
     }
 
-    .noise80s{
+    .noise80s {
         max-width: 79% !important;
     }
 
@@ -93,7 +93,7 @@
         background-attachment: fixed;
     }
 
-    .noise80s{
+    .noise80s {
         max-width: 79% !important;
     }
 }
@@ -168,6 +168,35 @@
     }
 }
 
+@media screen and (max-width: 961px) {
+    .channels {
+        position: relative;
+        top: -215px;
+    }
+
+    .controls {
+        position: relative;
+        top: -205px;
+    }
+
+    .ad {
+        position: relative;
+        top: 109px;
+    }
+
+    .playInfo {
+        position: relative;
+        top: -33px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pageInfo {
+        position: relative;
+        top: 499px;
+    }
+}
+
 
 @media only screen and (max-width: 920px) {
     .rightSecton {
@@ -205,8 +234,8 @@
     }
 
     .noise80s {
-        top: 52px !important;
-        left: 136px !important;
+        top: 32px !important;
+        left: 59px !important;
     }
 }
 
@@ -308,6 +337,10 @@
         top: -157px;
     }
 
+    .noise80s {
+        top: 24px !important;
+        left: 37px !important;
+    }
 
 }
 
@@ -317,8 +350,7 @@
     }
 
     .noise80s {
-
-        left: 67px !important;
+        left: 65px !important;
     }
 }
 
@@ -352,7 +384,7 @@
 
 
     .main {
-        background:transparent;
+        background: transparent;
     }
 
     .pageInfo {
@@ -437,6 +469,10 @@
     .controls {
         top: -167px !important;
     }
+
+    .noise80s{
+        max-width: 69% !important;
+    }
 }
 
 
@@ -484,6 +520,12 @@
     .controls {
         top: -158px !important;
     }
+
+    .noise80s {
+        top: 17px !important;
+        left: 24px !important;
+        width: 287px !important;
+    }
 }
 
 
@@ -499,5 +541,11 @@
 
     .controls {
         top: -158px !important;
+    }
+
+    .noise80s {
+        top: 7px !important;
+        left: 14px !important;
+        width: 269px !important;
     }
 }
