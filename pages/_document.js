@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from 'next/script';
 
 export default function Document() {
   return (
@@ -20,12 +19,6 @@ export default function Document() {
         <meta property="og:url" content="www.classicstv.net" />
         <meta property="og:type" content="website" />
         <meta name="google-site-verification" content="QUg1r1-ry6ZhM9aQdj6P44wgf8NiJ79QZP3IHlIaIl4" />
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}`}
-          strategy="lazyOnload"
-          crossOrigin="anonymous"
-        />
       </Head>
       <body>
         <Main />

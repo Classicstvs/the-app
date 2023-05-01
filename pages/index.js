@@ -36,11 +36,7 @@ export default function Home() {
         </div>
         <div className={styles.rightSecton}>
           <div className={styles.ad}>
-            <Ad
-              data-ad-slot="2382819204"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            />
+            <Ad />
           </div>
           <div className={styles.channels}>
             <Channels channels={channels} />
