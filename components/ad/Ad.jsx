@@ -1,19 +1,16 @@
 import styles from "./Ad.module.css";
 
-import { Adsense } from "@ctrl/react-adsense";
-
 export default function Ad() {
-
-
   return (
     <div className={styles.container}>
-      <Adsense
-        style={{height:'164px'}}
-        client="ca-pub-4803482388154607"
-        slot="2382819204"
-        // format="auto"
-        responsive="true"
-      />
+      <ins
+        class="adsbygoogle"
+        style={{display:'block'}}
+        data-ad-client="ca-pub-4803482388154607"
+        data-ad-slot="2382819204"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
     </div>
   );
 }
