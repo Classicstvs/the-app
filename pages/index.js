@@ -14,12 +14,12 @@ import { info90s } from "@/data/infos";
 import { NextSeo } from "next-seo";
 
 const SEO = {
-  title: "Classics TV | 90s Favourites TV Channels",
-  description: "",
+  title: "Classics TV | Best from 50s, 60s, 70s, 80s, 90s and 2000s Favourites TV Channels",
+  description: "Step into the past and relive the golden ages of television. Explore classic TV channels from the 50s, 60s, 70s, 80s, 90s and 2000s, via Fun TV Simulator.",
 
   openGraph: {
-    title: "Classics TV | 90s Favourites TV Channels",
-    description: "",
+    title: "Classics TV | Best from 50s, 60s, 70s, 80s, 90s and 2000s Favourites TV Channels",
+    description: "Step into the past and relive the golden ages of television. Explore classic TV channels from the 50s, 60s, 70s, 80s, 90s and 2000s, via Fun TV Simulator.",
   },
 };
 
