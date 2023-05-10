@@ -11,6 +11,7 @@ export default function Ad() {
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
+      <p>Just a small white space...</p>
     </div>
   );
 }
