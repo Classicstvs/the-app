@@ -2,7 +2,7 @@
     width: 200px;
     height: 280px;
     background-color: rgba(189, 189, 189, 0.171);
-    position: absolute;
+    position: fixed;
     top: 150px;
     left: -175px;
     /* left: 0; */
@@ -41,7 +41,7 @@
     width: 130px;
     height: 16px;
     background-color: rgba(189, 189, 189, 0.171);
-    position: absolute;
+    position: fixed;
     top: 77px;
    
     left: -94px;
