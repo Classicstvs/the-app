@@ -12,6 +12,7 @@ import CardsInfo from "@/components/cardsInfo/CardsInfo";
 import { info90s } from "@/data/infos";
 
 import { NextSeo } from "next-seo";
+import Donate from "@/components/donate/Donate";
 
 const SEO = {
   title: "Classics TV | Best from 50s, 60s, 70s, 80s, 90s and 2000s Favourites TV Channels",
@@ -28,6 +29,7 @@ const SEO = {
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Donate />
       <NextSeo {...SEO} />
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>
