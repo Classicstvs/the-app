@@ -41,7 +41,7 @@
     width: 130px;
     height: 16px;
     background-color: rgba(189, 189, 189, 0.171);
-    position: fixed;
+    position: absolute;
     top: 77px;
    
     left: -94px;
