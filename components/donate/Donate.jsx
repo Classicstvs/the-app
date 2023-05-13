@@ -19,13 +19,13 @@ export default function Donate() {
             />
           </div>
         </Link>
-        <h5>Donate Us</h5>
+        <h5>Donate</h5>
       </aside>
 
       <aside className={styles.containerResponsive}>
         <div className={styles.coffeeTitle}>
           <Link href="https://bmc.link/classicstv" target="_blank">
-            <h5>Donate Us</h5>
+            <h5>Donate</h5>
           </Link>
           <BiCoffeeTogo style={{ color: "#F6C964", fontSize: "13px" }} />
         </div>
