@@ -1,5 +1,7 @@
 import styles from "./Terms.module.css";
 
+import Donate from "@/components/donate/Donate";
+
 import { NextSeo } from "next-seo";
 
 const SEO = {
@@ -15,6 +17,7 @@ const SEO = {
 export default function Terms() {
   return (
     <main className={styles.container}>
+      <Donate />
       <NextSeo {...SEO} />
       <div className={styles.wrapper}>
         <div className={styles.content}>

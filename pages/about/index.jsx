@@ -8,6 +8,8 @@ import { MdEmail } from "react-icons/md";
 
 import { NextSeo } from "next-seo";
 
+import Donate from "@/components/donate/Donate";
+
 const SEO = {
   title: "Classics TV | About Us",
   description: "",
@@ -30,6 +32,7 @@ export default function AboutUs() {
 
   return (
     <main className={styles.container}>
+      <Donate />
       <NextSeo {...SEO} />
       <div className={styles.wrapper}>
         <div className={styles.contentAbout}>
