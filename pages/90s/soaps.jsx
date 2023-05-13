@@ -15,10 +15,12 @@ import Controls from "../../components/controls/Controls";
 import PlayInfo from "../../components/playInfo/PlayInfo";
 import PageInfo from "../../components/pageInfo/PageInfo";
 import CardsInfo from "../../components/cardsInfo/CardsInfo";
+import Donate from "@/components/donate/Donate";
 
 import { channels } from "../../data/channelsList";
 import soapsJson from "../../data/soaps.json";
 import { info90s } from "@/data/infos";
+
 
 export default function Soaps({ soaps }) {
   const SEO = {
@@ -67,6 +69,7 @@ export default function Soaps({ soaps }) {
 
   return (
     <main className={styles.main}>
+      <Donate />
       <NextSeo {...SEO} />
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>

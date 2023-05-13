@@ -16,6 +16,7 @@ import Controls from "../../../components/controls/Controls";
 import PlayInfo from "../../../components/playInfo/PlayInfo";
 import PageInfo from "../../../components/pageInfo/PageInfo";
 import CardsInfo from "../../../components/cardsInfo/CardsInfo";
+import Donate from "@/components/donate/Donate";
 
 import useScrollPosition from "@/hooks/useScrollPosition";
 
@@ -26,6 +27,7 @@ import { useRef } from "react";
 
 import screenfull from "screenfull";
 import { info90s } from "@/data/infos";
+
 
 export default function Video({ title }) {
   useScrollPosition();
@@ -149,6 +151,7 @@ export default function Video({ title }) {
 
   return (
     <main className={styles.main}>
+      <Donate />
       <NextSeo {...SEO} />
       <div className={styles.mainWrapper}>
         <div className={styles.leftSecton}>

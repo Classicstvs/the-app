@@ -2,6 +2,8 @@ import styles from "./Privacy.module.css";
 
 import { NextSeo } from "next-seo";
 
+import Donate from "@/components/donate/Donate";
+
 const SEO = {
   title: "Classics TV | Privacy Policy",
   description: "",
@@ -15,6 +17,7 @@ const SEO = {
 export default function Privacy() {
   return (
     <main className={styles.container}>
+      <Donate />
       <NextSeo {...SEO} />
       <div className={styles.wrapper}>
         <div className={styles.content}>

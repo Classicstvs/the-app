@@ -19,7 +19,9 @@ export default function Donate() {
             />
           </div>
         </Link>
-        <h5>Donate</h5>
+        <Link href="https://bmc.link/classicstv" target="_blank">
+          <h5>Donate</h5>
+        </Link>
       </aside>
 
       <aside className={styles.containerResponsive}>
